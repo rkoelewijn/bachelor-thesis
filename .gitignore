@@ -227,3 +227,7 @@ __marimo__/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Obsidian settings and workspace files
+.obsidian/
+
