@@ -1,0 +1,39 @@
+\documentclass[a4paper]{report}
+
+\usepackage[utf8]{inputenc}      % For setting up the encoding so you can type diacricts, e.g. é, ö.
+\usepackage{geometry}            % For setting the correct papersize.
+\usepackage[hidelinks]{hyperref} % Hyperlinks
+\usepackage{graphicx}            % Images
+\usepackage{rutitlepage}         % Titlepage
+
+\begin{document}
+
+\maketitleru[
+	authors={Firstname Lastname\\sXXXXXX},
+	date={\today},
+	others={%
+		{First supervisor/assessor:}{Title(s) Firstname Lastname},
+		{Second assessor:}{Title(s) Firstname Lastname}},
+	course={Bachelor's Thesis Computing Science},
+	title={Thesis Title},
+	subtitle={Subtitle if you like},
+	colour,
+]
+
+\input{abstract}
+
+\tableofcontents
+
+\input{introduction}
+\input{preliminaries}
+\input{research}
+\input{relatedwork}
+\input{conclusions}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\appendix
+\input{appendix}
+
+\end{document}
