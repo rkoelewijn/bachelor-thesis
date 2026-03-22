@@ -1,4 +1,4 @@
-#meeting #preparation
+#meeting
 ## 1. Research LLM Errors 
 
 - Huang et al. (2025) [[A Survey on Hallucination in Large Language Models - Principles, Taxonomy, Challenges, and Open Questions]]
@@ -41,9 +41,25 @@ De paper: [[GATSY - Graph Attention Network for Music Artist Similarity]] geeft 
 Om de summary te kunnen vergelijken, kan ik gebruik maken van XLM-R. [[Unsupervised Cross-lingual Representation Learning at Scale (XLM-RoBERTa)]]  Verder is deze multi talig, wat inhoudt dat het verschil tussen Nederlands en Engels niet uit zou moeten maken. De vraag is wel of deze niet te zwaar/te groot zou kunnen zijn. 
 
 ## 5. Vragen
-- De LLM controleert de website van Doornroosje, moet ik gaan controleren of de LLM de website van Doornroosje gelezen heeft, of dat de informatie die deze genereert klopt en misschien Doornroosje een fout heeft gemaakt op de website? 
-- De artiesten worden van de website gehaald, moet dit ook geverifieerd worden of alleen de summary? 
-- Is de XLM-R te groot om voor dit doeleinde te gebruiken? 
+- *De LLM controleert de website van Doornroosje, moet ik gaan controleren of de LLM de website van Doornroosje gelezen heeft, of dat de informatie die deze genereert klopt en misschien Doornroosje een fout heeft gemaakt op de website?* 
+	- We gaan er vanuit dat de informatie die op Doornroosje staat klopt en het doel is echt om te controleren of de LLM de website echt goed scraped. 
+	- Door meerdere websites en paginas te combineren kan het nog sterker worden -> *joint interference*. 
+- *De artiesten worden van de website gehaald, moet dit ook geverifieerd worden of alleen de summary?* 
+	- Dit is afhankelijk wat ik zelf wil, aangezien er veel verschil kan zitten tussen het verifieren van artiesten en de summary. 
+- *Is de XLM-R te groot om voor dit doeleinde te gebruiken?*
+	- Misschien, moet ik zelf even kijken 
+
+
+
+## Acties na meeting: 
+- Spreken met Chris
+-  Meer onderzoek naar Knowledge graphs
+- Nieuwe literatuur opzoeken, door op [[FELM - Benchmarking Factuality Eval of LLM]] en geciteerde werken. 
+- Specifieke probleemstelling -> zelf invullen / sturen 
+- Meer specifiek op muziek of algemeen ?
+- plan van aanpak/opzet 
+
+
 
 
 
