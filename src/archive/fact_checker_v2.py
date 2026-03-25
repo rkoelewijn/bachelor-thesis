@@ -54,38 +54,53 @@ def validate(test_name, artist, dutch_source, summary):
     print(f"🚀 RUNNING VALIDATION FOR: {artist}")
     print("="*50)
     
-    # 🔴 TRACER 1: Check what we actually loaded from the JSON
-    if not dutch_source:
-        print("🚨 [DEBUG] RAW TEXT IS EMPTY! Check how doornroosje.json is being read.")
-    else:
-        # Print the first 300 characters of the raw text so it doesn't flood your screen
-        print(f"📄 [DEBUG] RAW DUTCH TEXT RECEIVED:\n{str(dutch_source)[:300]}...\n")
-
-    # Run Phase 1
     clean_p = clean_dutch_premise(str(dutch_source), artist)
-    
-    # 🟢 TRACER 2: Check what survived the cleaner
-    if not clean_p.strip():
-        print("🚨 [DEBUG] CLEANED PREMISE IS EMPTY! The cleaner deleted everything.")
-    else:
-        print(f"✨ [DEBUG] CLEANED PREMISE (Sent to RoBERTa):\n{clean_p}\n")
-    
-    print("-" * 50)
-
-    # Run Phase 2
     claims = decomposer.extract_claims(summary, artist)
     
+    # We parse the cleaned Dutch text into individual sentences
+    dutch_sentences = [sent.text.strip() for sent in nlp_nl(clean_p).sents if len(sent.text.strip()) > 5]
+    
     for i, claim in enumerate(claims, 1):
-        # We pass clean_p to the NLI model
-        res = run_nli_check(clean_p, claim)
         print(f"[{i}] CLAIM: '{claim}'")
-        print(f"    🟢 {res['ent']:.1f}% Entail | 🟡 {res['neu']:.1f}% Neut | 🔴 {res['con']:.1f}% Cont")
         
-        if res['ent'] > 75: print("    ✅ RESULT: VERIFIED")
-        elif res['con'] > 50: print("    🚨 RESULT: HALLUCINATION")
-        else: print("    ⚠️ RESULT: UNVERIFIED (Fluff/Missing Evidence)")
+        best_entail = 0
+        best_res = None
+        best_evidence = ""
+        
+       # 🔍 THE FACT HUNTER: Test the claim against each Dutch sentence individually
+        for sentence in dutch_sentences:
+            
+            # --- THE FIX: CONTEXT INJECTION ---
+            # We anchor the artist's name to the sentence so RoBERTa knows the subject
+            contextual_sentence = f"Over {artist}: {sentence}"
+            
+            # We test the injected sentence, but...
+            res = run_nli_check(contextual_sentence, claim)
+            
+            if res['ent'] > best_entail:
+                best_entail = res['ent']
+                best_res = res
+                # ...we still save the original sentence so your printout looks clean!
+                best_evidence = sentence
+
+        # Print the best result found
+        if best_res:
+            print(f"    🔎 EVIDENCE: '{best_evidence}'")
+            print(f"    📊 SCORES: 🟢 {best_res['ent']:.1f}% Entail | 🟡 {best_res['neu']:.1f}% Neut | 🔴 {best_res['con']:.1f}% Cont")
+            
+            # Adjusted thresholds to account for cross-lingual fuzziness and grammar fragments
+            if best_res['ent'] > 60: 
+                print("    ✅ RESULT: VERIFIED")
+            elif best_res['con'] > 60: 
+                print("    🚨 RESULT: HALLUCINATION")
+            else: 
+                print("    ⚠️ RESULT: UNVERIFIED (Fluff/Missing Evidence)")
+        else:
+            print("    ⚠️ RESULT: UNVERIFIED (No valid Dutch sentences to check against)")
     
     return claims
+
+
 def run_benchmark():
     # 1. Load the database
     try:

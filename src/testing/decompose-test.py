@@ -2,23 +2,18 @@ import sys
 import json
 from pathlib import Path
 
-# 1. THE BRIDGE: Tell Python where the 'main' folder is
-# This calculates the path to 'bachelor-thesis/src/main'
 CURRENT_DIR = Path(__file__).resolve().parent
 SRC_MAIN_DIR = CURRENT_DIR.parent / "main"
 sys.path.append(str(SRC_MAIN_DIR))
 
-# Now we can import the logic from main/decomposer.py
 from decomposer import extract_claims 
 
-# 2. DATA PATH: Locate the JSON relative to this test file
-# Go up twice (testing -> src -> root) then into /data
 DATA_PATH = CURRENT_DIR.parent.parent / "data" / "newsletters.json"
-
 NO_OF_TESTS = 11 
 
 def run_benchmark():
-    # 1. Load the database
+
+    # Loading the testing database JSON. 
     try:
         with open(DATA_PATH, 'r') as f:
             corpus = json.load(f)

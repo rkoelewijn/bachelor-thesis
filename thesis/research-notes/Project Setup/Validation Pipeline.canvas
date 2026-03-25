@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"7fee1bf0f7c53e2f","x":-140,"y":-420,"width":250,"height":60,"type":"text","text":"START"},
+		{"id":"4c717685c0e85beb","x":-140,"y":-280,"width":250,"height":60,"type":"text","text":"data_loader.py"},
+		{"id":"1cd84d97d9712ac5","x":240,"y":-120,"width":250,"height":60,"type":"text","text":"dutch_parser.py"},
+		{"id":"163e341bcb959260","x":-520,"y":-130,"width":250,"height":70,"type":"text","text":"decomposer.py"},
+		{"id":"643878d22bf07416","x":-140,"y":60,"width":250,"height":50,"type":"text","text":"validator.py"},
+		{"id":"1f796775086af244","x":-140,"y":240,"width":250,"height":60,"type":"text","text":"END"}
+	],
+	"edges":[
+		{"id":"091774fc8120dbf5","fromNode":"163e341bcb959260","fromSide":"bottom","toNode":"643878d22bf07416","toSide":"left","label":"Atomic Claims from Summary"},
+		{"id":"f92272f0728bad1b","fromNode":"7fee1bf0f7c53e2f","fromSide":"bottom","toNode":"4c717685c0e85beb","toSide":"top","label":"JSON files"},
+		{"id":"7bf12df1b16ca809","fromNode":"4c717685c0e85beb","fromSide":"right","toNode":"1cd84d97d9712ac5","toSide":"top","label":"Full Dutch Text"},
+		{"id":"5bcb685269928fa2","fromNode":"1cd84d97d9712ac5","fromSide":"bottom","toNode":"643878d22bf07416","toSide":"right","label":"Clean Dutch Sentences"},
+		{"id":"28ac3444b7f13642","fromNode":"4c717685c0e85beb","fromSide":"left","toNode":"163e341bcb959260","toSide":"top","label":"One English Sentence Summary"},
+		{"id":"b82b6c51bdfad2ac","fromNode":"643878d22bf07416","fromSide":"bottom","toNode":"1f796775086af244","toSide":"top","label":"Summary Claim Validation Scores"}
+	]
+}
