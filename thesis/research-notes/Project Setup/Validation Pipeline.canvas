@@ -1,11 +1,11 @@
 {
 	"nodes":[
-		{"id":"7fee1bf0f7c53e2f","x":-140,"y":-420,"width":250,"height":60,"type":"text","text":"START"},
-		{"id":"4c717685c0e85beb","x":-140,"y":-280,"width":250,"height":60,"type":"text","text":"data_loader.py"},
-		{"id":"1cd84d97d9712ac5","x":240,"y":-120,"width":250,"height":60,"type":"text","text":"dutch_parser.py"},
-		{"id":"163e341bcb959260","x":-520,"y":-130,"width":250,"height":70,"type":"text","text":"decomposer.py"},
-		{"id":"643878d22bf07416","x":-140,"y":60,"width":250,"height":50,"type":"text","text":"validator.py"},
-		{"id":"1f796775086af244","x":-140,"y":240,"width":250,"height":60,"type":"text","text":"END"}
+		{"id":"7fee1bf0f7c53e2f","type":"text","text":"START","x":-140,"y":-420,"width":250,"height":60,"color":"4"},
+		{"id":"4c717685c0e85beb","type":"text","text":"data_loader.py","x":-140,"y":-280,"width":250,"height":60},
+		{"id":"1cd84d97d9712ac5","type":"text","text":"dutch_parser.py","x":240,"y":-120,"width":250,"height":60},
+		{"id":"163e341bcb959260","type":"text","text":"decomposer.py","x":-520,"y":-130,"width":250,"height":70},
+		{"id":"643878d22bf07416","type":"text","text":"validator.py","x":-140,"y":60,"width":250,"height":50},
+		{"id":"1f796775086af244","type":"text","text":"END","x":-140,"y":240,"width":250,"height":60,"color":"1"}
 	],
 	"edges":[
 		{"id":"091774fc8120dbf5","fromNode":"163e341bcb959260","fromSide":"bottom","toNode":"643878d22bf07416","toSide":"left","label":"Atomic Claims from Summary"},
