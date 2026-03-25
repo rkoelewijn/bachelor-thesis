@@ -1,0 +1,18 @@
+id,created_at,user,feedback
+1,2025-12-01 13:03:41.904846,Simon,"
+In the summary the next line is present: \r\nHeavy Lungs, a Dutch band, delivers raw, loud, and uncompromising rock with stormy distortion and fierce vocals, known for their intense live performances.\r\n\r\nBut the band is from UK.\r\n\r\nNever in text the nationality is named, so the LLM assumed that they are from the Netherlands""
+
+https://www.doornroosje.nl/event/heavy-lungs-2/"
+3,2025-12-01 13:15:33.689779,paul,Add spotify links to the events
+4,2025-12-01 19:32:46.346132,chris,In email with Utrecht gigs on Dec 1 the gig of the Cardinals is listed twice as it is concert in de Helling. Also listed on Tivoli Vredenburg website
+5,2025-12-01 21:22:28.918854,chris,"all genres in lower letters
+related artists can start with capital"
+6,2025-12-02 19:39:52.443897,Adriaan,"Vraag me af of Luna Maki uit Utrecht kom. "
+7,2025-12-02 19:40:35.195412,chris,add date and time when sale starts and link to ticket service. And generate an ics file so people can add to their calendar
+8,2025-12-04 20:07:38.823273,Arjen,"Acopia deelde het podium met bar italia maar dat wil niet zeggen dat ze zo klinken. Genre mismatch! "
+10,2025-12-16 19:39:55.76499,Arjen,"Naaz genre not great. Tekst zegt ""eigen geluid"" maar LLM maakt het doorsnee wereldmuziek lijken. "
+11,2025-12-16 21:24:14.061824,Arjen,"Naaz genre not great. Tekst zegt ""eigen geluid"" maar LLM maakt het doorsnee wereldmuziek lijken. "
+12,2026-01-01 13:32:59.780412,Arjen,"Upbeat is geen support act, en 40UP ook geen band"
+13,2026-01-01 13:47:45.003955,Arjen,"Upbeat is geen support act, en 40UP ook geen band"
+17,2026-02-03 21:06:21.254084,arjen,Planet Rose is not the main act
+18,2026-02-17 19:47:09.549863,Arjen,"Dit is wel grappig, voor beide Wende concerten heeft de LLM een andere (bijna gelijke, maar toch) tekst gegenereerd."

@@ -24,3 +24,22 @@
 - **No JSON Schema Evaluation:** We are evaluating the semantic reasoning of the English `summary` field only. We will not evaluate the LLM's ability to format strict entity lists like the `related_bands` array.
     
 - **No Generative Judges:** The validation step relies entirely on deterministic classification math (NLI). Secondary generative LLMs will not be used for evaluation.
+
+
+
+
+
+# SCOPE
+
+
+
+# SPACY TEST
+Kijken of de zinnen wel goed gesort worden.  In het algemeen kan dit niet werken, maar voor deze summary kan het wel werken. Goed formuleren als een limitation en te valideren. 
+
+post direct extraction -> literatuur naar zoeken. 
+
+Extraheren van feiten uit text: automatisch een knowledge graph  YAGO. Wikidata extraction, hoe voeg je feiten toel In Die bunch kijken wie dat ook gebruikt. Helpt ook om te schrijven wat je gedaan hevt voor de validatie. 
+
+# START MET ROBERTA
+
+
