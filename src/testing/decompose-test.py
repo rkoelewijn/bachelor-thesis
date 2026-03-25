@@ -15,6 +15,8 @@ from decomposer import extract_claims
 # Go up twice (testing -> src -> root) then into /data
 DATA_PATH = CURRENT_DIR.parent.parent / "data" / "newsletters.json"
 
+NO_OF_TESTS = 11 
+
 def run_benchmark():
     # 1. Load the database
     try:
@@ -27,7 +29,7 @@ def run_benchmark():
     print(f"\n{'ARTIST':<20} | {'STATUS'}")
     print("-" * 40)
 
-    # count = 0 # Initialize counter
+    count = 0 
 
     # 2. Iterate through all 11 entries
     for key, entry in corpus.items():
@@ -49,10 +51,10 @@ def run_benchmark():
             print(f"  └─ [{i}] {c}")
         print()
 
-        # count += 1
-        # if count >= 3:
-        #     print("\n🛑 Stopped after 3 entries for testing.")
-        #     break
+        count += 1
+        if count >= NO_OF_TESTS:
+            print(f"\n🛑 Stopped after {NO_OF_TESTS} entries for testing.")
+            break
 
 if __name__ == "__main__":
     run_benchmark()
