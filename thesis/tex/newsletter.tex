@@ -1,0 +1,98 @@
+\chapter{Cloudspeakers Concert Pipeline Validation}\label{Newsletter}
+
+\textit{This part of the thesis will be about the case of the Doornroosje Newsletter.}
+
+
+
+\noindent The first case we will be using our program on is a specific newsletter, which extracts data using Deepseek, a LLM, to summarise current events at Doornroosje, a venue located in 
+Nijmegen. 
+
+\section{Cloudspeakers Experiment Setup} \todo{A bit better?}
+\subsection{Cloudspeakers Pipeline Architecture}
+\textit{Cloudspeakers} is an Concert Event Pipeline setup by Chris Bol. It is an automated pipeline that collects concert events from Dutch music
+venues, extracts structured data using a Large Language Model, and distributes a
+weekly email newsletter to subscribers. \cite{bol2026cloudspeakers} The system is focused on Utrecht-based
+venues such as ACU, Ekko, De Helling, db's, De Nijverheid, and Tivoli Vredenburg.
+The pipeline runs on Windmill, an open-source workf bw automation platform. All
+logic is written in Python and SQL. No manual data entry is required.
+
+\noindent The Pipeline looks as follows: 
+\begin{enumerate}
+    \item Scrape event URLs from venue calendar pages
+    \item Store scraped pages (HTML + Markdown) in MinIO object storage
+    \item\textbf{ LLM extracts structured event data (Deepseek)}  
+    \item Structured data stored in PostgreSQL
+    \item Email newsletter to subscribers 
+\end{enumerate}
+Feedback is collected from users via a web form and stored in PostgreSQL. \\\\ 
+For this thesis, step 3 is most relevant since it uses an LLM to create a summary of the event and the core intelligence step. 
+The fields extracted by the LLM can be found in table \ref{tab:metadata_fields}.  
+\begin{table}[htpb]
+    \centering
+    \caption{Description of extracted event metadata fields.}
+    \label{tab:metadata_fields}
+    \renewcommand{\arraystretch}{1.3} % Adds padding to rows for better readability
+    \begin{tabular}{@{} l p{11cm} @{}}
+        \toprule
+        \textbf{Field} & \textbf{Description} \\
+        \midrule
+        \texttt{event}          & Name of the event \\
+        \texttt{venue\_name}    & Name of the venue (or hall) \\
+        \texttt{main\_act}      & Main performing artist or band \\
+        \texttt{support\_acts}  & Support acts (comma-separated) \\
+        \texttt{date}           & Event date in YYYY-MM-DD format \\
+        \texttt{date\_sale}     & Ticket sale start date \\
+        \texttt{url\_sale}      & Ticket purchase URL \\
+        \texttt{event\_type}    & Category: gig, club night, open podium, talk, film, show, exhibition, other\_category \\
+        \texttt{genres}         & Music genres (comma-separated, lowercase) \\
+        \texttt{summary}        & \textbf{One-sentence English summary including artist origin} \\
+        \texttt{related\_bands} & Similar artists mentioned on the page \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+As seen in table \ref{tab:metadata_fields}, the LLM generates an one-sentence English summary including the origin of the artist. 
+This shows that we will be doing Cross-lingual processing, as mentioned in section \ref{pre:sec:nli} since the website of Doornroosje is mostly in Dutch. 
+
+\subsection{Newsletter Examples}  
+For our tests, we will be using \textcolor{red}{30} different output examples, collected from \textcolor{red}{DATE} untill \textcolor{red}{DATE}. \todo{Add no of experiments and dates. }
+% An example can be found in \ref{}. 
+
+\begin{lstlisting}[language=json, caption={Example of a newsletter snippet.}, label={lst:newsletter_example}]
+    act: First Aid Kit - Visions of the Past Tour
+    type: gig
+    date: 2026-12-02
+    url: https://doornroosje.nl/event/first-aid-kit
+    venue: De Vereeniging
+    bands: First Aid Kit (main)
+    genres: folk, blues, country
+    summary: First Aid Kit, the Swedish duo of sisters Johanna and Klara Soderberg, perform their intimate folk music on their Visions of the Past Tour.
+\end{lstlisting}
+Since current scope of the thesis does not include validating the \texttt{type}, \texttt{date}, \texttt{venue}, \texttt{genres}, we do not need to store these. For every entry of the newsletter we validate, remove those entries.
+The final newsletter is stored as a JSON object, ensuring the validation pipeline can isolate the summary from the core entities. Listing \ref{lst:newsletter_json} shows a complete generated entry.
+
+\begin{lstlisting}[language=json, caption={Example of a simplified newsletter entry.}, label={lst:newsletter_json}]
+{
+  "event": "Daoud Live",
+  "venue_name": "Doornroosje",
+  "main_act": "Daoud",
+  "genres": ["jazz", "hip-hop"],
+  "summary": "French trumpeter Daoud is bringing his unique blend of jazz and hip-hop to Nijmegen for the first time."
+}
+\end{lstlisting}
+
+All examples can be found in Appendix \ref{appendix}. 
+
+Next, we \textcolor{blue}{as seen in section, we extract the text from the \texttt{url}.} The extracted text contains all information that is found on the Doornroosje website,
+giving our pipeline all information that could verify the claims made by the LLM in the summary. 
+This is then stored in a different JSON object (Listing \ref{lst:text_json}). \todo[color=blue]{add how i do the text extraction when finished.}
+
+\begin{lstlisting}[language=json, caption={Example of extracted text.}, label={lst:text_json}]
+    "VROEGZAT": {
+        "act": "VroegZat",
+        "url": "https://www.doornroosje.nl/event/vroegzat-10/", 
+        "text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!"
+    }
+\end{lstlisting}
+
+
+\section{Cloudspeakers Validation Results}

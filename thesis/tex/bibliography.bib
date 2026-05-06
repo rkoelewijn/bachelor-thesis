@@ -1,164 +1,126 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%
-%%  Example .bib references
-%%
-%%  Use the label (first entry) to cite a reference with \cite{label} in your
-%%  document. This example bibliography contains a number of examples of different
-%%  references. Consult http://www.bibtex.org/ for more information.
-%%
-%%  The use of a reference manager to generate these bibtex entries is highly
-%%  advised. Zotero (zotero.org) is a recommended one. Also, never trust google
-%%  scholar BibTeX exports, they are more often than not incomplete.
-%%
+%%  Hallucination & LLM Error Taxonomy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-@misc{
-    peys04:HowToWriteAGoodResearchPaper,
-    author  = {{Peyton Jones}, Simon},
-    title   = {How to write a good research paper},
-    date    = {october},
-    year    = 2004,
-    note    = {Presentation at Technical University of Vienna, \url{http://research.microsoft.com/en-us/um/people/simonpj/papers/giving-a-talk/writing-a-paper-slides.pdf}}
+
+@article{huang2025survey,
+  author = {Huang, Lei and Yu, Weijiang and Ma, Weitao and Zhong, Weihong and Feng, Zhangyin and Wang, Haotian and Chen, Qianglong and Peng, Weihua and Feng, Xiaocheng and Qin, Bing and Liu, Ting},
+  title = {A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions},
+  year = {2025},
+  journal = {ACM Trans. Inf. Syst.},
+  volume = {43},
+  number = {2},
+  url = {https://doi.org/10.1145/3703155},
+  doi = {10.1145/3703155}
 }
-@misc{
-    PlanetsOnWikipedia,
-    title       = {http://en.wikipedia.org/wiki/Planet}
+
+@misc{vinay2025failuremodesllmsystems,
+  title={Failure Modes in LLM Systems: A System-Level Taxonomy for Reliable AI Applications},
+  author={Vaishali Vinay},
+  year={2025},
+  eprint={2511.19933},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2511.19933}
 }
-@article{
-    aalw01:ExterminateDynamicChangeBug_ISF2001,
-    author      = {{\noopsort{Aalst}{van der Aalst}}, Wil},
-    title       = {Exterminating the Dynamic Change Bug: A Concrete Approach to Support Workflow Change},
-    journal     = {Information Systems Frontiers},
-    volume      = {3:3},
-    year        = {2001},
-    pages       = {297-317},
-    publisher   = {Kluwer Academic Publishers}
+
+@article{gao2024empirical,
+  title={An Empirical Study on Information Extraction using Large Language Models},
+  author={Gao, Jianhao and et al.},
+  journal={arXiv preprint arXiv:2305.14450},
+  year={2024},
+  url={https://arxiv.org/abs/2305.14450}
 }
-@techreport{
-    aalw02:WorkflowPatterns,
-    author      = {{\noopsort{Aalst}{van der Aalst}}, Wil and {\noopsort{Hofstede}{ter Hofstede}}, Arthur and Kiepuszewski, Bartek and Barros, Ana},
-    title       = {Workflow patterns},
-    institution = {Queensland University of Technology},
-    year        = 2002,
-    number      = {FIT-TR-2002-02}
+
+@article{zhao2023survey,
+  title={A survey of large language models},
+  author={Zhao, Wayne Xin and Zhou, Kun and Li, Junyi and Tang, Tianyi and Wang, Xiaolei and Hou, Yupeng and Min, Yingqian and Zhang, Beichen and Zhang, Junjie and Dong, Zican and others},
+  journal={arXiv preprint arXiv:2303.18223},
+  year={2023}
 }
-@incollection{
-    abrs90:lazyLambdaCalculus,
-    author    = {Abramsky, Samson},
-    title     = {The lazy lambda calculus},
-    booktitle = {Research Topics in Functional Programming},
-    publisher = {Addison-Wesley},
-    address   = {Reading, MA, USA},
-    editor    = {Turner, David},
-    isbn      = {0-201-17236-4},
-    pages     = {65--116},
-    year      = 1990,
-    url       = {\texttt{http:\-//\-citeseer.nj.nec.com\-/abramsky90lazy.html}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Evaluation & Fact-Checking Frameworks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{chen2023felm,
+  author = {chen, shiqi and Zhao, Yiran and Zhang, Jinghan and Chern, I-Chun and Gao, Siyang and Liu, Pengfei and He, Junxian},
+  booktitle = {Advances in Neural Information Processing Systems},
+  pages = {44502--44523},
+  publisher = {Curran Associates, Inc.},
+  title = {FELM: Benchmarking Factuality Evaluation of Large Language Models},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/8b8a7960d343e023a6a0afe37eee6022-Paper-Datasets_and_Benchmarks.pdf},
+  volume = {36},
+  year = {2023}
 }
-@inproceedings{
-    agoa00:ImprovingFlexibilityOfWFMs_BPM00,
-    author    = {Agostini, Alessandra and {\noopsort{Michelis}{De Michelis}}, Giorgio},
-    title     = {Improving flexibility of workflow management systems},
-    booktitle = {Business Process Management},
-    editor    = {{\noopsort{Aalst}{van der Aalst}}, Wil},
-    publisher = {Springer-Verlag},
-    series    = LNCS,
-    volume    = {1806},
-    pages     = {218-234},
-    year      = 2000
+
+@article{wei2024longform,
+  title={Long-form Factuality in Large Language Models},
+  author={Wei, Jerry and et al.},
+  journal={arXiv preprint arXiv:2403.18802},
+  year={2024},
+  url={https://arxiv.org/abs/2403.18802}
 }
-@book{
-    baej90:ProcessAlgebra,
-    author    = {Baeten, Jos and Weijland, Peter},
-    title     = {Process algebra},
-    publisher = {Cambridge University Press},
-    series    = {Cambridge Tracts in Theoretical Computer Science},
-    volume    = {18},
-    year      = 1990
+
+@article{wang2025slot,
+  title={SLOT: Structuring the Output of Large Language Models},
+  author={Wang, Darren Yow-Bang and Shen, Zhengyuan and Mishra, Soumya Smruti and et al.},
+  journal={arXiv preprint arXiv:2505.04016},
+  year={2025},
+  url={https://arxiv.org/abs/2505.04016}
 }
-@book{
-    bare84:LambdaCalculusBook,
-    author    = {Barendregt, Henk},
-    title     = {The lambda calculus, its syntax and semantics (revised edition)},
-    publisher = {North-Holland},
-    series    = {Studies in Logic},
-    volume    = {103},
-    year      = 1984
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Knowledge Graphs & Similarity
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{chen2025graphcheck,
+  title={GraphCheck: Breaking Long-Term Text Barriers with Extracted Knowledge Graph-Powered Fact-Checking},
+  author={Chen, Yingjian and Liu, Haoran and Liu, Yinhong and et al.},
+  journal={arXiv preprint arXiv:2502.16514},
+  year={2025},
+  url={https://arxiv.org/abs/2502.16514}
 }
-@techreport{
-    brod01:generating,
-    author      = {Broda, Sabine and Damas, Luís},
-    title       = {Generating normal inhabitants of types with a common structure},
-    number      = {DCC-2001-1},
-    institution = {DCC-FC \& LIACC, Universidade do Porto, Portugal},
-    year        = 2001
+
+@article{sansford2024grapheval,
+  title={GraphEval: A Knowledge-Graph Based LLM Hallucination Evaluation Framework},
+  author={Sansford, Hannah and Richardson, Nicholas and Petric Maretic, Hermina and Nait Saada, Juba},
+  journal={arXiv preprint arXiv:2407.10793},
+  year={2024},
+  url={https://arxiv.org/abs/2407.10793}
 }
-@unpublished{Chak03:HaskellFFI,
-    author = {Chakravarty, Manuel},
-    title  = {The {Haskell} 98 {Foreign Function Interface} 1.0, an addendum to the {Haskell} 98 Report},
-    year   = {2003},
-    note   = {\url{http://www.cse.unsw.edu.au/~chak/haskell/ffi}}
+
+@article{difrancesco2023gatsy,
+  title={GATSY: Graph Attention Network for Music Artist Similarity},
+  author={Di Francesco, Andrea Giuseppe and Giampietro, Giuliano and Spinelli, Indro and Comminiello, Danilo},
+  journal={arXiv preprint arXiv:2311.00635},
+  year={2023},
+  url={https://arxiv.org/pdf/2311.00635}
 }
-@manual{
-    coq98:manual,
-    author       = {The Coq Development Team},
-    title        = {The {C}oq proof assistant reference manual (version 7.0)},
-    year         = 1998,
-    note         = {\texttt{http:\-//\-pauillac.inria.fr\-/coq\-/doc\-/main.html}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Infrastructural Foundations (OWI & NLI)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{hendriksen2026open,
+  title={Open Web Indexes for Remote Querying},
+  author={Hendriksen, Gijs and Hiemstra, Djoerd and de Vries, Arjen P.},
+  booktitle={European Conference on Information Retrieval},
+  year={2026},
+  publisher={Springer}
 }
-@proceedings{
-  DBLP:conf/fp/1995,
-  editor    = {Turner, David},
-  title     = {Functional programming,},
-  organization = {Glasgow, UK},
-  booktitle = {Functional Programming},
-  publisher = {Springer-Verlag},
-  series    = {Workshops in Computing 1995},
-  year      = 1996,
-  isbn      = {3-540-14580-X},
-  bibsource = {DBLP, \texttt{http:\-//\-dblp.uni-trier.de}}
+
+@inproceedings{conneau2020unsupervised,
+  title={Unsupervised Cross-lingual Representation Learning at Scale},
+  author={Conneau, Alexis and Khandelwal, Kartikay and Goyal, Naman and Zettlemoyer, Luke and Stoyanov, Veselin},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  year={2020},
+  url={https://arxiv.org/abs/1911.02116}
 }
-@phdthesis{
-    hinr02:proofgeneric,
-    author = {Hinze, Ralf},
-    title  = {Generic programs and proofs},
-    school = {Universit\"at Bonn},
-    year   = 2000,
-    note   = {Habilitationsschrift}
-}
-@book{
-    hoac85:CSP,
-    author    = {Hoare, Charles},
-    title     = {Communicating sequential processes},
-    series    = {International Series in Computer Science},
-    publisher = {Prentice-Hall International},
-    year      = 1985
-}
-@conference{hofm11:symmetricLenses,
-    author = "Martin Hofmann and Benjamin C. Pierce and Daniel Wagner",
-    booktitle = "Proceedings of the 38th ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages, POPL 2011, Austin, TX, USA",
-    editor = "Thomas Ball and Mooly Sagiv",
-    isbn = "978-1-4503-0490-0",
-    pages = "371-384",
-    publisher = "ACM",
-    title = "{S}ymmetric lenses",
-    year = "2011",
-}
-@misc{
-    mcrl2:mCRL2toolset,
-    title        = {{mCRL2} toolset},
-    howpublished = {\texttt{http:\-//\-www.mcrl2.org/}}
-}
-@manual{
-    milr97:SML,
-    author       = {Milner, Robert and Tofte, Mads and Harper, Robert and MacQueen, David},
-    title        = {The definition of {S}tandard {ML} (revised)},
-    organization = {MIT Press},
-    year         = 1997
-}
-@mastersthesis{Nayl04:Hackle,
-    author = {Naylor, Matthew},
-    title  = {Haskell to {Clean} translation},
-    school = {University of York},
-    year   = {2004},
-    note   = {\url{http://www-users.cs.york.ac.uk/~mfn/hacle/hacle.pdf}}
+
+@unpublished{bol2026cloudspeakers,
+  author = {Bol, Chris},
+  title = {Cloudspeakers - Concert Event Pipeline},
+  year = {2026},
+  month = {March},
+  note = {Internal technical documentation. Provided directly by the author.}
 }

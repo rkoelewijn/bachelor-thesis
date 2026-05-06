@@ -6,3 +6,79 @@ core courses as you have, but not necessarily the same specialization, minor, or
 
 You do not have to call this chapter \emph{Preliminaries} and it does not need to be limited to one chapter.
 Some preliminary topics deserve their own chapter.
+
+\textbf{Preliminaries:}
+\begin{itemize}
+    \item LLM Hallucination
+    \item Cross-Lingual Natural Language Inference (NLI)
+    \item Open Web Index (OWI) Architecture \todo[color=gray,nolist]{If i decide on using it.}
+\end{itemize}
+
+
+\section{Hallucination in Large Language Models}\label{pre:sec:llm}
+In this thesis, we will be looking at the output of different Large Language Models (LLM). LLMs are massive artificial neural networks
+pre-trained on vast amounts of text data, designed to understand and generate human language. They show strong understanding in natural language and solving 
+complex tasks.  \cite{zhao2023survey} While these outputs often contain useful and correct information, they are prone to \textit{hallucinating}. 
+Hallucination of a LLM consists of the model generating content that is not faithful to its source. There exist multiple types of hallucinating, 
+and following the taxonomy proposed by
+\cite{huang2025survey}, we can categorise these into two types: 
+\begin{itemize}
+    \item \textbf{Factuality Hallucinations} 
+    \\ Discrepancies between generated content and verifiable real-world facts. 
+    This includes \textit{Fabrications} (made-up claims) and \textit{Contradictions} (statements that directly oppose reality).
+    \item \textbf{Faithfulness Hallucinations} 
+    \\ Divergence from the provided user input or context. This includes \textit{Instruction} (following the wrong instructions from the prompt), 
+    \textit{Context} (Not understanding the context) and \textit{Logical} (Incorrect logic, e.g. math errors).  
+    In information extraction (IE) tasks, these often manifest as ``Missing Spans" or ``Incorrect Types" \cite{gao2024empirical}.
+\end{itemize}
+
+\noindent Classifying the LLM Hallucination, allows us to have insight on what went wrong and where to improve. It gives us the ability to do a system-level
+diagnosis of the pipline \cite{vinay2025failuremodesllmsystems}. For instance, a \textit{faithfulness} error indicates a failure to maintain ``context-boundary" stability \cite{vinay2025failuremodesllmsystems}, 
+where a \textit{factuality} error might need external grounding through retrieval. Because LLMs are often unable to faithfully detect their own factual errors 
+  \cite{chen2023felm}, deterministic verification is required to ensure airtight verification. 
+
+
+
+\section{Cross-Lingual Natural Language Inference}\label{pre:sec:nli}
+Natural Language Inference (NLI), also known as Recognizing Textual Entailment (RTE), 
+is a core task in Natural Language Processing (NLP) \cite{conneau2020unsupervised}. 
+NLP is a multidisciplinary field at the crossover between Computing Science, Linguistics, and Artificial Intelligence, where scientists focus on 
+helping computers understand natural language. Common applications consist of machine translation, 
+sentiment analysis, and automated summarisation. The latter is 
+highly relevant for this thesis, since we deal with Information Extraction (IE), specifically
+ extracting text and entities from websites \cite{gao2024empirical}, and Semantic Validation, 
+ which involves logically validating the semantic meaning of different sentences to detect errors \cite{huang2025survey, chen2023felm}.
+
+The task of NLI in NLP is determining the logical relationship between two pieces of text: 
+a \textit{premise} and a \textit{hypothesis} \cite{conneau2020unsupervised}. Based on the truth of the premise, 
+the model assigns one of three categorical labels as demonstrated in Table \ref{tab:nli_examples}:
+
+\begin{table}[h]
+    \centering
+    \caption{Examples of Natural Language Inference (NLI) relationships.}
+    \label{tab:nli_examples}
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Premise} & \textbf{Hypothesis} & \textbf{NLI Label} \\
+        \midrule
+        Frank Boeijen is from Nijmegen. & Nijmegen is the hometown of Frank Boeijen. & \textit{Entailment} \\
+        Frank Boeijen is from Nijmegen. & Frank Boeijen is from Amsterdam. & \textit{Contradiction} \\
+        Frank Boeijen is from Nijmegen. & Frank Boeijen is coming back to Nijmegen. & \textit{Neutral} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Entailment:} The hypothesis is guaranteed to be true if the premise is true. In Table \ref{tab:nli_examples}, 
+    the premise logically necessitates that Nijmegen is Boeijen's hometown \cite{conneau2020unsupervised}.
+    \item \textbf{Contradiction:} The hypothesis is guaranteed to be false if the premise is true. 
+    Since the premise establishes Nijmegen as the origin, a claim of Amsterdam constitutes a direct contradiction \cite{conneau2020unsupervised}.
+    \item \textbf{Neutral:} The truth of the hypothesis cannot be determined from the premise alone. 
+    While Frank Boeijen may be ``coming back" to Nijmegen, the original premise regarding his origin does not provide sufficient
+     information to confirm or deny a return trip \cite{conneau2020unsupervised}.
+\end{itemize}
+
+\noindent In the context of this thesis, we utilize \textit{Cross-Lingual} NLI to bridge the language gap 
+between Dutch source text and English generated summaries. By using a multilingual model like XLM-RoBERTa, 
+we can evaluate a Dutch premise against an English hypothesis without an intermediate translation step,
+ preserving the semantic nuances of the original concert metadata \cite{conneau2020unsupervised}.

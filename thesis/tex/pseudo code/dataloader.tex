@@ -1,0 +1,9 @@
+\begin{lstlisting}[caption={Pseudocode for generating the cross-lingual evaluation corpus.}, label={lst:corpus_generation}, mathescape=true, frame=single, basicstyle=\ttfamily\small]
+        FOR EACH (key, entry) IN corpus:    
+        // Clean the artist name 
+        artist_clean $\leftarrow$ split(entry.act, '+')[0] 
+        summary $\leftarrow$ entry.summary
+        
+        // Match the English newsletter with the Dutch source
+        dutch_text $\leftarrow$ dutch_web_data[key].text
+\end{lstlisting}
