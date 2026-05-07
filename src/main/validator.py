@@ -19,21 +19,41 @@ def validate_claims(summary_claims, dutch_sentences, model_name=DEFAULT_MODEL):
     results = [] 
 
     for i, claim in enumerate(summary_claims, 1):
+        # Track Entailment
         best_entail = 0
-        best_result = None
-        best_evidence = ""
+        best_ent_result = None
+        best_ent_evidence = ""
+
+        # Track Contradiction
+        best_contradict = 0
+        best_con_result = None
+        best_con_evidence = ""
 
         for sentence in dutch_sentences: 
             result = run_nli_check(premise=sentence, hypothesis=claim)
 
+            # Update highest entailment match
             if result['ent'] > best_entail: 
                 best_entail = result['ent']
-                best_result = result
-                best_evidence = sentence
+                best_ent_result = result
+                best_ent_evidence = sentence
+
+            # Update highest contradiction match
+            if result['con'] > best_contradict:
+                best_contradict = result['con']
+                best_con_result = result
+                best_con_evidence = sentence
+
         results.append({
             "claim": claim,
-            "evidence": best_evidence,
-            "scores": best_result
+            "entailment_match": {
+                "evidence": best_ent_evidence,
+                "scores": best_ent_result
+            },
+            "contradiction_match": {
+                "evidence": best_con_evidence,
+                "scores": best_con_result
+            }
         })
         
     return results

@@ -1,5 +1,6 @@
 import sys
 import time
+import json
 from pathlib import Path
 
 # 1. PATH CONFIGURATION
@@ -31,6 +32,8 @@ def main():
         return
         
     print(f"📁 Loaded {len(corpus)} valid artist entries for evaluation.\n")
+    
+    final_output_data = [] # Stores all data for the final JSON export
 
     # --- STEP 2: PROCESSING LOOP ---
     for entry in corpus:
@@ -52,26 +55,43 @@ def main():
         print(f"  ⚖️  Running cross-lingual verification...")
         evaluations = validator.validate_claims(claims, context_sentences)
 
+        # Attach the results back to our entry data for exporting later
+        entry["validation_results"] = evaluations
+        final_output_data.append(entry)
+
         # --- STEP 3: REPORTING ---
         for i, eval_data in enumerate(evaluations, 1):
             print(f"\n  [{i}] CLAIM: '{eval_data['claim']}'")
             
-            if eval_data['scores']:
-                scores = eval_data['scores']
-                print(f"      🔎 EVIDENCE: '{eval_data['evidence']}'")
-                print(f"      📊 SCORES: 🟢 {scores['ent']:.1f}% Entail | 🟡 {scores['neu']:.1f}% Neut | 🔴 {scores['con']:.1f}% Cont")
+            # Check if scores exist (handles edge cases with empty Dutch sentences)
+            if eval_data['entailment_match']['scores']:
+                ent_score = eval_data['entailment_match']['scores']['ent']
+                con_score = eval_data['contradiction_match']['scores']['con']
                 
-                # Logic Thresholds
-                if scores['ent'] > 60: 
+                # Logic Thresholds: Which signal is stronger?
+                if ent_score > 60 and ent_score > con_score: 
                     print("      ✅ RESULT: VERIFIED")
-                elif scores['con'] > 60: 
-                    print("      🚨 RESULT: HALLUCINATION")
+                    print(f"      🔎 EVIDENCE: '{eval_data['entailment_match']['evidence']}'")
+                    print(f"      📊 SCORE: 🟢 {ent_score:.1f}% Entailment")
+                elif con_score > 60 and con_score > ent_score: 
+                    print("      🚨 RESULT: HALLUCINATION (Contradiction Caught)")
+                    print(f"      🔎 EVIDENCE: '{eval_data['contradiction_match']['evidence']}'")
+                    print(f"      📊 SCORE: 🔴 {con_score:.1f}% Contradiction")
                 else: 
-                    print("      ⚠️ RESULT: UNVERIFIED")
+                    print("      ⚠️ RESULT: UNVERIFIED / NEUTRAL")
+                    print(f"      🔎 TOP ENT EVIDENCE: '{eval_data['entailment_match']['evidence']}' ({ent_score:.1f}%)")
+                    print(f"      🔎 TOP CON EVIDENCE: '{eval_data['contradiction_match']['evidence']}' ({con_score:.1f}%)")
             else:
                 print("      ⚠️ RESULT: UNVERIFIED (No Dutch sentences available)")
         
         print("\n" + "="*60 + "\n")
+
+    # --- STEP 4: EXPORT DATA ---
+    export_path = CURRENT_DIR.parent / "data" / "validation_results_case1.json"
+    print(f"💾 Saving complete evaluation dataset to: {export_path}")
+    
+    with open(export_path, 'w', encoding='utf-8') as f:
+        json.dump(final_output_data, f, indent=4, ensure_ascii=False)
 
     # --- WRAP UP ---
     elapsed = time.time() - start_time

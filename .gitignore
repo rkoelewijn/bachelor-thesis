@@ -223,6 +223,7 @@ __marimo__/
 *.toc
 *.synctex.gz
 *.xdv
+*.tdo
 
 # OS generated files
 .DS_Store

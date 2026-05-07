@@ -7,7 +7,7 @@ except OSError:
 
 def prepare_dutch_sentences(raw_text, artist_name):
     doc = nlp_nl(raw_text)
-    # noise_words = ["ticket", "vvk", "euro", "uitverkocht", "bestel", "koop", "kassa"]
+    noise_words = ["ticket", "vvk", "euro", "uitverkocht", "bestel", "koop", "kassa"]
     prepared_sentences = []
     
     for sent in doc.sents:

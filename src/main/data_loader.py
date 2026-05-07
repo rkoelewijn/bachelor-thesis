@@ -27,6 +27,9 @@ def get_evaluation_corpus():
         artist_raw = entry.get('act', 'Unknown')
         artist_clean = artist_raw.split('+')[0].strip()
         summary = entry.get('summary', '')
+        
+        # Grab the URL from the newsletter entry
+        url = entry.get('url', '')
 
         web_entry = dutch_web_data.get(key, {})
         dutch_text = web_entry.get('text', '')
@@ -35,7 +38,8 @@ def get_evaluation_corpus():
             evaluation_data.append({
                 "artist": artist_clean,
                 "summary": summary,
-                "dutch_text": dutch_text
+                "dutch_text": dutch_text,
+                "url": url 
             })
 
     return evaluation_data

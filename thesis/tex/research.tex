@@ -9,7 +9,7 @@ Please note that, in order to improve readability of your thesis, you can put a 
 
 % overall architecture
 
-\subsection{Loading Text} \todo[color=blue]{change title  + add when implemented}
+\subsection{Loading Text} 
 
 \subsection{Data Loader}
 
@@ -20,5 +20,44 @@ Please note that, in order to improve readability of your thesis, you can put a 
 \subsection{Dutch Parser}
 
 \subsection{Validator}
+\subsubsection{Theory}
+Validating the claims is the core part of the operation we are doing. The validation is a process of cross-language NLI, comparing the original Dutch text to the English summaries that are given. 
 
-\subsection{Classification} \todo[color=gray]{Add when decided on whether to implement}
+% explain why we used RoBERTa over other choices 
+To avoid the inherent bias of self-validation—where an LLM acts as an uncritical judge of its own generated output
+\footnote{In the Netherlands, this specific conflict of interest is known as acting such as the company `WC-Eend', referencing
+ a famous advertising campaign in which the brand recommends its own product (Wij van Wc-Eend adviseren Wc-Eend).}, \changes{move footnote to introduction.}
+the option of using a generative model for the entailment check was discarded.
+\textcolor{red}{Even though multiple studies have shown this to be effective, 
+we wish to find a way to do this in a deterministic way due to LLMs having the nature of being unpredictable and prone to hallucination, 
+as mentioned in section \ref{pre:sec:llm}. } 
+\source{find the studies that show LLM can verify themselves.}
+Comparing the premise and the hypothesis can be done in multiple ways, but for this thesis we have made the choice to make use of Facebook's XLM-RoBERTa \cite{conneau2020unsupervised}. 
+
+XLM-RoBERTa, is a Transformer-based language model trained on 2.5 Terabytes of filtered CommonCrawl data across 100 different languages.
+XLM-R learns a shared mathematical representation of human language, which results in it being able to convert multiple languages into a mapped mathematical vector space, meaning different languages can be compared. 
+Conneau et al. show that XLM-R is very competitive with strong monolingual models on XNLI benchmarks, demonstrating that it is possible to have a single large model for all languages. \cite{conneau2020unsupervised} For the Cloudspeakers Experiment (section \ref{Newsletter}), this saves us steps from translating between Dutch and English, or limiting the experiments to pages that \textit{do} have an English variant. 
+As mentioned in \ref{pre:sec:nli}, NLI looks at the entailment, contradiction and neutral scores. XLM-R outputs these when given a premise and hypothesis and using these we can determine likelihood of a hallucination by the LLM. 
+
+Guidelines to the entailment scores can be found in Table XX. \additions{add table with entailment Guidelines}
+
+\begin{verbatim}
+    INSERT TABLE HERE
+\end{verbatim}
+
+
+\subsubsection{Implementation}
+The \texttt{validator} is implemented in Python utilizing PyTorch and the HuggingFace \texttt{transformers} library, using the specific \texttt{joeddav/xlm-roberta-large-xnli} model. 
+
+As mentioned in section XX, the pipeline delivers multiple different claims $\mathcal{C}$ and the original text from the source. Since XLM-R is set up to only check one premise against a single hypothesis, we will run the model 
+for every claim and every sentence in the source material and find which sentence results in the highest entailment and which in the highest contradiction. We chose to run the experiments in this way, since it showed the best results in testing compared to supplying the model with the entire source text at once. 
+For any given claim ($c \in \mathcal{C}$) and a set of source sentences ($\mathcal{S}$), the system iterates through $\mathcal{S}$, tokenizing the premise-hypothesis pairs with trunaction enabled. 
+The raw logits output by the model are passed through a Softmax function to calculate a probability distribution across the earliers mentions classes: \texttt{contradiction}, \texttt{neutral} and \texttt{entailment}. The script holds two trackers for each claim:
+\begin{enumerate}
+    \item \texttt{max\_entailment}: The sentence in $\mathcal{S}$ that returns the highest entailment probability
+    \item \texttt{max\_contradiction}: The sentence in $\mathcal{S}$ that returns the highest contradiction probability.
+\end{enumerate}
+\optional{Psuedocode for to show the for loops and explain complexity?}
+Testing results can be found in Table XX. These tests showed that XLM-R struggles when the premise and hypothesis aren't of the same length, most likely due to too much information being fed and flooding it with information, leading to a more neutral score. 
+These results are back up by SOURCE HERE!!! \source{Back up claim that one sentence is better than full text.}
+\subsection{Classification} \optional{Classification could be an option}

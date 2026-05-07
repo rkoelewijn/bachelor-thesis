@@ -102,5 +102,16 @@
     "related_artists": "Carpenter Brut, Perturbator, Gost, 220 Stab Wounds, Sanguisugabogg",
     "genres": "metal, death metal, punk, chiptune",
     "summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit."
-  }
+  }, 
+  "ADULT_DVD": {
+    "act": "Adult DVD",
+    "type": "gig",
+    "date": "2026-11-19",
+    "url": "https://doornroosje.nl/event/adult-dvd",
+    "venue": "Merleyn",
+    "bands": "Adult DVD (main)",
+    "related_artists": "DEVO, Soulwax",
+    "genres": "electronic, dance, noise rock, postpunk",
+    "summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings."
+}
 }
