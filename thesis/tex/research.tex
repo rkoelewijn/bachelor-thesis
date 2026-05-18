@@ -54,8 +54,8 @@ for every claim and every sentence in the source material and find which sentenc
 For any given claim ($c \in \mathcal{C}$) and a set of source sentences ($\mathcal{S}$), the system iterates through $\mathcal{S}$, tokenizing the premise-hypothesis pairs with trunaction enabled. 
 The raw logits output by the model are passed through a Softmax function to calculate a probability distribution across the earliers mentions classes: \texttt{contradiction}, \texttt{neutral} and \texttt{entailment}. The script holds two trackers for each claim:
 \begin{enumerate}
-    \item \texttt{max\_entailment}: The sentence in $\mathcal{S}$ that returns the highest entailment probability
-    \item \texttt{max\_contradiction}: The sentence in $\mathcal{S}$ that returns the highest contradiction probability.
+    \item \texttt{max\_entailment}: The sentence in $\mathcal{S}$ that returns the highest \textit{entailment} probability
+    \item \texttt{max\_contradiction}: The sentence in $\mathcal{S}$ that returns the highest \textit{contradiction} probability.
 \end{enumerate}
 \optional{Psuedocode for to show the for loops and explain complexity?}
 Testing results can be found in Table XX. These tests showed that XLM-R struggles when the premise and hypothesis aren't of the same length, most likely due to too much information being fed and flooding it with information, leading to a more neutral score. 
