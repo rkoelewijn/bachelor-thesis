@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"dfd9022bd23c7958","type":"text","text":"Data_loader.py","x":15,"y":-379,"width":250,"height":60,"color":"5"},
+		{"id":"a7472c20831071e4","type":"text","text":"validator.py","x":15,"y":0,"width":250,"height":60},
+		{"id":"8328ea1cce777253","type":"text","text":"END","x":15,"y":200,"width":250,"height":60},
+		{"id":"6180d6d7a2bc091d","type":"text","text":"validator_mb.py","x":15,"y":-100,"width":250,"height":60,"color":"5"},
+		{"id":"6ecd0bf2a3faa02a","type":"text","text":"build_corpus.py","x":15,"y":-640,"width":250,"height":60,"color":"5"},
+		{"id":"0792b5601f424ba4","type":"text","text":"START","x":-360,"y":-800,"width":250,"height":60},
+		{"id":"7ad5660a7f62635a","type":"text","text":"dutch_parser.py","x":360,"y":-220,"width":250,"height":60},
+		{"id":"2d9797c5dd33d81d","type":"text","text":"decomposer.py","x":-320,"y":-220,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"ca3c876b5d7b0950","fromNode":"0792b5601f424ba4","fromSide":"bottom","toNode":"6ecd0bf2a3faa02a","toSide":"left","label":"Newsletters"},
+		{"id":"3a531bbaed611071","fromNode":"dfd9022bd23c7958","fromSide":"right","toNode":"7ad5660a7f62635a","toSide":"top","label":"Raw Dutch Text"},
+		{"id":"a23584d7cfaa67d2","fromNode":"dfd9022bd23c7958","fromSide":"left","toNode":"2d9797c5dd33d81d","toSide":"top","label":"LLM Summaries"},
+		{"id":"bbefee9a8a5ec6b3","fromNode":"2d9797c5dd33d81d","fromSide":"bottom","toNode":"a7472c20831071e4","toSide":"left","label":"Atomic Claims"},
+		{"id":"2d50c65fe37f28d0","fromNode":"7ad5660a7f62635a","fromSide":"bottom","toNode":"a7472c20831071e4","toSide":"right","label":"Dutch Source Sentences"},
+		{"id":"c47d07a306eba471","fromNode":"a7472c20831071e4","fromSide":"bottom","toNode":"8328ea1cce777253","toSide":"top","label":"Validation Scores"},
+		{"id":"955e680844804cd5","fromNode":"6ecd0bf2a3faa02a","fromSide":"bottom","toNode":"dfd9022bd23c7958","toSide":"top","label":"Evaluation Corpus\n(Summary + Dutch Source + Music Brainz)"}
+	]
+}

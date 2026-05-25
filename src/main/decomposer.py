@@ -63,4 +63,7 @@ def extract_claims(summary, artist_name):
                     
     # Remove any duplicate claims just to be clean
     unique_claims = list(dict.fromkeys(claims))
+
+    MIN_WORDS = 5
+    unique_claims = [c for c in unique_claims if len(c.split()) >= MIN_WORDS]
     return unique_claims if unique_claims else [summary]

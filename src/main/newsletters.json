@@ -1,0 +1,378 @@
+{
+  "TEMPLATE": {
+    "act": "JSON TEMPLATE",
+    "type": "type",
+    "date": "2026-09-13",
+    "url": "https://doornroosje.nl/event/template",
+    "venue": "Doornroosje - Rode zaal",
+    "bands": "bands",
+    "genres": "genres",
+    "summary": "one sentence summary"
+  },
+  "VROEGZAT": {
+    "act": "VroegZat",
+    "date": "2026-06-26",
+    "url": "https://www.doornroosje.nl/event/vroegzat-10/",
+    "venue": "Doornroosje",
+    "bands": "DJ Rob de Nice, MC Rick Rossig (main)",
+    "genres": "pop, disco",
+    "summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres."
+  },
+  "FRANK_BOEIJEN": {
+    "act": "Frank Boeijen",
+    "date": "2026-08-23",
+    "url": "https://doornroosje.nl/event/frank-boeijen-19/",
+    "venue": "Openluchtteater De Goffert",
+    "bands": "Frank Boeijen (main)",
+    "genres": "pop",
+    "summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories."
+  },
+  "AND_ALSO_THE_TREES": {
+    "act": "And Also the Trees",
+    "date": "2026-09-24",
+    "url": "https://doornroosje.nl/event/and-also-the-trees/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "And Also the Trees (main)",
+    "related_artists": "The Cure, Killing Joke, Cocteau Twins, Tindersticks, Nick Cave",
+    "genres": "indierock, pop noir, post-punk",
+    "summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'."
+  },
+  "BERTOLF": {
+    "act": "Bertolf",
+    "date": "2026-12-19",
+    "url": "https://www.doornroosje.nl/event/bertolf-4/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Bertolf (main)",
+    "related_artists": "Buck Meek, Ben Caplan, CCC Inc., Millichamp",
+    "genres": "roots, bluegrass",
+    "summary": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol. 2' with his excellent Dutch band."
+  },
+  "WYATT_E": {
+    "act": "Wyatt E.",
+    "date": "2026-09-01",
+    "url": "https://www.doornroosje.nl/event/wyatt-e/",
+    "venue": "Merleyn",
+    "bands": "Wyatt E. (main)",
+    "genres": "metal, doom metal",
+    "summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology."
+  },
+  "DARYLL_ANN": {
+    "act": "Daryll-Ann",
+    "date": "2026-09-26",
+    "url": "https://www.doornroosje.nl/event/daryll-ann-5/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Daryll-Ann (main)",
+    "genres": "pop, rock",
+    "summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time."
+  },
+  "DAOUD": {
+    "act": "daoud",
+    "date": "2026-11-16",
+    "url": "https://www.doornroosje.nl/event/daoud/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "daoud (main)",
+    "related_artists": "Erik Truffaz",
+    "genres": "hip hop, jazz, electronic, neo-soul",
+    "summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock."
+  },
+  "KLEZMAGIC": {
+    "act": "Klezmagic",
+    "date": "2026-12-18",
+    "url": "https://www.doornroosje.nl/event/klezmagic/",
+    "venue": "Merleyn",
+    "bands": "Klezmagic (main)",
+    "genres": "balkan, klezmer, Ska",
+    "summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska."
+  },
+  "IOS": {
+    "act": "IOS",
+    "date": "2026-10-30",
+    "url": "https://www.doornroosje.nl/event/ios/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "IOS (main)",
+    "genres": "pop",
+    "summary": "A Dutch Nederpop band returns with new material and classic hits."
+  },
+  "MASTER_BOOT_RECORD": {
+    "act": "Master Boot Record+ Fulci + Arottenbrit",
+    "date": "2026-11-19",
+    "url": "https://www.doornroosje.nl/event/master-boot-record-3/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Master Boot Record (main), Fulci, Arottenbrit (support)",
+    "related_artists": "Carpenter Brut, Perturbator, Gost, 220 Stab Wounds, Sanguisugabogg",
+    "genres": "metal, death metal, punk, chiptune",
+    "summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit."
+  }, 
+  "ADULT_DVD": {
+    "act": "Adult DVD",
+    "type": "gig",
+    "date": "2026-11-19",
+    "url": "https://doornroosje.nl/event/adult-dvd",
+    "venue": "Merleyn",
+    "bands": "Adult DVD (main)",
+    "related_artists": "DEVO, Soulwax",
+    "genres": "electronic, dance, noise rock, postpunk",
+    "summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings."
+}, 
+"Hällas + Earth Tongue": {
+        "act": "Hällas + Earth Tongue",
+        "type": "gig",
+        "date": "2026-10-07",
+        "url": "https://doornroosje.nl/event/hallas",
+        "venue": "Doornroosje - Paarse zaal",
+        "bands": "Hällas (main), Earth Tongue (support)",
+        "related_artists": "Uriah Heep, Wishbone Ash, vroege Genesis",
+        "genres": "rock, progressieve rock, psychedelische rock",
+        "summary": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror."
+    },
+    "IDA": {
+        "act": "IDA",
+        "type": "gig",
+        "date": "2026-10-15",
+        "url": "https://doornroosje.nl/event/ida",
+        "venue": "Merleyn",
+        "bands": "IDA (main)",
+        "genres": "hyperpop, indiepop",
+        "summary": "Dutch hyperpop sensation IDA performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions."
+    },
+    "FLEMMING": {
+        "act": "FLEMMING",
+        "type": "gig",
+        "date": "2026-11-07",
+        "url": "https://doornroosje.nl/event/flemming-4",
+        "venue": "Doornroosje - Rode zaal",
+        "bands": "FLEMMING (main)",
+        "genres": "pop",
+        "summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics."
+    },
+    "Ruben Hillen": {
+        "act": "Ruben Hillen",
+        "type": "gig",
+        "date": "2027-04-15",
+        "url": "https://doornroosje.nl/event/ruben-hillen",
+        "venue": "Doornroosje - Paarse zaal",
+        "bands": "Ruben Hillen (main)",
+        "genres": "pop",
+        "summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences."
+    }, 
+    "Enigma": {
+        "act": "Enigma",
+        "type": "club night",
+        "date": "2026-06-19",
+        "url": "https://doornroosje.nl/event/enigma-2",
+        "venue": "Doornroosje - Rode zaal",
+        "bands": "DJ Y (main), Tsudi, HDM13, Click b2b Ipkiss (support)",
+        "genres": "breakbeat, drum'n'bass, jungle, at night",
+        "summary": "A dark rave bunker night with deep basslines, featuring DJ Y (alias of Coco Bryce) from Breda, plus local talents Tsudi, HDM13, and a b2b set by Click and Ipkiss."
+    },
+    "Racoon": {
+        "act": "Racoon",
+        "type": "gig",
+        "date": "2026-09-19",
+        "url": "https://doornroosje.nl/event/racoon-17",
+        "venue": "Doornroosje - Rode zaal",
+        "bands": "Racoon (main)",
+        "genres": "pop, rock",
+        "summary": "Racoon, a Dutch band from Zeeland, returns to Doornroosje for a concert."
+    },
+    "CLOUDSURFERS": {
+        "act": "CLOUDSURFERS",
+        "type": "gig",
+        "date": "2026-10-23",
+        "url": "https://doornroosje.nl/event/cloudsurfers-3",
+        "venue": "Merleyn",
+        "bands": "Cloudsurfers (main)",
+        "genres": "rock, punk, psychedelica",
+        "summary": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock."
+    },
+    "Los Pirañas": {
+        "act": "Los Pirañas",
+        "type": "gig",
+        "date": "2026-11-03",
+        "url": "https://doornroosje.nl/event/los-piranas",
+        "venue": "Merleyn",
+        "bands": "Los Pirañas (main)",
+        "genres": "afrobeat, psychedelic, cumbia",
+        "summary": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta."
+    }, 
+    "DYLAN LEBLANC - solo": {
+        "act": "DYLAN LEBLANC - solo",
+        "type": "gig",
+        "date": "2026-12-17",
+        "url": "https://thiemeloods.nl/index.php/event/dylan-leblanc-solo",
+        "venue": "Thiemeloods",
+        "bands": "Dylan LeBlanc (main)",
+        "genres": "folk, soul, altcountry, pop",
+        "summary": "American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop."
+    },
+    "William Barrett Band": {
+        "act": "William Barrett Band",
+        "type": "gig",
+        "date": "2026-06-25",
+        "url": "https://brebl.nl/event/2026/06/william-barrett-band",
+        "venue": "Brebl",
+        "bands": "William Barrett Band (main)",
+        "related_artists": "John Coltrane, Pharoah Sanders",
+        "genres": "jazz",
+        "summary": "The William Barrett Band presents their debut album 'Live in Amsterdam', a live jazz experience recorded in Amsterdam, featuring bassist William Barrett and his band."
+    },
+    "Philip Lassiter": {
+        "act": "Philip Lassiter",
+        "type": "gig",
+        "date": "2026-06-21",
+        "url": "https://brebl.nl/event/2026/06/philip-lassiter",
+        "venue": "Brebl",
+        "bands": "Philip Lassiter (main)",
+        "genres": "live muziek, pop, jazz",
+        "summary": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band."
+    },
+    "Alex Henry Foster": {
+        "act": "Alex Henry Foster",
+        "type": "gig",
+        "date": "2026-12-09",
+        "url": "https://doornroosje.nl/event/alex-henry-foster",
+        "venue": "Merleyn",
+        "bands": "Alex Henry Foster (main)",
+        "related_artists": "Explosions in the Sky, Mogwai, Amplifier, Radiohead, Nick Cave",
+        "genres": "rock, alternative, post rock",
+        "summary": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes."
+    },
+    "Solfestice #8": {
+        "act": "Solfestice #8",
+        "type": "gig",
+        "date": "2026-06-20",
+        "url": "https://brebl.nl/event/2026/06/solfestice-8",
+        "venue": "Brebl",
+        "bands": "I Compani (main)",
+        "genres": "live muziek, jazz",
+        "summary": "I Compani presents their new double album BASTA! with a mix of film music, opera, vaudeville, and jazz, featuring guest musicians."
+    },
+    "Hippotraktor": {
+        "act": "Hippotraktor",
+        "type": "gig",
+        "date": "2026-11-05",
+        "url": "https://doornroosje.nl/event/hippotraktor",
+        "venue": "Merleyn",
+        "bands": "Hippotraktor (main)",
+        "related_artists": "Gojira, Meshuggah, The Ocean, Psychonaut, Pothamus, MÚR",
+        "genres": "metal, progressive metal, sludge metal",
+        "summary": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences."
+    },
+    "Robin Scherpen - Pulse": {
+        "act": "Robin Scherpen - Pulse",
+        "type": "show",
+        "date": "2027-02-02",
+        "url": "https://doornroosje.nl/event/robin-scherpen",
+        "venue": "De Vereeniging",
+        "bands": "Robin Scherpen (main)",
+        "genres": "neo-klassiek",
+        "summary": "Componist en gitarist Robin Scherpen presenteert zijn intieme show Memory & Traces, een muzikale reis door donker en licht, melancholie en geluk."
+    },
+    "Primitive Ring": {
+        "act": "Primitive Ring",
+        "type": "gig",
+        "date": "2027-02-11",
+        "url": "https://doornroosje.nl/event/primitive-ring",
+        "venue": "Merleyn",
+        "bands": "Primitive Ring (main)",
+        "related_artists": "FUZZ, Ty Segall, GØGGS, Hooveriii, King Gizzard and the Lizard Wizard",
+        "genres": "rock, psychedelic rock, rock 'n' roll",
+        "summary": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour."
+    }, 
+    "Bokkeryers": {
+        "act": "Bokkeryers",
+        "type": "gig",
+        "date": "2026-09-26",
+        "url": "https://doornroosje.nl/event/bokkeryers",
+        "venue": "Merleyn",
+        "bands": "Bokkeryers (main)",
+        "related_artists": "DeWolff, Ozzy Osbourne, André Rieu, Carnaval Corpse",
+        "genres": "metal",
+        "summary": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and thrash metal with punk attitude and humor."
+    },
+    "corto.alto": {
+        "act": "corto.alto",
+        "type": "gig",
+        "date": "2026-10-13",
+        "url": "https://doornroosje.nl/event/corto-alto",
+        "venue": "Doornroosje - Paarse zaal",
+        "bands": "corto.alto (main)",
+        "related_artists": "Mick Jenkins",
+        "genres": "jazz, electronic, broken beats, hiphop",
+        "summary": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub."
+    },
+    "Tusky + Rats and Daggers": {
+        "act": "Tusky + Rats and Daggers",
+        "type": "gig",
+        "date": "2026-11-21",
+        "url": "https://doornroosje.nl/event/tusky-3",
+        "venue": "Merleyn",
+        "bands": "Tusky (main), Rats and Daggers (support)",
+        "related_artists": "IDLES, Queens of the Stone Age, Amyl & the Sniffers",
+        "genres": "rock, punk rock",
+        "summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers."
+    },
+    "HAEVN": {
+        "act": "HAEVN",
+        "type": "gig",
+        "date": "2026-12-15",
+        "url": "https://doornroosje.nl/event/haevn-9",
+        "venue": "De Vereeniging",
+        "bands": "HAEVN (main)",
+        "genres": "pop, electronic, neo-klassiek",
+        "summary": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound."
+    },
+    "Thijs Veldhuis": {
+        "act": "Thijs Veldhuis",
+        "type": "gig",
+        "date": "2026-10-23",
+        "url": "https://doornroosje.nl/event/thijs-veldhuis",
+        "venue": "Doornroosje - Paarse zaal",
+        "bands": "Thijs Veldhuis (main)",
+        "genres": "pop, rock, electronic, neo klassiek, indie, singer-songwriter",
+        "summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences."
+    },
+    "SNAYX": {
+        "act": "SNAYX",
+        "type": "gig",
+        "date": "2026-06-10",
+        "url": "https://doornroosje.nl/event/snayx",
+        "venue": "Merleyn",
+        "bands": "SNAYX (main)",
+        "related_artists": "Sleaford Mods, Soft Play, Kind Kapichi, Bob Vylan",
+        "genres": "rock, punk, electronic",
+        "summary": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences."
+    },
+    "The Rumjacks": {
+        "act": "The Rumjacks",
+        "type": "gig",
+        "date": "2026-07-07",
+        "url": "https://doornroosje.nl/event/the-rumjacks",
+        "venue": "Doornroosje - Rode zaal",
+        "bands": "The Rumjacks (main)",
+        "related_artists": "Gogol Bordello, Dropkick Murphys, UK Subs, The Pogues, Flogging Molly",
+        "genres": "punk, folk punk",
+        "summary": "The Rumjacks, an explosive folk-punk band from Sydney, Australia, known for their raw punk with Celtic influences and sing-along choruses."
+    },
+    "Chica Chica": {
+        "act": "Chica Chica",
+        "type": "gig",
+        "date": "2026-09-18",
+        "url": "https://doornroosje.nl/event/chica-chica",
+        "venue": "Merleyn",
+        "bands": "Chica Chica (main)",
+        "related_artists": "La Lom, Hermanos Gutierrez, Khruangbin",
+        "genres": "funk, jazz, soul, cumbia, psychedelic rock",
+        "summary": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves."
+    },
+    "Wodan Boys": {
+        "act": "Wodan Boys",
+        "type": "gig",
+        "date": "2026-10-15",
+        "url": "https://doornroosje.nl/event/wodan-boys-3",
+        "venue": "Doornroosje - Paarse zaal",
+        "bands": "Wodan Boys (main)",
+        "genres": "punk, punkrock, rock 'n roll",
+        "summary": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound."
+    }
+}

@@ -22,6 +22,18 @@ def prepare_dutch_sentences(raw_text, artist_name):
         if len(text.split()) > 5 or artist_name.lower() in text.lower():
             # 3. Inject Context
             contextualized = f"Over {artist_name}: {text}"
-            prepared_sentences.append(contextualized)
+            translated = translate_nl_to_en(contextualized)
+            prepared_sentences.append(translated)
             
     return prepared_sentences
+
+
+from transformers import MarianMTModel, MarianTokenizer
+mt_model_name = "Helsinki-NLP/opus-mt-nl-en"
+mt_tokenizer = MarianTokenizer.from_pretrained(mt_model_name)
+mt_model = MarianMTModel.from_pretrained(mt_model_name)
+
+def translate_nl_to_en(text):
+    tokens = mt_tokenizer([text], return_tensors="pt", padding=True, truncation=True)
+    translated = mt_model.generate(**tokens)
+    return mt_tokenizer.decode(translated[0], skip_special_tokens=True)

@@ -9,7 +9,23 @@ Please note that, in order to improve readability of your thesis, you can put a 
 
 % overall architecture
 
-\subsection{Loading Text} 
+\subsection{Dataset and Corpus Construction} 
+Before any validation or evaluation is possible, we need to load the source data given in the newsletters url part. This allows us to create a so-called \textit{corpus} which contains all available data we have on the artist we are evaluating.
+This corpus is setup as a deterministic and sandboxed evaluation dataset, rather than executing live web scraping and external API queries during the NLI and KG evaluation phases. By doing all the data loading up front, we save time loading all data again when our pipeline crashes later on, or if we wish to run the experiment again. 
+
+This process gathers the data in three simple steps: loading the local venue data, fetching the MusicBrainz facts, and saving everything to a JSON file.
+
+\subsubsection{Extracting Venue Data}
+The foundation of our dataset comes directly from the promotional newsletters of local Nijmegen venues. This is setup using an automated web scraper, where the primary event details and the LLM-generated summaries are manually extracted from these newsletters and provided to the script. 
+
+A comprehensive breakdown of the newsletter generation process, including its structural and visual layout, is discussed later in Chapter \ref{ch:cloudspeakers_pipeline} (The Cloudspeakers Pipeline). For the purpose of constructing this evaluation corpus, the script strictly isolates the English promotional text—which serves as our target for hallucination detection—alongside the core billing metadata required to identify the performing artists.
+
+\subsubsection{Gathering MusicBrainz Knowledge}
+Once the primary event data is manually set up, the script automatically fills the dataset with verified real-world facts by querying the MusicBrainz API. To respect the strict rate-limiting policies enforced by the MusicBrainz infrastructure, the script utilizes a mandatory one-second delay between consecutive requests, ensuring the outbound traffic remains at or below $1 request \slash second$. 
+
+For every artist identified in the venue data, the script searches the API to retrieve three specific data points: their geographic origin, associated musical genres, and any registered aliases. This factual data is stored to serve as the ground truth for detecting extrinsic hallucinations later in the pipeline. 
+
+Given that mid-tier venues frequently program niche, emerging, or highly localized artists, it is expected that some acts will be entirely absent from the MusicBrainz database. To ensure the robustness of the dataset generation, the script implements explicit error handling. If an artist cannot be resolved, the pipeline catches the exception and assigns empty values to the factual fields rather than terminating the program, allowing the script to safely proceed to the next entity.
 
 \subsection{Data Loader}
 

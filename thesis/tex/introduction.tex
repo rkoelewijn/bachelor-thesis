@@ -1,31 +1,58 @@
 \chapter{Introduction}\label{introduction}
-\textcolor{red}{The introduction of your bachelor thesis introduces the research area, the research hypothesis, and the scientific contributions of your work.
-A good narrative structure is the one suggested by Simon Peyton Jones~\cite{peys04:HowToWriteAGoodResearchPaper}:}
+% \textcolor{red}{The introduction of your bachelor thesis introduces the research area, the research hypothesis, and the scientific contributions of your work.
+% A good narrative structure is the one suggested by Simon Peyton Jones~\cite{peys04:HowToWriteAGoodResearchPaper}:}
 
-\begin{itemize}
-	\item \textcolor{red}{describe the problem \slash{} research question}
-	\item \textcolor{red}{motivate why this problem must be solved}
-	\item \textcolor{red}{demonstrate that a (new) solution is needed}
-	\item \textcolor{red}{explain the intuition behind your solution}
-	\item \textcolor{red}{motivate why \slash{} how your solution solves the problem (this is technical)}
-	\item \textcolor{red}{explain how it compares with related work}
-\end{itemize}
+% \begin{itemize}
+% 	\item \textcolor{red}{describe the problem \slash{} research question}
+% 	\item \textcolor{red}{motivate why this problem must be solved}
+% 	\item \textcolor{red}{demonstrate that a (new) solution is needed}
+% 	\item \textcolor{red}{explain the intuition behind your solution}
+% 	\item \textcolor{red}{motivate why \slash{} how your solution solves the problem (this is technical)}
+% 	\item \textcolor{red}{explain how it compares with related work}
+% \end{itemize}
 
-\textcolor{red}{Close the introduction with a paragraph in which the content of the next chapters is briefly mentioned (one sentence per chapter).}
-
-
-
-
-\textbf{Research Question}
-LLMs generate text, not always true. Hallucination -> sources. 
+% \textcolor{red}{Close the introduction with a paragraph in which the content of the next chapters is briefly mentioned (one sentence per chapter).}
 
 
 
- \begin{itemize}
-	\item \textit{"To what extent can a deterministic validation pipeline—utilizing the Open Web Index and Cross-Lingual NLI (XLM-RoBERTa)—accurately 
- detect factual hallucinations in LLM-generated English summaries of Dutch concert web pages?"}
- \end{itemize}
- 
-\textbf{Motivation}
+% - TALK ABOUT RISE OF LLM USAGE SINCE 2020 - introduction of problem
+In recent years, large language models (LLMs) have emerged and evolved rapidly \cite{zhao2023survey}. While initially restricted to research environments, these tools have now reached massive public scale. For instance, OpenAI recently confirmed it has surpassed 50 million paying subscribers across its commercial tiers, with up to 900 million weekly active users processing over 2 billion prompts per day \cite{openai2025enterprise}. This scale demonstrates that interacting with LLMs has become a routine global practice. However, while these models assist users in learning, working, and automating tasks, their widespread deployment does not come without downsides.
+
+One primary risk is \textit{hallucination}, a phenomenon, further discussed in Section \ref{preliminaries}, where an LLM generates output that is unfaithful to its original source or the user's instructions. While minor discrepancies often go unnoticed, severe hallucinations can have profound consequences. For example, Zhao et al. \cite{zhoa2026llmhallucinationsinthewild} analyzed 2.5 million published papers and found a sharp rise in non-existent references following widespread LLM adoption, conservatively estimating over 146,000 hallucinated citations in 2025 alone. Similar impacts have been documented across other critical sectors. In healthcare, hallucinations pose severe ethical and safety risks \cite{healthcarehallucinations2025}, while in the commercial sector, the use of ungrounded conversational agents has led to concrete operational liabilities for enterprises \cite{lseo2026liability}.
+
+While consequences of hallucinations are well-documented in high-stakes fields, like medicine and law, there is a distinct lack of research regarding the automated generation of promotional content for local music venues, or generation of highly localized, real-time cultural metadata. Since local venues often give the stage to smaller, lesser-known artists, the likelihood of hallucinations increases. While large language models demonstrate impressive factual recall for globally prominent topics, their reliability degrades precipitously when processing niche or localized information. This limitation, often referred to as popularity bias, is formally quantified by Kandpal et al. \cite{kandpal2023longtail}, who demonstrate that an LLM's ability to accurately state a fact is directly correlated to the frequency of that entity's appearance in its pre-training corpus.
+
+To address these widespread hallucinations, a common modern approach is the ``LLM-as-a-judge'' paradigm, wherein a highly capable model (such as GPT-4) is prompted to verify the factual accuracy of generated text. However, recent benchmarking reveals critical structural flaws in this methodology. Chen et al. \cite{chen2023felm} introduced the FELM benchmark, demonstrating that LLM evaluators struggle significantly to detect factual errors, often failing to identify hallucinations or confidently hallucinating false corrections themselves. This failure occurs because an LLM acting as a judge relies on the same flawed, popularity-biased parametric memory as the model generating the text. If an LLM lacks the training data to accurately describe a local Dutch punk band, it also lacks the data required to fact-check a summary about that band. Consequently, relying on an LLM to evaluate long-tail cultural metadata creates a circular validation flaw.
+
+To solve this, a new approach to automated evaluation is required. Traditional hallucination benchmarks often evaluate models against static, global datasets and primarily focus on monolingual English tasks. They are ill-equipped to handle the dynamic, cross-lingual nature of localized cultural metadata, where an English promotional summary must be verified against a Dutch source text. Therefore, we propose a two-phase hybrid evaluation architecture designed specifically for this domain.
+
+The intuition behind this solution is to decouple the evaluation of reading comprehension from the evaluation of world knowledge. First, to assess whether the LLM faithfully translated and summarized the provided text, we utilize a cross-lingual Natural Language Inference (NLI) model (XLM-RoBERTa). This isolates intrinsic hallucinations. Second, to overcome the LLM's popularity bias regarding long-tail entities, we integrate a non-parametric, structured external database (MusicBrainz). By deterministically cross-referencing the LLM's claims against this real-world knowledge graph, we can catch extrinsic hallucinations that the NLI model alone would miss. By combining these signals into a formalized error taxonomy matrix, our system can accurately classify the exact failure modes of LLMs when processing niche, localized data.
+
+Our primary research question entails: 
+\begin{enumerate}
+    \item To what extent can a hybrid evaluation framework, integrating cross-lingual Natural Language Inference (NLI) with a structured external knowledge graph, effectively detect and classify intrinsic and extrinsic hallucinations in LLM-generated live music summaries?
+    
+    \begin{enumerate}
+        \item \textbf{SQ 1}: How accurately can a cross-lingual NLI model isolate reading comprehension errors (intrinsic hallucinations) by evaluating the semantic entailment between English LLM summaries and their Dutch source texts?
+        \item \textbf{SQ 2}: How effectively can a non-parametric, external knowledge graph mitigate LLM popularity bias by verifying the real-world metadata of long-tail artists?
+        \item \textbf{SQ 3}: How can conflicting signals between intrinsic reading comprehension and extrinsic factual truth be formalized into a standardized error taxonomy (e.g., categorizing factual injections versus source conflicts)?
+    \end{enumerate}
+\end{enumerate}
+
+% The remainder of this thesis is structured as follows. Chapter 2 outlines the theoretical framework and related work concerning cross-lingual NLI and parametric memory limitations. Chapter 3 details the methodology and system architecture of the hybrid evaluation pipeline. Chapter 4 presents the quantitative results and error taxonomy generated from testing the pipeline on live music metadata. Chapter 5 discusses the implications of these findings, including the paradox of factual injections, and acknowledges system limitations. Finally, Chapter 6 concludes the research and suggests avenues for future work.
+
+% - SAY THAT LLMS CANNOT ALWAYS PROVE THEMSELVES - demonstrate new solution needed 
+
+
+% - WE WISH TO BUILD A DETERMINISTIC SOLUITION, SO IT WILL BE MORE RELIABLE - intuition 
+
+
+% - DETERMINISTIC SHOWS THAT LLMS MAKE MISTAKES - why solution solves problem
+
+
+% - RELATED WORK FELM, ... - why related 
+
+
+
 
 

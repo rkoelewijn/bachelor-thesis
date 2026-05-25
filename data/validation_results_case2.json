@@ -1,0 +1,191 @@
+[
+    {
+        "artist": "VroegZat",
+        "summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres.",
+        "dutch_text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!",
+        "url": "https://www.doornroosje.nl/event/vroegzat-10/",
+        "validation_results": [
+            {
+                "claim": "VroegZat bringing nightlife to the early evening",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 56.15300536155701,
+                "best_con_score": 85.33459901809692,
+                "evidence_used": "Over VroegZat: Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent.",
+                "hybrid_status": "INTRINSIC_HALLUCINATION",
+                "mb_data_used": {
+                    "status": "Not Found"
+                }
+            },
+            {
+                "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 90.16260504722595,
+                "best_con_score": 50.11906623840332,
+                "evidence_used": "Over VroegZat: Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Not Found"
+                }
+            }
+        ]
+    },
+    {
+        "artist": "Frank Boeijen",
+        "summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories.",
+        "dutch_text": "Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen. Iconische nummers als ‘Zwart Wit’, ‘Kronenburger Park’ en ‘De Verzoening’ zullen de revue passeren, maar hij weet het publiek ook steevast te verrassen met nieuw werk. Een avond met Frank Boeijen staat garant voor een gevarieerde show op hoog niveau, waarbij Franks warme stem en zijn voortreffelijke muzikale begeleiders de luisteraar meenemen in een tocht langs ontroering en herkenning, langs avontuur en vakmanschap. Duik in een wereld vol poëtische nummers en verhalen over schoonheid, liefde en het leven. En dat alles in de intieme, groene omgeving van Openluchttheater de Goffert. ",
+        "url": "https://doornroosje.nl/event/frank-boeijen-19/",
+        "validation_results": [
+            {
+                "claim": "Frank Boeijen returns to his beloved hometown of Nijmegen",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.9629020690918,
+                "best_con_score": 0.11751618003472686,
+                "evidence_used": "Over Frank Boeijen: Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Frank Boeijen",
+                    "type": "Person",
+                    "country": "NL",
+                    "area": "Netherlands"
+                }
+            },
+            {
+                "claim": "Frank Boeijen returns for an evening of poetic songs and stories",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 98.05810451507568,
+                "best_con_score": 39.84244763851166,
+                "evidence_used": "Over Frank Boeijen: Duik in een wereld vol poëtische nummers en verhalen over schoonheid, liefde en het leven.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Frank Boeijen",
+                    "type": "Person",
+                    "country": "NL",
+                    "area": "Netherlands"
+                }
+            }
+        ]
+    },
+    {
+        "artist": "And Also the Trees",
+        "summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'.",
+        "dutch_text": "De Engelse postpunkband And Also the Trees, bekend om hun meeslepende liveoptredens, unieke stijl, suggestieve teksten en donkere jazzritmes, is na ruim 15 albums nog steeds springlevend. De band komt dan ook met hun nieuwe album ‘The Devil’s Door’ in het najaar naar Doornroosje! And Also the Trees werd opgericht in 1979, tijdens het geboorte van het postpunk-tijdperk in Worcestershire. Vanaf de start kon de band het goed vinden met The Cure.  Ze speelden en werkten nauw samen.  And Also the Trees is opgericht door zanger Simon Huw Jones en gitarist Justin Jones. Beiden zorgden ze voor een continue behouden aanwezigheid binnen de internationale postpunk- en alternatieve scene. De band staat bekend om hun meeslepende liveoptredens. Het muzikale recept is bekend en nauwelijks aangepast, maar And Also the Trees werkt het op plaat en op het podium tot in de puntjes uit. De half gezongen teksten op nauwkeurig afgestemde gitaarlijnen klinken verfijnd en natuurlijk. And Also the Trees bracht op 26 februari 2026 hun nieuwe album ‘The Devil’s Door’ uit. Deze ruwe maar prachtige parel is een aanrader voor liefhebbers van sombere, tijdloze liedjes, zoals The Cure, Killing Joke, Cocteau Twins, Tindersticks of Nick Cave die kan maken.",
+        "url": "https://doornroosje.nl/event/and-also-the-trees/",
+        "validation_results": [
+            {
+                "claim": "And Also the Trees is The English post - punk band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.81614947319031,
+                "best_con_score": 92.25049614906311,
+                "evidence_used": "Over And Also the Trees: De Engelse postpunkband And Also the Trees, bekend om hun meeslepende liveoptredens, unieke stijl, suggestieve teksten en donkere jazzritmes, is na ruim 15 albums nog steeds springlevend.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "And Also the Trees",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            },
+            {
+                "claim": "And Also the Trees performs songs from their new album ' The Devil 's Door",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 53.54361534118652,
+                "best_con_score": 0.8290872909128666,
+                "evidence_used": null,
+                "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "And Also the Trees",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            }
+        ]
+    },
+    {
+        "artist": "Adult DVD",
+        "summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+        "dutch_text": "Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025! De band is geboren met peper in de reet: hun dansbare, bijna retro computerspel-achtige muziek grooved, rockt en swingt. Hun dancepunk is weird als DEVO en even dansbaar als Soulwax, waarbij veel fragmenten een knipoog geven naar oude 8bit muziek. Na enkele succesvolle EP’s zal hun debuutalbum dit voorjaar verschijnen.",
+        "url": "https://doornroosje.nl/event/adult-dvd",
+        "validation_results": [
+            {
+                "claim": "Adult DVD is from the Netherlands",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 89.46256637573242,
+                "best_con_score": 1.182529702782631,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Adult DVD",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            },
+            {
+                "claim": "Adult DVD is A synthpunk band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.76550340652466,
+                "best_con_score": 98.78652691841125,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Adult DVD",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            },
+            {
+                "claim": "Adult DVD returns to Nijmegen",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.91291165351868,
+                "best_con_score": 2.109762839972973,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Adult DVD",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            },
+            {
+                "claim": "Adult DVD returns with danceable , retro computer game - like music that grooves , rocks , and swings",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.86239671707153,
+                "best_con_score": 24.940094351768494,
+                "evidence_used": "Over Adult DVD: De band is geboren met peper in de reet: hun dansbare, bijna retro computerspel-achtige muziek grooved, rockt en swingt.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Adult DVD",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            },
+            {
+                "claim": "Adult DVD grooves",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 69.46154832839966,
+                "best_con_score": 25.351616740226746,
+                "evidence_used": "Over Adult DVD: De band is geboren met peper in de reet: hun dansbare, bijna retro computerspel-achtige muziek grooved, rockt en swingt.",
+                "hybrid_status": "VALID",
+                "mb_data_used": {
+                    "status": "Found",
+                    "name": "Adult DVD",
+                    "type": "Group",
+                    "country": "GB",
+                    "area": "United Kingdom"
+                }
+            }
+        ]
+    }
+]

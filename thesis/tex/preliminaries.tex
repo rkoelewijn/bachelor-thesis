@@ -1,19 +1,11 @@
 \chapter{Preliminaries}\label{preliminaries}
-This \emph{optional} chapter contains the stuff that your reader needs to know in order to understand
-your work.
-Your ``audience'' consists of fellow third year computing science bachelor students who have done the same
-core courses as you have, but not necessarily the same specialization, minor, or free electives.
+% This \emph{optional} chapter contains the stuff that your reader needs to know in order to understand
+% your work.
+% Your ``audience'' consists of fellow third year computing science bachelor students who have done the same
+% core courses as you have, but not necessarily the same specialization, minor, or free electives.
 
-You do not have to call this chapter \emph{Preliminaries} and it does not need to be limited to one chapter.
-Some preliminary topics deserve their own chapter.
-
-\textbf{Preliminaries:}
-\begin{itemize}
-    \item LLM Hallucination
-    \item Cross-Lingual Natural Language Inference (NLI)
-    \item Open Web Index (OWI) Architecture \optional{if i decide to use}
-\end{itemize}
-
+% You do not have to call this chapter \emph{Preliminaries} and it does not need to be limited to one chapter.
+% Some preliminary topics deserve their own chapter.
 
 \section{Hallucination in Large Language Models}\label{pre:sec:llm}
 In this thesis, we will be looking at the output of different Large Language Models (LLM). LLMs are massive artificial neural networks
@@ -37,7 +29,8 @@ diagnosis of the pipline \cite{vinay2025failuremodesllmsystems}. For instance, a
 where a \textit{factuality} error might need external grounding through retrieval. Because LLMs are often unable to faithfully detect their own factual errors 
   \cite{chen2023felm}, deterministic verification is required to ensure airtight verification. 
 
-\additions{Give probabilities of LLMs hallucinating to show relevance}
+To understand why these factual hallucinations occur so frequently in localized domains like local music venues, we must look at how LLMs store information. LLMs encode knowledge within their network weights during pre-training, forming what is known as \textit{parametric memory} \cite{mallen2023when}. While parametric memory is highly reliable for globally prominent entities (e.g., world-famous pop stars) due to their massive presence in the training data, it is inherently weak for niche, local entities. This limitation is known as \textit{popularity bias}. Kandpal et al. \cite{kandpal2023longtail} mathematically demonstrate that an LLM's ability to accurately recall a fact drops precipitously for ``long-tail'' entities that appear infrequently in its training corpus. Consequently, when an LLM is tasked with summarizing text about a local grassroots band, it encounters a void in its parametric memory and is statistically predisposed to hallucinate plausible, stereotype-driven fabrications.
+
 
 \section{Cross-Lingual Natural Language Inference}\label{pre:sec:nli}
 Natural Language Inference (NLI), also known as Recognizing Textual Entailment (RTE), 
@@ -82,3 +75,11 @@ the model assigns one of three categorical labels as demonstrated in Table \ref{
 between Dutch source text and English generated summaries. By using a multilingual model like XLM-RoBERTa, 
 we can evaluate a Dutch premise against an English hypothesis without an intermediate translation step,
  preserving the semantic nuances of the original concert metadata \cite{conneau2020unsupervised}.
+
+
+ \section{Knowledge Graphs and Non-Parametric Memory}\label{pre:sec:kg}
+To counteract the unreliability and popularity bias of an LLM's internal parametric memory, modern NLP pipelines often integrate \textit{non-parametric memory}—external, deterministically structured databases \cite{mallen2023when}. A primary form of non-parametric memory is a Knowledge Graph (KG). 
+
+A Knowledge Graph is a highly organized data structure that represents real-world entities as nodes (e.g., artists, venues, or albums) and the strict relationships between them as edges (e.g., ``originates from'' or ``performs genre''). Unlike an LLM, which guesses facts based on statistical probability, a KG allows for absolute, deterministic data retrieval. 
+
+In the context of live music metadata, open-source databases like MusicBrainz act as an authoritative Knowledge Graph. By programmatically querying a KG, an evaluation pipeline can cross-reference an LLM's generated claims against a strict relational schema. This theoretical step is functionally required to catch \textit{extrinsic hallucinations}; if the XNLI model (Section \ref{pre:sec:nli}) flags a generated claim as ``Neutral'' because the detail was not present in the original source text, the system must rely on the Knowledge Graph to determine if that injected detail is a true real-world fact or a fabricated hallucination.
