@@ -3,7 +3,7 @@ import spacy
 try:
     nlp_nl = spacy.load("nl_core_news_sm")
 except OSError:
-    print("🚨 Error: Dutch spaCy model not found. Run: python3 -m spacy download nl_core_news_sm")
+    print("Error: Dutch spaCy model not found.")
 
 def prepare_dutch_sentences(raw_text, artist_name):
     doc = nlp_nl(raw_text)
@@ -13,21 +13,27 @@ def prepare_dutch_sentences(raw_text, artist_name):
     for sent in doc.sents:
         text = sent.text.strip()
         
-        # 1. Filter out promotional noise
+        # Filter out promotional noise words and exclamation marks
         if text.count('!') > 1: continue
         if any(word in text.lower() for word in noise_words) and artist_name.lower() not in text.lower():
             continue
             
-        # 2. Ensure the sentence has enough substance or mentions the artist
+        # Ensure the sentence has enough substance or mentions the artist
         if len(text.split()) > 5 or artist_name.lower() in text.lower():
-            # 3. Inject Context
+            # Inject Context
+            # RoBERTa has problems finding whether the statement is true if the artist is not in the sentence. 
             contextualized = f"Over {artist_name}: {text}"
+            prepared_sentences.append(contextualized)
+
+            # Translate Dutch to English
+            # Data shows that our pipeline performs better if the source text is in the same language as the hypothesis
             translated = translate_nl_to_en(contextualized)
             prepared_sentences.append(translated)
             
     return prepared_sentences
 
 
+# Translation model for the source text 
 from transformers import MarianMTModel, MarianTokenizer
 mt_model_name = "Helsinki-NLP/opus-mt-nl-en"
 mt_tokenizer = MarianTokenizer.from_pretrained(mt_model_name)

@@ -1,0 +1,27 @@
+[
+    {
+        "artist": "VroegZat",
+        "url": "https://www.doornroosje.nl/event/vroegzat-10/",
+        "summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres.",
+        "dutch_text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!\nMeer zien van ons danceprogramma? Neem een kijkje op onze AT NIGHT-pagina !\nDoornroosje is gevestigd op Stationsplein 11, direct naast Station Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Not Found"
+        },
+        "validation_results": [
+            {
+                "claim": "VroegZat bringing nightlife to the early evening",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 69.10708546638489,
+                "best_con_score": 89.42761421203613,
+                "evidence_used": "About EarlySat: So at a normal time to bed, making you fit the next day."
+            },
+            {
+                "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 97.199147939682,
+                "best_con_score": 50.11906623840332,
+                "evidence_used": "About EarlySat: Musically it goes back and forth: from disco to pop, from reggae to rock and from happy to hip-hop, and those nice danceable tunes that fall between and beyond."
+            }
+        ]
+    }
+]

@@ -4,11 +4,11 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import musicbrainzngs
+import data_loader
 
-# --- 1. CONFIGURATION ---
 CURRENT_DIR = Path(__file__).resolve().parent
-NEWSLETTERS_PATH = CURRENT_DIR / "newsletters.json"
-OUTPUT_CORPUS_PATH = CURRENT_DIR / "full_evaluation_corpus.json"
+ROOT_DIR = CURRENT_DIR.parent.parent
+NEWSLETTERS_PATH = ROOT_DIR / "data" / "newsletters.json"
 
 musicbrainzngs.set_useragent(
     app="CloudspeakersThesisValidator",
@@ -16,8 +16,8 @@ musicbrainzngs.set_useragent(
     contact="ruben.koelewijn@ru.nl" 
 )
 
-# --- 2. SCRAPING & API ENGINES ---
 def fetch_dynamic_html(url):
+    """Uses Playwright headless browser to load full HTML of given URL."""
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
@@ -32,6 +32,7 @@ def fetch_dynamic_html(url):
         return full_html
 
 def clean_html_with_bs4(html_content):
+    """Uses BeautifulSoup to clean HTML and return body text."""
     if not html_content:
         return ""
     soup = BeautifulSoup(html_content, "html.parser")
@@ -68,7 +69,6 @@ def get_artist_facts(artist_name):
         print(f"MusicBrainz Error: {e}")
         return {"status": "Error"}
 
-# --- 3. MASTER LOOP ---
 def main():
     print("="*60)
     print("CLOUDSPEAKERS DATA INGESTION: BUILDING CORPUS")
@@ -78,6 +78,7 @@ def main():
         with open(NEWSLETTERS_PATH, 'r', encoding='utf-8') as f:
             newsletters = json.load(f)
     except FileNotFoundError:
+        print(f"Ingestion aborted: Could not find raw input file at '{NEWSLETTERS_PATH}'")
         return
 
     full_corpus = []
@@ -85,6 +86,7 @@ def main():
     print(f"Found {total_entries} entries. Beginning scrape...\n")
 
     for i, (key, entry) in enumerate(newsletters.items()):
+        # Avoiding template that is put into newsletter file to make copying easier. 
         if key == "TEMPLATE": continue
 
         artist_raw = entry.get('act', 'Unknown')
@@ -95,11 +97,9 @@ def main():
         print(f"[{i}/{total_entries}] Processing: {artist_clean}")
         if not url or not summary: continue
 
-        # 1. Get Doornroosje Text
         raw_html = fetch_dynamic_html(url)
         dutch_text = clean_html_with_bs4(raw_html)
 
-        # 2. Get MusicBrainz Facts
         print("Fetching MusicBrainz baseline...")
         mb_facts = get_artist_facts(artist_clean)
 
@@ -115,8 +115,8 @@ def main():
 
     print("\n" + "="*60)
     print(f"Saving compiled corpus with {len(full_corpus)} valid entries...")
-    with open(OUTPUT_CORPUS_PATH, 'w', encoding='utf-8') as f:
-        json.dump(full_corpus, f, indent=4, ensure_ascii=False)
+    
+    data_loader.save_evaluation_corpus(full_corpus)
 
 if __name__ == "__main__":
     main()
