@@ -29,7 +29,7 @@ def check_extrinsic_conflict(claim, mb_facts):
 
 def print_header():
     print("="*60)
-    print("CLOUDSPEAKERS HYBRID EVALUATOR (OFFLINE MODE)")
+    print("CLOUDSPEAKERS HYBRID EVALUATOR (WITH MB SYNTHESIS)")
     print("="*60)
 
 def main():
@@ -55,14 +55,22 @@ def main():
         print(f"EVALUATING: {artist.upper()}")
         print("-" * 60)
 
-        context_sentences = dutch_parser.prepare_dutch_sentences(dutch_text, artist)
+        # CHANGE: Pass mb_facts to dutch_parser
+        context_sentences = dutch_parser.prepare_dutch_sentences(
+            dutch_text, 
+            artist,
+            mb_facts=mb_facts  # <-- NEW: Include MusicBrainz facts
+        )
+        
+        print(f"Context sentences: {len(context_sentences)} (includes MB synthesis)")
+        
         claims = decomposer.extract_claims(summary, artist)
         print(f"Extracted {len(claims)} claims. Running NLI verification...")
 
         evaluations = validator.validate_claims(claims, context_sentences)
         hybrid_evaluations = []
 
-        # --- STEP 3: CONFLICT RESOLUTION & REPORTING ---
+       # --- STEP 3: CONFLICT RESOLUTION & REPORTING ---
         for i, eval_data in enumerate(evaluations, 1):
             claim = eval_data.get('claim', 'Unknown Claim')
             print(f"  [{i}] CLAIM: '{claim}'")
@@ -70,7 +78,7 @@ def main():
             ent_score = eval_data.get('best_ent_score', 0)
             con_score = eval_data.get('best_con_score', 0)
 
-            # Determine Intrinsic Verdict
+            # Determine Intrinsic Verdict (NLI)
             if ent_score > 60 and con_score > 60:
                 intrinsic_verdict = "AMBIGUOUS"
             elif ent_score > 60 and ent_score > con_score:
@@ -80,44 +88,49 @@ def main():
             else:
                 intrinsic_verdict = "UNSUPPORTED"
 
-            # Determine Extrinsic Conflict
+            # Determine Extrinsic Conflict (MusicBrainz)
             has_extrinsic_conflict = check_extrinsic_conflict(claim, mb_facts)
 
-            # Final Matrix Resolution
-            if intrinsic_verdict == "ENTAILMENT" and not has_extrinsic_conflict:
+            # Final Matrix Resolution - Extrinsic Priority
+            if has_extrinsic_conflict:
+                # IMMEDIATE OVERRIDE: MusicBrainz database contradicts the LLM
+                final_status = "EXTRINSIC_HALLUCINATION"
+                print(f"      🚨 STATUS: {final_status} (MusicBrainz explicitly contradicts claim)")
+
+            elif intrinsic_verdict == "ENTAILMENT":
                 final_status = "VALID"
                 print(f"      ✅ STATUS: {final_status} (NLI: {ent_score:.1f}% Entailment)")
-            
-            elif intrinsic_verdict == "ENTAILMENT" and has_extrinsic_conflict:
-                final_status = "SOURCE_CONFLICT (Text likely wrong)"
-                print(f"      ⚠️ STATUS: {final_status}")
             
             elif intrinsic_verdict == "CONTRADICTION":
                 final_status = "INTRINSIC_HALLUCINATION"
                 print(f"      🚨 STATUS: {final_status} (NLI: {con_score:.1f}% Contradiction)")
             
-            elif intrinsic_verdict == "UNSUPPORTED" and not has_extrinsic_conflict:
-                final_status = "EXTRINSIC_INJECTION_TRUE"
-                print(f"      ⚠️ STATUS: {final_status} (Factual addition)")
+            elif intrinsic_verdict == "UNSUPPORTED":
+                final_status = "UNVERIFIED"
+                print(f"      ⚠️ STATUS: {final_status} (Not in Dutch text, no MB conflict)")
             
             elif intrinsic_verdict == "AMBIGUOUS":
                 final_status = "AMBIGUOUS"
                 print(f"      ❓ STATUS: {final_status} (Ent: {ent_score:.1f}%, Con: {con_score:.1f}% — conflicting signals)")
-                
-            elif intrinsic_verdict == "UNSUPPORTED" and has_extrinsic_conflict:
-                final_status = "EXTRINSIC_HALLUCINATION_FALSE"
-                print(f"      🚨 STATUS: {final_status} (False addition)")
 
+            # Save results back to the evaluation dictionary
             eval_data["hybrid_status"] = final_status
             eval_data["mb_conflict_flag"] = has_extrinsic_conflict
-            hybrid_evaluations.append(eval_data)
+            
+            # Optional: Overwrite NLI verdict purely for JSON clarity if MB overrides it
+            if has_extrinsic_conflict:
+                eval_data["nli_verdict"] = "OVERRIDDEN_BY_DB"
+            else:
+                eval_data["nli_verdict"] = intrinsic_verdict
 
+            hybrid_evaluations.append(eval_data)
+            
         entry["validation_results"] = hybrid_evaluations
         final_output_data.append(entry)
         print("="*60)
 
     # --- STEP 4: EXPORT DATA ---
-    export_path = CURRENT_DIR / "data" / "final_hybrid_results.json"
+    export_path = CURRENT_DIR / "data" / "final_hybrid_results_v2.json"
     export_path.parent.mkdir(parents=True, exist_ok=True)
     
     print(f"\nSaving complete hybrid evaluation dataset to: {export_path}")
