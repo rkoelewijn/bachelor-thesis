@@ -27,15 +27,30 @@ For every artist identified in the venue data, the script searches the API to re
 
 Given that mid-tier venues frequently program niche, emerging, or highly localized artists, it is expected that some acts will be entirely absent from the MusicBrainz database. To ensure the robustness of the dataset generation, the script implements explicit error handling. If an artist cannot be resolved, the pipeline catches the exception and assigns empty values to the factual fields rather than terminating the program, allowing the script to safely proceed to the next entity.
 
-\subsection{Data Loader}
-
-
 
 \subsection{Decomposer}
+The main task of the decomposer step is to view the claims made by the LLM in the generated summary. A summary can contain from one untill multiple claims, so it is important that all of them get separated into atomic claims and get evaluated. We define a claim as `atomic' if it contains exactly one predicate-argument relationship, which allows the subsequent NLI model to render a definitive Entailment or Contradiction label without semantic noise.
 
-\additions{Write this part.}
-We base this on the SAFE by Google \cite{safe2024longform}
+While state-of-the-art frameworks like Google DeepMind's SAFE \cite{safe2024longform} rely on LLM prompting to decompose long-form summaries into atomic claim, introducing yet another machine learning model and creating high operational and computational costs, we made the choice to do this in a deterministic fashion. Our methodology adopts the core multi-stage atomic decomposition paradigm pioneered by SAFE, but replaces the LLM parser with a deterministic, rule-based linguistic dependency parse utilizing \texttt{spaCy}. Splitting claims into atomic claims, has been proven to improve performance in NLI for multiple models \cite{huang2026atomicsnlifinegrainednaturallanguage} and our own small scale testing (See Table \ref) \additions{Add table to show atomic claims give better results (maybe?)}. Our decomposer has been developed in parallel to the framework given by Huang et al. 
 
+
+Crucially, by utilizing a deterministic linguistic dependency parser rather than a secondary LLM for claim decomposition, we avoid the `recursive hallucination' risk. When an LLM is used to decompose a summary, it may introduce its own hallucinations during the parsing phase. Our rule-based approach ensures that the decomposition remains faithful to the text's syntactic structure, effectively providing a stable, verifiable input for the subsequent NLI evaluation.
+
+The core of our decomposer consists of treating a sentence as a hierarchical Dependency Tree, where words are nodes connected by functional relationships. These relationships mimic the function of words in English sentences, such as a \textit{preposition}, \textit{subject}, \textit{object}. The enumeration below shows the implementation of the algorithm. 
+\begin{enumerate}
+    \item Convert the raw text into a machine-readable dependency tree. This allows the system to identify the grammatical roles of words, such as which terms function as the subject and which function as the object of an action.
+    \item Iterate through every token in the document to locate ``action anchors." The system prioritizes VERB and AUX (auxiliary verbs such as `is' or `has'), as these words define the core events or states necessary for a factual claim.
+    \item Resolving Components: 
+    \begin{itemize}
+        \item Subject: Identify the nominal subject (`nsubj'). If the subject is a pronoun (e.g., ``He"), replace it with the primary entity name to ensure the claim remains contextually independent and verifiable.
+        \item Verb Phrase: Collect all auxiliary verbs to preserve the original tense (e.g., ``is performing").
+        \item Object: Locate the grammatical receiver of the action (direct object, attribute, or complement).
+        \item Modifiers: Identify surrounding phrases that provide extra context, such as time, location, or manner.
+    \end{itemize}
+    \item  Combine the subject, verb phrase, and object to construct a coherent, standalone sentence that represents the core fact.
+    \item If the sentence includes modifiers, ``multiply" the base statement by each modifier to generate individual, independent claims. This step converts one complex sentence into multiple simple, verifiable statements.
+    \item  Perform final data hygiene. Remove exact duplicate claims and discard any fragments that are under 5 words in length. This ensures the final output contains only high-quality, meaningful information.
+\end{enumerate}
 
 \subsection{Dutch Parser}
 

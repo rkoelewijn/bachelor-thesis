@@ -3,6 +3,7 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
 # --- CONFIGURATION ---
 DEFAULT_MODEL = "joeddav/xlm-roberta-large-xnli"
+# TODO:: TAKE OUT HARDCODED THRESHOLDS
 ENT_THRESHOLD = 60.0
 CON_THRESHOLD = 60.0
 

@@ -1,11 +1,11 @@
 \contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Change Title}{8}{section*.3}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Write this part.}{9}{section*.6}%
-\contentsline {todo}{\fcolorbox {black}{orange!40}{\textcolor {orange!40}{o}}\ move footnote to introduction.}{9}{section*.8}%
-\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ find the studies that show LLM can verify themselves.}{9}{section*.9}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add table with entailment Guidelines}{10}{section*.10}%
-\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Psuedocode for to show the for loops and explain complexity?}{10}{section*.12}%
-\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ Back up claim that one sentence is better than full text.}{10}{section*.13}%
-\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Classification could be an option}{10}{section*.14}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ A bit better?}{11}{section*.15}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add no of experiments and dates. }{12}{section*.16}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add how i do the text extraction when finished.}{13}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add table to show atomic claims give better results (maybe?)}{9}{section*.6}%
+\contentsline {todo}{\fcolorbox {black}{orange!40}{\textcolor {orange!40}{o}}\ move footnote to introduction.}{10}{section*.8}%
+\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ find the studies that show LLM can verify themselves.}{10}{section*.9}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add table with entailment Guidelines}{11}{section*.10}%
+\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Psuedocode for to show the for loops and explain complexity?}{11}{section*.12}%
+\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ Back up claim that one sentence is better than full text.}{11}{section*.13}%
+\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Classification could be an option}{11}{section*.14}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ A bit better?}{12}{section*.15}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add no of experiments and dates. }{13}{section*.16}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add how i do the text extraction when finished.}{14}{section*.17}%

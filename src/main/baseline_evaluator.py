@@ -1,4 +1,3 @@
-import sys
 import time
 import json
 from pathlib import Path
@@ -14,7 +13,7 @@ import validator
 
 def print_header():
     print("="*60)
-    print("CLOUDSPEAKERS BASELINE EVALUATOR (NLI ONLY)")
+    print("CLOUDSPEAKERS BASELINE EVALUATOR")
     print("="*60)
 
 def main():
