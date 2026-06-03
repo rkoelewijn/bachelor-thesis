@@ -1,5 +1,7 @@
 import time
 import musicbrainzngs
+import json
+from pathlib import Path
 
 # MusicBrainz REQUIRES a descriptive User-Agent, or they will block your IP.
 musicbrainzngs.set_useragent(
@@ -22,17 +24,30 @@ def get_artist_facts(artist_name):
         # Extract the top result
         match = result['artist-list'][0]
         
+        # --- FIX: Extract Genres from Tags ---
+        # MusicBrainz stores genres as user-generated tags. We pull the top 2.
+        tags = match.get("tag-list", [])
+        if tags:
+            genre = ", ".join([tag.get("name") for tag in tags[:2]])
+        else:
+            genre = "Unknown"
+
+        # --- FIX: Extract Place from Begin-Area ---
+        # 'area' is usually the country, 'begin-area' is the founding city/town.
+        place = match.get("begin-area", {}).get("name", "Unknown")
+
         # Build a structured dictionary of real-world facts
         facts = {
             "status": "Found",
-            "name": match.get("name"),
-            "type": match.get("type", "Unknown"), # e.g., Group, Person
-            "country": match.get("country", "Unknown"), # e.g., GB, NL, US
-            "area": match.get("area", {}).get("name", "Unknown"), # e.g., Leeds, Amsterdam
-            "formed": match.get("life-span", {}).get("begin", "Unknown")
+            "name": match.get("name", "Unknown"),
+            "type": match.get("type", "Unknown"), 
+            "country": match.get("country", "Unknown"), 
+            "area": match.get("area", {}).get("name", "Unknown"), 
+            "place": place,
+            "genre": genre
         }
         
-        # Sleep for 1 second to respect the MusicBrainz rate limit!
+        # Sleep for 1 second to respect the MusicBrainz rate limit
         time.sleep(1) 
         return facts
 
@@ -40,8 +55,6 @@ def get_artist_facts(artist_name):
         print(f"MusicBrainz API Error: {exc}")
         return {"status": "Error"}
 
-import json
-from pathlib import Path
 
 # --- CONFIGURATION ---
 # Points directly to the current directory since they are side-by-side
@@ -79,17 +92,30 @@ def list_all_artists():
     sorted_artists = sorted(list(unique_artists))
 
     # --- TERMINAL OUTPUT ---
-    print("\n" + "="*50)
-    print("📊 DATABASE ARTIST SUMMARY")
-    print("="*50)
+    print("\n" + "="*90)
+    print("📊 DATABASE ARTIST SUMMARY & MUSICBRAINZ FACTS")
+    print("="*90)
     print(f"Total entries processed: {total_entries}")
     print(f"Unique headliners found: {len(sorted_artists)}")
-    print("-" * 50)
+    print("Fetching facts from MusicBrainz... (Note: 1 second delay per artist due to rate limits)")
+    print("-" * 90)
     
     for i, artist in enumerate(sorted_artists, 1):
-        print(f"{i:03d}. {artist}")
+        # Fetch the facts for the current artist
+        facts = get_artist_facts(artist)
         
-    print("="*50 + "\n")
+        if facts.get("status") == "Found":
+            # Extract the required fields, defaulting to "Unknown" if missing
+            genre = facts.get("genre", "Unknown")
+            area = facts.get("area", "Unknown")
+            place = facts.get("place", "Unknown")
+            
+            # Print with formatted spacing for readability
+            print(f"{i:03d}. ARTIST: {artist:<20} | GENRE: {genre:<15} | AREA: {area:<15} | PLACE: {place}")
+        else:
+            print(f"{i:03d}. ARTIST: {artist:<20} | Status: {facts.get('status', 'Error')}")
+            
+    print("="*90 + "\n")
 
 if __name__ == "__main__":
     list_all_artists()

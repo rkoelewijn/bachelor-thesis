@@ -32,39 +32,87 @@ def fetch_dynamic_html(url):
         return full_html
 
 def clean_html_with_bs4(html_content):
-    """Uses BeautifulSoup to clean HTML and return body text."""
+    """Uses BeautifulSoup to clean HTML and return body text, ignoring cookie banners."""
     if not html_content:
         return ""
+    
     soup = BeautifulSoup(html_content, "html.parser")
+    
+    # Strip out standard non-content tags
     for unwanted in soup(['nav', 'header', 'footer', 'script', 'style', 'aside', 'form', 'button']):
         unwanted.decompose()
+        
     main_content = soup.find('main') or soup.find('article') or soup.body
-    if not main_content: return ""
+    if not main_content: 
+        return ""
     
-    clean_text_lines = [
-        p.get_text(separator=" ", strip=True) 
-        for p in main_content.find_all('p') 
-        if len(p.get_text(separator=" ", strip=True)) > 40
+    # Blocklist of phrases from the Dutch cookie notice
+    cookie_blocklist = [
+        "We gebruiken cookies om",
+        "Noodzakelijke cookies zijn",
+        "Deze cookies slaan geen persoonlijk",
+        "Functionele cookies helpen",
+        "Analytische cookies worden",
+        "Prestatiecookies worden",
+        "Advertentiecookies worden",
+        "Andere niet-gecategoriseerde cookies"
     ]
+    
+    clean_text_lines = []
+    
+    for p in main_content.find_all('p'):
+        text = p.get_text(separator=" ", strip=True)
+        
+        # Check if text meets length requirement
+        if len(text) > 40:
+            # Check if it matches anything in our blocklist (case-insensitive)
+            is_cookie_text = any(phrase.lower() in text.lower() for phrase in cookie_blocklist)
+            
+            if not is_cookie_text:
+                clean_text_lines.append(text)
+                
     return "\n".join(clean_text_lines)
 
 def get_artist_facts(artist_name):
-    """Fetches factual baseline data from MusicBrainz."""
+    """
+    Queries MusicBrainz for factual metadata about an artist to catch Extrinsic Hallucinations.
+    """
     try:
+        # Search for the artist (limit=1 to get the most likely match)
         result = musicbrainzngs.search_artists(query=artist_name, limit=1)
+        
         if not result.get('artist-list'):
             return {"status": "Not Found"}
 
+        # Extract the top result
         match = result['artist-list'][0]
-        time.sleep(1) # Crucial: Respect MB rate limit during batch ingestion
         
-        return {
+        # --- FIX: Extract Genres from Tags ---
+        # MusicBrainz stores genres as user-generated tags. We pull the top 2.
+        tags = match.get("tag-list", [])
+        if tags:
+            genre = ", ".join([tag.get("name") for tag in tags[:2]])
+        else:
+            genre = "Unknown"
+
+        # --- FIX: Extract Place from Begin-Area ---
+        # 'area' is usually the country, 'begin-area' is the founding city/town.
+        place = match.get("begin-area", {}).get("name", "Unknown")
+
+        # Build a structured dictionary of real-world facts
+        facts = {
             "status": "Found",
-            "name": match.get("name"),
+            "name": match.get("name", "Unknown"),
             "type": match.get("type", "Unknown"), 
             "country": match.get("country", "Unknown"), 
-            "area": match.get("area", {}).get("name", "Unknown")
+            "area": match.get("area", {}).get("name", "Unknown"), 
+            "place": place,
+            "genre": genre
         }
+        
+        # Sleep for 1 second to respect the MusicBrainz rate limit
+        time.sleep(1) 
+        return facts
     except Exception as e:
         print(f"MusicBrainz Error: {e}")
         return {"status": "Error"}

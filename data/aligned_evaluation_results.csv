@@ -1,0 +1,70 @@
+Artist,Claim,Baseline_Verdict,Hybrid_Verdict,Hybrid_Status,MB_Conflict_Flag,Ground_Truth,Baseline_Mapped
+VroegZat,VroegZat bringing nightlife to the early evening,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,FALSE,FALSE
+VroegZat,VroegZat bringing nightlife with a mix of danceable tunes across genres,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Frank Boeijen,Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Frank Boeijen,Dutch singer-songwriter Frank Boeijen returns for an evening of poetic songs and stories,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+And Also the Trees,And Also the Trees is The English post-punk band,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+And Also the Trees,"And Also the Trees, The English post-punk band And performs songs from their new album 'The Devil's Door",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Bertolf,Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Wyatt E.,"Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Wyatt E.,"Wyatt E. built on heavy, repetitive riffs and deep drones",CONTRADICTION,CONTRADICTION,VALID,False,TRUE,FALSE
+Wyatt E.,Wyatt E. based on ancient mythology,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Daryll-Ann,Daryll-Ann is The Dutch guitar pop band,ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+Daryll-Ann,The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' in its entirety,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,TRUE,FALSE
+Daryll-Ann,The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' for the first time,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,TRUE,FALSE
+daoud,daoud is The French-Moroccan trumpeter,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,FALSE,FALSE
+daoud,"The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves,",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_HALLUCINATION_FALSE,True,TRUE,UNSUPPORTED
+daoud,"daoud, that blends hip-hop grooves,",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Klezmagic,Klezmagic is The Amsterdam-based Balkan band,ENTAILMENT,ENTAILMENT,VALID,False,UNSUPPORTED,TRUE
+Klezmagic,"Klezmagic, The Amsterdam-based Balkan band presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,TRUE,FALSE
+Klezmagic,"Klezmagic blending Balkan, Klezmer, and Ska",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+IOS,A Dutch Nederpop band returns with new material and classic hits.,UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Master Boot Record,"Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,TRUE,FALSE
+Master Boot Record,"Master Boot Record fusing heavy metal, chiptune, and classical",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Master Boot Record,Master Boot Record supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,TRUE,FALSE
+Adult DVD,Adult DVD is from the Netherlands,ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,FALSE,TRUE
+Adult DVD,Adult DVD is A six-piece synthpunk band,ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+Adult DVD,"Adult DVD, A six-piece synthpunk band from the Netherlands returns with danceable, retro computer game-like music that grooves, rocks, and swings",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_HALLUCINATION_FALSE,True,TRUE,UNSUPPORTED
+Hällas,"Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Hällas,Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror,ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+Hällas,"Hällas, who inject psychedelic rock with gothic horror",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,FALSE,FALSE
+IDA,IDA is Dutch hyperpop sensation,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,True,TRUE,FALSE
+IDA,"IDA, Dutch hyperpop sensation performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions",ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+FLEMMING,FLEMMING FLEMMING (Flemming Freddie Viguurs,ENTAILMENT,ENTAILMENT,VALID,False,UNSUPPORTED,TRUE
+FLEMMING,"FLEMMING, Nederlandstalige pop with creative productions and witty lyrics",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Ruben Hillen,Ruben Hillen known from The Voice of Holland,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Enigma,"Enigma featuring DJ Y (alias of Coco Bryce) from Breda, plus local talents Tsudi, HDM13, and a b2b set by Click and Ipkiss",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,UNSUPPORTED,UNSUPPORTED
+Enigma,Enigma set by Click and Ipkiss,CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,UNSUPPORTED,FALSE
+Racoon,"Racoon, a Dutch band from Zeeland, returns for a concert",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+CLOUDSURFERS,"Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Los Pirañas,"Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+DYLAN LEBLANC - solo,DYLAN LEBLANC - solo is American singer-songwriter Dylan LeBlanc,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+DYLAN LEBLANC - solo,"DYLAN LEBLANC - solo, American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop",ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+DYLAN LEBLANC - solo,DYLAN LEBLANC - solo set,ENTAILMENT,ENTAILMENT,VALID,False,UNSUPPORTED,TRUE
+William Barrett Band,The William Barrett Band presents their debut album ' Live in Amsterdam',ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+William Barrett Band,William Barrett Band recorded in Amsterdam,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+William Barrett Band,William Barrett Band featuring bassist William Barrett and his band,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Philip Lassiter,"Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,TRUE,FALSE
+Alex Henry Foster,"Alex Henry Foster known for intense, cinematic alternative rock and post-rock,",ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,TRUE,TRUE
+Solfestice #8,"Solfestice #8, I Compani presents their new double album BASTA",CONTRADICTION,CONTRADICTION,AMBIGUOUS,False,TRUE,FALSE
+Solfestice #8,Solfestice #8 featuring guest musicians,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Hippotraktor,"Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Robin Scherpen - Pulse,"Componist en gitarist Robin Scherpen presenteert zijn intieme show Memory & Traces, een muzikale reis door donker en licht, melancholie en geluk.",ENTAILMENT,ENTAILMENT,SOURCE_CONFLICT (Text likely wrong),True,UNSUPPORTED,TRUE
+Primitive Ring,Primitive Ring featuring members of FUZZ and Hooveriii,CONTRADICTION,CONTRADICTION,AMBIGUOUS,False,UNSUPPORTED,FALSE
+Primitive Ring,"Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,TRUE,FALSE
+Bokkeryers,"Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,UNSUPPORTED,UNSUPPORTED
+Bokkeryers,"Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,UNSUPPORTED,FALSE
+Bokkeryers,Bokkeryers thrash metal with punk attitude and humor,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+corto.alto,corto.alto led by multi-instrumentalist Liam Shortall,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+corto.alto,"corto.alto blending jazz with hiphop, broken beats",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Tusky,Tusky delivers fierce punkrock with emo-hardcore influences fast,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Tusky,"Tusky delivers fierce punkrock with emo-hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,TRUE,FALSE
+Tusky,"Tusky, Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",CONTRADICTION,CONTRADICTION,INTRINSIC_HALLUCINATION,False,TRUE,FALSE
+Tusky,"Tusky inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+HAEVN,"Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+SNAYX,"British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+SNAYX,"SNAYX blending punk, rock, electronics, and experimental influences",ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+The Rumjacks,The Rumjacks known for their raw punk with Celtic influences and sing-along choruses,ENTAILMENT,ENTAILMENT,VALID,False,TRUE,TRUE
+Chica Chica,"Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves",UNSUPPORTED,UNSUPPORTED,EXTRINSIC_HALLUCINATION_FALSE,True,TRUE,UNSUPPORTED
+Wodan Boys,Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound,UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED
+Wodan Boys,Wodan Boys known for their energetic punk rock sound,UNSUPPORTED,UNSUPPORTED,EXTRINSIC_INJECTION_TRUE,False,TRUE,UNSUPPORTED

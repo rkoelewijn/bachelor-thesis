@@ -10,11 +10,37 @@
 \usepackage{booktabs}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{extarrows}
+\usepackage{booktabs}
+\usepackage{xspace}
+\usetikzlibrary{fadings}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes}
 
+\newcounter{questioncounter}
+\newcommand{\question}[1]{\stepcounter{questioncounter}\todo[color=yellow!40]{\thequestioncounter. #1}}
 \newcommand{\source}[1]{\todo[color=blue!40]{#1}}
 \newcommand{\changes}[1]{\todo[color=orange!40]{#1}}
 \newcommand{\optional}[1]{\todo[color=gray!40]{#1}}
 \newcommand{\additions}[1]{\todo[color=green!40]{#1}}
+\newcommand{\feedback}[1]{\todo[color=red!40]{#1}}
+
+\newcommand{\etal}{et al.\@\xspace}
+
 
 \lstset{
     language=Python,
@@ -92,8 +118,8 @@
 
 \input{introduction}
 \input{preliminaries}
-\input{research}
 \input{newsletter}
+\input{research}
 \input{secondcase}
 \input{relatedwork}
 \input{conclusions}

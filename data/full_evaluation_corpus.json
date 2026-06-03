@@ -18,7 +18,9 @@
             "name": "Frank Boeijen",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Nijmegen",
+            "genre": "singer-songwriter"
         }
     },
     {
@@ -31,7 +33,9 @@
             "name": "And Also the Trees",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Worcestershire",
+            "genre": "rock, post-punk"
         }
     },
     {
@@ -44,7 +48,9 @@
             "name": "Bertolf",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -57,7 +63,9 @@
             "name": "Wyatt E.",
             "type": "Group",
             "country": "BE",
-            "area": "Belgium"
+            "area": "Belgium",
+            "place": "Brussels",
+            "genre": "drone, post-metal"
         }
     },
     {
@@ -70,7 +78,9 @@
             "name": "Daryll-Ann",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Ermelo",
+            "genre": "rock, alternative rock"
         }
     },
     {
@@ -83,7 +93,9 @@
             "name": "daoud",
             "type": "Person",
             "country": "Unknown",
-            "area": "Toulouse"
+            "area": "Toulouse",
+            "place": "Unknown",
+            "genre": "downtempo, instrumental"
         }
     },
     {
@@ -96,7 +108,9 @@
             "name": "Klezmagic",
             "type": "Group",
             "country": "Unknown",
-            "area": "Amsterdam"
+            "area": "Amsterdam",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -109,7 +123,9 @@
             "name": "IOS",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "dutch, groningen"
         }
     },
     {
@@ -122,7 +138,9 @@
             "name": "MASTER BOOT RECORD",
             "type": "Person",
             "country": "IT",
-            "area": "Italy"
+            "area": "Italy",
+            "place": "Roma",
+            "genre": "electronic, industrial metal"
         }
     },
     {
@@ -135,7 +153,9 @@
             "name": "Adult DVD",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Leeds",
+            "genre": "dance-rock"
         }
     },
     {
@@ -148,7 +168,9 @@
             "name": "Hällas",
             "type": "Group",
             "country": "SE",
-            "area": "Sweden"
+            "area": "Sweden",
+            "place": "Jönköping",
+            "genre": "rock, progressive rock"
         }
     },
     {
@@ -161,33 +183,39 @@
             "name": "Ida",
             "type": "Group",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Brooklyn",
+            "genre": "indie rock, indie folk"
         }
     },
     {
         "artist": "FLEMMING",
         "url": "https://doornroosje.nl/event/flemming-4",
         "summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics.",
-        "dutch_text": "FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten. Vernoemd naar de zanger van Queens is het geen wonder dat FLEMMING een passie heeft voor muziek. Afgelopen april kwam zijn nieuwe album ‘Samen Is Leuker Dan Alleen’ uit en rijdt hij in het najaar van 2026 het hele land door tijdens zijn clubtour.\nMet debuutsingle ‘Amsterdam’ zet FLEMMING meteen een authentieke sound neer, wat al snel leidt tot een succes op zowel radio als Spotify, en tot zijn grote verrassing is de single binnen drie maanden goud. Opvolgers ‘Zij Wil Mij’ en ‘Automatisch’ zijn onmiskenbaar catchy en vrolijk. In het najaar van 2022 kwam zijn debuutalbum ‘FLEMMING’ uit, inclusief de geheel door hem zelf geschreven hit ‘Paracetamollen’. Het album stond 15 weken aansluitend op nummer één in de album charts op Spotify. Daarnaast behaalde al FLEMMING zijn singles minimaal de gouden status.\nEerder stond FLEMMING al op grote festivals als Paaspop, Zwarte Cross, Concert At Sea en verzorgde hij het voorprogramma van Guus Meeuwis tijdens de Groots met een zachte G concerten in het Philips Stadion.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nFLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten. Vernoemd naar de zanger van Queens is het geen wonder dat FLEMMING een passie heeft voor muziek. Afgelopen april kwam zijn nieuwe album ‘Samen Is Leuker Dan Alleen’ uit en rijdt hij in het najaar van 2026 het hele land door tijdens zijn clubtour.\nMet debuutsingle ‘Amsterdam’ zet FLEMMING meteen een authentieke sound neer, wat al snel leidt tot een succes op zowel radio als Spotify, en tot zijn grote verrassing is de single binnen drie maanden goud. Opvolgers ‘Zij Wil Mij’ en ‘Automatisch’ zijn onmiskenbaar catchy en vrolijk. In het najaar van 2022 kwam zijn debuutalbum ‘FLEMMING’ uit, inclusief de geheel door hem zelf geschreven hit ‘Paracetamollen’. Het album stond 15 weken aansluitend op nummer één in de album charts op Spotify. Daarnaast behaalde al FLEMMING zijn singles minimaal de gouden status.\nEerder stond FLEMMING al op grote festivals als Paaspop, Zwarte Cross, Concert At Sea en verzorgde hij het voorprogramma van Guus Meeuwis tijdens de Groots met een zachte G concerten in het Philips Stadion.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "FLEMMING",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
         "artist": "Ruben Hillen",
         "url": "https://doornroosje.nl/event/ruben-hillen",
         "summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences.",
-        "dutch_text": "Ruben Hill is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland. Met zijn karakteristieke stem, oprechte performances en sterke podium aanwezigheid wist hij zowel de coaches als de kijkers voor zich te winnen. Hij combineert emotie, energie en muzikaliteit in zijn optredens, waarin invloeden uit pop, soul en moderne singer-songwriter muziek samenkomen.\nOndanks zijn nuchtere karakter weet Ruben bij elk optreden het publiek voor zich te winnen door zijn intensiteit en eerlijkheid, eigenschappen waarmee hij zich in korte tijd heeft ontwikkeld tot een veelbelovende nieuwe naam binnen de Nederlandse muziekscene. Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.\nDirect na het winnen van de finale bracht hij zijn eerste eigen single ‘20 Seconds’ uit geproduceerd door Arno Krabman. Het is een country getinte track die na zijn overwinning meteen de streamingcharts inschiet. De dag na de finale maakten coaches Suzan & Freek bekend dat Ruben zal optreden in het voorprogramma van hun concerten in het GelreDome, daarnaast zal hij in juni ook optreden bij Concert at Sea.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Ruben Hillen is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland. Met zijn karakteristieke stem, oprechte performances en sterke podium aanwezigheid wist hij zowel de coaches als de kijkers voor zich te winnen. Hij combineert emotie, energie en muzikaliteit in zijn optredens, waarin invloeden uit pop, soul en moderne singer-songwriter muziek samenkomen.\nOndanks zijn nuchtere karakter weet Ruben bij elk optreden het publiek voor zich te winnen door zijn intensiteit en eerlijkheid, eigenschappen waarmee hij zich in korte tijd heeft ontwikkeld tot een veelbelovende nieuwe naam binnen de Nederlandse muziekscene. Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.\nDirect na het winnen van de finale bracht hij zijn eerste eigen single ‘20 Seconds’ uit geproduceerd door Arno Krabman. Het is een country getinte track die na zijn overwinning meteen de streamingcharts inschiet. De dag na de finale maakten coaches Suzan & Freek bekend dat Ruben zal optreden in het voorprogramma van hun concerten in het GelreDome, daarnaast zal hij in juni ook optreden bij Concert at Sea.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "Ruben Hillen",
             "type": "Unknown",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -200,20 +228,24 @@
             "name": "Enigma",
             "type": "Group",
             "country": "DE",
-            "area": "Germany"
+            "area": "Germany",
+            "place": "Germany",
+            "genre": "trance, electronic"
         }
     },
     {
         "artist": "Racoon",
         "url": "https://doornroosje.nl/event/racoon-17",
         "summary": "Racoon, a Dutch band from Zeeland, returns to Doornroosje for a concert.",
-        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nRacoon is al meer dan twintig jaar een van de meest succesvolle Nederlandse bands. Van uitverkochte tournees langs poppodia, via uitverkochte AFAS en Ziggo Domes naar grote spots op grote festivals. Dit najaar keert Racoon terug naar Doornroosje!\nMensen krijgen geen genoeg van Racoon en Racoon krijgt geen genoeg van muziek maken en live spelen. Door de jaren heen bouwde de band gestaag aan een indrukwekkend repertoire. Nummers die je ooit hard meezong in de auto die op repeat stonden tijdens lange zomers, of die ineens weer binnenkomen als je ze hoort.\nIn de loop der jaren groeiden songs als ‘Love You More’, ‘No Mercy’, ‘Oceaan’ en ‘Het Is Al Laat Toch’ uit tot vaste waarden in hun repertoire. Racoon wordt bekroond met Edisons en omarmd door radio en publiek.\nEen concert van Racoon draait om samen spelen en aandacht voor de muziek. Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nRacoon is al meer dan twintig jaar een van de meest succesvolle Nederlandse bands. Van uitverkochte tournees langs poppodia, via uitverkochte AFAS en Ziggo Domes naar grote spots op grote festivals. Dit najaar keert Racoon terug naar Doornroosje!\nMensen krijgen geen genoeg van Racoon en Racoon krijgt geen genoeg van muziek maken en live spelen. Door de jaren heen bouwde de band gestaag aan een indrukwekkend repertoire. Nummers die je ooit hard meezong in de auto die op repeat stonden tijdens lange zomers, of die ineens weer binnenkomen als je ze hoort.\nIn de loop der jaren groeiden songs als ‘Love You More’, ‘No Mercy’, ‘Oceaan’ en ‘Het Is Al Laat Toch’ uit tot vaste waarden in hun repertoire. Racoon wordt bekroond met Edisons en omarmd door radio en publiek.\nEen concert van Racoon draait om samen spelen en aandacht voor de muziek. Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.\nDe betoverende Faela neemt je mee door de support voor de avond. Met haar prachtige stem, bijzondere verschijning en sprankelende songs kost het haar weinig moeite om elk publiek volledig om haar vinger te winden. Samen brachten ze het nieuwe nummer ‘Daffodils’ uit.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "Racoon",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Goes",
+            "genre": "alternative rock"
         }
     },
     {
@@ -226,7 +258,9 @@
             "name": "Cloudsurfers",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -239,7 +273,9 @@
             "name": "Los Pirañas",
             "type": "Group",
             "country": "CO",
-            "area": "Colombia"
+            "area": "Colombia",
+            "place": "Bogotá",
+            "genre": "tropicanibalismo, psychedelic rock"
         }
     },
     {
@@ -252,7 +288,9 @@
             "name": "Bob Dylan",
             "type": "Person",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Duluth",
+            "genre": "rock, jazz"
         }
     },
     {
@@ -265,7 +303,9 @@
             "name": "William Barrett",
             "type": "Unknown",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -278,7 +318,9 @@
             "name": "Philip Lassiter",
             "type": "Person",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -291,7 +333,9 @@
             "name": "Alex Henry Foster",
             "type": "Person",
             "country": "Unknown",
-            "area": "Québec"
+            "area": "Québec",
+            "place": "Unknown",
+            "genre": "rock"
         }
     },
     {
@@ -304,7 +348,9 @@
             "name": "Lane 8",
             "type": "Person",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Unknown",
+            "genre": "trance, electronic"
         }
     },
     {
@@ -317,7 +363,9 @@
             "name": "Hippotraktor",
             "type": "Group",
             "country": "BE",
-            "area": "Belgium"
+            "area": "Belgium",
+            "place": "Mechelen",
+            "genre": "progressive metal, post-metal"
         }
     },
     {
@@ -330,7 +378,9 @@
             "name": "Robin Scherpen",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -343,7 +393,9 @@
             "name": "Primitive Ring",
             "type": "Group",
             "country": "Unknown",
-            "area": "Los Angeles"
+            "area": "Los Angeles",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -356,7 +408,9 @@
             "name": "De Bokkerÿers",
             "type": "Group",
             "country": "Unknown",
-            "area": "Limburg"
+            "area": "Limburg",
+            "place": "Limburg",
+            "genre": "Unknown"
         }
     },
     {
@@ -369,7 +423,9 @@
             "name": "corto.alto",
             "type": "Person",
             "country": "Unknown",
-            "area": "Glasgow"
+            "area": "Glasgow",
+            "place": "Glasgow",
+            "genre": "jazz"
         }
     },
     {
@@ -382,7 +438,9 @@
             "name": "Tusky",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -395,20 +453,9 @@
             "name": "HAEVN",
             "type": "Group",
             "country": "Unknown",
-            "area": "Unknown"
-        }
-    },
-    {
-        "artist": "Thijs Veldhuis",
-        "url": "https://doornroosje.nl/event/thijs-veldhuis",
-        "summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
-        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nThijs Veldhuis deed dit jaar mee aan The Voice of Holland en in het najaar staat hij op het podium in Doornroosje!\nThijs schrijft zijn eigen teksten en muziek, waarbij hij op een bijzondere manier enorm uit zijn comfortzone is gegaan door deel te nemen aan The Voice. Van het schrijven van nummers in zijn kamer in Utrecht naar optreden op misschien wel het grootste podium van Nederland.\nMuzikaal beweegt Thijs zich tussen verschillende invloeden uit rock, indie, pop, klassiek en elektronische muziek. De thema’s in de liedjes lopen uiteen: ze zijn persoonlijk maar het is ook een reflectie op bredere thema’s in de maatschappij.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
-        "musicbrainz_facts": {
-            "status": "Found",
-            "name": "Thijs Veldhuis",
-            "type": "Person",
-            "country": "NL",
-            "area": "Netherlands"
+            "area": "Unknown",
+            "place": "Amsterdam",
+            "genre": "Unknown"
         }
     },
     {
@@ -421,7 +468,9 @@
             "name": "SNAYX",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -434,7 +483,9 @@
             "name": "The Rumjacks",
             "type": "Group",
             "country": "AU",
-            "area": "Australia"
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "folk, punk"
         }
     },
     {
@@ -447,7 +498,9 @@
             "name": "Chica Chica Electrica",
             "type": "Group",
             "country": "AU",
-            "area": "Australia"
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     },
     {
@@ -460,7 +513,9 @@
             "name": "Wodan Boys",
             "type": "Group",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         }
     }
 ]

@@ -19,7 +19,7 @@ SCRIPTS = {
     },
     "2": {
         "name": "Dry-Run Decomposer Claims",
-        "file": MAIN_DIR / "export_all_claims.py",
+        "file": MAIN_DIR / "profile_claims.py",
         "description": "Generates all atomic claims instantly (No NLI)"
     },
     "3": {

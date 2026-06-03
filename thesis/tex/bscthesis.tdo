@@ -1,11 +1,13 @@
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Change Title}{8}{section*.3}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add table to show atomic claims give better results (maybe?)}{9}{section*.6}%
-\contentsline {todo}{\fcolorbox {black}{orange!40}{\textcolor {orange!40}{o}}\ move footnote to introduction.}{10}{section*.8}%
-\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ find the studies that show LLM can verify themselves.}{10}{section*.9}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add table with entailment Guidelines}{11}{section*.10}%
-\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Psuedocode for to show the for loops and explain complexity?}{11}{section*.12}%
-\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ Back up claim that one sentence is better than full text.}{11}{section*.13}%
-\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Classification could be an option}{11}{section*.14}%
-\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ A bit better?}{12}{section*.15}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add no of experiments and dates. }{13}{section*.16}%
-\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add how i do the text extraction when finished.}{14}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Rework research question to better suit results/ conclusions}{4}{section*.3}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Explain structure of the thesis.}{4}{section*.4}%
+\contentsline {todo}{\fcolorbox {black}{red!40}{\textcolor {red!40}{o}}\ Might be nice to implement a piece on measuring succes. }{7}{section*.5}%
+\contentsline {todo}{\fcolorbox {black}{yellow!40}{\textcolor {yellow!40}{o}}\ 1. Moeten alle newsletter entries in de Appendix of is dat niet relevant? }{10}{section*.6}%
+\contentsline {todo}{\fcolorbox {black}{yellow!40}{\textcolor {yellow!40}{o}}\ 2. Moet deze in een footnote of als bron?}{10}{section*.7}%
+\contentsline {todo}{\fcolorbox {black}{orange}{\textcolor {orange}{o}}\ Change Title}{11}{section*.8}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ Add table to show atomic claims give better results (maybe?)}{13}{section*.11}%
+\contentsline {todo}{\fcolorbox {black}{orange!40}{\textcolor {orange!40}{o}}\ move footnote to introduction.}{14}{section*.13}%
+\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ find the studies that show LLM can verify themselves.}{14}{section*.14}%
+\contentsline {todo}{\fcolorbox {black}{green!40}{\textcolor {green!40}{o}}\ add table with entailment Guidelines}{14}{section*.15}%
+\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Psuedocode for to show the for loops and explain complexity?}{15}{section*.17}%
+\contentsline {todo}{\fcolorbox {black}{blue!40}{\textcolor {blue!40}{o}}\ Back up claim that one sentence is better than full text.}{15}{section*.18}%
+\contentsline {todo}{\fcolorbox {black}{gray!40}{\textcolor {gray!40}{o}}\ Classification could be an option}{15}{section*.19}%

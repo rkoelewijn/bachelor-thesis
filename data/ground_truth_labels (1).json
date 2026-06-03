@@ -1,0 +1,641 @@
+[
+  {
+    "artist": "VroegZat",
+    "claim": "VroegZat bringing nightlife to the early evening",
+    "claim_index": 0,
+    "original_summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres.",
+    "evidence_used": "About EarlySat: So at a normal time to bed, making you fit the next day.",
+    "ground_truth": "FALSE",
+    "notes": ""
+  },
+  {
+    "artist": "VroegZat",
+    "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
+    "claim_index": 1,
+    "original_summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres.",
+    "evidence_used": "About EarlySat: Musically it goes back and forth: from disco to pop, from reggae to rock and from happy to hip-hop, and those nice danceable tunes that fall between and beyond.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Frank Boeijen",
+    "claim": "Frank Boeijen returns to his beloved hometown of Nijmegen",
+    "claim_index": 0,
+    "original_summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories.",
+    "evidence_used": "About Frank Boeijen: Frank Boeijen together with his band returns to Open Air Theatre de Goffert, in his beloved home town of Nijmegen.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Frank Boeijen",
+    "claim": "Frank Boeijen returns for an evening of poetic songs and stories",
+    "claim_index": 1,
+    "original_summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories.",
+    "evidence_used": "About Frank Boeijen: Dive into a world full of poetic songs and stories about beauty, love and life.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "And Also the Trees",
+    "claim": "And Also the Trees is The English post - punk band",
+    "claim_index": 0,
+    "original_summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'.",
+    "evidence_used": "About And Also the Trees: The English postpunk band And Also the Trees, known for their compelling live performances, unique style, suggestive lyrics and dark jazz rhythms, is still alive after more than 15 albums.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "And Also the Trees",
+    "claim": "And Also the Trees performs songs from their new album ' The Devil 's Door",
+    "claim_index": 1,
+    "original_summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'.",
+    "evidence_used": "About And Also the Trees: The band will come to Doornroosje in the fall with their new album \"The Devil \"s Doornroosje!",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Bertolf",
+    "claim": "Bertolf presents his bluegrass album ' Bluefinger vol",
+    "claim_index": 0,
+    "original_summary": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol. 2' with his excellent Dutch band.",
+    "evidence_used": "About Bertolf: Bertolf is back with his bluegrass album \"Bluefinger Vol. 2 \"!",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Wyatt E. performs long , hypnotic , and atmospheric compositions built on heavy , repetitive riffs and deep drones , often based on ancient mythology",
+    "claim_index": 0,
+    "original_summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology.",
+    "evidence_used": null,
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Wyatt E. built on heavy , repetitive riffs and deep drones",
+    "claim_index": 1,
+    "original_summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology.",
+    "evidence_used": "About Wyatt E.: Wyatt E.'s releases are often conceptually built around ancient mythology and historical periods, in which albums function as coherent, narrative wholes.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Wyatt E. based on ancient mythology",
+    "claim_index": 2,
+    "original_summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology.",
+    "evidence_used": "About Wyatt E.: Wyatt E.'s releases are often conceptually built around ancient mythology and historical periods, in which albums function as coherent, narrative wholes.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "Daryll-Ann is The Dutch pop band",
+    "claim_index": 0,
+    "original_summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time.",
+    "evidence_used": "About Daryll-Ann: The Dutch guitar pop band Daryll-Ann recorded the album \"Daryll-Ann Weeps\" thirty years ago.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "Daryll-Ann performs their cult - classic album ' Daryll - Ann Weeps ' in its entirety",
+    "claim_index": 1,
+    "original_summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time.",
+    "evidence_used": "About Daryll-Ann: The band hasn't performed the album in its entirety before, they will do this for the first time in autumn 2026!",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "Daryll-Ann performs their cult - classic album ' Daryll - Ann Weeps ' for the first time",
+    "claim_index": 2,
+    "original_summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time.",
+    "evidence_used": "About Daryll-Ann: The Dutch guitar pop band Daryll-Ann recorded the album \"Daryll-Ann Weeps\" thirty years ago.",
+    "ground_truth": "TRUE",
+    "notes": "Not the right sentence with the evidence but still true. "
+  },
+  {
+    "artist": "daoud",
+    "claim": "daoud is The Moroccan trumpeter",
+    "claim_index": 0,
+    "original_summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock.",
+    "evidence_used": "About daoud: Enfant Terrible of the French jazz band, but he is also labeled as the torchbearer of the new jazz scene in France.",
+    "ground_truth": "FALSE",
+    "notes": "daoud is a French-Moroccan Trumpeter"
+  },
+  {
+    "artist": "daoud",
+    "claim": "daoud plays unconventional , danceable , and cheerful jazz that blends hip - hop grooves ,",
+    "claim_index": 1,
+    "original_summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock.",
+    "evidence_used": "About daoud: He has also almost made it a hobby to annoy purists.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "daoud",
+    "claim": "daoud blends hip - hop grooves ,",
+    "claim_index": 2,
+    "original_summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock.",
+    "evidence_used": "About daoud: He dresses his trumpet game with hip-hop grooves, neo-soul and sometimes even a bit of rock.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic is The based Balkan band",
+    "claim_index": 0,
+    "original_summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska.",
+    "evidence_used": "About Klezmagic: The Amsterdam Balkan band Klezmagic presents their new album \"On Vrije Voeten\" during a show in Merleyn!",
+    "ground_truth": "UNSUPPORTED",
+    "notes": "Claim is invalid, it should be \"klezmagic is an amsterdam-based balkan band\""
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic presents their new album ' Op Vrije Voeten ' in an energetic show blending Balkan , Klezmer , and Ska",
+    "claim_index": 1,
+    "original_summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska.",
+    "evidence_used": "About Klezmagic: Klezmagic explores on their EP",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic blending Balkan , Klezmer , and Ska",
+    "claim_index": 2,
+    "original_summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska.",
+    "evidence_used": "About Klezmagic: the borders of Balkans, Klezmer and Ska.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "IOS",
+    "claim": "A Dutch Nederpop band returns with new material and classic hits.",
+    "claim_index": 0,
+    "original_summary": "A Dutch Nederpop band returns with new material and classic hits.",
+    "evidence_used": null,
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record creates an instrumental retro - futurist soundscape fusing heavy metal , chiptune , and classical , supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+    "claim_index": 0,
+    "original_summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit.",
+    "evidence_used": "About Master Boot Record: With blunt, groovy riffs, filthy slam-passages and a dark, cinematic atmosphere, their sound feels like an unadulterated nightmare at high volume.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record fusing heavy metal , chiptune , and classical",
+    "claim_index": 1,
+    "original_summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit.",
+    "evidence_used": "About Master Boot Record: Under the guidance of the enigmatic artist Victor Love, Master Boot Record creates an instrumental retro-futuristic sound landscape in which heavy metal, chiptune and classic come together into an exciting new sound.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+    "claim_index": 2,
+    "original_summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit.",
+    "evidence_used": "About Master Boot Record: Master Boot Record the 80s computer",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD is from the Netherlands",
+    "claim_index": 0,
+    "original_summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+    "evidence_used": "About Adult DVD: Merleyn is located on Hertogstraat 13 in the center of Nijmegen.",
+    "ground_truth": "FALSE",
+    "notes": "Evidence needs cleaning "
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD is A synthpunk band",
+    "claim_index": 1,
+    "original_summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+    "evidence_used": "About Adult DVD: The band is born with pepper in the ass: their danceable, almost retro computer game-like music grooved, rocks and swings.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD returns to Nijmegen",
+    "claim_index": 2,
+    "original_summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+    "evidence_used": "About Adult DVD: The six-headed synthpunk monster Adult DVD returns to Nijmegen after an impressive performance on Zeitgeist 2025!",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD returns with danceable , retro computer game - like music that grooves , rocks , and swings",
+    "claim_index": 3,
+    "original_summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+    "evidence_used": "About Adult DVD: The band is born with pepper in the ass: their danceable, almost retro computer game-like music grooved, rocks and swings.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas balances cosmic prog and classic hardrock with 70s - inspired soundscapes and theatrical vocals , supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+    "claim_index": 0,
+    "original_summary": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror.",
+    "evidence_used": "About Hällas: The duo Earth Tongue from New Zealand injects their psychedelic loaded rock with a hefty dose of gothic horror as can be heard on their new album \"Miraculous Death\" .",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+    "claim_index": 1,
+    "original_summary": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror.",
+    "evidence_used": "About Hällas: The duo Earth Tongue from New Zealand injects their psychedelic loaded rock with a hefty dose of gothic horror as can be heard on their new album \"Miraculous Death\" .",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas inject psychedelic rock with gothic horror",
+    "claim_index": 2,
+    "original_summary": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror.",
+    "evidence_used": "About Hällas: Live Hällas knows how to translate this magic effortlessly to the stage, where their layered compositions and dynamic build-up provide a hypnotic experience that keeps the audience in its grip from start to finish.",
+    "ground_truth": "FALSE",
+    "notes": "Invaild claim"
+  },
+  {
+    "artist": "IDA",
+    "claim": "IDA is Dutch hyperpop sensation",
+    "claim_index": 0,
+    "original_summary": "Dutch hyperpop sensation IDA performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions.",
+    "evidence_used": "About IDA: She distinguishes herself by sharp, introspective lyrics that stand directly opposite the eclectic productions of producer MAZOO.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "IDA",
+    "claim": "IDA performs genre - bending Neder - hype - pop with sharp introspective lyrics and eclectic productions",
+    "claim_index": 1,
+    "original_summary": "Dutch hyperpop sensation IDA performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions.",
+    "evidence_used": "About IDA: A combination of brutal and fragile songs in which she examines the adult world and dances over it.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "FLEMMING",
+    "claim": "FLEMMING FLEMMING ( Flemming Freddie Viguurs",
+    "claim_index": 0,
+    "original_summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics.",
+    "evidence_used": "About FLEMING: FLEMMING (Flemming Freddie Vigguurs) brings fresh, catchy, Dutch-language pop with creative productions and witty lyrics.",
+    "ground_truth": "UNSUPPORTED",
+    "notes": "Invalid claim "
+  },
+  {
+    "artist": "FLEMMING",
+    "claim": "FLEMMING pop with creative productions and witty lyrics",
+    "claim_index": 1,
+    "original_summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics.",
+    "evidence_used": "About FLEMING: FLEMMING (Flemming Freddie Vigguurs) brings fresh, catchy, Dutch-language pop with creative productions and witty lyrics.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Ruben Hillen",
+    "claim": "Ruben Hillen known from The Voice of Holland",
+    "claim_index": 0,
+    "original_summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences.",
+    "evidence_used": "About Ruben Hillen: Ruben Hill is a Dutch singer-songwriter who became known to the general public for his participation in the thirteenth season of The Voice of Holland.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Enigma",
+    "claim": "Enigma featuring DJ Y ( alias of Coco Bryce ) from Breda , plus local talents Tsudi , HDM13 , and a b2b set by Click and Ipkiss",
+    "claim_index": 0,
+    "original_summary": "A dark rave bunker night with deep basslines, featuring DJ Y (alias of Coco Bryce) from Breda, plus local talents Tsudi, HDM13, and a b2b set by Click and Ipkiss.",
+    "evidence_used": null,
+    "ground_truth": "UNSUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Enigma",
+    "claim": "Enigma set by Click and Ipkiss",
+    "claim_index": 1,
+    "original_summary": "A dark rave bunker night with deep basslines, featuring DJ Y (alias of Coco Bryce) from Breda, plus local talents Tsudi, HDM13, and a b2b set by Click and Ipkiss.",
+    "evidence_used": "About Enigma: They are taken over by none other than DJ Y (the alias of Coco Bryce)!",
+    "ground_truth": "UNSUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Racoon",
+    "claim": "Racoon returns for a concert",
+    "claim_index": 0,
+    "original_summary": "Racoon, a Dutch band from Zeeland, returns to Doornroosje for a concert.",
+    "evidence_used": "About Racoon: This autumn Racoon returns to Sleeping Beauty! People don't get enough of Racoon and Racoon doesn't get enough of making music and playing live.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "CLOUDSURFERS",
+    "claim": "CLOUDSURFERS present their evolved sound blending garagepunk , post - grunge , and psychedelic rock",
+    "claim_index": 0,
+    "original_summary": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock.",
+    "evidence_used": "About Cloudsurfers: Cloudsurfers' mutated mix of garage punk, post-grunge and psychedelic rock still thrives with the excitement of a band that goes straight to the eye of the storm.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Los Pirañas",
+    "claim": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
+    "claim_index": 0,
+    "original_summary": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
+    "evidence_used": "About Los Pirañas: The trio builds a bridge between dance music and traditional styles such as cumbia, afrobeat, Peruvian chicha and Colombian champeta.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo is American songwriter Dylan LeBlanc",
+    "claim_index": 0,
+    "original_summary": "American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop.",
+    "evidence_used": "About DYLAN LEBANC - solo: In the meantime he has definitely placed himself in the list of most talented songwriters of his generation.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo performs a solo set blending sixties folk , soul , altcountry and West Coast pop",
+    "claim_index": 1,
+    "original_summary": "American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop.",
+    "evidence_used": "About DYLAN LEBANC - solo: In the same studio Dylan also recorded his breakthrough recordings, imbued with subdued and beautifully sung sixties folk, soul, altocountry and West Coast pop.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo set",
+    "claim_index": 2,
+    "original_summary": "American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop.",
+    "evidence_used": "About DYLAN LEBANC - solo: That Dylan LeBlanc would become a very good singer-songwriter was already established.",
+    "ground_truth": "UNSUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "William Barrett Band presents their debut album ' Live in Amsterdam '",
+    "claim_index": 0,
+    "original_summary": "The William Barrett Band presents their debut album 'Live in Amsterdam', a live jazz experience recorded in Amsterdam, featuring bassist William Barrett and his band.",
+    "evidence_used": "About William Barrett Band: On Thursday 25 June the William Barrett Band will be in Brebl with music from their debut album Live in Amsterdam.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "William Barrett Band recorded in Amsterdam",
+    "claim_index": 1,
+    "original_summary": "The William Barrett Band presents their debut album 'Live in Amsterdam', a live jazz experience recorded in Amsterdam, featuring bassist William Barrett and his band.",
+    "evidence_used": "About William Barrett Band: That energy was then captured during live recordings in Theater de Roode Cinema, from which Live was born in Amsterdam:",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "William Barrett Band featuring bassist William Barrett and his band",
+    "claim_index": 2,
+    "original_summary": "The William Barrett Band presents their debut album 'Live in Amsterdam', a live jazz experience recorded in Amsterdam, featuring bassist William Barrett and his band.",
+    "evidence_used": "About William Barrett Band: The William Barrett Band brings an impulsive and compelling sound, with tumbling saxophone lines, wavy drums, acrobatic guitar parts and a bass player who constantly pushes his instrument and band forward.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Philip Lassiter",
+    "claim": "Philip Lassiter performs with his full 10 - piece band",
+    "claim_index": 0,
+    "original_summary": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band.",
+    "evidence_used": "About Philip Lassiter: At this last concert for the summer stop Lassiter will join with his entire 10-member band.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Alex Henry Foster",
+    "claim": "Alex Henry Foster known for intense , cinematic alternative rock and post - rock ,",
+    "claim_index": 0,
+    "original_summary": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes.",
+    "evidence_used": "About Alex Henry Foster: Canadian singer-songwriter and composer Alex Henry Foster stands out from his intense, cinematic approach to alternative rock and post-rock.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Solfestice #8",
+    "claim": "Solfestice #8 presents their new double album BASTA",
+    "claim_index": 0,
+    "original_summary": "I Compani presents their new double album BASTA! with a mix of film music, opera, vaudeville, and jazz, featuring guest musicians.",
+    "evidence_used": "About Solfestice #8: Also for a festive reason: the new double album BASTA! is presented.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Solfestice #8",
+    "claim": "Solfestice #8 featuring guest musicians",
+    "claim_index": 1,
+    "original_summary": "I Compani presents their new double album BASTA! with a mix of film music, opera, vaudeville, and jazz, featuring guest musicians.",
+    "evidence_used": "About Solfestice #8: Guests: Alex Coke - flute and tenorsax Frank Nielander - e-sax Paul Vlieks - trumpet",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Hippotraktor",
+    "claim": "Hippotraktor combines technical precision with atmospheric sludge and djent influences",
+    "claim_index": 0,
+    "original_summary": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences.",
+    "evidence_used": "About Hippotraktor: Characteristic for Hippotraktor is the balance between heavy, polyrhythmic structures and melodic, atmospheric passages.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Robin Scherpen - Pulse",
+    "claim": "Componist en gitarist Robin Scherpen presenteert zijn intieme show Memory & Traces, een muzikale reis door donker en licht, melancholie en geluk.",
+    "claim_index": 0,
+    "original_summary": "Componist en gitarist Robin Scherpen presenteert zijn intieme show Memory & Traces, een muzikale reis door donker en licht, melancholie en geluk.",
+    "evidence_used": "About Robin Scherpen - Pulse: Experience it yourself during this intimate live show in De Vereeniging, and get carried away in a journey through dark and light, through melancholy and happiness, with guitar playing at the highest level.",
+    "ground_truth": "UNSUPPORTED",
+    "notes": "Summary is in dutch."
+  },
+  {
+    "artist": "Primitive Ring",
+    "claim": "Primitive Ring featuring members of FUZZ and Hooveriii",
+    "claim_index": 0,
+    "original_summary": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour.",
+    "evidence_used": "About Primitive Ring: In the summer of 2026, they were taken on a tow by their friends of King Gizzard and the Lizard Wizard in the United States.",
+    "ground_truth": "UNSUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Primitive Ring",
+    "claim": "Primitive Ring perform their debut album on their first European tour",
+    "claim_index": 1,
+    "original_summary": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour.",
+    "evidence_used": "About Primitive Ring: The debut album \"Primitive Ring\" by Powertrio Primitive Ring was released in May 2026, after which they will also visit Merleyn in their very first European tour in 2027.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Bokkeryers",
+    "claim": "Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff , blending doom , sludge , and",
+    "claim_index": 0,
+    "original_summary": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and thrash metal with punk attitude and humor.",
+    "evidence_used": "About Bokkeryers: What's more metal than a bunch of low-level bandits moving on goats through the 18th century South Limburg night?",
+    "ground_truth": "UNSUPPORTED",
+    "notes": "Invalid claim"
+  },
+  {
+    "artist": "Bokkeryers",
+    "claim": "Bokkeryers thrash metal with punk attitude and humor",
+    "claim_index": 1,
+    "original_summary": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and thrash metal with punk attitude and humor.",
+    "evidence_used": "About Bokkeryers: This has little to do with DeWolff musically: this is a combination of heavy doom, sludge and thrash metal, provided with Limburg lyrics with a punk-attitude and a good dose of humor and self pot.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "corto.alto",
+    "claim": "corto.alto led by multi - instrumentalist Liam Shortall",
+    "claim_index": 0,
+    "original_summary": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub.",
+    "evidence_used": "About corto.alto: Liam Shortall creates hypnotic sounds on keyboards and alternates this live virtuoso between guitar, bass and trombone.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "corto.alto",
+    "claim": "corto.alto blending jazz with hiphop , broken beats",
+    "claim_index": 1,
+    "original_summary": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub.",
+    "evidence_used": "About corto.alto: From hip-hop, broken beats, dub to jazz.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky delivers fierce punkrock with emo - hardcore influences fast",
+    "claim_index": 0,
+    "original_summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers.",
+    "evidence_used": "About Tusky: Tusky creates a scary pit, made by very friendly people.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky delivers fierce punkrock with emo - hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES , Queens of the Stone Age , and Amyl & the Sniffers",
+    "claim_index": 1,
+    "original_summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers.",
+    "evidence_used": "About Tusky: Tusky creates a scary pit, made by very friendly people.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky brings a sharp blend of heavy and punk inspired by IDLES , Queens of the Stone Age , and Amyl & the Sniffers",
+    "claim_index": 2,
+    "original_summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers.",
+    "evidence_used": "About Tusky: Tusky creates a scary pit, made by very friendly people.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky inspired by IDLES , Queens of the Stone Age , and Amyl & the Sniffers",
+    "claim_index": 3,
+    "original_summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers.",
+    "evidence_used": "About Tusky: Inspired by the raw emotions of IDLES, the sex appeal of Queens of the Stone Age and the total disorder of Amyl & the Sniffers.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "HAEVN",
+    "claim": "HAEVN performs a mix of electronic and indiepop with melancholic , cinematic sound",
+    "claim_index": 0,
+    "original_summary": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound.",
+    "evidence_used": "About HAEVN: Their unique mix of electronic and indieppop, guided by soothing vocals lets you forget the world around you.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis participated in The Voice of Holland",
+    "claim_index": 0,
+    "original_summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
+    "evidence_used": "About Thijs Veldhuis: Thijs writes his own lyrics and music, in which he has left his comfort zone in a special way by participating in The Voice.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis performs his own songs blending rock , indie , pop , classical , and electronic influences",
+    "claim_index": 1,
+    "original_summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
+    "evidence_used": null,
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis blending rock , indie , pop , classical , and electronic influences",
+    "claim_index": 2,
+    "original_summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
+    "evidence_used": "About Thijs Veldhuis: Musically Thijs moves between different influences from rock, indie, pop, classical and electronic music.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "SNAYX",
+    "claim": "SNAYX brings their energetic live show with bass - driven anthems blending punk , rock , electronics , and experimental influences",
+    "claim_index": 0,
+    "original_summary": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences.",
+    "evidence_used": "About SNAYX: The band is known for their energetic live performances and bass-driven anthems in which punk, rock, electronics and experimental influences merge into an explosive sound.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "SNAYX",
+    "claim": "SNAYX blending punk , rock , electronics , and experimental influences",
+    "claim_index": 1,
+    "original_summary": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences.",
+    "evidence_used": "About SNAYX: The band is known for their energetic live performances and bass-driven anthems in which punk, rock, electronics and experimental influences merge into an explosive sound.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "The Rumjacks",
+    "claim": "The Rumjacks known for their raw punk with Celtic influences and sing - along choruses",
+    "claim_index": 0,
+    "original_summary": "The Rumjacks, an explosive folk-punk band from Sydney, Australia, known for their raw punk with Celtic influences and sing-along choruses.",
+    "evidence_used": "About The Rumjacks: The explosive folk punk band from Sydney, Australia, is known for their irresistible mix of raw punk with Celtic influences and sing-along choruses. Armed with banjo, tinwhistle and mandolin, combined with roaring guitars and pounding drums, they previously shared the stage with greats like Gogol Bordello, Dropkick Murphys and UK Subs. Their songs breathe rebellion, togetherness and a lot of Irish pub culture, without compromising on spice or urgency.",
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Chica Chica",
+    "claim": "Chica Chica celebrates the release of their second album ' Mi Zafira ' with psychedelic cumbia and tropical grooves",
+    "claim_index": 0,
+    "original_summary": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves.",
+    "evidence_used": null,
+    "ground_truth": "TRUE",
+    "notes": ""
+  },
+  {
+    "artist": "Wodan Boys",
+    "claim": "Wodan Boys known for their energetic punk rock sound",
+    "claim_index": 0,
+    "original_summary": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound.",
+    "evidence_used": null,
+    "ground_truth": "TRUE",
+    "notes": ""
+  }
+]

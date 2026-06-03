@@ -1,22 +1,15 @@
-\chapter{Cloudspeakers Concert Pipeline Validation}\label{Newsletter}
+\chapter{Cloudspeakers Concert Pipeline}\label{Newsletter}
+\noindent In this chapter, we will thoroughly discuss the architecture of the LLM summary we will be validation in this thesis, to give context on design choices made in later steps and chapters. The LLM we will be verifying was set up by Chris Bol \cite{bol2026cloudspeakers}. 
 
-\textit{This part of the thesis will be about the case of the Doornroosje Newsletter.}
-
-
-
-\noindent The first case we will be using our program on is a specific newsletter, which extracts data using Deepseek, a LLM, to summarise current events at Doornroosje, a venue located in 
-Nijmegen. 
-
-\section{Cloudspeakers Experiment Setup} \todo{A bit better?}
-\subsection{Cloudspeakers Pipeline Architecture}
+\section{Cloudspeakers Pipeline Architecture}
 \textit{Cloudspeakers} is an Concert Event Pipeline setup by Chris Bol. It is an automated pipeline that collects concert events from Dutch music
 venues, extracts structured data using a Large Language Model, and distributes a
-weekly email newsletter to subscribers. \cite{bol2026cloudspeakers} The system is focused on Utrecht-based
-venues such as ACU, Ekko, De Helling, db's, De Nijverheid, and Tivoli Vredenburg.
-The pipeline runs on Windmill, an open-source workf bw automation platform. All
+weekly email newsletter to subscribers \cite{bol2026cloudspeakers}. The system is focused on Utrecht-based
+venues such as ACU, Ekko, De Helling, db's, De Nijverheid, and Tivoli Vredenburg, but most importantly also contains the Nijmegen-based venue Doornroosje.
+The pipeline runs on Windmill, an open-source workflow automation platform. All
 logic is written in Python and SQL. No manual data entry is required.
 
-\noindent The Pipeline looks as follows: 
+\noindent The pipeline looks as follows: 
 \begin{enumerate}
     \item Scrape event URLs from venue calendar pages
     \item Store scraped pages (HTML + Markdown) in MinIO object storage
@@ -25,8 +18,11 @@ logic is written in Python and SQL. No manual data entry is required.
     \item Email newsletter to subscribers 
 \end{enumerate}
 Feedback is collected from users via a web form and stored in PostgreSQL. \\\\ 
-For this thesis, step 3 is most relevant since it uses an LLM to create a summary of the event and the core intelligence step. 
+
+\noindent Step 3, LLM extraction and summarisation by the Deepseek model, is what interest us the most. Even though we know the model and set up of the extraction, throughout this thesis the LLM and creation of the summary will be treated as a ``black box''. 
 The fields extracted by the LLM can be found in table \ref{tab:metadata_fields}.  
+
+\newpage
 \begin{table}[htpb]
     \centering
     \caption{Description of extracted event metadata fields.}
@@ -50,26 +46,28 @@ The fields extracted by the LLM can be found in table \ref{tab:metadata_fields}.
         \bottomrule
     \end{tabular}
 \end{table}
-As seen in table \ref{tab:metadata_fields}, the LLM generates an one-sentence English summary including the origin of the artist. 
-This shows that we will be doing Cross-lingual processing, as mentioned in section \ref{pre:sec:nli} since the website of Doornroosje is mostly in Dutch. 
 
-\subsection{Newsletter Examples}  
-For our tests, we will be using \textcolor{red}{30} different output examples, collected from \textcolor{red}{DATE} untill \textcolor{red}{DATE}. \additions{Add no of experiments and dates. }
-% An example can be found in \ref{}. 
+\noindent Table \ref{tab:metadata_fields} shows that Deepseek is instructed to generate a one-sentence English summary including the origin of the artist, which will be used to as the to be validated summary for this thesis. Other relevant field include the \texttt{main\_act} which is used to in generating atomic claims in Section \ref{rsh:decomposer} and \texttt{url\_sale} which is used find the source text of the summary in Section \ref{rsh:datacorpus}. We limit our scope to verifying the \texttt{summary}, but investigative work shows that there exist occurences of the LLM hallucinating on the \texttt{related\_bands}, where all bands mentioned on the page get marked as related, even though this might not be the case. Other fields, will be discarded in our own validation steps. 
+
+% \changes{Move this section to the research chapter}This shows that we will be doing Cross-lingual processing, as mentioned in section \ref{pre:sec:nli} since the website of Doornroosje is mostly in Dutch. 
+
+\section{Extracted Newsletters}  
+For our tests, we will be using 36 different output examples,of events taking place on June 10 2026 untill April 15 2027. Listing \ref{lst:newsletter_example} shows one example. 
+ 
 
 \begin{lstlisting}[language=json, caption={Example of a newsletter snippet.}, label={lst:newsletter_example}]
-    act: First Aid Kit - Visions of the Past Tour
-    type: gig
-    date: 2026-12-02
-    url: https://doornroosje.nl/event/first-aid-kit
-    venue: De Vereeniging
-    bands: First Aid Kit (main)
-    genres: folk, blues, country
-    summary: First Aid Kit, the Swedish duo of sisters Johanna and Klara Soderberg, perform their intimate folk music on their Visions of the Past Tour.
+    act: Frank Boeijen
+    date: 2026-08-23
+    url: https://doornroosje.nl/event/frank-boeijen-19/
+    venue: Openluchtteater De Goffert
+    bands: Frank Boeijen (main)
+    genres: pop
+    summary: Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories.
 \end{lstlisting}
-Since current scope of the thesis does not include validating the \texttt{type}, \texttt{date}, \texttt{venue}, \texttt{genres}, we do not need to store these. For every entry of the newsletter we validate, remove those entries.
-The final newsletter is stored as a JSON object, ensuring the validation pipeline can isolate the summary from the core entities. Listing \ref{lst:newsletter_json} shows a complete generated entry.
+Since current scope of the thesis does not include validating the \texttt{type}, \texttt{date}, \texttt{venue}, \texttt{genres}, we do not need to store these. 
+The final newsletter is stored as a JSON object, allowing our pipeline easy access. Listing \ref{lst:newsletter_json} shows a complete generated entry.
 
+\newpage
 \begin{lstlisting}[language=json, caption={Example of a simplified newsletter entry.}, label={lst:newsletter_json}]
 {
   "event": "Daoud Live",
@@ -80,19 +78,27 @@ The final newsletter is stored as a JSON object, ensuring the validation pipelin
 }
 \end{lstlisting}
 
-All examples can be found in Appendix \ref{appendix}. 
+\question{Moeten alle newsletter entries in de Appendix of is dat niet relevant? }
+All examples can be found in Appendix \ref{appendix}.
 
-Next, we \textcolor{blue}{as seen in section, we extract the text from the \texttt{url}.} The extracted text contains all information that is found on the Doornroosje website,
-giving our pipeline all information that could verify the claims made by the LLM in the summary. 
-This is then stored in a different JSON object (Listing \ref{lst:text_json}). \additions{add how i do the text extraction when finished.}
+% NOTE:: NOT NEEDED ANYMORE -> MOVED TO CHAPT4 
+% Next, we \textcolor{blue}{as seen in section, we extract the text from the \texttt{url}.} The extracted text contains all information that is found on the Doornroosje website,
+% giving our pipeline all information that could verify the claims made by the LLM in the summary. 
+% This is then stored in a different JSON object (Listing \ref{lst:text_json}). 
+% \begin{lstlisting}[language=json, caption={Example of extracted text.}, label={lst:text_json}]
+%     "VROEGZAT": {
+%         "act": "VroegZat",
+%         "url": "https://www.doornroosje.nl/event/vroegzat-10/", 
+%         "text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!"
+%     }
+% \end{lstlisting}
 
-\begin{lstlisting}[language=json, caption={Example of extracted text.}, label={lst:text_json}]
-    "VROEGZAT": {
-        "act": "VroegZat",
-        "url": "https://www.doornroosje.nl/event/vroegzat-10/", 
-        "text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!"
-    }
-\end{lstlisting}
 
+\section{Discussing Historical Feedback}
+At the bottom of each email sent by the pipeline, a link is put with a request for feedback to the reader. To see whether hallucinations already occured during this pipeline, we requested the full feedback list from Bol. 
 
-\section{Cloudspeakers Validation Results}
+The feedback list, contains 11 different feedback entries, of which three are suggestions of new features, two entires are about the \texttt{genre} being labelled incorrectly, two entreis where the act (main vs supporting) is labelled wrong and lastly, two actual hallucinations. 
+
+The hallucination feedback reads: ``I wonder whether \textit{Luna Maki} really is from Utrecht.'' A short online search shows that Luna Maki is actually from Amersfoort\footnote{https://www.nieuwsplein33.nl/nieuws/3867624/luna-maki-op-het-punt-van-doorbreken-met-afrobeat-uit-amersfoort}\question{Moet deze in een footnote of als bron?}. 
+
+The second person notes: ``\textit{Naaz} genre not great. Text says `unique sound' but the LLM turns it into regular folk music.'' This claim was not easily confirmed, but still shows us that the LLM has problems with defining the origin and might be interpreting genres wrong. 

@@ -11,64 +11,32 @@ import dutch_parser
 import decomposer
 import validator 
 
+def synthesize_mb_facts(mb_facts, artist):
+    """Converts structured MusicBrainz JSON into a list of factual sentences."""
+    sentences = [] 
 
+    if not mb_facts or mb_facts.get("status") == "Not Found":
+        return sentences
+    
+    if "area" in mb_facts and mb_facts.get("area") != "Unknown":
+            sentences.append(f"{artist} originates from {mb_facts['area']}.")
+    if "genre" in mb_facts and mb_facts.get("genre") != "Unknown":
+            sentences.append(f"{artist} plays {mb_facts['genre']} music.")
+
+    return sentences
+    
 # TODO:: MAKE THIS FUNCTION MAKE SENSE AND ACTUALLY DO SOMETHING
-def extract_verifiable_facts(claim, artist):
-    """Extract structured facts that can be verified against MusicBrainz."""
-    facts = []
-    claim_lower = claim.lower()
-    
-    # Country/origin patterns
-    country_map = {
-        'dutch': 'NL', 'netherlands': 'NL', 'belgian': 'BE', 'belgium': 'BE',
-        'english': 'GB', 'british': 'GB', 'american': 'US', 'canadian': 'CA',
-        'swedish': 'SE', 'german': 'DE', 'italian': 'IT', 'australian': 'AU'
-    }
-    for keyword, code in country_map.items():
-        if keyword in claim_lower:
-            facts.append(('country', code))
-    
-    # Artist type (band vs person)
-    if any(x in claim_lower for x in ['band', 'group', 'trio', 'quartet', 'duo']):
-        facts.append(('type', 'Group'))
-    elif any(x in claim_lower for x in ['singer', 'songwriter', 'artist', 'musician']):
-        facts.append(('type', 'Person'))
-    
-    return facts
-
-def verify_facts(extracted_facts, mb_facts):
-    """Check each extracted fact against MusicBrainz."""
-    if mb_facts.get('status') != 'Found':
-        return None  # Can't verify
-    
-    conflicts = []
-    for fact_type, fact_value in extracted_facts:
-        mb_value = mb_facts.get(fact_type)
-        if mb_value and mb_value != 'Unknown' and mb_value != fact_value:
-            conflicts.append((fact_type, fact_value, mb_value))
-    
-    return conflicts  # Returns list of (fact_type, claimed, actual) tuples
-
-
 def check_extrinsic_conflict(claim, mb_facts, artist):
-    """Bridge function: Evaluates the claim and returns True if a database conflict exists."""
-    if mb_facts.get("status") != "Found":
+    """Check whether our groundtruth database contains facts that contradict the claim given."""
+    fact_sentences = synthesize_mb_facts(mb_facts, artist)
+
+    if not fact_sentences:
         return False
-        
-    extracted_facts = extract_verifiable_facts(claim, artist)
-    
-    # If no facts could be extracted from the text, there is no conflict
-    if not extracted_facts:
-        return False
-        
-    conflicts = verify_facts(extracted_facts, mb_facts)
-    
-    # If the conflicts list is populated, an extrinsic hallucination occurred
-    if conflicts:
-        # Optional: Print the specific conflict to the terminal for transparency
-        for c in conflicts:
-            print(f"      [!] API CONFLICT: Claim says {c[0]} is '{c[1]}', but MusicBrainz says '{c[2]}'")
-        return True
+    for fact in fact_sentences:
+        res = validator.run_nli_check(premise=fact, hypothesis=claim)
+
+        if res['con'] > validator.CON_THRESHOLD:
+            return True
         
     return False
 
@@ -124,11 +92,14 @@ def main():
             con_score = eval_data.get('best_con_score', 0)
 
             # Determine Intrinsic Verdict
-            if ent_score > 60 and con_score > 60:
-                intrinsic_verdict = "AMBIGUOUS"
-            elif ent_score > 60 and ent_score > con_score:
+            if ent_score >= 90.0:
+                # OVERRIDE: If the text strongly entails the claim, ignore other conflicting sentences
                 intrinsic_verdict = "ENTAILMENT"
-            elif con_score > 60 and con_score > ent_score:
+            elif ent_score > validator.ENT_THRESHOLD and con_score > validator.CON_THRESHOLD:
+                intrinsic_verdict = "AMBIGUOUS"
+            elif ent_score > validator.ENT_THRESHOLD and ent_score > con_score:
+                intrinsic_verdict = "ENTAILMENT"
+            elif con_score > validator.CON_THRESHOLD and con_score > ent_score:
                 intrinsic_verdict = "CONTRADICTION"
             else:
                 intrinsic_verdict = "UNSUPPORTED"

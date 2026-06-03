@@ -6,17 +6,97 @@ Please note that, in order to improve readability of your thesis, you can put a 
 
 
 \section{Pipeline Setup}
+In order to correctly verify the summary given by the LLM model, we have to create a pipeline that sources the needed context. As seen in Chapter \ref{Newsletter}, the newsletter contains a one-sentence summary. Before we can validatie whether this is true or not, we need to extract all context. This is done by loading the URL using a headless browser, where we scrape the Dutch text. This then gets parsed and cleaned, and sent to the validator. Meanwhile, the summary gets chopped into atomic claims, who then can be validated. A diagram can be found in figure \ref{fig:pipeline_flowchart}. 
+\begin{figure}[htbp]
+\centering
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
-% overall architecture
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,680); %set diagram left start at 0, and has height of 680
 
-\subsection{Dataset and Corpus Construction} 
+%Shape: Rectangle [id:dp4070963882781028] 
+\draw   (300,1) -- (350,1) -- (350,25.96) -- (300,25.96) -- cycle ;
+%Shape: Rectangle [id:dp9774405992082825] 
+\draw   (250,75.38) -- (400,75.38) -- (400,100.33) -- (250,100.33) -- cycle ;
+%Straight Lines [id:da38434376573046714] 
+\draw    (325,26.46) -- (324.04,73.38) ;
+\draw [shift={(324,75.38)}, rotate = 271.17] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Shape: Rectangle [id:dp7238715529174791] 
+\draw   (0,125.29) -- (150,125.29) -- (150,150.25) -- (0,150.25) -- cycle ;
+%Shape: Rectangle [id:dp544713314300144] 
+\draw   (500,125.29) -- (650,125.29) -- (650,150.25) -- (500,150.25) -- cycle ;
+%Shape: Rectangle [id:dp6187874396247628] 
+\draw   (250,200.17) -- (400,200.17) -- (400,225.13) -- (250,225.13) -- cycle ;
+%Shape: Rectangle [id:dp9525801403683838] 
+\draw   (300,275.04) -- (350,275.04) -- (350,300) -- (300,300) -- cycle ;
+%Straight Lines [id:da7731746387458769] 
+\draw    (580,85.36) -- (580,123.29) ;
+\draw [shift={(580,125.29)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da8488203549026855] 
+\draw    (400,85.36) -- (580,85.36) ;
+
+%Straight Lines [id:da17279727340281192] 
+\draw    (580,212.15) -- (402,212.15) ;
+\draw [shift={(400,212.15)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da7845149368668756] 
+\draw    (580,150.25) -- (580,212.15) ;
+
+%Straight Lines [id:da8313227318576999] 
+\draw    (326,225.62) -- (325.04,272.54) ;
+\draw [shift={(325,274.54)}, rotate = 271.17] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da5767226057733228] 
+\draw    (71,85.36) -- (71,123.29) ;
+\draw [shift={(71,125.29)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da09197572758197181] 
+\draw    (70,85.36) -- (250,85.36) ;
+
+%Straight Lines [id:da9262340614866109] 
+\draw    (70,212.8) -- (248,212.8) ;
+\draw [shift={(250,212.8)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Straight Lines [id:da6502941044352438] 
+\draw    (70,213.15) -- (70,150.25) ;
+
+
+% Text Node
+\draw (281,79.11) node [anchor=north west][inner sep=0.75pt]   [align=left] {Build Corpus};
+% Text Node
+\draw (531,128.52) node [anchor=north west][inner sep=0.75pt]   [align=left] {Parse Source};
+% Text Node
+\draw (276,204.89) node [anchor=north west][inner sep=0.75pt]   [align=left] {Validate Claims};
+% Text Node
+\draw (231,31.92) node [anchor=north west][inner sep=0.75pt]   [align=left] {Newsletters \\to be verified};
+% Text Node
+\draw (494,43.88) node [anchor=north west][inner sep=0.75pt]   [align=left] {Scraped Dutch \\Source Text};
+% Text Node
+\draw (464,193.41) node [anchor=north west][inner sep=0.75pt]   [align=left] {Cleaned context};
+% Text Node
+\draw (71,46.87) node [anchor=north west][inner sep=0.75pt]   [align=left] {One sentence \\summary};
+% Text Node
+\draw (74,193.91) node [anchor=north west][inner sep=0.75pt]   [align=left] {Atomic Claims};
+% Text Node
+\draw (8,128.52) node [anchor=north west][inner sep=0.75pt]   [align=left] {Decompose Claims};
+% Text Node
+\draw (331,231.58) node [anchor=north west][inner sep=0.75pt]   [align=left] {Validation \\Scores};
+% Text Node
+\draw (309,279.27) node [anchor=north west][inner sep=0.75pt]   [align=left] {END};
+% Text Node
+\draw (301,4.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {START};
+
+
+\end{tikzpicture}
+\caption{System architecture flowchart demonstrating the corpus ingestion, atomic claim decomposition branches, and cross-lingual source verification steps.}
+\label{fig:pipeline_flowchart}
+\end{figure}
+Each paragraph will explain in depth the architectural choices that were made and how each part of the pipeline works. 
+
+\subsection{Dataset and Corpus Construction} \label{rsh:datacorpus}
 Before any validation or evaluation is possible, we need to load the source data given in the newsletters url part. This allows us to create a so-called \textit{corpus} which contains all available data we have on the artist we are evaluating.
 This corpus is setup as a deterministic and sandboxed evaluation dataset, rather than executing live web scraping and external API queries during the NLI and KG evaluation phases. By doing all the data loading up front, we save time loading all data again when our pipeline crashes later on, or if we wish to run the experiment again. 
 
-This process gathers the data in three simple steps: loading the local venue data, fetching the MusicBrainz facts, and saving everything to a JSON file.
+This process collects the data in three simple steps: loading the local venue data, fetching the MusicBrainz facts, and saving everything to a JSON file.
 
 \subsubsection{Extracting Venue Data}
-The foundation of our dataset comes directly from the promotional newsletters of local Nijmegen venues. This is setup using an automated web scraper, where the primary event details and the LLM-generated summaries are manually extracted from these newsletters and provided to the script. 
+As mentioned in Chapter \ref{Newsletter}, our primary data source is a generated newsletter, where we will be focussing on the venue Doornroosje, located in Nijmegen. This is setup using an automated web scraper, where the primary event details and the LLM-generated summaries are manually extracted from these newsletters and provided to the script. 
 
 A comprehensive breakdown of the newsletter generation process, including its structural and visual layout, is discussed later in Chapter \ref{ch:cloudspeakers_pipeline} (The Cloudspeakers Pipeline). For the purpose of constructing this evaluation corpus, the script strictly isolates the English promotional text—which serves as our target for hallucination detection—alongside the core billing metadata required to identify the performing artists.
 
@@ -28,7 +108,7 @@ For every artist identified in the venue data, the script searches the API to re
 Given that mid-tier venues frequently program niche, emerging, or highly localized artists, it is expected that some acts will be entirely absent from the MusicBrainz database. To ensure the robustness of the dataset generation, the script implements explicit error handling. If an artist cannot be resolved, the pipeline catches the exception and assigns empty values to the factual fields rather than terminating the program, allowing the script to safely proceed to the next entity.
 
 
-\subsection{Decomposer}
+\subsection{Decomposer}\label{rsh:decomposer}
 The main task of the decomposer step is to view the claims made by the LLM in the generated summary. A summary can contain from one untill multiple claims, so it is important that all of them get separated into atomic claims and get evaluated. We define a claim as `atomic' if it contains exactly one predicate-argument relationship, which allows the subsequent NLI model to render a definitive Entailment or Contradiction label without semantic noise.
 
 While state-of-the-art frameworks like Google DeepMind's SAFE \cite{safe2024longform} rely on LLM prompting to decompose long-form summaries into atomic claim, introducing yet another machine learning model and creating high operational and computational costs, we made the choice to do this in a deterministic fashion. Our methodology adopts the core multi-stage atomic decomposition paradigm pioneered by SAFE, but replaces the LLM parser with a deterministic, rule-based linguistic dependency parse utilizing \texttt{spaCy}. Splitting claims into atomic claims, has been proven to improve performance in NLI for multiple models \cite{huang2026atomicsnlifinegrainednaturallanguage} and our own small scale testing (See Table \ref) \additions{Add table to show atomic claims give better results (maybe?)}. Our decomposer has been developed in parallel to the framework given by Huang et al. 

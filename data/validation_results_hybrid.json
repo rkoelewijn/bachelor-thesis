@@ -11,18 +11,18 @@
             {
                 "claim": "VroegZat bringing nightlife to the early evening",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 69.10708546638489,
-                "best_con_score": 89.42761421203613,
-                "evidence_used": "About EarlySat: So at a normal time to bed, making you fit the next day.",
-                "hybrid_status": "AMBIGUOUS",
+                "best_ent_score": 56.15300536155701,
+                "best_con_score": 85.33459901809692,
+                "evidence_used": "Over VroegZat: Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent.",
+                "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 97.199147939682,
+                "best_ent_score": 90.16260504722595,
                 "best_con_score": 50.11906623840332,
-                "evidence_used": "About EarlySat: Musically it goes back and forth: from disco to pop, from reggae to rock and from happy to hip-hop, and those nice danceable tunes that fall between and beyond.",
+                "evidence_used": "Over VroegZat: Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -38,14 +38,16 @@
             "name": "Frank Boeijen",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Nijmegen",
+            "genre": "singer-songwriter"
         },
         "validation_results": [
             {
                 "claim": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.95490908622742,
-                "best_con_score": 0.16967857955023646,
+                "best_con_score": 0.10706743923947215,
                 "evidence_used": "Over Frank Boeijen: Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -54,7 +56,7 @@
                 "claim": "Dutch singer-songwriter Frank Boeijen returns for an evening of poetic songs and stories",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.23409223556519,
-                "best_con_score": 32.92669355869293,
+                "best_con_score": 31.362316012382507,
                 "evidence_used": "Over Frank Boeijen: Duik in een wereld vol poëtische nummers en verhalen over schoonheid, liefde en het leven.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -71,24 +73,26 @@
             "name": "And Also the Trees",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Worcestershire",
+            "genre": "rock, post-punk"
         },
         "validation_results": [
             {
                 "claim": "And Also the Trees is The English post-punk band",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.85017776489258,
+                "best_ent_score": 99.84201192855835,
                 "best_con_score": 62.091320753097534,
-                "evidence_used": "About And Also the Trees: The English postpunk band And Also the Trees, known for their compelling live performances, unique style, suggestive lyrics and dark jazz rhythms, is still alive after more than 15 albums.",
-                "hybrid_status": "AMBIGUOUS",
+                "evidence_used": "Over And Also the Trees: De Engelse postpunkband And Also the Trees, bekend om hun meeslepende liveoptredens, unieke stijl, suggestieve teksten en donkere jazzritmes, is na ruim 15 albums nog steeds springlevend.",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "And Also the Trees, The English post-punk band And performs songs from their new album 'The Devil's Door",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 80.86109757423401,
+                "best_ent_score": 65.81464409828186,
                 "best_con_score": 1.589086838066578,
-                "evidence_used": "About And Also the Trees: The band will come to Doornroosje in the fall with their new album \"The Devil \"s Doornroosje!",
+                "evidence_used": "Over And Also the Trees: De band komt dan ook met hun nieuwe album ‘The Devil’s Door’ in het najaar naar Doornroosje!",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -104,14 +108,16 @@
             "name": "Bertolf",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.90907907485962,
-                "best_con_score": 7.201691716909409,
+                "best_con_score": 1.3542717322707176,
                 "evidence_used": "Over Bertolf: Bertolf is terug met zijn bluegrass album ‘Bluefinger vol. 2’!",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -128,14 +134,16 @@
             "name": "Wyatt E.",
             "type": "Group",
             "country": "BE",
-            "area": "Belgium"
+            "area": "Belgium",
+            "place": "Brussels",
+            "genre": "drone, post-metal"
         },
         "validation_results": [
             {
                 "claim": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 4.568078368902206,
-                "best_con_score": 1.3261256739497185,
+                "best_ent_score": 4.242967441678047,
+                "best_con_score": 0.7056480273604393,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -143,17 +151,17 @@
             {
                 "claim": "Wyatt E. built on heavy, repetitive riffs and deep drones",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 98.41004610061646,
+                "best_ent_score": 96.63556814193726,
                 "best_con_score": 99.76784586906433,
                 "evidence_used": "Over Wyatt E.: De releases van Wyatt E. zijn vaak conceptueel opgebouwd rond antieke mythologie en historische periodes, waarbij albums functioneren als samenhangende, verhalende gehelen.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "Wyatt E. based on ancient mythology",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.23283457756042,
-                "best_con_score": 1.2385973706841469,
+                "best_con_score": 0.32183118164539337,
                 "evidence_used": "Over Wyatt E.: De releases van Wyatt E. zijn vaak conceptueel opgebouwd rond antieke mythologie en historische periodes, waarbij albums functioneren als samenhangende, verhalende gehelen.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -170,35 +178,37 @@
             "name": "Daryll-Ann",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Ermelo",
+            "genre": "rock, alternative rock"
         },
         "validation_results": [
             {
                 "claim": "Daryll-Ann is The Dutch guitar pop band",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.8435914516449,
+                "best_ent_score": 99.36902523040771,
                 "best_con_score": 79.82943654060364,
-                "evidence_used": "About Daryll-Ann: The Dutch guitar pop band Daryll-Ann recorded the album \"Daryll-Ann Weeps\" thirty years ago.",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "evidence_used": "Over Daryll-Ann: De Nederlands gitaarpopband Daryll-Ann nam dertig jaar geleden het album ‘Daryll-Ann Weeps’ op.",
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' in its entirety",
                 "nli_verdict": "CONTRADICTION",
                 "best_ent_score": 12.91465163230896,
-                "best_con_score": 95.22790312767029,
-                "evidence_used": "About Daryll-Ann: The band hasn't performed the album in its entirety before, they will do this for the first time in autumn 2026!",
+                "best_con_score": 63.496118783950806,
+                "evidence_used": "Over Daryll-Ann: De band heeft het album nog niet eerder in z’n geheel uitgevoerd, dit komen ze in het najaar 2026 voor het eerst doen!",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": false
+                "mb_conflict_flag": true
             },
             {
                 "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' for the first time",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 7.458392530679703,
+                "best_ent_score": 5.017802864313126,
                 "best_con_score": 99.0804672241211,
                 "evidence_used": "Over Daryll-Ann: De Nederlands gitaarpopband Daryll-Ann nam dertig jaar geleden het album ‘Daryll-Ann Weeps’ op.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": false
+                "mb_conflict_flag": true
             }
         ]
     },
@@ -212,7 +222,9 @@
             "name": "daoud",
             "type": "Person",
             "country": "Unknown",
-            "area": "Toulouse"
+            "area": "Toulouse",
+            "place": "Unknown",
+            "genre": "downtempo, instrumental"
         },
         "validation_results": [
             {
@@ -222,24 +234,24 @@
                 "best_con_score": 74.21440482139587,
                 "evidence_used": "Over daoud: daoud maakt jazz die niet echt in een hokje past.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": false
+                "mb_conflict_flag": true
             },
             {
                 "claim": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves,",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 29.65763807296753,
-                "best_con_score": 30.915743112564087,
+                "best_ent_score": 12.134920060634613,
+                "best_con_score": 30.038222670555115,
                 "evidence_used": null,
-                "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
-                "mb_conflict_flag": false
+                "hybrid_status": "EXTRINSIC_HALLUCINATION_FALSE",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "daoud, that blends hip-hop grooves,",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.87151622772217,
-                "best_con_score": 84.00411605834961,
+                "best_con_score": 41.05600118637085,
                 "evidence_used": "Over daoud: Hij kleedt zijn trompetspel aan met hiphop-grooves, neo-soul en soms zelfs een beetje rock.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
         ]
@@ -254,7 +266,9 @@
             "name": "Klezmagic",
             "type": "Group",
             "country": "Unknown",
-            "area": "Amsterdam"
+            "area": "Amsterdam",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -263,24 +277,24 @@
                 "best_ent_score": 99.9032735824585,
                 "best_con_score": 99.19026494026184,
                 "evidence_used": "Over Klezmagic: De Amsterdamse Balkanband Klezmagic presenteert hun nieuwe album ‘Op Vrije Voeten’ tijdens een show in Merleyn!",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "Klezmagic, The Amsterdam-based Balkan band presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 17.32521951198578,
-                "best_con_score": 99.74294304847717,
-                "evidence_used": "About Klezmagic: Klezmagic explores on their EP",
+                "best_ent_score": 6.564165651798248,
+                "best_con_score": 96.36637568473816,
+                "evidence_used": "Over Klezmagic: Klezmagic verkent op hun EP ‘",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "Klezmagic blending Balkan, Klezmer, and Ska",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 93.88654828071594,
+                "best_ent_score": 60.15555262565613,
                 "best_con_score": 8.79649966955185,
-                "evidence_used": "About Klezmagic: the borders of Balkans, Klezmer and Ska.",
+                "evidence_used": "Over Klezmagic: de grenzen van Balkan, Klezmer en Ska.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -296,14 +310,16 @@
             "name": "IOS",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "dutch, groningen"
         },
         "validation_results": [
             {
                 "claim": "A Dutch Nederpop band returns with new material and classic hits.",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 31.242436170578003,
-                "best_con_score": 2.8949562460184097,
+                "best_ent_score": 3.6884956061840057,
+                "best_con_score": 1.3187399134039879,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -320,15 +336,17 @@
             "name": "MASTER BOOT RECORD",
             "type": "Person",
             "country": "IT",
-            "area": "Italy"
+            "area": "Italy",
+            "place": "Roma",
+            "genre": "electronic, industrial metal"
         },
         "validation_results": [
             {
                 "claim": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 5.282965302467346,
-                "best_con_score": 99.8945415019989,
-                "evidence_used": "About Master Boot Record: With blunt, groovy riffs, filthy slam-passages and a dark, cinematic atmosphere, their sound feels like an unadulterated nightmare at high volume.",
+                "best_ent_score": 2.7506735175848007,
+                "best_con_score": 99.8873770236969,
+                "evidence_used": "Over Master Boot Record: Met lompe, groovende riffs, smerige slam-passages en een duistere, filmische sfeer voelt hun sound als een onvervalste nachtmerrie op hoog volume.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": true
             },
@@ -336,9 +354,9 @@
                 "claim": "Master Boot Record fusing heavy metal, chiptune, and classical",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.86746311187744,
-                "best_con_score": 96.13232016563416,
+                "best_con_score": 90.5049204826355,
                 "evidence_used": "Over Master Boot Record: Onder leiding van de enigmatische artiest Victor Love, creëert Master Boot Record een instrumentaal retro-futuristisch klanklandschap waarin heavy metal, chiptune en klassiek samenkomen tot een opwindende nieuwe sound.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
             {
@@ -362,7 +380,9 @@
             "name": "Adult DVD",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Leeds",
+            "genre": "dance-rock"
         },
         "validation_results": [
             {
@@ -378,19 +398,19 @@
                 "claim": "Adult DVD is A six-piece synthpunk band",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.92483258247375,
-                "best_con_score": 63.9687180519104,
+                "best_con_score": 4.1259486228227615,
                 "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns to Nijmegen",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.75911378860474,
-                "best_con_score": 1.306621078401804,
+                "best_con_score": 0.7160572335124016,
                 "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
-                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
-                "mb_conflict_flag": true
+                "hybrid_status": "VALID",
+                "mb_conflict_flag": false
             },
             {
                 "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns with danceable, retro computer game-like music that grooves, rocks, and swings",
@@ -413,14 +433,16 @@
             "name": "Hällas",
             "type": "Group",
             "country": "SE",
-            "area": "Sweden"
+            "area": "Sweden",
+            "place": "Jönköping",
+            "genre": "rock, progressive rock"
         },
         "validation_results": [
             {
                 "claim": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 82.82234072685242,
-                "best_con_score": 57.792699337005615,
+                "best_con_score": 17.29445308446884,
                 "evidence_used": "Over Hällas: Het duo Earth Tongue uit Nieuw Zeeland injecteert hun psychedelisch geladen rock met een flinke dosis gothic horror zoals te horen is op hun nieuwe album ‘Miraculous Death’.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -429,10 +451,10 @@
                 "claim": "Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.8670220375061,
-                "best_con_score": 83.41538310050964,
+                "best_con_score": 74.34036135673523,
                 "evidence_used": "Over Hällas: Het duo Earth Tongue uit Nieuw Zeeland injecteert hun psychedelisch geladen rock met een flinke dosis gothic horror zoals te horen is op hun nieuwe album ‘Miraculous Death’.",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "Hällas, who inject psychedelic rock with gothic horror",
@@ -441,7 +463,7 @@
                 "best_con_score": 95.76424360275269,
                 "evidence_used": "Over Hällas: Met hun kenmerkende mix van 70’s geïnspireerde soundscapes, theatrale vocalen en meeslepende gitaarlijnen bouwen ze werelden die even mysterieus als meeslepend zijn.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": false
+                "mb_conflict_flag": true
             }
         ]
     },
@@ -455,7 +477,9 @@
             "name": "Ida",
             "type": "Group",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Brooklyn",
+            "genre": "indie rock, indie folk"
         },
         "validation_results": [
             {
@@ -482,20 +506,22 @@
         "artist": "FLEMMING",
         "url": "https://doornroosje.nl/event/flemming-4",
         "summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics.",
-        "dutch_text": "FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten. Vernoemd naar de zanger van Queens is het geen wonder dat FLEMMING een passie heeft voor muziek. Afgelopen april kwam zijn nieuwe album ‘Samen Is Leuker Dan Alleen’ uit en rijdt hij in het najaar van 2026 het hele land door tijdens zijn clubtour.\nMet debuutsingle ‘Amsterdam’ zet FLEMMING meteen een authentieke sound neer, wat al snel leidt tot een succes op zowel radio als Spotify, en tot zijn grote verrassing is de single binnen drie maanden goud. Opvolgers ‘Zij Wil Mij’ en ‘Automatisch’ zijn onmiskenbaar catchy en vrolijk. In het najaar van 2022 kwam zijn debuutalbum ‘FLEMMING’ uit, inclusief de geheel door hem zelf geschreven hit ‘Paracetamollen’. Het album stond 15 weken aansluitend op nummer één in de album charts op Spotify. Daarnaast behaalde al FLEMMING zijn singles minimaal de gouden status.\nEerder stond FLEMMING al op grote festivals als Paaspop, Zwarte Cross, Concert At Sea en verzorgde hij het voorprogramma van Guus Meeuwis tijdens de Groots met een zachte G concerten in het Philips Stadion.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nFLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten. Vernoemd naar de zanger van Queens is het geen wonder dat FLEMMING een passie heeft voor muziek. Afgelopen april kwam zijn nieuwe album ‘Samen Is Leuker Dan Alleen’ uit en rijdt hij in het najaar van 2026 het hele land door tijdens zijn clubtour.\nMet debuutsingle ‘Amsterdam’ zet FLEMMING meteen een authentieke sound neer, wat al snel leidt tot een succes op zowel radio als Spotify, en tot zijn grote verrassing is de single binnen drie maanden goud. Opvolgers ‘Zij Wil Mij’ en ‘Automatisch’ zijn onmiskenbaar catchy en vrolijk. In het najaar van 2022 kwam zijn debuutalbum ‘FLEMMING’ uit, inclusief de geheel door hem zelf geschreven hit ‘Paracetamollen’. Het album stond 15 weken aansluitend op nummer één in de album charts op Spotify. Daarnaast behaalde al FLEMMING zijn singles minimaal de gouden status.\nEerder stond FLEMMING al op grote festivals als Paaspop, Zwarte Cross, Concert At Sea en verzorgde hij het voorprogramma van Guus Meeuwis tijdens de Groots met een zachte G concerten in het Philips Stadion.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "FLEMMING",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "FLEMMING FLEMMING (Flemming Freddie Viguurs",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 97.79433012008667,
-                "best_con_score": 51.39078497886658,
+                "best_con_score": 37.778764963150024,
                 "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -504,7 +530,7 @@
                 "claim": "FLEMMING is a Dutch pop artist known for catchy",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.88603591918945,
-                "best_con_score": 1.1649655178189278,
+                "best_con_score": 0.26338214520365,
                 "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -513,7 +539,7 @@
                 "claim": "FLEMMING, Nederlandstalige pop with creative productions and witty lyrics",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.88123178482056,
-                "best_con_score": 2.299746870994568,
+                "best_con_score": 0.510529289022088,
                 "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -524,19 +550,21 @@
         "artist": "Ruben Hillen",
         "url": "https://doornroosje.nl/event/ruben-hillen",
         "summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences.",
-        "dutch_text": "Ruben Hill is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland. Met zijn karakteristieke stem, oprechte performances en sterke podium aanwezigheid wist hij zowel de coaches als de kijkers voor zich te winnen. Hij combineert emotie, energie en muzikaliteit in zijn optredens, waarin invloeden uit pop, soul en moderne singer-songwriter muziek samenkomen.\nOndanks zijn nuchtere karakter weet Ruben bij elk optreden het publiek voor zich te winnen door zijn intensiteit en eerlijkheid, eigenschappen waarmee hij zich in korte tijd heeft ontwikkeld tot een veelbelovende nieuwe naam binnen de Nederlandse muziekscene. Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.\nDirect na het winnen van de finale bracht hij zijn eerste eigen single ‘20 Seconds’ uit geproduceerd door Arno Krabman. Het is een country getinte track die na zijn overwinning meteen de streamingcharts inschiet. De dag na de finale maakten coaches Suzan & Freek bekend dat Ruben zal optreden in het voorprogramma van hun concerten in het GelreDome, daarnaast zal hij in juni ook optreden bij Concert at Sea.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Ruben Hillen is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland. Met zijn karakteristieke stem, oprechte performances en sterke podium aanwezigheid wist hij zowel de coaches als de kijkers voor zich te winnen. Hij combineert emotie, energie en muzikaliteit in zijn optredens, waarin invloeden uit pop, soul en moderne singer-songwriter muziek samenkomen.\nOndanks zijn nuchtere karakter weet Ruben bij elk optreden het publiek voor zich te winnen door zijn intensiteit en eerlijkheid, eigenschappen waarmee hij zich in korte tijd heeft ontwikkeld tot een veelbelovende nieuwe naam binnen de Nederlandse muziekscene. Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.\nDirect na het winnen van de finale bracht hij zijn eerste eigen single ‘20 Seconds’ uit geproduceerd door Arno Krabman. Het is een country getinte track die na zijn overwinning meteen de streamingcharts inschiet. De dag na de finale maakten coaches Suzan & Freek bekend dat Ruben zal optreden in het voorprogramma van hun concerten in het GelreDome, daarnaast zal hij in juni ook optreden bij Concert at Sea.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "Ruben Hillen",
             "type": "Unknown",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 0.7840108126401901,
+                "best_ent_score": 0.46361316926777363,
                 "best_con_score": 92.52131581306458,
                 "evidence_used": "Over Ruben Hillen: Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
@@ -545,9 +573,9 @@
             {
                 "claim": "Ruben Hillen known from The Voice of Holland",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.76218342781067,
+                "best_ent_score": 99.75900650024414,
                 "best_con_score": 8.410166949033737,
-                "evidence_used": "Over Ruben Hillen: Ruben Hill is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland.",
+                "evidence_used": "Over Ruben Hillen: Hillen is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -563,7 +591,9 @@
             "name": "Enigma",
             "type": "Group",
             "country": "DE",
-            "area": "Germany"
+            "area": "Germany",
+            "place": "Germany",
+            "genre": "trance, electronic"
         },
         "validation_results": [
             {
@@ -579,8 +609,8 @@
                 "claim": "Enigma set by Click and Ipkiss",
                 "nli_verdict": "CONTRADICTION",
                 "best_ent_score": 46.84991240501404,
-                "best_con_score": 99.95471835136414,
-                "evidence_used": "About Enigma: They are taken over by none other than DJ Y (the alias of Coco Bryce)!",
+                "best_con_score": 99.89668130874634,
+                "evidence_used": "Over Enigma: HDMI3 en Tsudi gaan de avond openen met een mix van rauwe breaks en diepe bassjes.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             }
@@ -590,20 +620,22 @@
         "artist": "Racoon",
         "url": "https://doornroosje.nl/event/racoon-17",
         "summary": "Racoon, a Dutch band from Zeeland, returns to Doornroosje for a concert.",
-        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nRacoon is al meer dan twintig jaar een van de meest succesvolle Nederlandse bands. Van uitverkochte tournees langs poppodia, via uitverkochte AFAS en Ziggo Domes naar grote spots op grote festivals. Dit najaar keert Racoon terug naar Doornroosje!\nMensen krijgen geen genoeg van Racoon en Racoon krijgt geen genoeg van muziek maken en live spelen. Door de jaren heen bouwde de band gestaag aan een indrukwekkend repertoire. Nummers die je ooit hard meezong in de auto die op repeat stonden tijdens lange zomers, of die ineens weer binnenkomen als je ze hoort.\nIn de loop der jaren groeiden songs als ‘Love You More’, ‘No Mercy’, ‘Oceaan’ en ‘Het Is Al Laat Toch’ uit tot vaste waarden in hun repertoire. Racoon wordt bekroond met Edisons en omarmd door radio en publiek.\nEen concert van Racoon draait om samen spelen en aandacht voor de muziek. Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nRacoon is al meer dan twintig jaar een van de meest succesvolle Nederlandse bands. Van uitverkochte tournees langs poppodia, via uitverkochte AFAS en Ziggo Domes naar grote spots op grote festivals. Dit najaar keert Racoon terug naar Doornroosje!\nMensen krijgen geen genoeg van Racoon en Racoon krijgt geen genoeg van muziek maken en live spelen. Door de jaren heen bouwde de band gestaag aan een indrukwekkend repertoire. Nummers die je ooit hard meezong in de auto die op repeat stonden tijdens lange zomers, of die ineens weer binnenkomen als je ze hoort.\nIn de loop der jaren groeiden songs als ‘Love You More’, ‘No Mercy’, ‘Oceaan’ en ‘Het Is Al Laat Toch’ uit tot vaste waarden in hun repertoire. Racoon wordt bekroond met Edisons en omarmd door radio en publiek.\nEen concert van Racoon draait om samen spelen en aandacht voor de muziek. Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.\nDe betoverende Faela neemt je mee door de support voor de avond. Met haar prachtige stem, bijzondere verschijning en sprankelende songs kost het haar weinig moeite om elk publiek volledig om haar vinger te winden. Samen brachten ze het nieuwe nummer ‘Daffodils’ uit.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
         "musicbrainz_facts": {
             "status": "Found",
             "name": "Racoon",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Goes",
+            "genre": "alternative rock"
         },
         "validation_results": [
             {
                 "claim": "Racoon, a Dutch band from Zeeland, returns to Doornroosje",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.71727132797241,
-                "best_con_score": 58.33534598350525,
+                "best_con_score": 4.412047937512398,
                 "evidence_used": "Over Racoon: Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -629,14 +661,16 @@
             "name": "Cloudsurfers",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock",
                 "nli_verdict": "UNSUPPORTED",
                 "best_ent_score": 4.035436362028122,
-                "best_con_score": 0.5978571716696024,
+                "best_con_score": 0.2805368974804878,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -653,17 +687,19 @@
             "name": "Los Pirañas",
             "type": "Group",
             "country": "CO",
-            "area": "Colombia"
+            "area": "Colombia",
+            "place": "Bogotá",
+            "genre": "tropicanibalismo, psychedelic rock"
         },
         "validation_results": [
             {
                 "claim": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.90044236183167,
-                "best_con_score": 0.3762661013752222,
+                "best_con_score": 0.33274448942393064,
                 "evidence_used": "Over Los Pirañas: Het trio bouwt een brug tussen dancemuziek en traditionele stijlen als cumbia, afrobeat, Peruaanse chicha en Colombiaanse champeta.",
-                "hybrid_status": "VALID",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             }
         ]
     },
@@ -677,15 +713,17 @@
             "name": "Bob Dylan",
             "type": "Person",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Duluth",
+            "genre": "rock, jazz"
         },
         "validation_results": [
             {
                 "claim": "DYLAN LEBLANC - solo is American singer-songwriter Dylan LeBlanc",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 98.6864984035492,
+                "best_ent_score": 97.47163653373718,
                 "best_con_score": 0.7388722151517868,
-                "evidence_used": "About DYLAN LEBANC - solo: In the same studio Dylan also recorded his breakthrough recordings, imbued with subdued and beautifully sung sixties folk, soul, altocountry and West Coast pop.",
+                "evidence_used": "Over DYLAN LEBLANC - solo: In diezelfde studio nam Dylan ook zijn doorbraakopnames op, doordrenkt van ingetogen en fraai gezongen sixties folk, soul, altcountry en West Coast pop.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
@@ -693,10 +731,10 @@
                 "claim": "DYLAN LEBLANC - solo, American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 91.31288528442383,
-                "best_con_score": 4.9062330275774,
+                "best_con_score": 4.522218927741051,
                 "evidence_used": "Over DYLAN LEBLANC - solo: In diezelfde studio nam Dylan ook zijn doorbraakopnames op, doordrenkt van ingetogen en fraai gezongen sixties folk, soul, altcountry en West Coast pop.",
-                "hybrid_status": "VALID",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "DYLAN LEBLANC - solo set",
@@ -719,7 +757,9 @@
             "name": "William Barrett",
             "type": "Unknown",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -744,7 +784,7 @@
                 "claim": "William Barrett Band featuring bassist William Barrett and his band",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.71942901611328,
-                "best_con_score": 1.654103770852089,
+                "best_con_score": 0.27551010716706514,
                 "evidence_used": "Over William Barrett Band: De William Barrett Band brengt een impulsieve en meeslepende sound, met tuimelende saxofoonlijnen, golvende drums, acrobatische gitaarpartijen en een bassist die zijn instrument én band voortdurend vooruit stuwt.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
@@ -761,17 +801,19 @@
             "name": "Philip Lassiter",
             "type": "Person",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 0.08079588296823204,
-                "best_con_score": 99.61012601852417,
-                "evidence_used": "About Philip Lassiter: During his studies in Florida he perfected his talent on trumpet, got to know Salsa and Merengue, and refined his natural gift as a jazz pianist.",
+                "best_ent_score": 0.06303059635683894,
+                "best_con_score": 98.33452701568604,
+                "evidence_used": "Over Philip Lassiter: In 2000 won hij de International Trumpet Guild Jazz Solo Competition!\nAls zoon van een predikant – een man “die tot rood aangelopen toe elk beetje zweet uit zich werkte",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": true
+                "mb_conflict_flag": false
             }
         ]
     },
@@ -785,17 +827,19 @@
             "name": "Alex Henry Foster",
             "type": "Person",
             "country": "Unknown",
-            "area": "Québec"
+            "area": "Québec",
+            "place": "Unknown",
+            "genre": "rock"
         },
         "validation_results": [
             {
                 "claim": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 62.59565353393555,
+                "best_ent_score": 31.842973828315735,
                 "best_con_score": 92.04123020172119,
                 "evidence_used": "Over Alex Henry Foster: Na zijn werk met post-hardcore band Your Favorite Enemies sloeg Foster een meer introspectieve richting in, wat resulteerde in zijn solodebuut ‘Windows in the Sky’ in 2018, een persoonlijk en emotioneel geladen album dat internationaal op uitmuntende kritieken kon rekenen.",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "hybrid_status": "INTRINSIC_HALLUCINATION",
+                "mb_conflict_flag": true
             },
             {
                 "claim": "Alex Henry Foster known for intense, cinematic alternative rock and post-rock,",
@@ -803,8 +847,8 @@
                 "best_ent_score": 99.950110912323,
                 "best_con_score": 99.27268028259277,
                 "evidence_used": "Over Alex Henry Foster: De Canadese singer-songwriter en componist Alex Henry Foster weet zich te onderscheiden met zijn intense, filmische benadering van alternatieve rock en post-rock.",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             }
         ]
     },
@@ -818,7 +862,9 @@
             "name": "Lane 8",
             "type": "Person",
             "country": "US",
-            "area": "United States"
+            "area": "United States",
+            "place": "Unknown",
+            "genre": "trance, electronic"
         },
         "validation_results": [
             {
@@ -833,9 +879,9 @@
             {
                 "claim": "Solfestice #8 featuring guest musicians",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.91395473480225,
-                "best_con_score": 0.8609741926193237,
-                "evidence_used": "About Solfestice #8: Guests: Alex Coke - flute and tenorsax Frank Nielander - e-sax Paul Vlieks - trumpet",
+                "best_ent_score": 99.892657995224,
+                "best_con_score": 0.7038939278572798,
+                "evidence_used": "Over Solfestice #8: Gasten: Alex Coke - fluit en tenorsax Frank Nielander - e-sax Paul Vlieks -\ntrompet",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -851,14 +897,16 @@
             "name": "Hippotraktor",
             "type": "Group",
             "country": "BE",
-            "area": "Belgium"
+            "area": "Belgium",
+            "place": "Mechelen",
+            "genre": "progressive metal, post-metal"
         },
         "validation_results": [
             {
                 "claim": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 6.336086988449097,
-                "best_con_score": 25.468209385871887,
+                "best_ent_score": 4.77461963891983,
+                "best_con_score": 5.301600322127342,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -875,7 +923,9 @@
             "name": "Robin Scherpen",
             "type": "Person",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -884,8 +934,8 @@
                 "best_ent_score": 99.79314804077148,
                 "best_con_score": 96.58867120742798,
                 "evidence_used": "Over Robin Scherpen - Pulse: Maak het zelf mee tijdens deze intieme liveshow in De Vereeniging, en laat je meeslepen in een reis door donker en licht, door melancholie en geluk, met gitaarspel op het hoogste niveau.",
-                "hybrid_status": "AMBIGUOUS",
-                "mb_conflict_flag": false
+                "hybrid_status": "SOURCE_CONFLICT (Text likely wrong)",
+                "mb_conflict_flag": true
             }
         ]
     },
@@ -899,7 +949,9 @@
             "name": "Primitive Ring",
             "type": "Group",
             "country": "Unknown",
-            "area": "Los Angeles"
+            "area": "Los Angeles",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -932,14 +984,16 @@
             "name": "De Bokkerÿers",
             "type": "Group",
             "country": "Unknown",
-            "area": "Limburg"
+            "area": "Limburg",
+            "place": "Limburg",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 20.924873650074005,
-                "best_con_score": 10.761893540620804,
+                "best_ent_score": 14.04435783624649,
+                "best_con_score": 5.175365135073662,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -948,8 +1002,8 @@
                 "claim": "Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
                 "nli_verdict": "CONTRADICTION",
                 "best_ent_score": 24.11426156759262,
-                "best_con_score": 94.17916536331177,
-                "evidence_used": "About Bokkeryers: An affidavit, in which someone wrapped in a red robe and barking like a mad dog crawls backwards on knees through the chapel, towards the altar where a chalice full of blood is ready to be drunk ritually?",
+                "best_con_score": 89.68836069107056,
+                "evidence_used": "Over Bokkeryers: Wat is er nou méér metal dan een stel bandieten van laag allooi dat zich vliegend op bokken door de 18e eeuwse Zuid-Limburgse nacht voortbeweegt?",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             },
@@ -959,7 +1013,7 @@
                 "best_ent_score": 99.85414743423462,
                 "best_con_score": 96.70588374137878,
                 "evidence_used": "Over Bokkeryers: Dit heeft muzikaal gezien bar weinig te maken met DeWolff: dit is een combinatie van keiharde doom-, sludge- en thrashmetal, voorzien van Limburgstalige teksten met een punk-attitude en een flinke dosis humor en zelfspot.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
         ]
@@ -974,17 +1028,19 @@
             "name": "corto.alto",
             "type": "Person",
             "country": "Unknown",
-            "area": "Glasgow"
+            "area": "Glasgow",
+            "place": "Glasgow",
+            "genre": "jazz"
         },
         "validation_results": [
             {
                 "claim": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub",
                 "nli_verdict": "CONTRADICTION",
-                "best_ent_score": 0.9506696835160255,
+                "best_ent_score": 0.5634617526084185,
                 "best_con_score": 94.88893747329712,
                 "evidence_used": "Over corto.alto: ‘WHODIS’ in samenwerking met de rapper Mick Jenkins uit Chicago en de gloednieuwe single ‘THIEF’, waarmee ze de nieuwe koers van corto.alto blijven tonen.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
-                "mb_conflict_flag": true
+                "mb_conflict_flag": false
             },
             {
                 "claim": "corto.alto led by multi-instrumentalist Liam Shortall",
@@ -998,8 +1054,8 @@
             {
                 "claim": "corto.alto blending jazz with hiphop, broken beats",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 59.047865867614746,
-                "best_con_score": 37.556883692741394,
+                "best_ent_score": 53.7123441696167,
+                "best_con_score": 26.606228947639465,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -1016,7 +1072,9 @@
             "name": "Tusky",
             "type": "Group",
             "country": "NL",
-            "area": "Netherlands"
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -1025,15 +1083,15 @@
                 "best_ent_score": 99.42445158958435,
                 "best_con_score": 95.69075107574463,
                 "evidence_used": "Over Tusky: De vlammende mix van (emo)hardcore, punk is uitermate geschikt voor de moshers, de headbangers, de schreeuwers, de skaters en iedereen die verder wel van een beetje pit houdt.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             },
             {
                 "claim": "Tusky delivers fierce punkrock with emo-hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
                 "nli_verdict": "CONTRADICTION",
                 "best_ent_score": 10.186104476451874,
-                "best_con_score": 94.62453722953796,
-                "evidence_used": "About Tusky: Tusky creates a scary pit, made by very friendly people.",
+                "best_con_score": 84.72194075584412,
+                "evidence_used": "Over Tusky: Tusky zorgt voor een enge pit, gemaakt door heel vriendelijke mensen.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             },
@@ -1041,8 +1099,8 @@
                 "claim": "Tusky, Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
                 "nli_verdict": "CONTRADICTION",
                 "best_ent_score": 47.24525809288025,
-                "best_con_score": 96.05029225349426,
-                "evidence_used": "About Tusky: Tusky creates a scary pit, made by very friendly people.",
+                "best_con_score": 79.30371165275574,
+                "evidence_used": "Over Tusky: Tusky zorgt voor een enge pit, gemaakt door heel vriendelijke mensen.",
                 "hybrid_status": "INTRINSIC_HALLUCINATION",
                 "mb_conflict_flag": false
             },
@@ -1052,7 +1110,7 @@
                 "best_ent_score": 99.93230104446411,
                 "best_con_score": 97.09846377372742,
                 "evidence_used": "Over Tusky: Geïnspireerd door de rauwe emoties van IDLES, de sex-appeal van Queens of the Stone Age en de totale wanorde van Amyl & the Sniffers.",
-                "hybrid_status": "AMBIGUOUS",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
         ]
@@ -1067,57 +1125,17 @@
             "name": "HAEVN",
             "type": "Group",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Amsterdam",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound",
                 "nli_verdict": "ENTAILMENT",
                 "best_ent_score": 99.55593347549438,
-                "best_con_score": 12.669672071933746,
+                "best_con_score": 3.213293105363846,
                 "evidence_used": "Over HAEVN: Hun unieke mix van electronic en indiepop, geleid door rustgevende zang laat je de wereld om je heen even vergeten.",
-                "hybrid_status": "VALID",
-                "mb_conflict_flag": false
-            }
-        ]
-    },
-    {
-        "artist": "Thijs Veldhuis",
-        "url": "https://doornroosje.nl/event/thijs-veldhuis",
-        "summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
-        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nThijs Veldhuis deed dit jaar mee aan The Voice of Holland en in het najaar staat hij op het podium in Doornroosje!\nThijs schrijft zijn eigen teksten en muziek, waarbij hij op een bijzondere manier enorm uit zijn comfortzone is gegaan door deel te nemen aan The Voice. Van het schrijven van nummers in zijn kamer in Utrecht naar optreden op misschien wel het grootste podium van Nederland.\nMuzikaal beweegt Thijs zich tussen verschillende invloeden uit rock, indie, pop, klassiek en elektronische muziek. De thema’s in de liedjes lopen uiteen: ze zijn persoonlijk maar het is ook een reflectie op bredere thema’s in de maatschappij.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
-        "musicbrainz_facts": {
-            "status": "Found",
-            "name": "Thijs Veldhuis",
-            "type": "Person",
-            "country": "NL",
-            "area": "Netherlands"
-        },
-        "validation_results": [
-            {
-                "claim": "Thijs Veldhuis, who participated in The Voice of Holland",
-                "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.75396394729614,
-                "best_con_score": 0.31630320008844137,
-                "evidence_used": "Over Thijs Veldhuis: Thijs schrijft zijn eigen teksten en muziek, waarbij hij op een bijzondere manier enorm uit zijn comfortzone is gegaan door deel te nemen aan The Voice.",
-                "hybrid_status": "VALID",
-                "mb_conflict_flag": false
-            },
-            {
-                "claim": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences",
-                "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 1.4093431644141674,
-                "best_con_score": 0.1432086923159659,
-                "evidence_used": null,
-                "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
-                "mb_conflict_flag": false
-            },
-            {
-                "claim": "Thijs Veldhuis blending rock, indie, pop, classical, and electronic influences",
-                "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.70802664756775,
-                "best_con_score": 0.6237235385924578,
-                "evidence_used": "Over Thijs Veldhuis: Muzikaal beweegt Thijs zich tussen verschillende invloeden uit rock, indie, pop, klassiek en elektronische muziek.",
                 "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
@@ -1133,7 +1151,9 @@
             "name": "SNAYX",
             "type": "Group",
             "country": "GB",
-            "area": "United Kingdom"
+            "area": "United Kingdom",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
@@ -1166,16 +1186,18 @@
             "name": "The Rumjacks",
             "type": "Group",
             "country": "AU",
-            "area": "Australia"
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "folk, punk"
         },
         "validation_results": [
             {
                 "claim": "The Rumjacks known for their raw punk with Celtic influences and sing-along choruses",
                 "nli_verdict": "ENTAILMENT",
-                "best_ent_score": 99.82922673225403,
+                "best_ent_score": 99.77540373802185,
                 "best_con_score": 78.62811088562012,
-                "evidence_used": "About The Rumjacks: The explosive folk punk band from Sydney, Australia, is known for their irresistible mix of raw punk with Celtic influences and sing-along choruses. Armed with banjo, tinwhistle and mandolin, combined with roaring guitars and pounding drums, they previously shared the stage with greats like Gogol Bordello, Dropkick Murphys and UK Subs. Their songs breathe rebellion, togetherness and a lot of Irish pub culture, without compromising on spice or urgency.",
-                "hybrid_status": "AMBIGUOUS",
+                "evidence_used": "Over The Rumjacks: De explosieve folkpunkband uit Sydney, Australië, staat bekend om hun onweerstaanbare mix van rauwe punk met Keltische invloeden en meezingbare refreinen.\nGewapend met banjo, tinwhistle en mandoline, gecombineerd met brullende gitaren en beukende drums, deelden ze eerder het podium met grootheden als Gogol Bordello, Dropkick Murphys en UK Subs. Hun nummers ademen rebellie, saamhorigheid en een flinke scheut Ierse pubcultuur, zonder aan pit of urgentie in te boeten.",
+                "hybrid_status": "VALID",
                 "mb_conflict_flag": false
             }
         ]
@@ -1190,13 +1212,15 @@
             "name": "Chica Chica Electrica",
             "type": "Group",
             "country": "AU",
-            "area": "Australia"
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 0.5741339642554522,
+                "best_ent_score": 0.5170944612473249,
                 "best_con_score": 37.05122470855713,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_HALLUCINATION_FALSE",
@@ -1214,14 +1238,16 @@
             "name": "Wodan Boys",
             "type": "Group",
             "country": "Unknown",
-            "area": "Unknown"
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
         },
         "validation_results": [
             {
                 "claim": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 1.371779851615429,
-                "best_con_score": 2.579001523554325,
+                "best_ent_score": 0.6331009790301323,
+                "best_con_score": 0.314329587854445,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
@@ -1229,8 +1255,8 @@
             {
                 "claim": "Wodan Boys known for their energetic punk rock sound",
                 "nli_verdict": "UNSUPPORTED",
-                "best_ent_score": 41.9933021068573,
-                "best_con_score": 7.98305943608284,
+                "best_ent_score": 13.166394829750061,
+                "best_con_score": 5.622794106602669,
                 "evidence_used": null,
                 "hybrid_status": "EXTRINSIC_INJECTION_TRUE",
                 "mb_conflict_flag": false
