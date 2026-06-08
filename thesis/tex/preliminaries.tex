@@ -9,7 +9,7 @@
 \noindent In this chapter, we introduce the concepts behind this thesis. First, we discuss the definitions of hallucinations in large language models. Secondly, we explain the subject of cross-lingual natural language interference and its relevance to this thesis. Lastly, we discuss knowledge graphs and its usage of non-parametric memory. 
 
 \section{Hallucination in Large Language Models}\label{pre:sec:llm}
-In this thesis, we will be discussing the occurences of hallucinations in LLMs. LLMs are massive artificial neural networks
+In this thesis, we will be discussing the occurrences of hallucinations in LLMs. LLMs are massive artificial neural networks
 pre-trained on vast amounts of text data, designed to understand and generate human language. They show strong understanding in natural language and solving 
 complex tasks \cite{zhao2023survey}. While these outputs often contain useful and correct information, they are prone to \textit{hallucinating}. 
 Hallucination of a LLM consists of the model generating content that is not faithful to its source. Multiple types of hallucination exist, 
@@ -36,7 +36,7 @@ To understand why these factual hallucinations occur so frequently in localized 
 \section{Cross-Lingual Natural Language Inference}\label{pre:sec:nli}
 Natural Language Inference (NLI), also known as Recognizing Textual Entailment (RTE), 
 is a core task in Natural Language Processing (NLP) \cite{conneau2020unsupervised}. 
-NLP is a multidisciplinary field at the crossover between Computing Science, Linguistics, and Artificial Intelligence, where scientists focus on 
+NLP is a multidisciplinary field at the intersection between Computing Science, Linguistics, and Artificial Intelligence, where scientists focus on 
 helping computers understand natural language. Common applications consist of machine translation, 
 sentiment analysis, and automated summarisation. The latter is 
 highly relevant for this thesis, since we deal with Information Extraction (IE), specifically
@@ -81,7 +81,7 @@ we can evaluate a Dutch premise against an English hypothesis without an interme
  \section{Knowledge Graphs and Non-Parametric Memory}\label{pre:sec:kg}
 To counteract the unreliability and popularity bias of an LLM's internal parametric memory, modern NLP pipelines often integrate \textit{non-parametric memory}-external, deterministically structured databases \cite{mallen2023when}. A primary form of non-parametric memory is a Knowledge Graph (KG). 
 
-A Knowledge Graph is an organized data structure that represents real-world entities as nodes (e.g., artists, venues, or albums) and the strict relationships between them as edges (e.g., ``originates from'' or ``performs genre''). Unlike an LLM, which guesses facts based on statistical probability, a KG allows for absolute, deterministic data retrieval. 
+A Knowledge Graph is an organized data structure that represents real-world entities as nodes (e.g., artists, venues, or albums) and the strict relationships between them as edges (e.g., ``originates from'' or ``performs genre''). Unlike parametric models, which recall facts via learned statistical associations that degrade for low-frequency entities, a KG retrieves facts through direct structured queries with deterministic outputs.
 
 In order to replicate the pipeline structure with an integrated non-parametric for our niche local music knowledge, open-source databases such as MusicBrainz exist. The MusicBrainz database can be implemented as a knowledge graph, allowing us to cross-reference the generated claims against verified information. This option gives us the possibility to move on from ``Neutral" to a possible ``Contradiction'' when the source text does not provide enough context. 
 

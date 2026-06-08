@@ -18,9 +18,9 @@
 % - TALK ABOUT RISE OF LLM USAGE SINCE 2020 - introduction of problem
 In recent years, large language models (LLMs) have emerged and evolved rapidly \cite{zhao2023survey}. While initially restricted to research environments, these tools have now reached massive public scale. For instance, OpenAI recently confirmed it has surpassed 50 million paying subscribers across its commercial tiers, with up to 900 million weekly active users processing over 2 billion prompts per day \cite{openai2025enterprise}. This scale demonstrates that interacting with LLMs has become a routine global practice. However, while these models assist users in learning, working, and automating tasks, their widespread deployment does not come without downsides.
 
-One primary risk is \textit{hallucination}, a phenomenon, further discussed in Section \ref{preliminaries}, where an LLM generates output that is unfaithful to its original source or the user's instructions. While minor discrepancies often go unnoticed, severe hallucinations can have profound consequences. For example, Zhao \etal \cite{zhoa2026llmhallucinationsinthewild} analyzed 2.5 million published papers and found a sharp rise in non-existent references following widespread LLM adoption, conservatively estimating over 146,000 hallucinated citations in 2025 alone. Similar impacts have been documented across other critical sectors. In healthcare, hallucinations pose severe ethical and safety risks \cite{healthcarehallucinations2025}, while in the commercial sector, the use of ungrounded conversational agents has led to concrete operational liabilities for enterprises \cite{lseo2026liability}.
+One primary risk is \textit{hallucination}, a phenomenon further discussed in Section \ref{preliminaries}, where an LLM generates output that is unfaithful to its original source or the user's instructions. While minor discrepancies often go unnoticed, severe hallucinations can have profound consequences. For example, Zhao \etal \cite{zhoa2026llmhallucinationsinthewild} analyzed 2.5 million published papers and found a sharp rise in non-existent references following widespread LLM adoption, conservatively estimating over 146,000 hallucinated citations in 2025 alone. Similar impacts have been documented across other critical sectors. In healthcare, hallucinations pose severe ethical and safety risks \cite{healthcarehallucinations2025}, while in the commercial sector, the use of ungrounded conversational agents has led to concrete operational liabilities for enterprises \cite{lseo2026liability}.
 
-As mentioned above, the occurences of hallucinations are well-documented in high-stakes fields like medicine and law. 
+As mentioned above, the occurrences of hallucinations are well-documented in high-stakes fields like medicine and law. 
 In this thesis, however, we will consider a use-case which is less universally known, a case on a local music venue in Nijmegen. 
 Since local venues often give the stage to smaller, lesser-known artists, the likelihood of hallucinations increases. While large language models demonstrate impressive factual recall for globally prominent topics, their reliability degrades significantly when processing niche or localized information. This limitation, often referred to as popularity bias, is formally quantified by Kandpal \etal \cite{kandpal2023longtail}, who demonstrate that an LLM's ability to accurately state a fact is directly correlated to the frequency of that entity's appearance in its pre-training corpus.
 
@@ -38,27 +38,14 @@ Our primary research question entails:
 \begin{enumerate}
     \item[\textbf{RQ 1}] To what extent can a hybrid evaluation framework, integrating deterministic claim decomposition, cross-lingual Natural Language Inference (NLI), and a structured external knowledge graph, effectively detect and categorize hallucinations in one-sentence LLM-generated local music venue summaries?
     \begin{enumerate}
-        \item[\textbf{RQ 1.1}] How accurately can a cross-lingual NLI baseline detect intrinsic hallucinations by evaluating the semantic entailment between English atomic claims and their Dutch source texts?
-        \item[\textbf{RQ 1.2}] How effectively can the integration of the MusicBrainz external knowledge graph reduce the false positive rate of the baseline by validating extrinsic hallucinations?
-        % \item[\textbf{RQ 1.3}] How does aggregating these claim-level evaluations through a strict Logical AND gate impact the final error detection rate at the sentence level?
+        \item[\textbf{RQ 1.1}] How accurately can a cross-lingual NLI baseline detect and classify intrinsic hallucinations by evaluating semantic entailment between English atomic claims and their Dutch source texts, and to what extent does it label extrinsic hallucinations with a neutral or supported verdict?
+        \item[\textbf{RQ 1.2}] How does the calibration of the baseline confidence threshold ($\mathcal{T}$) impact the models error detection and accuracy? 
+        \item[\textbf{RQ 1.3}] How effectively can the integration of the MusicBrainz external knowledge graph increase the accuracy of atomic and sentence level labels of the baseline by validating extrinsic hallucinations?
+        \item[\textbf{RQ 1.4}] How does aggregating these atomic claim-level evaluations using min-pooling impact the  error detection and false positive rates at the sentence level?
     \end{enumerate}
 \end{enumerate}
 
-\additions{Explain structure of the thesis.}
-
-% The remainder of this thesis is structured as follows. Chapter 2 outlines the theoretical framework and related work concerning cross-lingual NLI and parametric memory limitations. Chapter 3 details the methodology and system architecture of the hybrid evaluation pipeline. Chapter 4 presents the quantitative results and error taxonomy generated from testing the pipeline on live music metadata. Chapter 5 discusses the implications of these findings, including the paradox of factual injections, and acknowledges system limitations. Finally, Chapter 6 concludes the research and suggests avenues for future work.
-
-% - SAY THAT LLMS CANNOT ALWAYS PROVE THEMSELVES - demonstrate new solution needed 
-
-
-% - WE WISH TO BUILD A DETERMINISTIC SOLUITION, SO IT WILL BE MORE RELIABLE - intuition 
-
-
-% - DETERMINISTIC SHOWS THAT LLMS MAKE MISTAKES - why solution solves problem
-
-
-% - RELATED WORK FELM, ... - why related 
-
+The remainder of this thesis is structured as follows. Chapter \ref{preliminaries} outlines the theoretical background regarding hallucinations in LLMs, cross-lingual NLI, Knowledge Graphs and Binary Classification Metrics. Next, Chapter \ref{Newsletter} discusses the used dataset, how it was generated and what existing problems occur. Following this, Chapter \ref{research} discusses the full evaluation pipeline architecture, including generating the corpus, extracting source data and the external knowledge graph, parsing Dutch source text, decomposing the summaries into atomic claims, validating and evaluating these atomic claims and lastly the experiment set up. Chapter \ref{results} shows the results of our experiments, which will then be discussed in Chapter \ref{discussion} and future work will be suggested in addition to our limitations . Finally, Chapter \ref{conclusions} concludes the research by answering the research questions according to our results and discussion.
 
 
 

@@ -28,6 +28,10 @@
 \usepackage{booktabs}
 \usepackage{xspace}
 \usepackage{standalone}
+\usepackage{url}
+\usepackage{longtable} 
+\usepackage{float}
+
 \usetikzlibrary{fadings}
 \usetikzlibrary{patterns}
 \usetikzlibrary{shadows.blur}
@@ -43,6 +47,14 @@
 
 \newcommand{\etal}{et al.\@\xspace}
 \newcommand{\rob}{XLM-RoBERTa\xspace}
+
+\newcounter{claimctr}
+\setcounter{claimctr}{0}
+
+\newcommand{\claim}[1]{%
+    \refstepcounter{claimctr}% Increment counter and make it referenceable
+    \textbf{C.\theclaimctr:} \label{#1}% Output "C.X:" and apply the tracking label
+}
 
 
 \lstset{
@@ -103,11 +115,11 @@
 	authors={Ruben Koelewijn \\s1105300},
 	date={\today},
 	others={%
-		{First supervisor/assessor:}{Title(s) Firstname Lastname},
-		{Second assessor:}{Title(s) Firstname Lastname}},
+		{First supervisor/assessor:}{prof.\@\xspace dr.\@\xspace ir.\@\xspace Arjen de Vries},
+		{Second assessor:}{prof.\@\xspace dr.\@\xspace ir.\@\xspace Djoerd Hiemstra}},
 	course={Bachelor's Thesis Computing Science},
-	title={Evaluating and Validating the Information Extraction of a Music Newsletter LLM},
-	subtitle={Subtitle if you like},
+	title={Detecting Hallucinations in LLM Summaries of Local Music Venues: \\ A Hybrid Cross-Lingual NLI and Knowledge Graph Architecture},
+	% subtitle={Subtitle if you like},
 	colour,
 ]
 
@@ -115,7 +127,7 @@
 
 \tableofcontents
 
-\listoftodos
+% \listoftodos
 
 \newpage
 
@@ -125,7 +137,7 @@
 \input{research}
 \input{results}
 \input{discussion}
-\input{relatedwork}
+% \input{relatedwork} -> already distributed across all other chapters. 
 \input{conclusions}
 
 \bibliographystyle{plain}

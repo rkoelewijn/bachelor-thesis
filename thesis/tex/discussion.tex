@@ -1,27 +1,147 @@
 \chapter{Discussion}\label{discussion}
 % CHAPTER I ADDED MYSELF TO DISCUSS RESULTS
-In this chapter, we will be discussing the results shown in Chapter \ref{results}. 
+Following the findings presented in Chapter \ref{results}, this chapter provides a deeper interpretation of the pipeline's behavior. We explore the broader implications of the baseline and hybrid architectures, detailing how specific design choices, such as the min-pooling evaluation strategy and the database query scope, directly shaped the final metrics. Ultimately, this discussion contextualizes the system's performance, outlines the limitations of the experimental setup, and identifies pathways for future research.
 
 \section{Baseline Behavior}
+\subsection{Evaluation Limits of the Experiment Performance}
+When evaluating the experiment pipeline's performance, it is important to give context to the results with the sound performance of the baseline model. The baseline pipeline established a Sentence F1-Score of 0.8615 and an Error Detection Rate of 1.0000. In data mining literature, it is a well-documented principle that model evaluation must always be measured relative to a baseline classifier; when a baseline achieves near-maximum performance, the mathematical room for measurable improvement approaches zero \cite{tan2019introduction}. Because the baseline model successfully caught all explicit hallucinated claims independently, the Knowledge Graph was mathematically bottlenecked. 
+
+
 % \item We have high false positives ,  High number of intrinsic supported 
 % \item \rob frequency scores 
 
+% a good baseline, made it harder to generate a better experiment, due to not a lot of things that are able to be changed. 
+
+
+\subsection{Threshold Optimization}
+As seen in Figure \ref{fig:threshold_optimization}, the optimal threshold is set to $\mathcal{T} = 70.0$. The false positive rate, only changes between the extremes ($ 90.0 \ge \mathcal{T} \ge 5.0$ ). This shows that when the models marks a claim as a contradiction, it is certain. This is backed up by the distribution found in Figure \ref{fig:score_distribution}, where most of the claims have a entailment confidence that is higher than 90\%, or lower than 10\%. This can be related back to the structure of \rob, which is set up to be a strict NLI model. 
+
+\subsection{Atomic Level Implications}
+Most notably, our atomic level implications of the current baseline pipeline is that the model is strict and quick to mark ground-truth \texttt{SUPPORTED} claims as \texttt{INTRINSIC}, as this was the biggest set of incorrectly labelled claims with 12. This can be attributed to how we use \rob and aggregated results. Since we make use of a max score, the possibility exists that only one sentence contains supporting evidence, but the claim is worded differently, given a slightly lower entailment score, meanwhile another sentence that is not relevent, e.g. due to it being about the supporting act,  could end up giving a high contradiction score which marks the claim as \texttt{INTRINSIC}. A clear example of this is the 'Daryll-Ann Weeps' entry (Table \ref{tab:daryll_ann_example}). Claim C.\ref{clm:daryll_ann} was predicted as \texttt{INTRINSIC}, even though the claim holds. The source text lacked a sentence exactly matching the claim, resulting in a low entailment score. Instead, the model fixated on a sentence explaining the band recorded the album thirty years ago, interpreting it as a direct contradiction to the phrase 'for the first time'.
+Nevertheless, the fact that the \rob model could successfully evaluate these atomic claims validates our departure from the LLM-prompted decomposition seen in the SAFE framework \cite{safe2024longform}. By utilizing a deterministic dependency parser, the pipeline successfully decomposed sentences to atomic claims without introducing the risk of recursive LLM hallucinations during the decomposition phase.
+\begin{table}[htbp]
+    \vspace{0.2cm}
+    \begin{flushleft}
+        \claim{clm:daryll_ann} \textit{The Dutch guitar pop band performs their cult-classic album `Daryll-Ann Weeps' for the first time}
+    \end{flushleft}
+    \vspace{-0.3cm} % Trek de tabel iets dichter naar de claim toe
+    \centering
+    \begin{tabular}{lc}
+        \toprule
+        \textbf{NLI Metric} & \textbf{Confidence Score (\%)} \\
+        \midrule
+        Entailment (\texttt{best\_ent\_score}) & $5.0178$ \\
+        Contradiction (\texttt{best\_con\_score}) & $99.0805$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Raw NLI Confidence Scores for the Analyzed Claim}
+    \label{tab:daryll_ann_example}
+\end{table}
+
 
 \section{Knowledge Graph Implementation Consequences}
+The implementation of our knowledge graph did not directly lead to increases in sentence level performance, due to no sentences receiving a different label. This can be attributed to our choice of implementing the min-pooling aggregation and the knowledge graph ultimately only shifting 5 atomic claims from \texttt{EXTRINSIC} to \texttt{INTRINSIC} with 60\% accuracy.When analysing these claims and the evidence given by the validation module, we can sort them into two categories based on the synthezied sentence type used as evidence. The first 3 claims that were now labelled as contradictions, were regarding the origin of the artist. Table \ref{tab:hybrid_validation_examples} shows C.\ref{clm:adult_dvd}, of artist ``Adult DVD''. In the original source text, no origin is mentioned, but our external database showed they are not from The Netherlands, leading to a correct jump to \texttt{INTRINSIC}. Table \ref{tab:hybrid_validation_examples} shows C.\ref{clm:daoud} related to artist ``daoud''. The type of evidence used, is based on the genre of music they create, which leads to a contradiction, since ``unconventional, danceable, and cheerful jazz that blends hip-hop grooves'' is not the exact same as ``downtempo, instrumental music''. Table \ref{tab:override_accuracy_summary} shows all 5 shifts and their respective synthezied source category, which leads us to believe our model is more accurate on the artists origin than their music genre. 
+
+  \begin{table}[ht]
+    \centering
+    \caption{Distribution of Ground Truth vs. Predicted labels in the atomic claim dataset at Experiment ($\mathcal{T} = 70$).}
+    \label{tab:atomic_label_distribution_experiment}
+    \begin{tabular}{lcccc}
+        \toprule
+        & \multicolumn{2}{c}{\textbf{Ground Truth}} & \multicolumn{2}{c}{\textbf{Predicted (Experiment)}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        \textbf{Label} & \textbf{Count} & \textbf{Percentage} & \textbf{Count} & \textbf{Percentage} \\
+        \midrule
+        SUPPORTED & 55 & 56.1\% & 42 & 42.9\% \\
+        EXTRINSIC & 24 & 24.5\% & 20 & 20.4\% \\
+        INTRINSIC & 19 & 19.4\% & \textbf{36} & 36.7\% \\
+        \midrule
+        \textbf{Total} & \textbf{98} & \textbf{100.0\%} & \textbf{98} & \textbf{100.0\%} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Examples of incorrect baseline signals successfully overridden by the Knowledge Graph to an intrinsic contradiction (\texttt{INTRINSIC}).}    \label{tab:hybrid_validation_examples}
+    \renewcommand{\arraystretch}{1.3}
+
+    % --- Voorbeeld 1: daoud (Taxonomische frictie) ---
+    \vspace{0.2cm}
+    \begin{flushleft}
+        \claim{clm:daoud} \textit{The French-Moroccan trumpeter and composer daoud plays unconventional, \textcolor{red}{danceable, and cheerful} jazz that blends hip-hop grooves}
+    \end{flushleft}
+    \vspace{-0.3cm} 
+    \begin{tabular}{l r r p{0.55\linewidth}}
+        \toprule
+        \textbf{KG Verdict} & \textbf{Ent. Score} & \textbf{Con. Score} & \textbf{Evidence Used (MusicBrainz)} \\
+        \midrule
+        CONTRADICTION & 2.36 & 95.19 & \textit{daoud} plays downtempo, instrumental music. \\
+        \bottomrule
+    \end{tabular}
+
+    \vspace{0.4cm} % Ruimte tussen de twee claims
+
+    % --- Voorbeeld 2: Adult DVD (Geografische frictie) ---
+    \begin{flushleft}
+        \claim{clm:adult_dvd} \textit{Adult DVD, A six-piece synthpunk band from the \textcolor{red}{Netherlands} returns with danceable, retro computer game-like music that grooves, rocks, and swings}
+    \end{flushleft}
+    \vspace{-0.3cm}
+    \begin{tabular}{l r r p{0.55\linewidth}}
+        \toprule
+        \textbf{KG Verdict} & \textbf{Ent. Score} & \textbf{Con. Score} & \textbf{Evidence Used (MusicBrainz)} \\
+        \midrule
+        CONTRADICTION & 1.27 & 96.23 & \textit{Adult DVD} originates from United Kingdom. \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Due to there not being a significant number of shifts, we are not able to make factual claims, but we can speculate whether our implementation has ground. By inspecting the types of synthezied source, we can detect a pattern in the accurate and inaccurate label shifts. Label shifts regarding origin of the artist, were correctly shifted, while labels that were shifted due to the music genre being contradicting, were not accurate. When inspecting these genre cases, the genres listed in the source were always mentioned correctly in the claim. This can be attributed to the difference between fact checking locations and genres, due to geographical locations being 1 to 1, meaning that if an artist is from The Netherlands, it is easy to check, but music genres are not as easily labelled. For example, if we check another venues website\footnote{https://www.spotgroningen.nl/events/rockit/programma/daoud/} for artist ``daoud'', we see that they also show his music as being ``elektronica'', which was not mentioned on the Doornroosje website. 
+
+The (lack of) distribution of labels being overriden can also be attributed to \rob's distribution of claims across entailment scores (Figure \ref{fig:score_distribution}). If our external graph wants to overwrite a contradiction, it will almost need to be 100\% certain, and no case of this happened to appear in our experiment. 
 % \item Able to verify locantion easier than genre 
 % \item overrides only from extrinsic to intrinsic 
+These results provide preliminary evidence that deterministic override mechanisms can correct specific NLI classification errors, though the limited number of overrides (N = 5) prevents generalization. While the FELM benchmark \cite{chen2023felm} demonstrates that generative evaluators often hallucinate their own corrections when dealing with long-tail entities, our deterministic override mechanism entirely bypasses this circular validation flaw. By relying on structured non-parametric memory, the pipeline ensures that any successful override is deterministically grounded in database-verified facts, eliminating the probabilistic error of parametric models.
 
 
 
 \section{Evaluation Metrics}
+% When comparing the evaluation metrics across the two levels (atomic vs. sentence), we can see that the F1-Scores, Accuracy, Error Detection and False Positive Rate all increase in Table \ref{tab:min_pooling_comparison}. Due to the min-pooling aggregation from atomic to sentence level we implemented, our pipeline biases towards error detection since one claim in a three-claim sentence will fail the sentence. This comes with the upside of our error detection being flawless, but the downside of our False Positive Rate inclining as well due to it being more agressive. 
+When comparing the evaluation metrics across the two levels (atomic vs. sentence), the implications of our chosen aggregation logic become clear. As established in Section \ref{sec:binary_metrics}, frameworks like SummaC \cite{laban2021summaC} rely on mean-pooling to aggregate summary scores, which inherently dilutes the penalty of a single hallucinated claim if the rest of the sentence is factual. By explicitly diverging from the SummaC methodology and implementing strict min-pooling, our pipeline successfully forces a heavy bias towards error detection. As seen in Table \ref{tab:min_pooling_comparison}, this architectural choice guaranteed a flawless Error Detection Rate (1.0000), successfully catching edge-case hallucinations that a mean-pooling approach would likely obscure. However, this comes with the significant trade-off of inflating the False Positive Rate to 0.4737, highlighting the inherent tension between high-sensitivity hallucination detection and overall sentence accuracy.
 %     \item The min-pooling allows for a significant jump in accuracy 
 % You must explicitly discuss the trade-off of min-pooling. Yes, it guarantees a perfect Error Detection Rate (1.000) because it acts as a highly sensitive tripwire, but it also creates the "Bucket Effect." You need to explicitly state that because min-pooling groups both error types into one bucket, migrating claims between EXTRINSIC and INTRINSIC failed to move the needle on the binary sentence F1-score.
 
+\begin{table}[htbp]
+    \centering
+    \caption{Comparison of baseline performance metrics at the atomic claim level versus the aggregated sentence level ($\mathcal{T} = 70.0$). Both levels evaluate the binary classification of errors (SUPPORTED vs. INCORRECT).}
+    \label{tab:min_pooling_comparison}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{l c c}
+        \toprule
+        \textbf{Metric} & \textbf{Atomic Level (Binary)} & \textbf{Sentence Level (Min-Pooling)} \\
+        \midrule
+        Error Detection Rate (Recall) & 0.8837 & 1.0000 \\
+        False Positive Rate & 0.3273 & 0.4737 \\
+        Accuracy & 0.7653 & 0.8085 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
 \section{Limitations \& Future Work}
 
-% The Schema Limitation: You must mention that the False Positive Rate didn't drop largely because the MusicBrainz query scope was artificially limited to only three attributes (Area, Country, Genre). If the model flagged a release year as a hallucination, the Knowledge Graph was blind to it and couldn't rescue it.
+\subsection{Limitations of the Experimental Setup}
+While the hybrid pipeline successfully demonstrated the viability of Knowledge Graph interventions for NLI error correction, several structural and methodological limitations must be acknowledged when interpreting the results.
 
-% Domain Generalization: Could this pipeline work for news articles or medical texts, or is the reliance on a specific database like MusicBrainz too rigid?
+\textbf{External Graph Knowledge Gap:} The most significant limitation of the hybrid architecture is the restricted scope of the Knowledge Graph integration. The MusicBrainz data synthesis was strictly constrained to three attribute categories: \texttt{Area}, \texttt{Country}, and \texttt{Genre}. Consequently, if the baseline NLI model flagged a temporal claim (e.g., an album release year) or an entity claim (e.g., the name of a band member) as an \texttt{EXTRINSIC} hallucination, the external database was unable to assist the pipeline.
 
-% Coudlve used a training/testing split, or more data. 
+\textbf{Dataset Complexity and Evaluation Splits:} The evaluation was conducted on a moderately sized dataset consisting of $N=47$ summary sentences, with 98 atomic claims. While sufficient for a proof-of-concept pipeline, a larger corpus is required to achieve higher statistical confidence. Furthermore, the absence of a strict train/test split for hyperparameter tuning means the optimal baseline threshold ($\mathcal{T} = 70.0$) was calibrated and evaluated on the same data, presenting a minor risk of threshold overfitting. 
 
+\subsection{Future Work}
+Based on the limitations identified, future research should focus on expanding the dataset, increasing the knowledge graphs knowledge and testing its adaptability to other datasets. 
+
+\textbf{Knowledge Graph Expansion.} The first step that is to implement an extension to our current knowledge graph. A graph which includes more information about the artist, e.g. release dates, tour years, band members, could help the current set up. This could be done by either choosing to use another database, or implementing a web-search structure of sorts. By equipping the Knowledge Graph to answer a wider variety of queries, the pipeline's performance on verifying \texttt{EXTRINSIC} claims could increase, effectively reducing the False Positive Rate and shifting the sentence-level binary metrics.
+
+\newpage 
+\textbf{Cross-Domain Evaluation and Broad-Schema Graphs.} To test the adaptability and dynamic set up of the experimental approach, future work should evaluate the pipeline on a multi-domain dataset (e.g., verifying Wikipedia articles or news summaries). Instead of relying on a niche database like MusicBrainz, the system could be integrated with a massive, generalized Knowledge Graph such as Wikidata, or again utilizing an open web search. This would test whether the pipeline can successfully classify hallucinations outside of the music database.
+
+\textbf{Methodological Refinements.} Future experiments should utilize a larger dataset divided into strict training, validation, and testing splits to ensure threshold calibrations are robust. 

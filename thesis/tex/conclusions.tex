@@ -1,6 +1,20 @@
 \chapter{Conclusions}\label{conclusions}
-In this chapter you present all conclusions that can be drawn from the
-preceding chapters.
-It should not introduce new experiments, theories, investigations, etc.:
-these should have been written down earlier in the thesis.
-Therefore, conclusions can be brief and to the point.
+% In this chapter you present all conclusions that can be drawn from the
+% preceding chapters.
+% It should not introduce new experiments, theories, investigations, etc.:
+% these should have been written down earlier in the thesis.
+% Therefore, conclusions can be brief and to the point.
+
+This research aimed to detect hallucinations in LLM-summaries of local music venues, using a hybrid cross-lingual NLI and knowledge graph architecture. To combat the flaws of ``LLM-as-a-judge'' systems, we proposed and tested a hybrid Natural Language Inference (NLI) and Knowledge Graph architecture. By answering the subquestions formulated at the beginning of this thesis, we arrive at our final conclusion regarding the viability of this hybrid framework. 
+
+Regarding the baseline performance (\textbf{RQ 1.1}), the cross-lingual NLI model demonstrated a high capability to detect hallucinations, achieving a full Error Detection Rate (1.0000) and a Sentence F1-Score of 0.8615. However, this high performance introduced a statistical evaluation limit, leaving minimal mathematical room for external improvement. Furthermore, the baseline exhibited a strong conservative bias, often misclassifying verifiable claims as intrinsic contradictions due to the strict maximum-score aggregation strategy across evidence sentences.
+
+Regarding threshold optimization (\textbf{RQ 1.2}), the confidence threshold ($\mathcal{T}$), our evaluations showed to lock the threshold at the optimal value of 70.0, showing that it only had a small impact on the metrics, mainly when the threshold was set to an extreme value ($\mathcal{T} \le 20.0$ or $\mathcal{T} \ge 90.0$). 
+
+Regarding the Knowledge Graph's efficacy (\textbf{RQ 1.3}), the integration of MusicBrainz successfully resolved specific baseline uncertainties by overriding unverified extrinsic claims into intrinsic contradictions. 
+
+However, results varied between different categories of synthetic source material. The external graph accurately verified deterministic, 1-to-1 factual attributes such as geographic origins, but it failed to accurately map less strictly defined music genres. 
+
+Regarding the architectural aggregation logic (\textbf{RQ 1.4}), the implementation of strict min-pooling introduced increased our evaluation metrics from the atomic to the sentence level. This design choice guaranteed that no hallucinated sentences slipped through the pipeline, but also prevented atomic-level corrections by the Knowledge Graph from propagating to the sentence-level scores. Since by grouping both minor atomic errors and severe hallucinations into a single failure state, the aggregation logic prevented the Knowledge Graph's atomic corrections from rescuing overarching sentence scores, ultimately keeping the pipeline's False Positive Rate at 0.4737.
+
+Combining these findings answers the primary research question (\textbf{RQ 1}). A hybrid evaluation framework integrating deterministic claim decomposition, XNLI, and a structured Knowledge Graph, is a methodologically sound approach for detecting and categorizing hallucinations in LLM-generated summaries. It successfully circumvents the circular validation flaws of ``LLM-as-a-judge" models by providing deterministic overrides for factual errors. However, its overarching effectiveness is currently bottlenecked by the scope of the data contained by our knowledge graph and the strictness of min-pooling aggregation. To fully resolve the high false positive rates, future iterations of this architecture must broaden the query schema and adopt a more dynamic aggregation logic.
