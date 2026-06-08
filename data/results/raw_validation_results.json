@@ -1,0 +1,1693 @@
+[
+    {
+        "artist": "VroegZat",
+        "url": "https://www.doornroosje.nl/event/vroegzat-10/",
+        "summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres.",
+        "dutch_text": "VroegZat brengt het nachtleven terug naar de avond! Evenveel feest, maar eerder op de avond (19.30 tot 00.00 uur). Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent. Win-win! Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen. DJ Rob de Nice en MC Rick Rossig gooien alles in de mix. Zorg dat je op tijd binnen bent, want hier kun je niet vroeg genoeg hard gaan!\nMeer zien van ons danceprogramma? Neem een kijkje op onze AT NIGHT-pagina !\nDoornroosje is gevestigd op Stationsplein 11, direct naast Station Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Not Found"
+        },
+        "raw_validations": [
+            {
+                "claim": "VroegZat bringing nightlife to the early evening",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 56.15300536155701,
+                "best_con_score": 85.33459901809692,
+                "evidence_used": "Over VroegZat: Dus op een normale tijd naar bed, waardoor je de volgende dag gewoon fit bent.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 90.16260504722595,
+                "best_con_score": 50.11906623840332,
+                "evidence_used": "Over VroegZat: Muzikaal gaat het heen en weer: van disco naar pop, van reggae naar rock en van happy naar hiphop, en die lekkere dansbare tunes die daartussen en daarbuiten vallen.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Frank Boeijen",
+        "url": "https://doornroosje.nl/event/frank-boeijen-19/",
+        "summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories.",
+        "dutch_text": "Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen. Iconische nummers als ‘Zwart Wit’, ‘Kronenburger Park’ en ‘De Verzoening’ zullen de revue passeren, maar hij weet het publiek ook steevast te verrassen met nieuw werk.\nEen avond met Frank Boeijen staat garant voor een gevarieerde show op hoog niveau, waarbij Franks warme stem en zijn voortreffelijke muzikale begeleiders de luisteraar meenemen in een tocht langs ontroering en herkenning, langs avontuur en vakmanschap. Duik in een wereld vol poëtische nummers en verhalen over schoonheid, liefde en het leven. En dat alles in de intieme, groene omgeving van Openluchttheater de Goffert.\n“Frank Boeijen weet als vanouds vernieuwend voor de dag te komen. Hij verkeert in artistieke topvorm. Zijn stem heeft aan betekenisvolle gloed gewonnen. Er valt veel te genieten tijdens zijn voorstelling” – Popmagazine Heaven\nOpenluchttheater De Goffert is gevestigd op Steinweglaan 2, midden in het Nijmeegse Goffertpark. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Frank Boeijen",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Nijmegen",
+            "genre": "singer-songwriter"
+        },
+        "raw_validations": [
+            {
+                "claim": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.95490908622742,
+                "best_con_score": 0.10706743923947215,
+                "evidence_used": "Over Frank Boeijen: Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Dutch singer-songwriter Frank Boeijen returns for an evening of poetic songs and stories",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.23409223556519,
+                "best_con_score": 6.6840678453445435,
+                "evidence_used": "Over Frank Boeijen: Duik in een wereld vol poëtische nummers en verhalen over schoonheid, liefde en het leven.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "And Also the Trees",
+        "url": "https://doornroosje.nl/event/and-also-the-trees/",
+        "summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'.",
+        "dutch_text": "De Engelse postpunkband And Also the Trees, bekend om hun meeslepende liveoptredens, unieke stijl, suggestieve teksten en donkere jazzritmes, is na ruim 15 albums nog steeds springlevend. De band komt dan ook met hun nieuwe album ‘The Devil’s Door’ in het najaar naar Doornroosje!\nAnd Also the Trees werd opgericht in 1979, tijdens het geboorte van het postpunk-tijdperk in Worcestershire. Vanaf de start kon de band het goed vinden met The Cure.  Ze speelden en werkten nauw samen.  And Also the Trees is opgericht door zanger Simon Huw Jones en gitarist Justin Jones. Beiden zorgden ze voor een continue behouden aanwezigheid binnen de internationale postpunk- en alternatieve scene.\nDe band staat bekend om hun meeslepende liveoptredens. Het muzikale recept is bekend en nauwelijks aangepast, maar And Also the Trees werkt het op plaat en op het podium tot in de puntjes uit. De half gezongen teksten op nauwkeurig afgestemde gitaarlijnen klinken verfijnd en natuurlijk.\nAnd Also the Trees bracht op 26 februari 2026 hun nieuwe album ‘The Devil’s Door’ uit. Deze ruwe maar prachtige parel is een aanrader voor liefhebbers van sombere, tijdloze liedjes, zoals The Cure, Killing Joke, Cocteau Twins, Tindersticks of Nick Cave die kan maken.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "And Also the Trees",
+            "type": "Group",
+            "country": "GB",
+            "area": "United Kingdom",
+            "place": "Worcestershire",
+            "genre": "rock, post-punk"
+        },
+        "raw_validations": [
+            {
+                "claim": "And Also the Trees is The English post-punk band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.84201192855835,
+                "best_con_score": 62.091320753097534,
+                "evidence_used": "Over And Also the Trees: De Engelse postpunkband And Also the Trees, bekend om hun meeslepende liveoptredens, unieke stijl, suggestieve teksten en donkere jazzritmes, is na ruim 15 albums nog steeds springlevend.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "And Also the Trees, The English post-punk band And performs songs from their new album 'The Devil's Door",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 65.81464409828186,
+                "best_con_score": 1.589086838066578,
+                "evidence_used": "Over And Also the Trees: De band komt dan ook met hun nieuwe album ‘The Devil’s Door’ in het najaar naar Doornroosje!",
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Bertolf",
+        "url": "https://www.doornroosje.nl/event/bertolf-4/",
+        "summary": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol. 2' with his excellent Dutch band.",
+        "dutch_text": "Bertolf is terug met zijn bluegrass album ‘Bluefinger vol. 2’! In tegenstelling tot de eerdere versie ‘Bluefinger’ bestaat ‘Bluefinger vol. 2’ uit volledig nieuw en eigen repertoire. De plaat wordt gebracht met ongelofelijke instrumentale virtuositeit, aanstekelijk spelplezier en prachtige meerstemmige zang. Natuurlijk komt ook het beste van ‘Bluefinger’ voorbij, met af en toe een verrassende cover in een bluegrass bewerking.\nBertolf kreeg bluegrass muziek met de paplepel ingegoten en vloog in 2022 naar Nashville om een lang gekoesterde droom te laten uitkomen. Hij nam er het album ‘Bluefinger’ op – een bluegrass album, met zijn grootste helden uit de scene Jerry Douglas en Stuart Duncan. Rond dit album volgde een uitgebreide tour langs Nederlandse theaters, podia en festivals met een band bestaande uit de beste muzikanten uit de nationale bluegrass-scene.\nDe band raakte zo hecht en goed op elkaar ingespeeld, dat Bertolf besloot om ‘Bluefinger vol. 2’ op te nemen, maar dit keer met zijn uitmuntende Nederlandse band. De befaamde engineer en mixer Dave Sinko kwam overgevlogen om het album op te nemen te mixen.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Bertolf",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.90907907485962,
+                "best_con_score": 1.3542717322707176,
+                "evidence_used": "Over Bertolf: Bertolf is terug met zijn bluegrass album ‘Bluefinger vol. 2’!",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Wyatt E.",
+        "url": "https://www.doornroosje.nl/event/wyatt-e/",
+        "summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology.",
+        "dutch_text": "De muziek van het Belgische Wyatt E. ontvouwt zich als een ritueel: langzaam, meeslepend en hypnotiserend, gedragen door diepe drones, gelaagde doom melodieën en een indrukwekkende sfeer die zowel spiritueel als filmisch aanvoelt.\nMet een karakteristieke combinatie van zware, repetitieve riffs, trage spanningsopbouw en een sterk atmosferisch geluid creëert de band langgerekte composities die zowel intens als ingetogen zijn. De releases van Wyatt E. zijn vaak conceptueel opgebouwd rond antieke mythologie en historische periodes, waarbij albums functioneren als samenhangende, verhalende gehelen. Ook live staat de band bekend om intense, zorgvuldig opgebouwde shows die het publiek onderdompelen in een langzaam ontwikkelende, hypnotiserende sfeer. Daarmee positioneert Wyatt E. zich als een act die zowel binnen de heavy muziekwereld als bij een avontuurlijk, genre-overschrijdend publiek in de smaak valt. hun optreden tijdens Soulcrusher 2025 was weergaloos en smaakt absoluut naar meer!\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Wyatt E.",
+            "type": "Group",
+            "country": "BE",
+            "area": "Belgium",
+            "place": "Brussels",
+            "genre": "drone, post-metal"
+        },
+        "raw_validations": [
+            {
+                "claim": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 4.242967441678047,
+                "best_con_score": 0.4047231748700142,
+                "evidence_used": null,
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Wyatt E. built on heavy, repetitive riffs and deep drones",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 96.63556814193726,
+                "best_con_score": 99.76784586906433,
+                "evidence_used": "Over Wyatt E.: De releases van Wyatt E. zijn vaak conceptueel opgebouwd rond antieke mythologie en historische periodes, waarbij albums functioneren als samenhangende, verhalende gehelen.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Wyatt E. based on ancient mythology",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.23283457756042,
+                "best_con_score": 0.3192364703863859,
+                "evidence_used": "Over Wyatt E.: De releases van Wyatt E. zijn vaak conceptueel opgebouwd rond antieke mythologie en historische periodes, waarbij albums functioneren als samenhangende, verhalende gehelen.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Daryll-Ann",
+        "url": "https://www.doornroosje.nl/event/daryll-ann-5/",
+        "summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time.",
+        "dutch_text": "De Nederlands gitaarpopband Daryll-Ann nam dertig jaar geleden het album ‘Daryll-Ann Weeps’ op.  De band heeft het album nog niet eerder in z’n geheel uitgevoerd, dit komen ze in het najaar 2026 voor het eerst doen!\nHet album is een van de kroonjuwelen van de Nederpop en Excelsior Recordings in het bijzonder. De band nam ‘Daryll-Ann Weeps’ in 1996 op in Weesp, het album dat uitgroeide met de ware status ‘cult-classic’.\n‘Daryll-Ann Weeps’ is een album waar alles in zit: woede, verdriet, schoonheid en troost. De band giet de klassieke elementen van ware kunst in zestien geniale songs. Daryll-Ann komt in de originele bezetting en onder de best denkbare omstandigheden voor een show naar Doornroosje.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Daryll-Ann",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Ermelo",
+            "genre": "rock, alternative rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Daryll-Ann is The Dutch guitar pop band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.36902523040771,
+                "best_con_score": 79.82943654060364,
+                "evidence_used": "Over Daryll-Ann: De Nederlands gitaarpopband Daryll-Ann nam dertig jaar geleden het album ‘Daryll-Ann Weeps’ op.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' in its entirety",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 12.91465163230896,
+                "best_con_score": 63.496118783950806,
+                "evidence_used": "Over Daryll-Ann: De band heeft het album nog niet eerder in z’n geheel uitgevoerd, dit komen ze in het najaar 2026 voor het eerst doen!",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' for the first time",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 5.017802864313126,
+                "best_con_score": 99.0804672241211,
+                "evidence_used": "Over Daryll-Ann: De Nederlands gitaarpopband Daryll-Ann nam dertig jaar geleden het album ‘Daryll-Ann Weeps’ op.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "daoud",
+        "url": "https://www.doornroosje.nl/event/daoud/",
+        "summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock.",
+        "dutch_text": "De Frans-Marrokkaanse trompettist en componist daoud maakt jazz die niet echt in een hokje past. Ook heeft hij er bijna een hobby van gemaakt om puristen te irriteren. Zichzelf neemt hij niet zo serieus, maar zijn muziek wel. Zijn muziek is tegendraads, soms chaotisch, dan weer teder maar altijd wars van conventies.\ndaoud had geen makkelijke jeugd en was een tijd dakloos. Hij noemt zichzelf het ‘Enfant Terrible van de Franse jazz’, maar hij wordt ook bestempeld als de fakkeldrager van de nieuwe jazzscene in Frankrijk. Muzikaal houdt daoud van avontuur, zolang het maar dansbaar en vrolijk is. Als charismatische frontman is humor een belangrijk onderdeel van zijn muziek.\nHij kleedt zijn trompetspel aan met hiphop-grooves, neo-soul en soms zelfs een beetje rock. Door zijn luchtige stijl lijkt het soms een beetje achteloos, maar het zit razendknap in elkaar.\ndaoud deelde op prestigieuze festivals het podium met onder andere Erik Truffaz. Dankzij de release van ‘GOOD BOY’ (2024) speelde hij ramvolle shows langs podia als Ronnie Scott’s in Londen, Montreux Jazz Festival, North Sea Jazz en Eurosonic Noorderslag. Live zijn daoud en zijn band onvoorspelbaar maar altijd indrukwekkend. Van ingetogen momenten tot uitbarstingen waarbij de regels van het genre constant onder druk staan.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "daoud",
+            "type": "Person",
+            "country": "Unknown",
+            "area": "Toulouse",
+            "place": "Unknown",
+            "genre": "downtempo, instrumental"
+        },
+        "raw_validations": [
+            {
+                "claim": "daoud is The French-Moroccan trumpeter",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 3.2822363078594208,
+                "best_con_score": 74.21440482139587,
+                "evidence_used": "Over daoud: daoud maakt jazz die niet echt in een hokje past.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves,",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 12.134920060634613,
+                "best_con_score": 30.038222670555115,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "daoud, that blends hip-hop grooves,",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.87151622772217,
+                "best_con_score": 41.05600118637085,
+                "evidence_used": "Over daoud: Hij kleedt zijn trompetspel aan met hiphop-grooves, neo-soul en soms zelfs een beetje rock.",
+                "ground_truth": "UNKNOWN"
+            }
+        ]
+    },
+    {
+        "artist": "Klezmagic",
+        "url": "https://www.doornroosje.nl/event/klezmagic/",
+        "summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska.",
+        "dutch_text": "De Amsterdamse Balkanband Klezmagic presenteert hun nieuwe album ‘Op Vrije Voeten’ tijdens een show in Merleyn! De energieke achtkoppige band verweeft Balkan, Klezmer en eigen invloeden tot een explosieve mix die zowel danst als raakt.\nSinds hun debuutalbum ‘MAKEDAMSKO’ (2019) ontwikkelde de band een herkenbaar eigen geluid en ze brachten naast meerdere singles, ook een EP en livealbum uit. Klezmagic verkent op hun EP ‘De Grote Race’ (2022) de grenzen van Balkan, Klezmer en Ska. Ze krijgen met de stuwende ritmes, opzwepende blazers en meeslepende strijkers elke zaal in beweging. Van intieme clubs tot aan festivals. De band bouwde dankzij verschillende tours door Europa niet alleen nationaal, maar ook internationaal een fanbase op.\nIn maart 2026 komt Klezmagic hun debuutalbum uit. ‘Op Vrije Voeten’ is een veelzijdig album waarin de Klezmagic-sound vernieuwd en herontdekt wordt. Temidden van een mozaïek van invloeden uit Oost-Europese, Turkse, Italiaanse en Nederlandse muziek wordt er in het album gemeanderd tussen melancholie en vreugde, de stad en de natuur, chaos en verstilling. Het omarmt de extase en durft tegelijkertijd klein en kwetsbaar te zijn. Klezmagic viert dit nieuwe album tijdens de show in Merleyn.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Klezmagic",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Amsterdam",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Klezmagic is The Amsterdam-based Balkan band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.9032735824585,
+                "best_con_score": 0.6665840744972229,
+                "evidence_used": "Over Klezmagic: De Amsterdamse Balkanband Klezmagic presenteert hun nieuwe album ‘Op Vrije Voeten’ tijdens een show in Merleyn!",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Klezmagic, The Amsterdam-based Balkan band presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 6.564165651798248,
+                "best_con_score": 96.36637568473816,
+                "evidence_used": "Over Klezmagic: Klezmagic verkent op hun EP ‘",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Klezmagic blending Balkan, Klezmer, and Ska",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 60.15555262565613,
+                "best_con_score": 8.79649966955185,
+                "evidence_used": "Over Klezmagic: de grenzen van Balkan, Klezmer en Ska.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "IOS",
+        "url": "https://www.doornroosje.nl/event/ios/",
+        "summary": "A Dutch Nederpop band returns with new material and classic hits.",
+        "dutch_text": "IOS (IsOokSchitterend) was er ineens, eind jaren ’90. Hun debuutsingle ‘Voltooid Verleden Tijd’ stond maar liefst 30 weken in de Top 40. De band bivakkeerde 15 jaar in de hitlijsten met nummers als ‘Uit De Schaduw’, ‘Hoe Het Voelt’ en ‘Altijd Wel Iemand’ en daarmee bouwde IOS een stevige live reputatie op.\nIn 2010 nam de band afscheid van het publiek en de spotlights met tien avonden in Ahoy tijdens Vrienden van Amstel Live. Na een pauze van meer dan 10 jaar pakte IOS de draad weer op. Een reünieconcert in een uitverkocht Tivoli, zes nieuwe singles, een club- en een theatertour en een best-of LP.\nMomenteel werkt de band aan haar achtste studioalbum en daarmee gaan ze komend najaar op tour. Verwacht dus nieuw werk, en daarnaast natuurlijk de echte IOS klassiekers en meezingers. Een avond Nederpop met een gedurfd randje. Fris, maar toch vertrouwd; IOS is terug!\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "IOS",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "dutch, groningen"
+        },
+        "raw_validations": [
+            {
+                "claim": "A Dutch Nederpop band returns with new material and classic hits.",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 3.6884956061840057,
+                "best_con_score": 1.3187399134039879,
+                "evidence_used": null,
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Master Boot Record",
+        "url": "https://www.doornroosje.nl/event/master-boot-record-3/",
+        "summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit.",
+        "dutch_text": "Master Boot Record en Fulci komen voor co-headline show naar Nijmegen! Beide bands staan bekend om hun unieke en onmiskenbare sound. Waar Master Boot Record de 80s computer sound mixt met metal, grijpt Fulci terug op de old school Italiaanse horror films.\nOnder leiding van de enigmatische artiest Victor Love, creëert Master Boot Record een instrumentaal retro-futuristisch klanklandschap waarin heavy metal, chiptune en klassiek samenkomen tot een opwindende nieuwe sound. Elk nummer is een complexe mix van razendsnelle gitaarpartijen, barok-geïnspireerde melodieën en 8-bit synthesizers. Minutieus gearrangeerd om een geluid te vormen dat tegelijk nostalgisch als avant-gardistisch klinkt. De geprogrammeerde drums en zoemende floppy drive synths vormen de basis voor de ritmesectie. Alsof je naar de soundtrack van Stranger Things zit te luisteren, maar dan op steroïden. Master Boot Record weet de hartslag van de rock ‘n’ roll te versmelten met die van de kille digitale wereld.\nCo-headliner deze avond is Fulci. Deze immens populaire Italiaanse deathmetalband brengt een kneiterharde ode aan de gruwelcinema van Lucio Fulci. Met lompe, groovende riffs, smerige slam-passages en een duistere, filmische sfeer voelt hun sound als een onvervalste nachtmerrie op hoog volume. Live klinkt Fulci als een bloeddoordrenkte horrortrip vol zombies, gore en brute breakdowns; compromisloos, ziekelijk zwaar en verslavend intens.\nAan Arottenbit de eer de avond te openen, dit solo project combineert net als Master Boot Record 8-bit punk en metal, maar dan uitgevoerd op een Gameboy!\nDeze avond is verplichte kost voor liefhebbers van o.a. Carpenter Brut, Perturbator, Gost maar ook 220 Stab Wounds en Sanguisugabogg.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "MASTER BOOT RECORD",
+            "type": "Person",
+            "country": "IT",
+            "area": "Italy",
+            "place": "Roma",
+            "genre": "electronic, industrial metal"
+        },
+        "raw_validations": [
+            {
+                "claim": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 2.7506735175848007,
+                "best_con_score": 99.8873770236969,
+                "evidence_used": "Over Master Boot Record: Met lompe, groovende riffs, smerige slam-passages en een duistere, filmische sfeer voelt hun sound als een onvervalste nachtmerrie op hoog volume.",
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "Master Boot Record fusing heavy metal, chiptune, and classical",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.86746311187744,
+                "best_con_score": 90.5049204826355,
+                "evidence_used": "Over Master Boot Record: Onder leiding van de enigmatische artiest Victor Love, creëert Master Boot Record een instrumentaal retro-futuristisch klanklandschap waarin heavy metal, chiptune en klassiek samenkomen tot een opwindende nieuwe sound.",
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "Master Boot Record supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 11.154446005821228,
+                "best_con_score": 99.52219128608704,
+                "evidence_used": "Over Master Boot Record: Onder leiding van de enigmatische artiest Victor Love, creëert Master Boot Record een instrumentaal retro-futuristisch klanklandschap waarin heavy metal, chiptune en klassiek samenkomen tot een opwindende nieuwe sound.",
+                "ground_truth": "UNKNOWN"
+            }
+        ]
+    },
+    {
+        "artist": "Adult DVD",
+        "url": "https://doornroosje.nl/event/adult-dvd",
+        "summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings.",
+        "dutch_text": "Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!\nDe band is geboren met peper in de reet: hun dansbare, bijna retro computerspel-achtige muziek grooved, rockt en swingt. Hun dancepunk is weird als DEVO en even dansbaar als Soulwax, waarbij veel fragmenten een knipoog geven naar oude 8bit muziek.\nNa enkele succesvolle EP’s zal hun debuutalbum dit voorjaar verschijnen.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Adult DVD",
+            "type": "Group",
+            "country": "GB",
+            "area": "United Kingdom",
+            "place": "Leeds",
+            "genre": "dance-rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Adult DVD is from the Netherlands",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 89.46256637573242,
+                "best_con_score": 1.182529702782631,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Adult DVD is A six-piece synthpunk band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.92483258247375,
+                "best_con_score": 0.8469329215586185,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns to Nijmegen",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.75911378860474,
+                "best_con_score": 0.3180461935698986,
+                "evidence_used": "Over Adult DVD: Het zeskoppige synthpunkmonster Adult DVD komt terug naar Nijmegen na een indrukwekkend optreden op Zeitgeist 2025!",
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns with danceable, retro computer game-like music that grooves, rocks, and swings",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 1.5159960836172104,
+                "best_con_score": 0.3390880534425378,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Hällas",
+        "url": "https://doornroosje.nl/event/hallas",
+        "summary": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror.",
+        "dutch_text": "Hällas uit Zweden balanceert moeiteloos tussen kosmische prog en klassieke hardrock. Met hun kenmerkende mix van 70’s geïnspireerde soundscapes, theatrale vocalen en meeslepende gitaarlijnen bouwen ze werelden die even mysterieus als meeslepend zijn.\nHällas is geen band die simpelweg nummers schrijft, ze creëren volledige universums waarin elke plaat voelt als een nieuw hoofdstuk in een groter, mythologisch verhaal.\nSinds hun doorbraak met ‘Excerpts from a Future Past’ en de veelgeprezen opvolger ‘Conundrum’ heeft de band een trouwe internationale fanbase opgebouwd. Live weet Hällas deze magie moeiteloos te vertalen naar het podium, waar hun gelaagde composities en dynamische opbouw zorgen voor een hypnotiserende ervaring die het publiek van begin tot eind in zijn greep houdt.\nVoor liefhebbers van bands als Uriah Heep, Wishbone Ash en vroege Genesis, maar met een frisse, eigentijdse twist, is Hällas een absolute must-see. Verwacht geen standaard show, maar een reis door tijd en ruimte gedreven door melodie, mystiek en pure muzikale verbeeldingskracht.\nHet duo Earth Tongue uit Nieuw Zeeland injecteert hun psychedelisch geladen rock met een flinke dosis gothic horror zoals te horen is op hun nieuwe album ‘Miraculous Death’.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Hällas",
+            "type": "Group",
+            "country": "SE",
+            "area": "Sweden",
+            "place": "Jönköping",
+            "genre": "rock, progressive rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 82.82234072685242,
+                "best_con_score": 16.21689647436142,
+                "evidence_used": "Over Hällas: Het duo Earth Tongue uit Nieuw Zeeland injecteert hun psychedelisch geladen rock met een flinke dosis gothic horror zoals te horen is op hun nieuwe album ‘Miraculous Death’.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.8670220375061,
+                "best_con_score": 74.34036135673523,
+                "evidence_used": "Over Hällas: Het duo Earth Tongue uit Nieuw Zeeland injecteert hun psychedelisch geladen rock met een flinke dosis gothic horror zoals te horen is op hun nieuwe album ‘Miraculous Death’.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Hällas, who inject psychedelic rock with gothic horror",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 35.319554805755615,
+                "best_con_score": 95.76424360275269,
+                "evidence_used": "Over Hällas: Met hun kenmerkende mix van 70’s geïnspireerde soundscapes, theatrale vocalen en meeslepende gitaarlijnen bouwen ze werelden die even mysterieus als meeslepend zijn.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "IDA",
+        "url": "https://doornroosje.nl/event/ida",
+        "summary": "Dutch hyperpop sensation IDA performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions.",
+        "dutch_text": "De hyperpop sensatie van Popronde 2025 IDA komt na het Bevrijdingsfestival in het Hunnerpark en een volle aankomende festivalzomer dit najaar voor een show naar Merleyn!\nIDA zoekt met haar genre-bending neder-hype-pop muziek alle grenzen op in de Nederlandstalige elektronische popmuziek. Ze onderscheidt zich door scherpe, introspectieve teksten die recht tegenover de eclectische producties van producer MAZOO staan. Wat de luisteraar krijgt? Een combinatie van brutale en kwetsbare songs waarbij ze de volwassen wereld onder de loep legt en er keihard overheen danst.\nNa sterk ontvangen singles zoals ‘Kubus In Een Ballenbak’ en ‘Niemand’ bracht IDA haar debuut-EP ‘Komt Goed’ uit. Een week na release zette ze Noorderslag in de fik. Sindsdien heeft ze niet stilgezeten. Met ‘Vlammen’ ligt er een nieuwe single die de nodige support geniet, en op 8 mei stond ze voor een uitverkochte eerste soloshow in TivoliVredenburg.\nHaar liveshows zijn intens, meeslepend en compromisloos. Die energie bracht haar naar toonaangevende podia als Melkweg, Paradiso, Oosterpoort en 013. Op de grote festivalpodia liet IDA een blijvende indruk achter, met haar definitieve doorbraak op Eurosonic Noorderslag als voorlopig hoogtepunt.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Ida",
+            "type": "Group",
+            "country": "US",
+            "area": "United States",
+            "place": "Brooklyn",
+            "genre": "indie rock, indie folk"
+        },
+        "raw_validations": [
+            {
+                "claim": "IDA is Dutch hyperpop sensation",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 1.8607636913657188,
+                "best_con_score": 92.09933280944824,
+                "evidence_used": "Over IDA: IDA zoekt met haar genre-bending neder-hype-pop muziek alle grenzen op in de Nederlandstalige elektronische popmuziek.",
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "IDA, Dutch hyperpop sensation performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 72.81452417373657,
+                "best_con_score": 40.52932858467102,
+                "evidence_used": "Over IDA: Een combinatie van brutale en kwetsbare songs waarbij ze de volwassen wereld onder de loep legt en er keihard overheen danst.",
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "FLEMMING",
+        "url": "https://doornroosje.nl/event/flemming-4",
+        "summary": "FLEMMING (Flemming Freddie Viguurs) is a Dutch pop artist known for catchy, Nederlandstalige pop with creative productions and witty lyrics.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nFLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten. Vernoemd naar de zanger van Queens is het geen wonder dat FLEMMING een passie heeft voor muziek. Afgelopen april kwam zijn nieuwe album ‘Samen Is Leuker Dan Alleen’ uit en rijdt hij in het najaar van 2026 het hele land door tijdens zijn clubtour.\nMet debuutsingle ‘Amsterdam’ zet FLEMMING meteen een authentieke sound neer, wat al snel leidt tot een succes op zowel radio als Spotify, en tot zijn grote verrassing is de single binnen drie maanden goud. Opvolgers ‘Zij Wil Mij’ en ‘Automatisch’ zijn onmiskenbaar catchy en vrolijk. In het najaar van 2022 kwam zijn debuutalbum ‘FLEMMING’ uit, inclusief de geheel door hem zelf geschreven hit ‘Paracetamollen’. Het album stond 15 weken aansluitend op nummer één in de album charts op Spotify. Daarnaast behaalde al FLEMMING zijn singles minimaal de gouden status.\nEerder stond FLEMMING al op grote festivals als Paaspop, Zwarte Cross, Concert At Sea en verzorgde hij het voorprogramma van Guus Meeuwis tijdens de Groots met een zachte G concerten in het Philips Stadion.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "FLEMMING",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "FLEMMING FLEMMING (Flemming Freddie Viguurs",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 97.79433012008667,
+                "best_con_score": 37.778764963150024,
+                "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "FLEMMING is a Dutch pop artist known for catchy",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.88603591918945,
+                "best_con_score": 0.26338214520365,
+                "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "FLEMMING, Nederlandstalige pop with creative productions and witty lyrics",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.88123178482056,
+                "best_con_score": 0.510529289022088,
+                "evidence_used": "Over FLEMMING: FLEMMING (Flemming Freddie Viguurs) brengt frisse, catchy, Nederlandstalige pop met creatieve producties en gevatte teksten.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Ruben Hillen",
+        "url": "https://doornroosje.nl/event/ruben-hillen",
+        "summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences.",
+        "dutch_text": "Ruben Hillen is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland. Met zijn karakteristieke stem, oprechte performances en sterke podium aanwezigheid wist hij zowel de coaches als de kijkers voor zich te winnen. Hij combineert emotie, energie en muzikaliteit in zijn optredens, waarin invloeden uit pop, soul en moderne singer-songwriter muziek samenkomen.\nOndanks zijn nuchtere karakter weet Ruben bij elk optreden het publiek voor zich te winnen door zijn intensiteit en eerlijkheid, eigenschappen waarmee hij zich in korte tijd heeft ontwikkeld tot een veelbelovende nieuwe naam binnen de Nederlandse muziekscene. Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.\nDirect na het winnen van de finale bracht hij zijn eerste eigen single ‘20 Seconds’ uit geproduceerd door Arno Krabman. Het is een country getinte track die na zijn overwinning meteen de streamingcharts inschiet. De dag na de finale maakten coaches Suzan & Freek bekend dat Ruben zal optreden in het voorprogramma van hun concerten in het GelreDome, daarnaast zal hij in juni ook optreden bij Concert at Sea.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Ruben Hillen",
+            "type": "Unknown",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.4395289346575737,
+                "best_con_score": 92.52131581306458,
+                "evidence_used": "Over Ruben Hillen: Al voor zijn deelname aan The Voice was Ruben jarenlang actief in de muziek als frontman van coverband Unite, waar hij veel live-ervaring opdeed en zich ontwikkelde tot een veelzijdige performer.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Ruben Hillen known from The Voice of Holland",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.75900650024414,
+                "best_con_score": 8.410166949033737,
+                "evidence_used": "Over Ruben Hillen: Hillen is een Nederlandse singer-songwriter die bij het grote publiek bekend werd door zijn deelname aan het dertiende seizoen van The Voice of Holland.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Racoon",
+        "url": "https://doornroosje.nl/event/racoon-17",
+        "summary": "Racoon, a Dutch band from Zeeland, returns to Doornroosje for a concert.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nRacoon is al meer dan twintig jaar een van de meest succesvolle Nederlandse bands. Van uitverkochte tournees langs poppodia, via uitverkochte AFAS en Ziggo Domes naar grote spots op grote festivals. Dit najaar keert Racoon terug naar Doornroosje!\nMensen krijgen geen genoeg van Racoon en Racoon krijgt geen genoeg van muziek maken en live spelen. Door de jaren heen bouwde de band gestaag aan een indrukwekkend repertoire. Nummers die je ooit hard meezong in de auto die op repeat stonden tijdens lange zomers, of die ineens weer binnenkomen als je ze hoort.\nIn de loop der jaren groeiden songs als ‘Love You More’, ‘No Mercy’, ‘Oceaan’ en ‘Het Is Al Laat Toch’ uit tot vaste waarden in hun repertoire. Racoon wordt bekroond met Edisons en omarmd door radio en publiek.\nEen concert van Racoon draait om samen spelen en aandacht voor de muziek. Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.\nDe betoverende Faela neemt je mee door de support voor de avond. Met haar prachtige stem, bijzondere verschijning en sprankelende songs kost het haar weinig moeite om elk publiek volledig om haar vinger te winden. Samen brachten ze het nieuwe nummer ‘Daffodils’ uit.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Racoon",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Goes",
+            "genre": "alternative rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Racoon, a Dutch band from Zeeland, returns to Doornroosje",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.71727132797241,
+                "best_con_score": 4.412047937512398,
+                "evidence_used": "Over Racoon: Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Racoon, a Dutch band from Zeeland, returns for a concert",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 98.90072345733643,
+                "best_con_score": 4.970761761069298,
+                "evidence_used": "Over Racoon: Doornroosje is dan ook blij deze Zeeuwen ook dit jaar weer te mogen verwelkomen in Doornroosje.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "CLOUDSURFERS",
+        "url": "https://doornroosje.nl/event/cloudsurfers-3",
+        "summary": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock.",
+        "dutch_text": "Een nieuw tijdperk breekt aan voor Cloudsurfers. Met een aangescherpt gevoel voor melodieën en een breder palet stuwt de Nijmeegse vijfkoppige band hun geluid vooruit, zonder de explosieve energie en gecontroleerde chaos los te laten die hen op de kaart heeft gezet. Dit nieuwe hoofdstuk draait om groei: luider waar het telt, meer gelaagd waar het nodig is en onverschrokken als altijd.\nCloudsurfers’ gemuteerde mix van garagepunk, post-grunge en psychedelische rock bruist nog steeds van de opwinding van een band die recht op het oog van de storm afgaat. Waar eerder het werk vooral dreef op pure vaart en wrijving, laat het nieuwe materiaal een diepere dynamiek horen: nummers die ademen, hooks die blijven hangen en melodieën die net zo hard snijden als het lawaai.\nMet nieuwe muziek in het vooruitzicht verlegt de band opnieuw hun grenzen. De aankomende nummers verruimen het sonische palet, terwijl ze geworteld blijven in de kern van de band. Afgelopen maart kwam hun nieuwe single ‘Daddy Issues’ uit.\nBekend om hun explosieve liveshows heeft Cloudsurfers inmiddels een reputatie opgebouwd die verder reikt dan de Nederlandse underground. Binnen het Nederlandse livecircuit speelden ze op toonaangevende podia en festivals maar ook speelden ze reeds vele malen buiten onze landsgrenzen zoals New York, Zuid-Afrika tot Oost-Europa.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Cloudsurfers",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 4.035436362028122,
+                "best_con_score": 0.24251360446214676,
+                "evidence_used": null,
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Los Pirañas",
+        "url": "https://doornroosje.nl/event/los-piranas",
+        "summary": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
+        "dutch_text": "Los Pirañas is een Colombiaanse ‘supergroep’ die bestaat uit Eblis Alvarez (van de Meridian Brothers), Mario Geleano (Frente Cumbiero, Ondatropica) en Pedro Ojeda (Romperayo). Het trio bouwt een brug tussen dancemuziek en traditionele stijlen als cumbia, afrobeat, Peruaanse chicha en Colombiaanse champeta.\nAlle bandleden zijn creatief gezien medeverantwoordelijk voor de revival van het traditionele Colombiaanse geluid. Met Los Pirañas verleggen zij gezamenlijk de muzikale grenzen nog een stukje verder, door ongewone combinaties aan te gaan. Dit resulteert in een warmbloedige en dansbare muzikale mix.\nHun nieuwste album ‘Una oportunidad mas de triunfar en la vida’ kwam uit op het label Glitterbeat en in 2026 gaan ze op een korte Europese tour, waaronder naar Merleyn!\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Los Pirañas",
+            "type": "Group",
+            "country": "CO",
+            "area": "Colombia",
+            "place": "Bogotá",
+            "genre": "tropicanibalismo, psychedelic rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.90044236183167,
+                "best_con_score": 0.1019857358187437,
+                "evidence_used": "Over Los Pirañas: Het trio bouwt een brug tussen dancemuziek en traditionele stijlen als cumbia, afrobeat, Peruaanse chicha en Colombiaanse champeta.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "DYLAN LEBLANC - solo",
+        "url": "https://thiemeloods.nl/index.php/event/dylan-leblanc-solo",
+        "summary": "American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop.",
+        "dutch_text": "Dat Dylan LeBlanc zou uitgroeien tot een hele goede singer-songwriter stond al vast. Zijn vader James LeBlanc was een van de vaste sessiemuzikanten bij de bekende Muscle Shoals Studios, waar artiesten als The Staple Singers, Aretha Franklin, Etta James, Otis Redding en Wilson Pickett hun muziek opnamen. In diezelfde studio nam Dylan ook zijn doorbraakopnames op, doordrenkt van ingetogen en fraai gezongen sixties folk, soul, altcountry en West Coast pop.\nLeBlanc debuteerde op negentienjarige leeftijd met een ijzersterk plaat. Niet lang daarna zonk hij echter weg in een duistere periode vol zelfhaat en drank, waaruit hij een glorieuze comeback maakte. Inmiddels heeft hij zich definitief geplaatst in het rijtje van meest getalenteerde liedjesschrijvers van zijn generatie.\nCentraal in zijn meest recente werk staat de coyote, een dier waar LeBlanc zich, zoals hij zelf zegt, altijd in heeft herkend. Net als dat dier is hij iemand die zwerft en weet wanneer hij op zijn instinct moet vertrouwen, muzikaal en anderszins.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Bob Dylan",
+            "type": "Person",
+            "country": "US",
+            "area": "United States",
+            "place": "Duluth",
+            "genre": "rock, jazz"
+        },
+        "raw_validations": [
+            {
+                "claim": "DYLAN LEBLANC - solo is American singer-songwriter Dylan LeBlanc",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 97.47163653373718,
+                "best_con_score": 0.7388722151517868,
+                "evidence_used": "Over DYLAN LEBLANC - solo: In diezelfde studio nam Dylan ook zijn doorbraakopnames op, doordrenkt van ingetogen en fraai gezongen sixties folk, soul, altcountry en West Coast pop.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "DYLAN LEBLANC - solo, American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 91.31288528442383,
+                "best_con_score": 4.522218927741051,
+                "evidence_used": "Over DYLAN LEBLANC - solo: In diezelfde studio nam Dylan ook zijn doorbraakopnames op, doordrenkt van ingetogen en fraai gezongen sixties folk, soul, altcountry en West Coast pop.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "DYLAN LEBLANC - solo set",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.48651194572449,
+                "best_con_score": 10.86583063006401,
+                "evidence_used": "Over DYLAN LEBLANC - solo: Dat Dylan LeBlanc zou uitgroeien tot een hele goede singer-songwriter stond al vast.",
+                "ground_truth": "UNKNOWN"
+            }
+        ]
+    },
+    {
+        "artist": "William Barrett Band",
+        "url": "https://brebl.nl/event/2026/06/william-barrett-band",
+        "summary": "The William Barrett Band presents their debut album 'Live in Amsterdam', a live jazz experience recorded in Amsterdam, featuring bassist William Barrett and his band.",
+        "dutch_text": "Op donderdag 25 juni staat de William Barrett Band in Brebl met muziek van hun debuutalbum Live in Amsterdam. Voor deze plaat koos bassist en componist William Barrett bewust voor de kern van jazz: een bruisende live-ervaring, vol spontaniteit, interactie en muziek die echt in het moment ontstaat.\nNadat Barrett acht composities schreef, trok hij met zijn band de Amsterdamse kroegen in om het materiaal voor publiek te laten groeien. Daar kwam de muziek pas echt tot leven. Die energie werd vervolgens vastgelegd tijdens live-opnames in Theater de Roode Bioscoop, waaruit Live in Amsterdam ontstond: een album dat de intensiteit, vrijheid en directe zeggingskracht van de band perfect vangt.\nDe William Barrett Band brengt een impulsieve en meeslepende sound, met tuimelende saxofoonlijnen, golvende drums, acrobatische gitaarpartijen en een bassist die zijn instrument én band voortdurend vooruit stuwt. Hun muziek ademt de spirit van jazzgrootheden als John Coltrane en Pharoah Sanders, maar klinkt tegelijk onmiskenbaar eigentijds en eigenzinnig.\nDe muzikanten van de William Barrett Band zijn inmiddels niet meer weg te denken van de Nederlandse jazzpodia en festivals. Met Live in Amsterdam zetten zij nadrukkelijk hun stempel op de Nederlandse jazz van nu.\nBezetting: William Barrett – bas, composities Mo van der Does – saxofoon Gijs Idema – gitaar Wouter Kühne – drums",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "William Barrett",
+            "type": "Unknown",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "The William Barrett Band presents their debut album ' Live in Amsterdam'",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.95905756950378,
+                "best_con_score": 0.47638225369155407,
+                "evidence_used": "Over William Barrett Band: Op donderdag 25 juni staat de William Barrett Band in Brebl met muziek van hun debuutalbum Live in Amsterdam.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "William Barrett Band recorded in Amsterdam",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.8089611530304,
+                "best_con_score": 2.549528330564499,
+                "evidence_used": "Over William Barrett Band: Die energie werd vervolgens vastgelegd tijdens live-opnames in Theater de Roode Bioscoop, waaruit Live in Amsterdam ontstond:",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "William Barrett Band featuring bassist William Barrett and his band",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.71942901611328,
+                "best_con_score": 0.27551010716706514,
+                "evidence_used": "Over William Barrett Band: De William Barrett Band brengt een impulsieve en meeslepende sound, met tuimelende saxofoonlijnen, golvende drums, acrobatische gitaarpartijen en een bassist die zijn instrument én band voortdurend vooruit stuwt.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Philip Lassiter",
+        "url": "https://brebl.nl/event/2026/06/philip-lassiter",
+        "summary": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band.",
+        "dutch_text": "Geworteld in Texas Funk, Alabama Gospel, New Orleans Jazz en Nashville Soul, is Philip Lassiter een 11-voudig Grammy-winnende blaas- en strijkarrangeur, en voormalig leider/arrangeur van de blazerssectie van Prince en The New Power Generation. Philip heeft op wereldwijde podia gestaan, waaronder het Essence Festival, Montreux Jazz Festival, North Sea Jazz Festival en Bonnaroo. In 2000 won hij de International Trumpet Guild Jazz Solo Competition!\nAls zoon van een predikant – een man “die tot rood aangelopen toe elk beetje zweet uit zich werkte” – leerde Philip hoe je een publiek weet te boeien. Die geest heeft hij sindsdien meegenomen op zijn eigen muzikale missie.\nTijdens zijn studie in Florida perfectioneerde hij zijn talent op trompet, leerde hij Salsa en Merengue kennen, en verfijnde hij zijn natuurlijke gave als jazzpianist.\nAcht jaar in Dallas onder de vleugels van enkele van de meest getalenteerde muzikanten en producers ter wereld – zoals Kirk Franklin, Fred Hammond, Bernard Wright, Bobby Sparks, Snarky Puppy, Erykah Badu en vele anderen – vergrootten zijn faam binnen de gospel- en funkscene.\nMet de humor en het lyrische ritme van Slim Shady vóór de muziekindustrie hem opslokte, zou Philthy het liefdeskind kunnen zijn van André 3000 en Aretha Franklin, met James Brown die zijn zegen uitspreekt. Het is een energieke liveshow die je absoluut niet mag missen.\nLassiter zal aantreden met zijn voltallige 10-koppige band. Dus 'put on your dancing shoes' en laat de zomer maar beginnen!\nBezetting: Philip Lassiter . Trompet, keys and vocals Josephine Marie - Vocals Sherefa Yorks - Vocals Alvaro Jimenez - trumpet Jesse Schilderink - tenor sax Pablo Martinez - trombone Richie Reichgelt - guitar Kevin Jube - Keys Aäron Bouwman - bass Niek de Bruijn - drums\nNa het concert van Philip Lassiter is er een MonkeyJam jamsessie.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Philip Lassiter",
+            "type": "Person",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.06303059635683894,
+                "best_con_score": 98.33452701568604,
+                "evidence_used": "Over Philip Lassiter: In 2000 won hij de International Trumpet Guild Jazz Solo Competition!\nAls zoon van een predikant – een man “die tot rood aangelopen toe elk beetje zweet uit zich werkte",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Alex Henry Foster",
+        "url": "https://doornroosje.nl/event/alex-henry-foster",
+        "summary": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes.",
+        "dutch_text": "De Canadese singer-songwriter en componist Alex Henry Foster weet zich te onderscheiden met zijn intense, filmische benadering van alternatieve rock en post-rock.\nNa zijn werk met post-hardcore band Your Favorite Enemies sloeg Foster een meer introspectieve richting in, wat resulteerde in zijn solodebuut ‘Windows in the Sky’ in 2018, een persoonlijk en emotioneel geladen album dat internationaal op uitmuntende kritieken kon rekenen. Zijn muziek kenmerkt zich door lange, opbouwende composities waarin spoken word, melancholische melodieën en atmosferische soundscapes samenkomen. Thema’s als verlies, rouw en existentiële reflectie vormen de kern van zijn werk, zonder te vervallen in cliché. Live vertaalt zich dat naar meeslepende, vaak cathartische performances die balanceren tussen verstilling en eruptie.\nMet latere releases en intensieve tournees heeft Foster zijn reputatie als compromisloze en authentieke artiest verder verstevigd, waarbij artistieke integriteit steeds centraal blijft staan. Alex henry Foster is een aanrader voor liefhebbers van o.a. Explosions in the Sky, Mogwai, Amplifier, Radiohead en zelfs Nick Cave. Grote schoenen om te vullen…\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Alex Henry Foster",
+            "type": "Person",
+            "country": "Unknown",
+            "area": "Québec",
+            "place": "Unknown",
+            "genre": "rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 31.842973828315735,
+                "best_con_score": 92.04123020172119,
+                "evidence_used": "Over Alex Henry Foster: Na zijn werk met post-hardcore band Your Favorite Enemies sloeg Foster een meer introspectieve richting in, wat resulteerde in zijn solodebuut ‘Windows in the Sky’ in 2018, een persoonlijk en emotioneel geladen album dat internationaal op uitmuntende kritieken kon rekenen.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Alex Henry Foster known for intense, cinematic alternative rock and post-rock,",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.950110912323,
+                "best_con_score": 99.27268028259277,
+                "evidence_used": "Over Alex Henry Foster: De Canadese singer-songwriter en componist Alex Henry Foster weet zich te onderscheiden met zijn intense, filmische benadering van alternatieve rock en post-rock.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Hippotraktor",
+        "url": "https://doornroosje.nl/event/hippotraktor",
+        "summary": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences.",
+        "dutch_text": "Hippotraktor heeft zich in korte tijd ontwikkeld tot een vaste waarde binnen de Belgische en internationale progressieve metal scene. De band uit Mechelen combineert technische precisie met een uitgesproken gevoel voor sfeer, resulterend in een gelaagd en intens geluid.\nSinds het debuut Meridian uit 2021 en opvolger Stasis uit 2024, uitgebracht via Pelagic Records, wordt de band geprezen om hun complexe composities, krachtige productie en coherente artistieke visie.\nKenmerkend voor Hippotraktor is de balans tussen zware, polyrhythmische structuren en melodische, atmosferische passages. Invloeden uit sludge, post-metal en djent worden samengebracht zonder aan focus in te boeten. Ook live bevestigt de band hun reputatie, met optredens op onder meer Graspop, ArcTanGent, Motocultor en ons eigen Soulcrusher.\nNieuw materiaal is in aantocht en de reden om weer op pad te gaan waarbij Nijmegen niet wordt overgeslagen. Hippotraktor is een hele dikke aanrader voor bekende bands als Gojira, Meshuggah en The Ocean, maar ook Psychonaut, Pothamus en MÚR.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Hippotraktor",
+            "type": "Group",
+            "country": "BE",
+            "area": "Belgium",
+            "place": "Mechelen",
+            "genre": "progressive metal, post-metal"
+        },
+        "raw_validations": [
+            {
+                "claim": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 4.77461963891983,
+                "best_con_score": 5.301600322127342,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Primitive Ring",
+        "url": "https://doornroosje.nl/event/primitive-ring",
+        "summary": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour.",
+        "dutch_text": "Het debuutalbum ‘Primitive Ring’ van powertrio Primitive Ring verscheen in mei 2026, waarna ze in 2027 tijdens hun allereerste Europese tournee ook een bezoekje brengen aan Merleyn.\nPrimitive Ring bestaat uit Charles Moothart (gitaar/zang), Bert Hoover (bas/zang) en Jon Modaff (drums). Deze uit Los Angelos afkomstige band werd in september 2024 opgericht toen Moothart en Hoover samen op zoek waren naar een nieuwe, creatieve uitlaatklep.\nDe muzikale alleskunner Moothart kun je kennen als vast bandlid bij FUZZ, Ty Segall en GØGGS waarbij hij zang, gitaar en drums speelt. Ben Hoover en Jon Modaff spelen beiden in Hooveriii.\nDe band bracht in 2025 vier 7-inch singles uit op vier verschillende labels (Greenway, In the Red, Reverberation Appreciation Society en Fuzz Club). In het lokale zalencircuit in LA deden ze veel ervaring op om zicht te perfectioneren. Het was volgens Primitive Ring al snel duidelijk: rock ‘n’ roll is de basis.\nIn de zomer van 2026 worden ze op sleeptouw genomen door hun vrienden van King Gizzard and the Lizard Wizard in de Verenigde Staten. Geoefend en wel komen ze in 2027 naar Nijmegen!\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Primitive Ring",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Los Angeles",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Primitive Ring featuring members of FUZZ and Hooveriii",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 89.39327001571655,
+                "best_con_score": 96.326744556427,
+                "evidence_used": "Over Primitive Ring: In de zomer van 2026 worden ze op sleeptouw genomen door hun vrienden van King Gizzard and the Lizard Wizard in de Verenigde Staten.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.5483086686581373,
+                "best_con_score": 98.37566614151001,
+                "evidence_used": "Over Primitive Ring: De band bracht in 2025 vier 7-inch singles uit op vier verschillende labels (Greenway, In the Red, Reverberation Appreciation Society en Fuzz Club).",
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Bokkeryers",
+        "url": "https://doornroosje.nl/event/bokkeryers",
+        "summary": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and thrash metal with punk attitude and humor.",
+        "dutch_text": "Het was tijdens een familielunch in Gasterie de Bokkeryer in Sweikhuizen dat Pablo van de Poel van DeWolff en zijn 10 jaar jongere broertje Vince zich hardop afvroegen… waarom bestaat er eigenlijk geen Limburgstalige metalband die ‘De Bokkeryers’ heet? Wat is er nou méér metal dan een stel bandieten van laag allooi dat zich vliegend op bokken door de 18e eeuwse Zuid-Limburgse nacht voortbeweegt?\nEen beëdiging, waarbij iemand gehuld in een rood gewaad en blaffend als een dolle hond achterwaarts op knieën door de kapel kruipt, richting het altaar waar een kelk vol bloed klaarstaat om ritueel gedronken te worden? Hoe al deze figuren, van vilder Mathias Ponts tot Chirurgijn Kirchhoffs aan hun gruwelijke einde kwamen; aan de galg, gebraakt door het rad of gevierendeeld? Wat is er nou méér metal dan dat? De gebroeders Van De Poel en hun bokkige vriend Jordan Faber zagen het als hun Limburgse ereplicht om deze verhalen vol duisternis en meedogenloosheid te voorzien van de verschroeiende riffs, de donderende ritmes en de tekstuele extravagantie die ze verdienen.\nHet resultaat heeft geleid tot niet alleen de oprichting van Bokkeryers, maar ook een debuut album dat klinkt als een nachtmerrie waarin het onheilige, misvormde duivelskind van Ozzy Osbourne en André Rieu in een kolkende beerput verdronken wordt door de zanger van Carnaval Corpse. Let op! Dit heeft muzikaal gezien bar weinig te maken met DeWolff: dit is een combinatie van keiharde doom-, sludge- en thrashmetal, voorzien van Limburgstalige teksten met een punk-attitude en een flinke dosis humor en zelfspot. En misschien zelfs een collab met Limburgse carnavalskoningin Beppie Kraft? Breng oordoppen mee.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "De Bokkerÿers",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Limburg",
+            "place": "Limburg",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 14.04435783624649,
+                "best_con_score": 5.175365135073662,
+                "evidence_used": null,
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 24.11426156759262,
+                "best_con_score": 89.68836069107056,
+                "evidence_used": "Over Bokkeryers: Wat is er nou méér metal dan een stel bandieten van laag allooi dat zich vliegend op bokken door de 18e eeuwse Zuid-Limburgse nacht voortbeweegt?",
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Bokkeryers thrash metal with punk attitude and humor",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.85414743423462,
+                "best_con_score": 96.70588374137878,
+                "evidence_used": "Over Bokkeryers: Dit heeft muzikaal gezien bar weinig te maken met DeWolff: dit is een combinatie van keiharde doom-, sludge- en thrashmetal, voorzien van Limburgstalige teksten met een punk-attitude en een flinke dosis humor en zelfspot.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "corto.alto",
+        "url": "https://doornroosje.nl/event/corto-alto",
+        "summary": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub.",
+        "dutch_text": "Er broeit iets in Glasgow. De stad van imposante architectuur en beruchte regenbuien ontpopt zich de afgelopen jaren nadrukkelijk als een ware hotspot van jazz. Zo ook één van de relevaties: corto.alto. Het is de band rond componist en multi-instrumentalist Liam Shortall.\nLiam Shortall zorgt voor hypnotiserende geluiden op toetsen en wisselt dit live virtuoos af tussen gitaar, bas en trombone. Op debuutalbum ‘Bad With Names’ (2023) levert corto.alto een toegankelijk geluid af, maar achter de oppervlakte staat het bol van de subtiele tempoverschuivingen. Op onnavolgbare wijze weeft de band uiteenlopende muzikale stijlen. Van hiphop, broken beats, dub tot aan jazz. Het resultaat: een betoverende fusie die de grenzen van de hedendaagse jazz uitdaagt.\nDit voorjaar verschijnt er nieuwe muziek: ‘WHODIS’ in samenwerking met de rapper Mick Jenkins uit Chicago en de gloednieuwe single ‘THIEF’, waarmee ze de nieuwe koers van corto.alto blijven tonen.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "corto.alto",
+            "type": "Person",
+            "country": "Unknown",
+            "area": "Glasgow",
+            "place": "Glasgow",
+            "genre": "jazz"
+        },
+        "raw_validations": [
+            {
+                "claim": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.5634617526084185,
+                "best_con_score": 94.88893747329712,
+                "evidence_used": "Over corto.alto: ‘WHODIS’ in samenwerking met de rapper Mick Jenkins uit Chicago en de gloednieuwe single ‘THIEF’, waarmee ze de nieuwe koers van corto.alto blijven tonen.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "corto.alto led by multi-instrumentalist Liam Shortall",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.93220567703247,
+                "best_con_score": 15.181851387023926,
+                "evidence_used": "Over corto.alto: Liam Shortall zorgt voor hypnotiserende geluiden op toetsen en wisselt dit live virtuoos af tussen gitaar, bas en trombone.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "corto.alto blending jazz with hiphop, broken beats",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 53.7123441696167,
+                "best_con_score": 26.606228947639465,
+                "evidence_used": null,
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Tusky",
+        "url": "https://doornroosje.nl/event/tusky-3",
+        "summary": "Tusky delivers fast, fierce punkrock with emo-hardcore influences, while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers.",
+        "dutch_text": "Voor snelle, vuige en furieuze punkrock ben je aan het juiste adres bij Tusky. De vlammende mix van (emo)hardcore, punk is uitermate geschikt voor de moshers, de headbangers, de schreeuwers, de skaters en iedereen die verder wel van een beetje pit houdt.\nTusky zorgt voor een enge pit, gemaakt door heel vriendelijke mensen. Hun muziek klinkt alsof je met je beste vrienden ineens heel veel talent hebt gekregen en in een kelderpunkrock bent gaan maken. Maar wel een kelder van het soort vrije-school ouders die enorm je passies steunen en dus wel hele goede spullen in die garage hebben gezet. Tusky blaast 10 kaarsjes uit en is daarom klaar om hun liveshow naar een nog hoger niveau te tillen. Meer band, meer energie, meer entertainment en vooral: meer Tusky.\nHet powertrio van Rats and Daggers zoekt de vlijmscherpe rand tussen heavy en punk op. Geïnspireerd door de rauwe emoties van IDLES, de sex-appeal van Queens of the Stone Age en de totale wanorde van Amyl & the Sniffers. Energie die zo oprecht uit de tenen komt dat iedereen in de zaal geraakt wordt. Rats and Daggers biedt een toevlucht die je uit je dagelijkse sleur schopt.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Tusky",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Tusky delivers fierce punkrock with emo-hardcore influences fast",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.42445158958435,
+                "best_con_score": 95.69075107574463,
+                "evidence_used": "Over Tusky: De vlammende mix van (emo)hardcore, punk is uitermate geschikt voor de moshers, de headbangers, de schreeuwers, de skaters en iedereen die verder wel van een beetje pit houdt.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Tusky delivers fierce punkrock with emo-hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 10.186104476451874,
+                "best_con_score": 84.72194075584412,
+                "evidence_used": "Over Tusky: Tusky zorgt voor een enge pit, gemaakt door heel vriendelijke mensen.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Tusky, Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 47.24525809288025,
+                "best_con_score": 79.30371165275574,
+                "evidence_used": "Over Tusky: Tusky zorgt voor een enge pit, gemaakt door heel vriendelijke mensen.",
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "Tusky inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.93230104446411,
+                "best_con_score": 97.09846377372742,
+                "evidence_used": "Over Tusky: Geïnspireerd door de rauwe emoties van IDLES, de sex-appeal van Queens of the Stone Age en de totale wanorde van Amyl & the Sniffers.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "HAEVN",
+        "url": "https://doornroosje.nl/event/haevn-9",
+        "summary": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound.",
+        "dutch_text": "Na een bijzonder optreden afgelopen mei in het Hunnerpark in Nijmegen komt HAEVN terug naar onze stad voor een show in één van hun favoriete zalen: De Vereeniging.\nDe succesvolle groep oogst niet alleen succes in Nederland, maar verkoopt ook in de UK en andere Europese landen grote zalen uit. Hun unieke mix van electronic en indiepop, geleid door rustgevende zang laat je de wereld om je heen even vergeten. Met hun melancholische en haast filmische geluid nemen ze je mee op een reis door emoties en verbeelding.\nVerwacht niet alleen hun huidige repertoire, maar ook verrassend nieuw werk van HAEVN.\nDit is een concert met staanplaatsen voor het podium en zitplaatsen op het amphitheater en op de balkons. Zitplaatsen kunnen niet gereserveerd worden.\nConcertgebouw De Vereeniging is gevestigd aan het Keizer Karelplein, op loopafstand van Station Nijmegen. Klik voor route.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "HAEVN",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Amsterdam",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.55593347549438,
+                "best_con_score": 1.0501518845558167,
+                "evidence_used": "Over HAEVN: Hun unieke mix van electronic en indiepop, geleid door rustgevende zang laat je de wereld om je heen even vergeten.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Thijs Veldhuis",
+        "url": "https://doornroosje.nl/event/thijs-veldhuis",
+        "summary": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nThijs Veldhuis deed dit jaar mee aan The Voice of Holland en in het najaar staat hij op het podium in Doornroosje!\nThijs schrijft zijn eigen teksten en muziek, waarbij hij op een bijzondere manier enorm uit zijn comfortzone is gegaan door deel te nemen aan The Voice. Van het schrijven van nummers in zijn kamer in Utrecht naar optreden op misschien wel het grootste podium van Nederland.\nMuzikaal beweegt Thijs zich tussen verschillende invloeden uit rock, indie, pop, klassiek en elektronische muziek. De thema’s in de liedjes lopen uiteen: ze zijn persoonlijk maar het is ook een reflectie op bredere thema’s in de maatschappij.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Thijs Veldhuis",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Thijs Veldhuis, who participated in The Voice of Holland",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.75396394729614,
+                "best_con_score": 0.14266276266425848,
+                "evidence_used": "Over Thijs Veldhuis: Thijs schrijft zijn eigen teksten en muziek, waarbij hij op een bijzondere manier enorm uit zijn comfortzone is gegaan door deel te nemen aan The Voice.",
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 1.4093431644141674,
+                "best_con_score": 0.10308615164831281,
+                "evidence_used": null,
+                "ground_truth": "UNKNOWN"
+            },
+            {
+                "claim": "Thijs Veldhuis blending rock, indie, pop, classical, and electronic influences",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.70802664756775,
+                "best_con_score": 0.4431753885000944,
+                "evidence_used": "Over Thijs Veldhuis: Muzikaal beweegt Thijs zich tussen verschillende invloeden uit rock, indie, pop, klassiek en elektronische muziek.",
+                "ground_truth": "UNKNOWN"
+            }
+        ]
+    },
+    {
+        "artist": "SNAYX",
+        "url": "https://doornroosje.nl/event/snayx",
+        "summary": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences.",
+        "dutch_text": "Het Britse alt-rocktrio SNAYX komt tijdens hun Europese tournee met Don Broco voor een eigen headline show naar Merleyn. De band staat bekend om hun energieke live optredens en bass-gedreven anthems waarin punk, rock, elektronica en experimentele invloeden samensmelten tot een explosief geluid.\nHet trio bestaat uit Ollie (bas/gitaar), Elaine AKA ‘Lainey’ (drums) en frontman Charlie Herridge (gitaar/zang). Charlie richt zich tekstueel hedendaagse onderwerpen zoals oorlog, macht en ongelijkheid maar ook het digitale circus waarin we tegenwoordig allemaal lijken te opereren.\nHun intense live optredens moet je zelf meemaken want de band staat niet voor niets al naam en faam op heel veel festivals in hun thuisland. SNAYX is een dikke aanrader voor fans van Sleaford Mods, Soft Play Kind Kapichi en Bob Vylan.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "SNAYX",
+            "type": "Group",
+            "country": "GB",
+            "area": "United Kingdom",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 92.2782301902771,
+                "best_con_score": 7.108757644891739,
+                "evidence_used": "Over SNAYX: De band staat bekend om hun energieke live optredens en bass-gedreven anthems waarin punk, rock, elektronica en experimentele invloeden samensmelten tot een explosief geluid.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "SNAYX blending punk, rock, electronics, and experimental influences",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.87817406654358,
+                "best_con_score": 4.101157560944557,
+                "evidence_used": "Over SNAYX: De band staat bekend om hun energieke live optredens en bass-gedreven anthems waarin punk, rock, elektronica en experimentele invloeden samensmelten tot een explosief geluid.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "The Rumjacks",
+        "url": "https://doornroosje.nl/event/the-rumjacks",
+        "summary": "The Rumjacks, an explosive folk-punk band from Sydney, Australia, known for their raw punk with Celtic influences and sing-along choruses.",
+        "dutch_text": "The Rumjacks keren terug naar Nijmegen! De explosieve folkpunkband uit Sydney, Australië, staat bekend om hun onweerstaanbare mix van rauwe punk met Keltische invloeden en meezingbare refreinen.\nGewapend met banjo, tinwhistle en mandoline, gecombineerd met brullende gitaren en beukende drums, deelden ze eerder het podium met grootheden als Gogol Bordello, Dropkick Murphys en UK Subs. Hun nummers ademen rebellie, saamhorigheid en een flinke scheut Ierse pubcultuur, zonder aan pit of urgentie in te boeten. Van clubshows tot festivals: The Rumjacks leveren altijd een dampende set vol energie en karakter. Dus trek die groene outfit uit de kast en we zien je in de moshpit. Dit is een absolute aanrader voor fans van The Pogues, Dropkick Murphys en Flogging Molly.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "The Rumjacks",
+            "type": "Group",
+            "country": "AU",
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "folk, punk"
+        },
+        "raw_validations": [
+            {
+                "claim": "The Rumjacks known for their raw punk with Celtic influences and sing-along choruses",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.77540373802185,
+                "best_con_score": 78.62811088562012,
+                "evidence_used": "Over The Rumjacks: De explosieve folkpunkband uit Sydney, Australië, staat bekend om hun onweerstaanbare mix van rauwe punk met Keltische invloeden en meezingbare refreinen.\nGewapend met banjo, tinwhistle en mandoline, gecombineerd met brullende gitaren en beukende drums, deelden ze eerder het podium met grootheden als Gogol Bordello, Dropkick Murphys en UK Subs. Hun nummers ademen rebellie, saamhorigheid en een flinke scheut Ierse pubcultuur, zonder aan pit of urgentie in te boeten.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Chica Chica",
+        "url": "https://doornroosje.nl/event/chica-chica",
+        "summary": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves.",
+        "dutch_text": "Chica Chica maakt spannende muziek met als basis psychedelische cumbia, woestijn-achtige filmscores en dansbare tropische grooves. Deze avond staat in het teken van de release van hun tweede album ‘Mi Zafira’.\nDe band is ontstaan uit het verlangen om te reizen, door middel van hun muziek neemt dit trio je mee op een road-trip terug in de tijd. Funky melodische baslijnen, onstuimige gitaren en Zuid-Amerikaanse percussie.\nOrganisch en korrelig, zonnig en vol leven, als de analoge foto op de cover van je favoriete langspeelplaat. De perfecte muziek om op weg te dromen of te dansen. Voor liefhebbers van La Lom, Hermanos Gutierrez en Khruangbin.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Chica Chica Electrica",
+            "type": "Group",
+            "country": "AU",
+            "area": "Australia",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.5170944612473249,
+                "best_con_score": 37.05122470855713,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Wodan Boys",
+        "url": "https://doornroosje.nl/event/wodan-boys-3",
+        "summary": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound.",
+        "dutch_text": "Hoe dan? Met muziek natuurlijk! Hectisch gitaargeweld, pakkende refreinen, gitaren en drums. Het viertal Mikkie B, Olivier, Timo en Thomas doen dit sinds 2021 en speelde reeds succesvol op Lowlands, Best Kept Secret, Down The Rabbit Hole en Valkhof Festival en in de poppodia.\nVorig jaar brachten ze hun debuutalbum ‘Godspeed A Go Go’ uit. Dit album staat voor alles wat Wodan Boys goed maakt, maar dan nog één versnellinkje hoger: keiharde, onversneden rock ‘n roll.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Wodan Boys",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.6331009790301323,
+                "best_con_score": 0.314329587854445,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Wodan Boys known for their energetic punk rock sound",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 13.166394829750061,
+                "best_con_score": 5.622794106602669,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "NAFT",
+        "url": "https://doornroosje.nl/event/naft",
+        "summary": "Belgian group NAFT, known for their debut album 'Brass Tactics', blends electronic music with live brass and drums for an energetic rave experience.",
+        "dutch_text": "De Belgische groep NAFT ontstond op de Gentse Feesten in 2018, maar groeide al snel uit van ‘guerilla’ straatband tot een vaste waarde op nationale en internationale festivalpodia.\nDe band transformeerde in een live (tech)house-act met vier koperblazers en twee drummers. NAFT maakt elektronische muziek, maar volledig live met akoestische instrumenten. De blaasinstrumenten worden gemanipuleerd met digitale én analoge effecten via effectpedalen. Een techniek die ooit de elektrische gitaar revolutioneerde en nu hetzelfde doet voor blazers.\nHun bruisende energie, compromisloze ritmes en pure rave-spirit zorgen voor een indrukwekkende live-ervaring.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "NAFT",
+            "type": "Group",
+            "country": "JP",
+            "area": "Japan",
+            "place": "Osaka",
+            "genre": "likedis auto"
+        },
+        "raw_validations": [
+            {
+                "claim": "NAFT known for their debut album 'Brass Tactics', blends electronic music with live brass and drums",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.9774934500455856,
+                "best_con_score": 9.060008823871613,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "NAFT known for an energetic rave experience",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.79800581932068,
+                "best_con_score": 86.30918264389038,
+                "evidence_used": "Over NAFT: Een techniek die ooit de elektrische gitaar revolutioneerde en nu hetzelfde doet voor blazers.\nHun bruisende energie, compromisloze ritmes en pure rave-spirit zorgen voor een indrukwekkende live-ervaring.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Stippenlift",
+        "url": "https://doornroosje.nl/event/stippenlift-4",
+        "summary": "Stippenlift, the Dutch project of Hugo van de Poel, celebrates 15 years of Christmas hits with a special show blending pop, electronic, and depriwave.",
+        "dutch_text": "Het is al 10 jaar geleden dat Stippenlift debuteerde met “Huilen (Kerst)” en een nieuwe taal gaf aan complexe (kerst)gevoelens. Met een grote collectie kersthits en bijbehorende gezelligheidstrauma’s komt Stippenlift terug voor een speciale show in Merleyn.\nWat als niche-muziek begon is inmiddels uitgegroeid tot een omvangrijk oeuvre, meerdere alterego’s, een serie sippe kersthits met bijbehorende kerstoptredens, een hechte insta-community waarin mentale gezondheid wordt gevierd en besproken, én het eigen kledingmerk depriwave.\nVia Stippenlift deelt zanger en producer Hugo van de Poel diens levenslange strijd met depressie en leven in een neurotypische wereld. De ‘hits’ luisteren naar titels als ‘Huilen’, ‘Autisme’, ‘Was Ik Maar Dood’ of wat dacht je van ‘Euthanasie’?! Weinig artiesten die zo veel ellende met zo veel energie en enthousiasme weten te brengen. Gehuld in depriwave kun je bij Stippenlift met trots je mentale kwetsbaarheid laten zien. Onder leiding van Stippenlift kun je dansen in genderverwarring. Met Stippenlift kun je eindelijk schreeuwen dat je een autist bent. Alles om te zien en voelen dat je niet alleen bent.\n’10 Jaar Kerst met Stippenlift’ is het ideale uitje voor iedereen die niet van uitjes houdt, niet van mensen houdt, niet van kerst houdt maar tevens ook enorm van kerst, mensen en uitjes houdt of de potentie voelt ooit zo’n persoon te kunnen zijn.\nSamen alleen haat/liefde voelen bij de complexiteit der dingen, die nergens zo voelbaar is als rond de kerst.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Stippenlift",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Stippenlift, the Dutch project of Hugo van de Poel, celebrates 15 years of Christmas hits with a special show blending pop, electronic, and depriwave",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.3852890804409981,
+                "best_con_score": 99.96601343154907,
+                "evidence_used": "Over Stippenlift: ’10 Jaar Kerst met Stippenlift’ is het ideale uitje voor iedereen die niet van uitjes houdt, niet van mensen houdt, niet van kerst houdt maar tevens ook enorm van kerst, mensen en uitjes houdt of de potentie voelt ooit zo’n persoon te kunnen zijn.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Stippenlift hits with a special show blending pop, electronic, and depriwave",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 8.357477933168411,
+                "best_con_score": 75.95152854919434,
+                "evidence_used": "Over Stippenlift: De ‘hits’ luisteren naar titels als ‘Huilen’, ‘Autisme’, ‘",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "The Jayhawks",
+        "url": "https://doornroosje.nl/event/the-jayhawks",
+        "summary": "The Jayhawks, an American band formed in 1985 in Minneapolis, perform their unique mix of country, folk, soul, Britpop, and rock 'n roll.",
+        "dutch_text": "The Jayhawks maken al meer dan 40 jaar muziek die de ziel van klassieke Amerikaanse songwriting ademt. Ze begonnen in het postpunk tijdperk in Minneapolis, waar bands als The Replacements, Hüsker Dü en Soul Asylum successen vierden. Ze waren pioniers in het voorschotelen van hun unieke mix van country, folk, soul, Britpop en rock ’n roll aan het rockpubliek van die tijd.\nDe band heeft op bijna elk groot muziekfestival gespeeld; van Farm Aid tot Priumavera Sound, van Pinkpop tot Wilco’s Sky Blue Sky. The Jayhawks hebben, net als The Band en Tommy Petty & The Heartbreakers, getourd als begeleidingsband met grootheden als Ray Davies, Roger McGuinn en Johnny Cash.\nDe band heeft al meer dan 12 studio albums op hun naam staan, nog altijd blijven Gary Louris, Marc Perlman, Karen Grotberg en Tim O’Reagan nieuwe muziek opnemen en wereldwijd touren.\nThe Jayhawks werkte opnieuw samen met de legendarische producer Bob Ezrin (Pink Floyd, Peter Gabriel, Lou Reed) aan hun aankomende album ‘Sanctuary Park’ dat eind zomer 2026 zal uitkomen.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "The Jayhawks",
+            "type": "Group",
+            "country": "US",
+            "area": "United States",
+            "place": "Minneapolis",
+            "genre": "americana, rock and indie"
+        },
+        "raw_validations": [
+            {
+                "claim": "The Jayhawks formed in 1985",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.24300215300172567,
+                "best_con_score": 98.29906225204468,
+                "evidence_used": "Over The Jayhawks: The Jayhawks maken al meer dan 40 jaar muziek die de ziel van klassieke Amerikaanse songwriting ademt.",
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "The Jayhawks formed in Minneapolis",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 72.44578003883362,
+                "best_con_score": 1.0530178435146809,
+                "evidence_used": "Over The Jayhawks: Ze begonnen in het postpunk tijdperk in Minneapolis, waar bands als The Replacements, Hüsker",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "The Jayhawks, an American band formed in 1985 in Minneapolis, perform their unique mix of country, folk, soul, Britpop, and rock 'n roll",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.2698066644370556,
+                "best_con_score": 79.87533807754517,
+                "evidence_used": "Over The Jayhawks: Ze begonnen in het postpunk tijdperk in Minneapolis, waar bands als The Replacements, Hüsker",
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "The Skints",
+        "url": "https://doornroosje.nl/event/the-skints-2",
+        "summary": "The Skints, a Bristol-based quartet, blend reggae, soul, punk, ska, and grime into a unique 'tropical punk' style.",
+        "dutch_text": "Het Londense viertal The Skints heeft zich vanuit de diepten van de underground punk- en skascene opgewerkt tot een unieke naam binnen de internationale reggaewereld. De band combineert invloeden als reggae, soul, punk, ska en grime tot een eigen, unieke ’tropical punk’-stijl.\nDe band, bestaande uit Jamie, Josh, Jon en Marcia noemen hun rauwe mix van ska, dub, reggae, hiphop & punk-met-urban-attitude, bij voorkeur ‘East London reggae’.\nGeïnspireerd door de Jamaicaanse muziek uit de vroege jaren tachtig slaagden The Skints er op een fijne wijze in om daar in de 21e eeuw een eigen draai aan te geven. Met een eerbetoon aan muzikale voorvaders als The Specials en Madness. De heren en dame kregen al gauw veel waardering en mede door het intensieve touren hebben ze een grote schare fans aan zich gebonden. De afgelopen jaren stond de band al op o.a. Glastonbury, Summerjam, Lowlands en Zwarte Cross.\nMet zonnige, feelgood grooves en creatieve insteek, heeft het Londense viertal wereldwijd naam gemaakt en zich vanuit de underground ska/punk scene opgewerkt tot een wereldwijd reggae-fenomeen. Veelgeprezen albums, waaronder ‘Part & Parcel’, ‘FM’ en ‘Swimming Lessons’ bezorgden de band niet enkel aanzienlijk veel airplay, maar bovendien ook tal van samenwerkingen zoals met Protoje en Jesse Royal.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "The Skints",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "London",
+            "place": "Unknown",
+            "genre": "reggae, ska"
+        },
+        "raw_validations": [
+            {
+                "claim": "The Skints, a Bristol-based quartet, blend reggae, soul, punk, ska, and grime into a unique 'tropical punk' style.",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 6.0353051871061325,
+                "best_con_score": 99.96030926704407,
+                "evidence_used": "Over The Skints: Het Londense viertal The Skints heeft zich vanuit de diepten van de underground punk- en skascene opgewerkt tot een unieke naam binnen de internationale reggaewereld.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Tramhaus",
+        "url": "https://doornroosje.nl/event/tramhaus-2",
+        "summary": "Tramhaus is an energetic five-piece band from Rotterdam, recently signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock.",
+        "dutch_text": "De energieke vijfkoppige band Tramhaus uit Rotterdam wordt geprezen om hun explosieve liveshows en meeslepende nummers. De band staat bekend om hun brede en voortdurend opzwepende geluid, dat reikt van post-hardcore tot shoegaze en punkrock. Op 3 juni komt de eerste single ‘Plovdiv’ van het nieuwe album ‘Blister’ uit.\nTramhaus is opgericht in 2020 en is in staat om alles wat het leven brengt in zich op te nemen en er mee om te gaan. Op het podium vormen ze één krachtig geheel, waarmee ze het publiek vanaf de eerste tot de laatste noot grijpen en meenemen in een maalstroom van emoties. Met de kernovertuiging dat een netwerken van vriendschappen hen er doorheen zal helpen, heeft Tramhaus ervoor gezorgd dat ze een bijna constant tourschema hebben kunnen volhouden en een album maakte dat de belofte van hun debuutalbum ‘The First Exit’ (2024) overtreft.\nIn hun relatief korte bestaan heeft de hechte groep onafgebroken getourd en onderweg steeds meer populariteit verworven. In 2027 mogen we ze terugverwachten in Doornroosje!\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Tramhaus",
+            "type": "Group",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Rotterdam",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Tramhaus is an energetic five-piece band from Rotterdam recently signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.6711412221193314,
+                "best_con_score": 1.3665730133652687,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Tramhaus signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 15.018567442893982,
+                "best_con_score": 1.1069459840655327,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Tramhaus known for their explosive live shows",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.87855553627014,
+                "best_con_score": 0.4938127938657999,
+                "evidence_used": "Over Tramhaus: De energieke vijfkoppige band Tramhaus uit Rotterdam wordt geprezen om hun explosieve liveshows en meeslepende nummers.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Tramhaus ranging to shoegaze and punkrock",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.82165694236755,
+                "best_con_score": 40.34586846828461,
+                "evidence_used": "Over Tramhaus: De band staat bekend om hun brede en voortdurend opzwepende geluid, dat reikt van post-hardcore tot shoegaze en punkrock.",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Playlunch",
+        "url": "https://doornroosje.nl/event/playlunch",
+        "summary": "Australian band Playlunch brings their heavy, grunge-infused pop to Europe for the first time.",
+        "dutch_text": "Dit jaar brak de band Playlunch door in hun thuisland met de single ‘Keith’ die miljoenen keren werd gestreamd, waarna hun tweede album ‘Sex Ed’ als warme broodjes over de toonbank vlogen. Na vele festivalshows en een uitverkochte clubtournee in zowel Australië als Nieuw-Zeeland komt de band nu voor het eerst naar Europa. Verwacht een avond vol good vibrations in Merleyn!\nHun debuutsingle ‘Soupe Opera’ (2023) ging binnen enkele dagen viraal op TikTok en later datzelfde jaar volgde hun debuutalbum ‘Who’s Ready For A Good Time’ (2023). Het resultaat: instrumentale funk uit de late jaren ’70, gecombineerd met de mixtape-esthetiek van vroege hiphophelden en een flinke dosis bedroom pop.\nTekstuele verwijzen ze regelmatig naar (de Australische) subcultuur, die de komische sfeer van de band versterken. Hun tweede album ‘Sex Ed’ (2025) werd meteen een hit werd bij de Australische radiozender Triple J en dit betekende tevens een succesvolle entree van Playlunch op de Noord-Amerikaanse en ook Europese muziekmarkt.\nDe Australiërs laten zich inspireren door bands als Vulfpeck, Silk Sonic en vele soul- en funk helden uit jaren ’70.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Playlunch",
+            "type": "Group",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Melbourne",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Australian band Playlunch brings their heavy, grunge-infused pop to Europe for the first time",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 2.129318006336689,
+                "best_con_score": 99.72597360610962,
+                "evidence_used": "Over Playlunch: Het resultaat: instrumentale funk uit de late jaren ’70, gecombineerd met de mixtape-esthetiek van vroege hiphophelden en een flinke dosis bedroom pop.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "MÚR",
+        "url": "https://doornroosje.nl/event/mur",
+        "summary": "Icelandic band MÚR, featuring former members of Sólstafir, performs heavy atmospheric post metal with cinematic dynamics.",
+        "dutch_text": "De IJslandse band MÚR had nog geen album uit toen ze in 2022 tijdens Soulcrusher op indrukwekkende wijze hun zware sfeervolle post metal ten gehore brachten.\nInmiddels zijn we drie jaar later en heeft het geweldige titelloze debuut in 2024 het levenslicht gezien en staat de nieuwe plaat in de steigers. Massieve, gelaagde gitaarriffs worden afgewisseld met filmische dynamiek en fragiele passages. Met hun IJslandse roots en uitgesproken eigen identiteit klinkt de jonge band tegelijk mysterieus, modern en vol karakter. Liefhebbers van lange nummers met opbouw, kop-staart plus inhoud zijn bij MÚR dan aan het juiste adres. Verplichte kost voor fans van Cult of Luna en The Ocean, maar ook Messa en Psychonaut.\nMerleyn is gevestigd op Hertogstraat 13 in het centrum van Nijmegen. Klik voor alle info over jouw bezoek.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Múr",
+            "type": "Group",
+            "country": "IS",
+            "area": "Iceland",
+            "place": "Iceland",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "MÚR featuring former members of Sólstafir",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.18404718721285462,
+                "best_con_score": 0.13006915105506778,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Icelandic band MÚR, featuring former members of Sólstafir, performs heavy atmospheric post metal with cinematic dynamics",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 1.1389922350645065,
+                "best_con_score": 2.657756395637989,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "La Pegatina",
+        "url": "https://doornroosje.nl/event/la-pegatina",
+        "summary": "La Pegatina, a Madrid-based band, brings their energetic mix of rumba catalana, ska, punk, cumbia, and música mestiza for a fiesta therapy concert.",
+        "dutch_text": "Met de thuisbasis in Barcelona en hun energieke, dansbare muziek zorgt La Pegatina ervoor dat stilzitten onmogelijk wordt gemaakt.  Hun explosieve mix van rumba catalana, ska, punk, cumbia en música mestiza maakt dat elk optreden binnen een paar seconden verandert in één groot feest.\nLa Pegatina begon op straat en vult inmiddels de grootste zalen van Spanje. Ook in Nederland zorgen ze voor ultieme fiesta-optredens, zo stonden ze op onder andere Lowlands, Zwarte Cross en Pinkpop.\nNa 20 jaar en meer dan 1200 concerten nam de band in 2025 even gas terug met een tussenjaar. In 2026 pakken ze de draad vol enthousiasme weer op. Met hun nieuwe plaat ‘Fuegos del Barrio’ begint La Pegatina in juni vol energie aan een wereldtournee. Tijdens deze tour komen ze ook terug naar Doornroosje met als doel: binnen drie seconden iedereen in beweging krijgen met een glimlach van oor tot oor.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "La Pegatina",
+            "type": "Group",
+            "country": "ES",
+            "area": "Spain",
+            "place": "Montcada i Reixac",
+            "genre": "rumba catalana"
+        },
+        "raw_validations": [
+            {
+                "claim": "La Pegatina, a Madrid-based band, brings their energetic mix of rumba catalana, ska, punk, cumbia, and música mestiza for a fiesta therapy concert",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 0.6940397899597883,
+                "best_con_score": 99.94280934333801,
+                "evidence_used": "Over La Pegatina: Met de thuisbasis in Barcelona en hun energieke, dansbare muziek zorgt La Pegatina ervoor dat stilzitten onmogelijk wordt gemaakt.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Froukje - 'Kijk Je Naar Mij' albumtour 2026",
+        "url": "https://doornroosje.nl/event/froukje-12",
+        "summary": "Froukje, a Dutch singer-songwriter, performs her new album 'Kijk Je Naar Mij?' following her recent sold-out tour in Belgium.",
+        "dutch_text": "Nooit meer te laat voor tickets? Meld je aan voor updates !\nFroukje komt terug naar Nijmegen! Begin oktober komt haar nieuwe album ‘Kijk Je Naar Mij?’ uit en daarmee gaat ze langs alle grote poppodia, waaronder Doornroosje.\nFroukje is één van de meest eigenzinnige stemmen in de Nederlandse popmuziek. Met haar nieuwe album draait ze haar blik om; waar haar debuutplaat naar binnen keek, kijkt ‘Kijk Je Naar Mij?’ naar buiten. Naar de wereld, de liefde in al haar vormen en naar de wonderlijke verhouding tot haar eigen artiestenbestaan.\nZe schreef het album zelf, en produceerde het ook grotendeels in haar eentje. Het album is persoonlijk en gepolijst tegelijk. Nummers als ‘Iedereen Gaat Vreemd’ en ‘Jaar Na Jaar’ geven al een idee: fris, zelfverzekerd en met de losheid van iemand die weet wat ze doet.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Froukje",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Netherlands",
+            "genre": "singer-songwriter, synth-pop"
+        },
+        "raw_validations": [
+            {
+                "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026, Froukje, a Dutch singer-songwriter, performs her new album 'Kijk Je Naar Mij following her recent sold-out tour in Belgium",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 1.0336240753531456,
+                "best_con_score": 0.32307084184139967,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026 following her recent sold-out tour in Belgium",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 0.34312838688492775,
+                "best_con_score": 0.4010060802102089,
+                "evidence_used": null,
+                "ground_truth": "EXTRINSIC"
+            },
+            {
+                "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026 sold out",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 94.4476068019867,
+                "best_con_score": 1.6720576211810112,
+                "evidence_used": "Over Froukje - 'Kijk Je Naar Mij' albumtour 2026: ’ uit en daarmee gaat ze langs alle grote poppodia, waaronder Doornroosje.",
+                "ground_truth": "EXTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "HENGE",
+        "url": "https://doornroosje.nl/event/henge-4",
+        "summary": "HENGE, an American alien-themed rock act, brings their groovy spacerock with synths and hooks to the stage.",
+        "dutch_text": "Je niet gebruikelijke rock act HENGE komt terug naar Doornroosje! De buitenaardse vreugdebrengers verrukken al negen jaar lang publiek in het Verenigd Koninkrijk en Europa sinds ze neerdaalden op Planeet Aarde. Deze gedurfde wezens verspreiden een boodschap van hoop, waarmee ze het publiek amuseren en opgetild achterlaten.\nEen alien achter de synths, een moerasmonster achter de drums en een frontman van miljarden jaren oud. Toch klinkt het ook voor aardse normen opvallend lekker: de spacerock is ontzettend groovy, doorspekt met electronica, synths en hooks die in je hoofd blijven zitten.\nOf zoals ze het zelf zeggen: “There are no Earth words to describe these sounds, but you will learn how to love and dance again. Absorb the mutated frequencies of Cosmic Dross.”, dat belooft wat.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "HENGE",
+            "type": "Group",
+            "country": "GB",
+            "area": "United Kingdom",
+            "place": "Manchester",
+            "genre": "nom, goo"
+        },
+        "raw_validations": [
+            {
+                "claim": "HENGE, an American alien-themed rock act, brings their groovy spacerock with synths and hooks",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 26.521065831184387,
+                "best_con_score": 23.865729570388794,
+                "evidence_used": null,
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "HENGE, an American alien-themed rock act, brings their groovy spacerock to the stage",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 33.514973521232605,
+                "best_con_score": 73.39683771133423,
+                "evidence_used": "Over HENGE: Deze gedurfde wezens verspreiden een boodschap van hoop, waarmee ze het publiek amuseren en opgetild achterlaten.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Sam Newbould Quintet",
+        "url": "https://brebl.nl/event/2026/07/sam-newbould-quintet",
+        "summary": "The Sam Newbould Quintet, a Yorkshire-born, Amsterdam-based heavy metal ensemble, performs music from their Edison-nominated album Homing and previews new material.",
+        "dutch_text": "De in Yorkshire geboren Sam Newbould staat aan het hoofd van een bekroonde, vijfkoppige internationale formatie die voortkomt uit de bruisende Amsterdams jazzscene. Hun muziek wordt omschreven als „adembenemend, soms introvert en intiem en dan weer uitbundig“ (SWN Talent Award, NL) en combineert virtuositeit met stuwende grooves en speelse melodieën die in je hoofd blijven hangen.\nMet hun meest recente album Homing, genomineerd voor een Edison Award, heeft de band zijn plaats op het internationale toneel veroverd met optredens op Jazzahead 2025, North Sea Jazz Festival (NL), Love Supreme (VK), BIMHUIS (NL) en The Vortex (VK).\nTijdens het concert van het kwintet in Brebl zal een voorproefje te horen zijn van nieuwe muziek van hun aanstaande vierde album, dat later dit jaar uitkomt, evenals muziek van hun nieuwste album Homing . De bezetting op het album bestaat uit Bernard van Rossum (tenorsaxofoon), Xavi Torres (piano), Jort Terwijn (bas) en Guy Salamon (drums).\nLine-up in Brebl: Sam Newbould - alto saxophone/compositions Hristo Goleminov - tenor saxophone Ida Alanen - piano Jort Terwijn - bass Guy Salamon - drums\nPress quotes: “Een parel in de dagverse jazzvangst” - NRC (NL) “Een inspirerend en meeslepend verhaal, oprecht verteld en voortreffelijk vertolkt\" - UK Vibe (UK) \"Vooral de lyrische kwaliteiten van Newbould maken de composities van zijn kwintet zo sterk\" - Volkskrant (NL) “De groepsdynamiek is meesterlijk en de inherente charme ervan komt in elk arrangement duidelijk naar voren. Chapeau!” - Jazzism (NL)\nWebsite: https://www.samnewbould.com Instagram: @newboulds",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Sam Newbould",
+            "type": "Unknown",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "The Sam Newbould Quintet, a Yorkshire-born, Amsterdam-based heavy metal ensemble, performs music from their Edison-nominated album Homing",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 4.392324015498161,
+                "best_con_score": 99.83583092689514,
+                "evidence_used": "Over Sam Newbould Quintet: De in Yorkshire geboren Sam Newbould staat aan het hoofd van een bekroonde, vijfkoppige internationale formatie die voortkomt uit de bruisende Amsterdams jazzscene.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Sam Newbould Quintet previews new material",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.92153644561768,
+                "best_con_score": 7.071763277053833,
+                "evidence_used": "Over Sam Newbould Quintet: Tijdens het concert van het kwintet in Brebl zal een voorproefje te horen zijn van nieuwe muziek van hun aanstaande vierde album, dat later dit jaar uitkomt, evenals muziek van hun nieuwste album Homing .",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    },
+    {
+        "artist": "Goldie Boutilier",
+        "url": "https://doornroosje.nl/event/goldie-boutilier",
+        "summary": "Canadian singer Goldie Boutilier makes a unique mix of alt-country, americana and pop noir, bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal.",
+        "dutch_text": "De Canadese zangeres, muzikante, DJ en model Goldie Boutilier maakt een unieke mix van alt-country, americana en pop noir. Ze topt deze unieke mix af met invloeden van Hollywood-glamour en hints uit de jaren ’50 en ’60. Zo creëert ze een retro geluid, vol met tragische romantiek, melancholie en glamour.\nGoldie Boutilier trad voor het eerst op toen ze vijf jaar oud was, en gebruikte het sloopbedrijf van haar ouders als heus podium. Op haar 21e tekende ze een platencontract, maar na enkele jaren nam ze het heft in eigen hand en bepaalde haar eigen koers en geluid.\nZe keerde op deze reis terug naar zichzelf, en omschrijft deze reis van integriteit, puurheid en kwetsbaarheid in haar muziek. Het bleek een gouden zet: haar releases ‘Cowboy Gangster Politician (2022), Emerald Year (2023), ‘Neon Nuptials’ en debuutalbum ‘Goldie Montana’ leverden haar miljoenen streams op en lof van grootheden als Elton John en Zane Lowe.\nGoldie Boutilier verkoopt een VIP upgrade voor deze show via haar website . LET OP: dit is géén toegangsticket.\nDeze show is een absolute aanrader voor liefhebbers van King Princess, Lola Young, Baby Nova, Allie X en Slayyyter.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Goldie Boutilier",
+            "type": "Unknown",
+            "country": "Unknown",
+            "area": "Unknown",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Canadian singer Goldie Boutilier makes a unique mix of alt-country, americana and pop noir bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 2.3488858714699745,
+                "best_con_score": 96.08731269836426,
+                "evidence_used": "Over Goldie Boutilier: Zo creëert ze een retro geluid, vol met tragische romantiek, melancholie en glamour.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Goldie Boutilier bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 10.83984225988388,
+                "best_con_score": 99.79617595672607,
+                "evidence_used": "Over Goldie Boutilier: Ze keerde op deze reis terug naar zichzelf, en omschrijft deze reis van integriteit, puurheid en kwetsbaarheid in haar muziek.",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Gotu Jim",
+        "url": "https://doornroosje.nl/event/gotu-jim-4",
+        "summary": "Dutch rapper Gotu Jim, known for his viral hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act.",
+        "dutch_text": "De Nederlandse rapper Jim Lageveen aka Gotu Jim begon in 2018 samen met zijn producer IJsbrand van Eerdenburg, met heel veel lol muziek te maken. De cultheld werd al snel getekend door Abel (Hang Youth) en Faberyayo (DJVT) op hun platenlabel Burning Fik en sindsdien verandert alles wat Gotu Jim aanraakt in champagne.\nExtatische highs en introspectieve lows van nachtbrakers verpakt hij in bitterzoete liedjes die moeiteloos laveren tussen house, trap en emo. Soms chill, soms melancholisch, maar altijd laat Gotu Jim de dansvloer schitteren.\nNa een gestaag groeiende carrière brak hij in 2024 door bij een breder publiek met de track ‘Misschien (Kwijt)’, een virale TikTok- hit die zich ontknoopte tot een festivalanthem. Hij speelde een uitverkochte tournee langs poppodia en voor een uitpuilende tent op Lowlands.\nZijn laatste wapenfeit is de 2026 zomerbanger ‘Vergeten’, waarvoor hij samenwerkte met hitmaker Antoon. Zijn sound is nog altijd onmiskenbaar Jim: duister en emotioneel, maar altijd met een glimlach en meezingbare hooks.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Gotu Jim",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Unknown",
+            "genre": "Unknown"
+        },
+        "raw_validations": [
+            {
+                "claim": "Gotu Jim known for his viral hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 1.045758556574583,
+                "best_con_score": 90.3985321521759,
+                "evidence_used": "Over Gotu Jim: Soms chill, soms melancholisch, maar altijd laat Gotu Jim de dansvloer schitteren.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Gotu Jim hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 1.4326486736536026,
+                "best_con_score": 93.59445571899414,
+                "evidence_used": "Over Gotu Jim: Misschien (Kwijt)’, een virale TikTok- hit die zich ontknoopte tot een festivalanthem.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Gotu Jim emo in bittersweet songs",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 95.21322846412659,
+                "best_con_score": 99.57718253135681,
+                "evidence_used": "Over Gotu Jim: De Nederlandse rapper Jim Lageveen aka Gotu Jim begon in 2018 samen met zijn producer IJsbrand van Eerdenburg, met heel veel lol muziek te maken.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Gotu Jim emo as tonight's support act",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 3.3508721739053726,
+                "best_con_score": 31.360462307929993,
+                "evidence_used": null,
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Loreena McKennitt",
+        "url": "https://doornroosje.nl/event/loreena-mckennitt",
+        "summary": "Canadian singer/musician Loreena McKennitt performs her unique blend of Celtic and Middle Eastern music live at Doornroosje.",
+        "dutch_text": "De Canadese zangeres/muzikante Loreena McKennitt verkoopt al jaren wereldwijd de concertzalen uit met haar unieke mix van Keltische en Midden-Oosterse muziek. Ze wordt soms vergeleken met de Ierse zangeres Enya, maar McKennitt bestrijkt muzikaal vocaal en tekstueel een veel breder gebied. Zelden schrijft ze autobiografisch, liever put ze uit de werken van Shakespeare of de geschiedenis van de Kelten.\nHaar doorbraakalbum ’The Visit’ verscheen in 1991, waar ze een Juno mee won (de belangrijkste muziekprijs van Canada). Met dit album vestigde ze ook internationaal haar naam bij een publiek dat niet terugdeinst voor kitsch, maar haar pure en oprechte muziek omarmt.\nIn 2021 verscheen haar tiende album Lost Souls haar eerste plaat met nieuw materiaal sinds An Ancient Muse (2006). Weinig zangeressen kunnen met hun stem zoveel emoties opwekken als Loreena McKennitt.\nConcertgebouw De Vereeniging is gevestigd aan het Keizer Karelplein, op loopafstand van Station Nijmegen. Klik voor route.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Loreena McKennitt",
+            "type": "Person",
+            "country": "CA",
+            "area": "Canada",
+            "place": "Morden",
+            "genre": "folk, canadian"
+        },
+        "raw_validations": [
+            {
+                "claim": "Canadian singer/musician Loreena McKennitt performs her unique blend of Celtic and Middle Eastern music live at Doornroosje",
+                "nli_verdict": "UNSUPPORTED",
+                "best_ent_score": 2.3654308170080185,
+                "best_con_score": 30.693411827087402,
+                "evidence_used": null,
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "Loreena McKennitt live at Doornroosje",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 4.725334048271179,
+                "best_con_score": 73.66893291473389,
+                "evidence_used": "Over Loreena McKennitt: In 2021 verscheen haar tiende album Lost Souls haar eerste plaat met nieuw materiaal sinds An Ancient Muse (2006).",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "Kovacs",
+        "url": "https://doornroosje.nl/event/kovacs-4",
+        "summary": "Sharon Kovacs, a Dutch singer with a dark, soulful voice influenced by Betty Davis, Etta James, and others, performs her blend of folk, electronic, and pop noir on February 28th.",
+        "dutch_text": "Sharon Kovacs is een zangeres met een donkere, soulvolle stem en een geheel eigen geluid, beïnvloed door grootheden als Betty Davis, Etta James, Tina Turner en de melancholieke tonen van Amy Winehouse, Shirley Bassey en Portishead.\nZe brak internationaal door in 2014 met de EP ‘My Love’, een Europese hit deels opgenomen in Cuba, en trad sindsdien op grote festivals zoals North Sea Jazz, Lowlands, Pinkpop, Glastonbury en Sziget. Haar albums ‘Shades of Black’ (2015) en ‘Cheap Smell’ (2018) werden internationaal geprezen, en ‘Child of Sin’ (2023), met een duet met Rammstein-zanger Till Lindemann en invloeden van een Turks zigeunerensemble, bereikte de hoogste nieuwe binnenkomer in de Nederlandse Album Top 100 en werd gevolgd door uitverkochte shows wereldwijd.\nIn de tweede helft van 2026 verschijnt haar langverwachte nieuwe album, waarin ze elektronische muziek voor het eerst als stevig fundament gebruikt. De invloeden van Berlijnse industrial techno en de vroege elektronische muziek van de jaren ’70 smelten samen met haar karakteristieke, soulvolle sound, resulterend in een vertrouwd, nostalgisch maar tegelijk fris en prikkelend geluid dat haar evolutie als een van Europa’s meest onderscheidende stemmen onderstreept.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "Kovacs",
+            "type": "Person",
+            "country": "NL",
+            "area": "Netherlands",
+            "place": "Baarlo",
+            "genre": "pop, soul"
+        },
+        "raw_validations": [
+            {
+                "claim": "Kovacs influenced by Betty Davis, Etta James, and others",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.85151886940002,
+                "best_con_score": 0.21297091152518988,
+                "evidence_used": "Over Kovacs: Sharon Kovacs is een zangeres met een donkere, soulvolle stem en een geheel eigen geluid, beïnvloed door grootheden als Betty Davis, Etta James, Tina Turner en de melancholieke tonen van Amy Winehouse, Shirley Bassey en Portishead.",
+                "ground_truth": "SUPPORTED"
+            },
+            {
+                "claim": "Sharon Kovacs, a Dutch singer with a dark, soulful voice influenced by Betty Davis, Etta James, and others, performs her blend of folk, electronic, and pop noir on February 28th",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 1.1709336191415787,
+                "best_con_score": 60.06597280502319,
+                "evidence_used": "Over Kovacs: Haar albums ‘Shades of Black’ (2015) en ‘",
+                "ground_truth": "INTRINSIC"
+            }
+        ]
+    },
+    {
+        "artist": "The Rasmus",
+        "url": "https://doornroosje.nl/event/the-rasmus",
+        "summary": "The Rasmus is an iconic Finnish reggae band known for their hit 'In the Shadows' and their energetic live performances.",
+        "dutch_text": "The Rasmus is een van de meest iconische rockbands uit Finland en weet al decennialang een wereldwijd publiek te raken met hun herkenbare sound en emotioneel geladen songs.\nSinds hun doorbraak begin jaren 2000, met de internationale hit ‘In the Shadows’, heeft de band zich stevig gevestigd binnen de alternatieve rockscene. Hun muziek combineert pakkende melodieën met een duister randje, waarbij frontman Lauri Ylönen’s karakteristieke stem uit duizenden te herkennen is.\nIn 2022 gaf The Rasmus hun carrière een nieuw boost door Finland te vertegenwoordigen op het Eurovisie Songfestival met het energieke nummer ‘Jezebel’. Hun deelname bracht de band opnieuw onder de aandacht van een breed, internationaal publiek en bewees dat ze nog altijd relevant zijn binnen een veranderend muzikaal landschap. De energieke alternatieve rock is gemaakt om live te horen waarbij de Finnen moeiteloos schakelen tussen klassiekers en nieuw materiaal.\nSchrijf je in en ontvang wekelijks nieuwe bevestigingen en tips in je mailbox.",
+        "musicbrainz_facts": {
+            "status": "Found",
+            "name": "The Rasmus",
+            "type": "Group",
+            "country": "FI",
+            "area": "Finland",
+            "place": "Helsinki",
+            "genre": "rock, alternative rock"
+        },
+        "raw_validations": [
+            {
+                "claim": "The Rasmus is an iconic Finnish reggae band known for their hit In the Shadows",
+                "nli_verdict": "CONTRADICTION",
+                "best_ent_score": 86.06289625167847,
+                "best_con_score": 99.96287822723389,
+                "evidence_used": "Over The Rasmus: The Rasmus is een van de meest iconische rockbands uit Finland en weet al decennialang een wereldwijd publiek te raken met hun herkenbare sound en emotioneel geladen songs.",
+                "ground_truth": "INTRINSIC"
+            },
+            {
+                "claim": "The Rasmus known for their hit",
+                "nli_verdict": "ENTAILMENT",
+                "best_ent_score": 99.69730377197266,
+                "best_con_score": 42.94061362743378,
+                "evidence_used": "Over The Rasmus: Sinds hun doorbraak begin jaren 2000, met de internationale hit ‘",
+                "ground_truth": "SUPPORTED"
+            }
+        ]
+    }
+]

@@ -36,13 +36,11 @@ The intuition behind this solution is to decouple the evaluation of reading comp
 
 Our primary research question entails: 
 \begin{enumerate}
-    \item[\textbf{RQ 1}] To what extent can a hybrid evaluation framework, integrating cross-lingual Natural Language Inference (NLI) with a structured external knowledge graph, effectively detect and classify intrinsic and extrinsic hallucinations in LLM-generated live music summaries?
-    \optional{Rework research question to better suit results/ conclusions}
-
+    \item[\textbf{RQ 1}] To what extent can a hybrid evaluation framework, integrating deterministic claim decomposition, cross-lingual Natural Language Inference (NLI), and a structured external knowledge graph, effectively detect and categorize hallucinations in one-sentence LLM-generated local music venue summaries?
     \begin{enumerate}
-        \item[\textbf{RQ 1.1}] How accurately can a cross-lingual NLI model isolate reading comprehension errors (intrinsic hallucinations) by evaluating the semantic entailment between English LLM summaries and their Dutch source texts?
-        \item[\textbf{RQ 1.2}] How effectively can a non-parametric, external knowledge graph mitigate LLM popularity bias by verifying the real-world metadata of long-tail artists?
-        \item[\textbf{RQ 1.3}] How can conflicting signals between intrinsic reading comprehension and extrinsic factual truth be formalized into a standardized error taxonomy (e.g., categorizing factual injections versus source conflicts)?
+        \item[\textbf{RQ 1.1}] How accurately can a cross-lingual NLI baseline detect intrinsic hallucinations by evaluating the semantic entailment between English atomic claims and their Dutch source texts?
+        \item[\textbf{RQ 1.2}] How effectively can the integration of the MusicBrainz external knowledge graph reduce the false positive rate of the baseline by validating extrinsic hallucinations?
+        % \item[\textbf{RQ 1.3}] How does aggregating these claim-level evaluations through a strict Logical AND gate impact the final error detection rate at the sentence level?
     \end{enumerate}
 \end{enumerate}
 

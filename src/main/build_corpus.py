@@ -8,7 +8,7 @@ import data_loader
 
 CURRENT_DIR = Path(__file__).resolve().parent
 ROOT_DIR = CURRENT_DIR.parent.parent
-NEWSLETTERS_PATH = ROOT_DIR / "data" / "newsletters.json"
+NEWSLETTERS_PATH = ROOT_DIR / "data" / "corpus" / "newsletters.json"
 
 musicbrainzngs.set_useragent(
     app="CloudspeakersThesisValidator",
@@ -16,20 +16,14 @@ musicbrainzngs.set_useragent(
     contact="ruben.koelewijn@ru.nl" 
 )
 
-def fetch_dynamic_html(url):
-    """Uses Playwright headless browser to load full HTML of given URL."""
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        try:
-            page.goto(url, wait_until="networkidle", timeout=15000) 
-            full_html = page.content()
-        except Exception as e:
-            print(f"Playwright timeout: {e}")
-            full_html = ""
-        finally:
-            browser.close()
-        return full_html
+def fetch_dynamic_html(page, url):
+    """Navigates to the URL using the pre-allocated browser page."""
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        return page.content()
+    except Exception as e:
+        print(f"🚨 Error scraping {url}: {e}")
+        return ""
 
 def clean_html_with_bs4(html_content):
     """Uses BeautifulSoup to clean HTML and return body text, ignoring cookie banners."""
@@ -133,33 +127,49 @@ def main():
     total_entries = len([k for k in newsletters.keys() if k != "TEMPLATE"])
     print(f"Found {total_entries} entries. Beginning scrape...\n")
 
-    for i, (key, entry) in enumerate(newsletters.items()):
-        # Avoiding template that is put into newsletter file to make copying easier. 
-        if key == "TEMPLATE": continue
+    # --- ARCHITECTURE FIX: Initialize Playwright and Browser ONCE outside the loop ---
+    print("Launching stable browser instance...")
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-gpu",           # Stops WSL2 graphics conflicts
+                "--single-process"         # Aggregates threads to prevent segmentation faults
+            ]
+        )
+        context = browser.new_context()
+        page = context.new_page()
 
-        artist_raw = entry.get('act', 'Unknown')
-        artist_clean = artist_raw.split('+')[0].strip()
-        url = entry.get('url', '')
-        summary = entry.get('summary', '')
+        for i, (key, entry) in enumerate(newsletters.items()):
+            # Avoiding template that is put into newsletter file to make copying easier. 
+            if key == "TEMPLATE": continue
 
-        print(f"[{i}/{total_entries}] Processing: {artist_clean}")
-        if not url or not summary: continue
+            artist_raw = entry.get('act', 'Unknown')
+            artist_clean = artist_raw.split('+')[0].strip()
+            url = entry.get('url', '')
+            summary = entry.get('summary', '')
 
-        raw_html = fetch_dynamic_html(url)
-        dutch_text = clean_html_with_bs4(raw_html)
+            print(f"[{i}/{total_entries}] Processing: {artist_clean}")
+            if not url or not summary: continue
 
-        print("Fetching MusicBrainz baseline...")
-        mb_facts = get_artist_facts(artist_clean)
+            # --- Pass the initialized 'page' object into the scraping function ---
+            raw_html = fetch_dynamic_html(page, url)
+            dutch_text = clean_html_with_bs4(raw_html)
 
-        if dutch_text:
-            print(" Scrape & API successful.")
-            full_corpus.append({
-                "artist": artist_clean,
-                "url": url,
-                "summary": summary,
-                "dutch_text": dutch_text,
-                "musicbrainz_facts": mb_facts
-            })
+            print(" Fetching MusicBrainz baseline...")
+            mb_facts = get_artist_facts(artist_clean)
+
+            if dutch_text:
+                print(" Scrape & API successful.")
+                full_corpus.append({
+                    "artist": artist_clean,
+                    "url": url,
+                    "summary": summary,
+                    "dutch_text": dutch_text,
+                    "musicbrainz_facts": mb_facts
+                })
+        
+        print("Scraping complete. Closing browser.")
 
     print("\n" + "="*60)
     print(f"Saving compiled corpus with {len(full_corpus)} valid entries...")

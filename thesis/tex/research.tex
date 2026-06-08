@@ -1,121 +1,96 @@
-\chapter{Research}\label{research} \todo{Change Title}
-This chapter, or series of chapters, delves into all technical details that are required to \emph{prove} your scientific hypothesis.
-Please do not call this chapter or these chapters \emph{Research} as that name is not descriptive.
-It should be sufficiently detailed and precise in order for any fellow computing scientist student to be able to \emph{repeat} your research and therewith establish the same results \slash{} conclusions that you have obtained.
-Please note that, in order to improve readability of your thesis, you can put a part of this information also in one or more appendices (see Appendix~\ref{appendix}).
+\chapter{Summary Evaluation Pipeline Architecture}\label{research} 
+% This chapter, or series of chapters, delves into all technical details that are required to \emph{prove} your scientific hypothesis.
+% Please do not call this chapter or these chapters \emph{Research} as that name is not descriptive.
+% It should be sufficiently detailed and precise in order for any fellow computing scientist student to be able to \emph{repeat} your research and therewith establish the same results \slash{} conclusions that you have obtained.
+% Please note that, in order to improve readability of your thesis, you can put a part of this information also in one or more appendices (see Appendix~\ref{appendix}).
 
+This chapter explains the pipeline structure set up to validate the LLM summaries generated for the Cloudspeakers Newsletter. The pipeline consists of five modules, building the dataset, decomposing the summary into atomic claims, parsing the Dutch source text, evaluating validity of the claims against the source text and external database knowledge from MusicBrainz and lastly evaluating the outcome. 
 
-\section{Pipeline Setup}
-In order to correctly verify the summary given by the LLM model, we have to create a pipeline that sources the needed context. As seen in Chapter \ref{Newsletter}, the newsletter contains a one-sentence summary. Before we can validatie whether this is true or not, we need to extract all context. This is done by loading the URL using a headless browser, where we scrape the Dutch text. This then gets parsed and cleaned, and sent to the validator. Meanwhile, the summary gets chopped into atomic claims, who then can be validated. A diagram can be found in figure \ref{fig:pipeline_flowchart}. 
+In order to correctly verify the summary given by the LLM model, we have to create a pipeline that sources the needed context. As seen in Chapter \ref{Newsletter}, the newsletter contains a one-sentence summary. Before we can validate whether the claim is supported, we need to extract all context. This is done by loading the URL using a headless browser, where we scrape the Dutch text. This then gets parsed and cleaned, and sent to be validated by a NLI model. Meanwhile, the summary gets separated into atomic claims, to be validated. The NLI model consists of a Transformer-based language model which can perform cross-lingual comparisons, which compares the source, our premise, to the hypothesis, atomic claims. This pipeline follows the \textit{segmentation, matrix generation, aggregation} structure suggested by Laban \etal \cite{laban2021summaC}. However, in our experiment, we supply our baseline evaluation with the external knowledge graph, to aid the program in finding and correcting hallucinations. We also do not use any of the mean aggregation methods, but instead opt to use \textit{min aggregation}. Using entailment scores of our claims, we are able to classify two types of hallucinations. 
+A diagram showing the full framework can be found in Figure \ref{fig:pipeline_flowchart}. 
 \begin{figure}[htbp]
 \centering
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,680); %set diagram left start at 0, and has height of 680
-
-%Shape: Rectangle [id:dp4070963882781028] 
-\draw   (300,1) -- (350,1) -- (350,25.96) -- (300,25.96) -- cycle ;
-%Shape: Rectangle [id:dp9774405992082825] 
-\draw   (250,75.38) -- (400,75.38) -- (400,100.33) -- (250,100.33) -- cycle ;
-%Straight Lines [id:da38434376573046714] 
-\draw    (325,26.46) -- (324.04,73.38) ;
-\draw [shift={(324,75.38)}, rotate = 271.17] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Shape: Rectangle [id:dp7238715529174791] 
-\draw   (0,125.29) -- (150,125.29) -- (150,150.25) -- (0,150.25) -- cycle ;
-%Shape: Rectangle [id:dp544713314300144] 
-\draw   (500,125.29) -- (650,125.29) -- (650,150.25) -- (500,150.25) -- cycle ;
-%Shape: Rectangle [id:dp6187874396247628] 
-\draw   (250,200.17) -- (400,200.17) -- (400,225.13) -- (250,225.13) -- cycle ;
-%Shape: Rectangle [id:dp9525801403683838] 
-\draw   (300,275.04) -- (350,275.04) -- (350,300) -- (300,300) -- cycle ;
-%Straight Lines [id:da7731746387458769] 
-\draw    (580,85.36) -- (580,123.29) ;
-\draw [shift={(580,125.29)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da8488203549026855] 
-\draw    (400,85.36) -- (580,85.36) ;
-
-%Straight Lines [id:da17279727340281192] 
-\draw    (580,212.15) -- (402,212.15) ;
-\draw [shift={(400,212.15)}, rotate = 360] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da7845149368668756] 
-\draw    (580,150.25) -- (580,212.15) ;
-
-%Straight Lines [id:da8313227318576999] 
-\draw    (326,225.62) -- (325.04,272.54) ;
-\draw [shift={(325,274.54)}, rotate = 271.17] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da5767226057733228] 
-\draw    (71,85.36) -- (71,123.29) ;
-\draw [shift={(71,125.29)}, rotate = 270] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da09197572758197181] 
-\draw    (70,85.36) -- (250,85.36) ;
-
-%Straight Lines [id:da9262340614866109] 
-\draw    (70,212.8) -- (248,212.8) ;
-\draw [shift={(250,212.8)}, rotate = 180] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-%Straight Lines [id:da6502941044352438] 
-\draw    (70,213.15) -- (70,150.25) ;
-
-
-% Text Node
-\draw (281,79.11) node [anchor=north west][inner sep=0.75pt]   [align=left] {Build Corpus};
-% Text Node
-\draw (531,128.52) node [anchor=north west][inner sep=0.75pt]   [align=left] {Parse Source};
-% Text Node
-\draw (276,204.89) node [anchor=north west][inner sep=0.75pt]   [align=left] {Validate Claims};
-% Text Node
-\draw (231,31.92) node [anchor=north west][inner sep=0.75pt]   [align=left] {Newsletters \\to be verified};
-% Text Node
-\draw (494,43.88) node [anchor=north west][inner sep=0.75pt]   [align=left] {Scraped Dutch \\Source Text};
-% Text Node
-\draw (464,193.41) node [anchor=north west][inner sep=0.75pt]   [align=left] {Cleaned context};
-% Text Node
-\draw (71,46.87) node [anchor=north west][inner sep=0.75pt]   [align=left] {One sentence \\summary};
-% Text Node
-\draw (74,193.91) node [anchor=north west][inner sep=0.75pt]   [align=left] {Atomic Claims};
-% Text Node
-\draw (8,128.52) node [anchor=north west][inner sep=0.75pt]   [align=left] {Decompose Claims};
-% Text Node
-\draw (331,231.58) node [anchor=north west][inner sep=0.75pt]   [align=left] {Validation \\Scores};
-% Text Node
-\draw (309,279.27) node [anchor=north west][inner sep=0.75pt]   [align=left] {END};
-% Text Node
-\draw (301,4.23) node [anchor=north west][inner sep=0.75pt]   [align=left] {START};
-
-
-\end{tikzpicture}
+\includegraphics[width=1\textwidth]{diagram1.pdf}
 \caption{System architecture flowchart demonstrating the corpus ingestion, atomic claim decomposition branches, and cross-lingual source verification steps.}
 \label{fig:pipeline_flowchart}
 \end{figure}
-Each paragraph will explain in depth the architectural choices that were made and how each part of the pipeline works. 
 
-\subsection{Dataset and Corpus Construction} \label{rsh:datacorpus}
-Before any validation or evaluation is possible, we need to load the source data given in the newsletters url part. This allows us to create a so-called \textit{corpus} which contains all available data we have on the artist we are evaluating.
-This corpus is setup as a deterministic and sandboxed evaluation dataset, rather than executing live web scraping and external API queries during the NLI and KG evaluation phases. By doing all the data loading up front, we save time loading all data again when our pipeline crashes later on, or if we wish to run the experiment again. 
+Each paragraph will explain in depth the architectural choices that were made and how each module of the pipeline works. 
 
-This process collects the data in three simple steps: loading the local venue data, fetching the MusicBrainz facts, and saving everything to a JSON file.
+\section{Corpus Construction} \label{rsh:datacorpus}
+Before any validation or evaluation is possible, we need to load the source data given in the newsletters' \texttt{URL} field. This allows us to create a so-called \textit{corpus} which contains all available data we have on the artist we are evaluating. The corpus setup is implemented by loading all the data up front, so we save time loading all data again when our pipeline crashes later on, or if we wish to run the experiment again. This process collects the data in three simple steps: loading the local venue data, fetching the MusicBrainz facts, and saving everything to a JSON file.
 
-\subsubsection{Extracting Venue Data}
-As mentioned in Chapter \ref{Newsletter}, our primary data source is a generated newsletter, where we will be focussing on the venue Doornroosje, located in Nijmegen. This is setup using an automated web scraper, where the primary event details and the LLM-generated summaries are manually extracted from these newsletters and provided to the script. 
+\subsection{Extracting Venue Data}
+As mentioned in Chapter \ref{Newsletter}, our primary data source is a generated newsletter, where we will be focussing on the venue Doornroosje, located in Nijmegen. This is setup using an, where the primary event details and the LLM-generated summaries are manually extracted from these newsletters and provided to the script. 
 
-A comprehensive breakdown of the newsletter generation process, including its structural and visual layout, is discussed later in Chapter \ref{ch:cloudspeakers_pipeline} (The Cloudspeakers Pipeline). For the purpose of constructing this evaluation corpus, the script strictly isolates the English promotional text—which serves as our target for hallucination detection—alongside the core billing metadata required to identify the performing artists.
+The events page gets opened using a chromium headless browser, set up using the \texttt{Playwright} package. This is done since we wanted to ensure that our web scraping was done in a dynamic and deterministic fashion and we could replace the venue if we wanted to. This meant the option of using an AI Webcrawler was out of the equation, due to it not being deterministic and it being to cost heavy to set up. To prevent memory leaks and segmentation faults during the batch processing, we allocated a single browser context and passed every \texttt{URL} field from the input newsletters iteratively. 
 
-\subsubsection{Gathering MusicBrainz Knowledge}
-Once the primary event data is manually set up, the script automatically fills the dataset with verified real-world facts by querying the MusicBrainz API. To respect the strict rate-limiting policies enforced by the MusicBrainz infrastructure, the script utilizes a mandatory one-second delay between consecutive requests, ensuring the outbound traffic remains at or below $1 request \slash second$. 
+Once we collected the HTML using the headless browser, we used \texttt{bs4} from the \texttt{BeautifulSoup} package to find the \texttt{main},  \texttt{body} or  \texttt{article} which contained the text originally scraped by the LLM. Other HTML tags were discarded. This source text is then passed on to our Dutch Parser module, which parses, clean and prepares the Dutch text to be used as the premise of the NLI check. 
 
-For every artist identified in the venue data, the script searches the API to retrieve three specific data points: their geographic origin, associated musical genres, and any registered aliases. This factual data is stored to serve as the ground truth for detecting extrinsic hallucinations later in the pipeline. 
-
-Given that mid-tier venues frequently program niche, emerging, or highly localized artists, it is expected that some acts will be entirely absent from the MusicBrainz database. To ensure the robustness of the dataset generation, the script implements explicit error handling. If an artist cannot be resolved, the pipeline catches the exception and assigns empty values to the factual fields rather than terminating the program, allowing the script to safely proceed to the next entity.
+\section{External Knowledge Graph Implementation}
+The external knowledge graph we chose for this experiment is the MusicBrainz Database \cite{musicbrainz}.
+MusicBrainz is a community-maintained, open source encyclopedia of music information. It stores all of the music information that is collected by users, from artists and their releases to works and their composers. MusicBrainz gives us the availability to use this service by calling their API, allowing us to automatically request information. 
 
 
-\subsection{Decomposer}\label{rsh:decomposer}
-The main task of the decomposer step is to view the claims made by the LLM in the generated summary. A summary can contain from one untill multiple claims, so it is important that all of them get separated into atomic claims and get evaluated. We define a claim as `atomic' if it contains exactly one predicate-argument relationship, which allows the subsequent NLI model to render a definitive Entailment or Contradiction label without semantic noise.
+\subsection{MusicBrainz Data Extraction}
+Once the primary event data is manually set up, the script automatically fills the dataset with verified real-world facts by querying the MusicBrainz API. To respect the strict rate-limiting policies enforced by the MusicBrainz infrastructure, our script pauses for a second, before querying the next artist. 
 
-While state-of-the-art frameworks like Google DeepMind's SAFE \cite{safe2024longform} rely on LLM prompting to decompose long-form summaries into atomic claim, introducing yet another machine learning model and creating high operational and computational costs, we made the choice to do this in a deterministic fashion. Our methodology adopts the core multi-stage atomic decomposition paradigm pioneered by SAFE, but replaces the LLM parser with a deterministic, rule-based linguistic dependency parse utilizing \texttt{spaCy}. Splitting claims into atomic claims, has been proven to improve performance in NLI for multiple models \cite{huang2026atomicsnlifinegrainednaturallanguage} and our own small scale testing (See Table \ref) \additions{Add table to show atomic claims give better results (maybe?)}. Our decomposer has been developed in parallel to the framework given by Huang et al. 
+For every artist identified in the venue data, the script searches the API to retrieve three specific data points: 
+\texttt{name}, \texttt{type}, \texttt{country}, \texttt{area}, \texttt{place} and \texttt{genre}. A description and example of each field can be found in Table \ref{tab:musicbrainz_facts}.
+
+\begin{table}[htbp]
+    \centering
+    \renewcommand{\arraystretch}{1.2} % Adds a bit of padding for readability
+    \begin{tabular}{@{}llp{4cm}@{}}
+        \toprule
+        \textbf{Field} & \textbf{Description} & \textbf{Example} \\
+        \midrule
+        \texttt{name} & The official name of the artist, band, or act. & \texttt{Frank Boeijen} \\
+        \texttt{type} & The classification of the entity (e.g., Person, Group). & \texttt{Person} \\
+        \texttt{country} & The primary country of origin for the artist. & \texttt{NL} \\
+        \texttt{area} & The broader geographical region or country. & \texttt{Netherlands} \\
+        \texttt{place} & The specific founding city or hometown (\texttt{begin-area}). & \texttt{Nijmegen} \\
+        \texttt{genre} & A comma-separated list of the top two user-generated genre tags. &  \texttt{singer-songwriter}\\
+        \bottomrule
+    \end{tabular}
+    \caption{Description and examples of factual metadata fields extracted from the MusicBrainz API.}
+    \label{tab:musicbrainz_facts}
+\end{table}
+
+\noindent Given that mid-tier venues frequently program niche, emerging, or local artists, it is expected that some acts will be entirely absent from the MusicBrainz database. To ensure the robustness of the dataset generation, the script implements explicit error handling. If an artist cannot be resolved, the pipeline catches the exception and assigns empty values to the factual fields rather than terminating the program, allowing the script to safely proceed to the next entity.
+
+\section{Parsing Dutch Source Text}
+The main task of this module is to clean the extracted text, since HMTL source text delivered by the corpus module contains boilerplate text that can clutter up our analysis. One factor that we noticed, was a constant section of a cookies pop-up text. During test runs of the web scraping, our corpus was filled with the paragraph that can be found in Listing \ref{lst:cookiesparagraph}.  
+
+\begin{lstlisting}[language=json, caption={An example of boilerplate cookie consent text frequently extracted as noise during the initial web scraping phase.}, label={lst:cookiesparagraph}]
+We gebruiken cookies om je ervaring op onze website te verbeteren. Lees hier ons privacybeleid.
+Noodzakelijke cookies zijn cruciaal voor de basisfuncties van de website en zonder deze werkt de website niet op de beoogde manier.
+Deze cookies slaan geen persoonlijk identificeerbare gegevens op.
+Functionele cookies helpen bepaalde functionaliteiten uit te voeren, zoals het delen van de inhoud van de website op sociale mediaplatforms, het verzamelen van feedback en andere functies van derden.
+Analytische cookies worden gebruikt om te begrijpen hoe bezoekers omgaan met de website. Deze cookies helpen informatie te verstrekken over de statistieken van het aantal bezoekers, het bouncepercentage, de verkeersbron, enz.
+Prestatiecookies worden gebruikt om de belangrijkste prestatie-indexen van de website te begrijpen en te analyseren, wat helpt bij het leveren van een betere gebruikerservaring voor de bezoekers.
+Advertentiecookies worden gebruikt om bezoekers gepersonaliseerde advertenties te bezorgen op basis van de eerder bezochte pagina's en om de effectiviteit van de advertentiecampagne te analyseren.
+Andere niet-gecategoriseerde cookies zijn cookies die worden geanalyseerd en die nog niet in een categorie zijn ingedeeld.
+\end{lstlisting}
+
+\noindent Instead of filtering this text statically, which in theory would work since we are only scraping from a single source, we opted for a more dynamic approach to ensure that when this pipeline is adapted to another webpage less work is needed. This dynamic approach is heuristic-based, which works since basing our rules on shallow text features for boilerplate removal achieves high accuracy without the need for complex structural features or site-specific engineering \cite{Kohlschütter2010boilerplatedetection}. Our code utilizes regular expressions (regex) to search and remove Listing \ref{lst:cookiesparagraph}. First, we define a list of patterns, which are the commonly found phrases in cookie banners, such as ``We gebruiken cookies'' and ``Functionele cookies''. Then, we match the rest of the sentence and loop through the document and replace any matching string with an empty string, deleting the snippet. Lastly, we clean up large chunks of white space. 
+
+% Explain the Over: {artist} 
+After having removed the boilerplate text from the source, we need to append context about the artist to each sentence. As the validation is done over every single source line, context can be lost due to the artist name not being in the sentence. To solve this issue, we prepend the following string: ``\texttt{Over {artist\_name}:}'', where the name of the artist is inserted. This addition ensures that the sentences keep their main focus, which is a necessity for the validation process in Section \ref{rsh:validator}. 
+The clean, contextualised Dutch source sentences are then passed on to the validator. All these individual sentences form the source sentence set $\mathcal{S} = \{ s_1, s_2, \dots, s_n \}$. 
 
 
-Crucially, by utilizing a deterministic linguistic dependency parser rather than a secondary LLM for claim decomposition, we avoid the `recursive hallucination' risk. When an LLM is used to decompose a summary, it may introduce its own hallucinations during the parsing phase. Our rule-based approach ensures that the decomposition remains faithful to the text's syntactic structure, effectively providing a stable, verifiable input for the subsequent NLI evaluation.
+\section{Decompsing Summaries Into Atomic Claims}\label{rsh:decomposer}
+The main task of the decomposer module is to separate the claims made by the LLM in the generated summary. A summary can contain from one untill multiple claims, so it is important that all of them get separated into \textit{atomic claims} and get evaluated. We define a claim as \textit{atomic} if it contains exactly one predicate-argument relationship, which allows the subsequent NLI model to render a definitive hallucination label without semantic noise. This falls back on the first step of Laban \etal's structure, which exists of \textit{segmentation}, where we decompose a summary $\mathcal{C}$ into atomic claims $\mathcal{C} = \{ c_1, c_2, \dots, c_m \}$. 
 
+
+\subsection{Decompsing Intuition}
+While state-of-the-art frameworks like Google DeepMind's SAFE \cite{safe2024longform} rely on LLM prompting to decompose long-form summaries into atomic claim, introducing yet another machine learning model and creating high operational and computational costs, we made the choice to do this in a deterministic fashion. Our methodology adopts the core multi-stage atomic decomposition paradigm pioneered by SAFE, but replaces the LLM parser with a deterministic, rule-based linguistic dependency parse utilizing \texttt{spaCy}. Splitting claims into atomic claims, has been proven to improve performance in NLI for multiple models \cite{huang2026atomicsnlifinegrainednaturallanguage,laban2021summaC}. Our decomposer has been developed in parallel to the framework given by Huang \etal \cite{huang2026atomicsnlifinegrainednaturallanguage}. 
+
+
+Crucially, by utilizing a deterministic linguistic dependency parser rather than a secondary LLM for claim decomposition, we avoid the `recursive hallucination' risk \cite{yoo2026torlite}. When an LLM is used to decompose a summary, it may introduce its own hallucinations during the parsing phase. Our rule-based approach ensures that the decomposition remains faithful to the text's syntactic structure, effectively providing a stable, verifiable input for the subsequent NLI evaluation.
+
+\subsection{Decomposer Implementation}
 The core of our decomposer consists of treating a sentence as a hierarchical Dependency Tree, where words are nodes connected by functional relationships. These relationships mimic the function of words in English sentences, such as a \textit{preposition}, \textit{subject}, \textit{object}. The enumeration below shows the implementation of the algorithm. 
 \begin{enumerate}
     \item Convert the raw text into a machine-readable dependency tree. This allows the system to identify the grammatical roles of words, such as which terms function as the subject and which function as the object of an action.
@@ -131,48 +106,151 @@ The core of our decomposer consists of treating a sentence as a hierarchical Dep
     \item If the sentence includes modifiers, ``multiply" the base statement by each modifier to generate individual, independent claims. This step converts one complex sentence into multiple simple, verifiable statements.
     \item  Perform final data hygiene. Remove exact duplicate claims and discard any fragments that are under 5 words in length. This ensures the final output contains only high-quality, meaningful information.
 \end{enumerate}
+The atomic claims set has now been created and can be validated by the next module. 
 
-\subsection{Dutch Parser}
+\section{Validating Atomic Claims Based on Source Text}\label{rsh:validator}
+Once the atomic claims have been generated and the source text has been cleaned and contextualised, we can start the validation process. The validation module of the pipeline compares the hypothesis, atomic claims, against the premises, contextualised source text, and returns three different scores, \texttt{entailment}, \texttt{contradiction} and \texttt{neutral}. Based on these scores, we can determine the validity of the claim. Since the source text differs from the atomic claims, we will be using a cross-language NLI (XNLI) model, to ensure no context is lost in a (seperate) translation layer.
 
-\subsection{Validator}
-\subsubsection{Theory}
-Validating the claims is the core part of the operation we are doing. The validation is a process of cross-language NLI, comparing the original Dutch text to the English summaries that are given. 
+\subsection{Validation Design Choices}
+As mentioned in Section \ref{introduction}, the option of using a generative model for the entailment check was discarded to avoid the inherent bias of self-validation where a LLM acts as an uncritical judge of its own generated output. Since the scope is based on finding out whether this deterministic pipeline is possible, we have chosen to implement Facebook's \rob \cite{conneau2020unsupervised}. \rob, according to Conneau \etal, serves as an extensively documented `gold standard'baseline in cross-lngual NLI literature. 
 
-% explain why we used RoBERTa over other choices 
-To avoid the inherent bias of self-validation—where an LLM acts as an uncritical judge of its own generated output
-\footnote{In the Netherlands, this specific conflict of interest is known as acting such as the company `WC-Eend', referencing
- a famous advertising campaign in which the brand recommends its own product (Wij van Wc-Eend adviseren Wc-Eend).}, \changes{move footnote to introduction.}
-the option of using a generative model for the entailment check was discarded.
-\textcolor{red}{Even though multiple studies have shown this to be effective, 
-we wish to find a way to do this in a deterministic way due to LLMs having the nature of being unpredictable and prone to hallucination, 
-as mentioned in section \ref{pre:sec:llm}. } 
-\source{find the studies that show LLM can verify themselves.}
-Comparing the premise and the hypothesis can be done in multiple ways, but for this thesis we have made the choice to make use of Facebook's XLM-RoBERTa \cite{conneau2020unsupervised}. 
+\rob is a Transformer-based language model trained on 2.5 Terabytes of filtered CommonCrawl data across 100 different languages.
+\rob learns a shared mathematical representation of human language, which results in it being able to convert multiple languages into a mapped mathematical vector space, meaning different languages can be compared. 
+Conneau \etal show that \rob is very competitive with strong monolingual models on XNLI benchmarks, demonstrating that it is possible to have a single large model for all languages. \cite{conneau2020unsupervised}.
+For the Cloudspeakers Experiment (Section \ref{Newsletter}), this saves us steps from translating between Dutch and English which could lead to information and/or performance loss, or limiting the experiments to pages that \textit{do} have an English variant. 
+As mentioned in \ref{pre:sec:nli}, NLI looks at the entailment, contradiction and neutral scores. \rob outputs these when given a premise and hypothesis and using these we can determine likelihood of a hallucination by the LLM. Table \ref{tab:validation} shows a validation example on two claims, only differing by the hometown of the artist. The \texttt{neutral} score is not shown, to simplify the example.  
 
-XLM-RoBERTa, is a Transformer-based language model trained on 2.5 Terabytes of filtered CommonCrawl data across 100 different languages.
-XLM-R learns a shared mathematical representation of human language, which results in it being able to convert multiple languages into a mapped mathematical vector space, meaning different languages can be compared. 
-Conneau et al. show that XLM-R is very competitive with strong monolingual models on XNLI benchmarks, demonstrating that it is possible to have a single large model for all languages. \cite{conneau2020unsupervised} For the Cloudspeakers Experiment (section \ref{Newsletter}), this saves us steps from translating between Dutch and English, or limiting the experiments to pages that \textit{do} have an English variant. 
-As mentioned in \ref{pre:sec:nli}, NLI looks at the entailment, contradiction and neutral scores. XLM-R outputs these when given a premise and hypothesis and using these we can determine likelihood of a hallucination by the LLM. 
+\begin{table}[htbp]
+    \centering
+\caption{An example of the validation output generated by \rob, detailing the confidence scores and the extracted evidence used for each claim.}
+    \label{tab:validation}
+    \renewcommand{\arraystretch}{1.3}
 
-Guidelines to the entailment scores can be found in Table XX. \additions{add table with entailment Guidelines}
+    % --- Voorbeeld 1 ---
+    \vspace{0.2cm}
+    \begin{flushleft}
+        \textbf{C.1:} \textit{Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen}
+    \end{flushleft}
+    \vspace{-0.3cm} % Trek de tabel iets dichter naar de claim toe
+    \begin{tabular}{l r r p{0.55\linewidth}}
+        \toprule
+        \textbf{Verdict} & \textbf{Ent. Score} & \textbf{Con. Score} & \textbf{Evidence Used} \\
+        \midrule
+        ENTAILMENT & 99.95 & 0.11 & Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen. \\
+        \bottomrule
+    \end{tabular}
 
-\begin{verbatim}
-    INSERT TABLE HERE
-\end{verbatim}
+    \vspace{0.4cm} % Ruimte tussen de twee claims
 
+    % --- Voorbeeld 2 ---
+    \begin{flushleft}
+        \textbf{C.2:}  \textit{Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of \textcolor{red}{Amsterdam}}
+    \end{flushleft}
+    \vspace{-0.3cm}
+    \begin{tabular}{l r r p{0.55\linewidth}}
+        \toprule
+        \textbf{Verdict} & \textbf{Ent. Score} & \textbf{Con. Score} & \textbf{Evidence Used} \\
+        \midrule
+        CONTRADICTION & 0.12 & 99.30 & Frank Boeijen keert samen met zijn band terug naar Openluchttheater de Goffert, in zijn geliefde thuisstad Nijmegen. \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
-\subsubsection{Implementation}
-The \texttt{validator} is implemented in Python utilizing PyTorch and the HuggingFace \texttt{transformers} library, using the specific \texttt{joeddav/xlm-roberta-large-xnli} model. 
+\subsection{\rob Implementation}
+The \texttt{validator} is implemented in Python utilizing PyTorch and the HuggingFace \\ \texttt{transformers} library, using the specific \texttt{joeddav/xlm-roberta-large-xnli} model. 
+\noindent As mentioned in Section \ref{rsh:decomposer}, the pipeline delivers multiple different atomic claims ($c^A_1, c^A_2, \dots, c^A_n$) for every summary $\mathcal{C}^A$ and the source sentences $S^A = \{s^A_1, s^A_2, \dots, s^A_m\}$ for every artist $A$. Since \rob is set up to only check one premise against a single hypothesis, we will run the model for every claim and every sentence in the source material and find which sentence results in the highest entailment and which in the highest contradiction. We chose to run the experiments in this way, to adhere the the segmentation framework \cite{laban2021summaC} and to remain below \rob's maximum input token capacity. To be certain we won't go above \rob's 512-token input limit, we tokenize the pairs ($c^A_i, s^A_j$) with trunaction enabled. This is just a precaution, because during our experiments \rob never complained about the token limit being reached. 
 
-As mentioned in section XX, the pipeline delivers multiple different claims $\mathcal{C}$ and the original text from the source. Since XLM-R is set up to only check one premise against a single hypothesis, we will run the model 
-for every claim and every sentence in the source material and find which sentence results in the highest entailment and which in the highest contradiction. We chose to run the experiments in this way, since it showed the best results in testing compared to supplying the model with the entire source text at once. 
-For any given claim ($c \in \mathcal{C}$) and a set of source sentences ($\mathcal{S}$), the system iterates through $\mathcal{S}$, tokenizing the premise-hypothesis pairs with trunaction enabled. 
-The raw logits output by the model are passed through a Softmax function to calculate a probability distribution across the earliers mentions classes: \texttt{contradiction}, \texttt{neutral} and \texttt{entailment}. The script holds two trackers for each claim:
+The raw numbers (logits) output by the model are passed through a Softmax function to calculate a probability distribution across the earlier mentioned classes: \texttt{contradiction}, \texttt{neutral} and \texttt{entailment}. This ensures they all add up to a value of $1$.
+
+The script holds two trackers for each claim in $mathcal(C^A)$:
 \begin{enumerate}
-    \item \texttt{max\_entailment}: The sentence in $\mathcal{S}$ that returns the highest \textit{entailment} probability
-    \item \texttt{max\_contradiction}: The sentence in $\mathcal{S}$ that returns the highest \textit{contradiction} probability.
+    \item $\texttt{ent\_score}_{\text{max}}(c^A_j)$: The maximum entailment score of Claim $j$ for all sentences $S^A$. 
+    \item $\texttt{con\_score}_{\text{max}}(c^A_j)$: The maximum contradiction score of Claim $j$ for all sentences in $S^A$. 
 \end{enumerate}
-\optional{Psuedocode for to show the for loops and explain complexity?}
-Testing results can be found in Table XX. These tests showed that XLM-R struggles when the premise and hypothesis aren't of the same length, most likely due to too much information being fed and flooding it with information, leading to a more neutral score. 
-These results are back up by SOURCE HERE!!! \source{Back up claim that one sentence is better than full text.}
-\subsection{Classification} \optional{Classification could be an option}
+
+\noindent These scores and sentences are then passed on to our evaluation module. These trackers represent the matrix of size $M \times N$, with every possible pair $(c_i, s_j)$ \cite{laban2021summaC}, but since we are not interested in the entire matrix, but just the peaks, we do not store the entire matrix but just the max scores. This is due to the labelling logic will apply in Section \ref{rsh:tenrary}. 
+
+\section{Evaluating Validation Scores}\label{rsh:eval}
+The evaluation of the newsletter summaries, will be done in a two step process. After \rob has finished generating validation scores for each claim of a summary sentence, we will first label the claims as \texttt{SUPPORTED}, \texttt{INTRINSIC} or \texttt{EXTRINSIC}
+%\cite On Faithfulness and Factuality in Abstractive Summarization", Maynez et al. (2020), \source{Add this one}
+\cite{huang2025survey}
+  based on the Dutch source text. Flagging the claims will be done based on the trackers set up in Section \ref{rsh:validator}. Next, after the hallucinations have been marked, we aggregate these results in based on the SAFE framework \cite{wei2024longform}, by using a strict atomic verification, which entails that every claim of the sentence has to be marked \texttt{SUPPORTED} for a sentence to be given the \texttt{CORRECT} verdict. Otherwise, it receives \texttt{INCORRECT}. 
+  
+  We choose this binary evaluation approach, since we use a SummaC-based \cite{laban2021summaC} baseline approach, but to also not lose the information gathered by classifying the hallucinations. 
+
+\subsection{Ternary Atomic Claim Evaluation}\label{rsh:tenrary} 
+\noindent To correctly map every atomic claim onto one of the three claim labels (\texttt{SUPPORTED}, \texttt{INTRINSIC} or \texttt{EXTRINSIC}), we make use of the trackers set up in Section \ref{rsh:validator}. Equation 4.1 shows when a label is applied. 
+
+\begin{equation}
+\text{Verdict}(c_j) = 
+\begin{cases} 
+\text{SUPPORTED} & \text{if } \texttt{ent\_score}_{\text{max}}(c_j) \ge \mathcal{T} \quad \text{and} \quad \texttt{ent\_score}_{\text{max}}(c_j) > \texttt{con\_score}_{\text{max}}(c_j) \\
+\text{INTRINSIC} & \text{if } \texttt{con\_score}_{\text{max}}(c_j) \ge \mathcal{T} \quad \text{and} \quad \texttt{con\_score}_{\text{max}}(c_j) > \texttt{ent\_score}_{\text{max}}(c_j) \\
+\text{EXTRINSIC} & \text{otherwise}
+\end{cases}
+\end{equation}
+For all $c_j$ in $\mathcal{C}$, $\texttt{ent\_score}_{\text{max}}(c_j)$ is that claims highest entailment score for sentence $s_j$ , $\texttt{con\_score}_{\text{max}}(c_j)$ is that claims highest contradiction score for sentence $s_j$ and $\mathcal{T}$ referring to the confidence threshold. 
+
+
+
+\subsection{Binary Sentence Evaluation}
+After having given a verdict to the claims of a sentence, we start the aggregation process of these claims. The form of aggregation we have chosen is from the SAFE framework \cite{safe2024longform}, where every claim must hold before a parent sentence can hold. While the SummaC \cite{laban2021summaC} architecture utilizes mean-pooling to aggregate summaries,this approach risks missing hallucinations due to a sentence having a large number of claims. We opt to implement \textit{min-pooling}: 
+
+\begin{itemize}
+    \item \textbf{CORRECT:} A sentence is labeled as factually consistent if and only if all of its atomic claims are classified as \texttt{SUPPORTED}.
+    \item \textbf{INCORRECT:} A sentence is labeled as inconsistent if at least one of its atomic claims is classified as an \texttt{INTRINSIC} or \texttt{EXTRINSIC} hallucination.
+\end{itemize}
+This strict binary output serves as the final evaluation metric for our pipeline, allowing us to calculate the error detection rate when comparing the baseline model against the experiment model, which uses the external knowledge graph.
+
+
+\newpage
+\section{Experiment setup (Knowledge Graph Integration)}
+To asses whether a hybrid evaluation framework, implementing \rob with the MusicBrainz integrated knowledge graph, can effectively detect and classify intrinsic and extrinsic hallucinations, we have set up our discussed framework. At the point of evaluation, we will see whether inserting the external data can improve our sentence verdict. By helping the validation module by inserting more data we confirmed holds, we hope to improve it's overall score. 
+
+\subsection{Calculating up Baseline Measurements}
+To compare the results, we will first gather results without the external database, to create a baseline. This baseline can be loosely compared to other NLI Summary Frameworks \cite{laban2021summaC}, as well as modern LLM-driven factuality evaluators \cite{chen2023felm}. For this baseline framework, we have to also calculate the optimal value for $\mathcal{T}$, mentioned in Equation 4.1. This is done after having generated the validation scores. The scores are saves, and we run a check for $ 0.0 \le \mathcal{T} \le 1.0$ in increments of $0.05$, creating 21 unique thresholds. We choose this size of increments, since smaller increments may lead to overfitting of the model. Once the optimal threshold for our baseline setup has been calculated, we apply this threshold to the experiment setup to guarantee that possible improvements can be attributed to our addition of an external knowledge graph. 
+
+\subsection{External Knowledge Graph Override}
+As we wish to insert to external knowledge graph into our structure to asses whether our hybrid framework works, we implemented an override system. Since \rob is built on comparing natural language, we cannot compare the values from the MusicBrainz API directly to our hypothesis. For this, we will need to generate synthetic source text. For every field that contains data in the MusicBrainz database, we fit it into a custom template sentence. These sentences can be found in Table \ref{tab:mb_synthesis_templates}. 
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{p{0.2\textwidth} p{0.75\textwidth}}
+\hline
+\textbf{MusicBrainz Field} & \textbf{Synthesized Template Sentence} \\
+\hline
+\texttt{area}    & \textit{[Artist] originates from [Area].} \\
+\texttt{country} & \textit{[Artist] originates from [Country].} \\
+\texttt{genre}   & \textit{[Artist] plays [Genre] music.} \\
+\hline
+\end{tabular}
+\caption{Template sentences used to synthesize structured MusicBrainz data into natural language premises for cross-lingual NLI validation.}
+\label{tab:mb_synthesis_templates}
+\end{table}
+
+\noindent Next, we do another validation round using \rob on the claims which were marked \texttt{INTRINSIC} or \texttt{EXTRINSIC} and our synthesized sentences. Using the same threshold $\mathcal{T}$, we relabel these claims and override the existing value if they differ. 
+
+\subsection{Manual Ground Truth Labelling}
+To check the accuracy our labels for claims and sentences, we have manually marked every sentence and claim, so that the results can be compared. Creating ground-truth labels for the claims, which leads into the ground-truth for the sentences, was done based on the following considerations:
+\begin{itemize}
+    \item  \textbf{Completeness}: Every topic mentioned in the summary had to be able to be traced back to (a part of) a sentence.
+    \item \textbf{Factuality}: All claims had to be truthful according to the source text, meaning no contradictions were found in the source.
+\end{itemize} 
+\noindent Notably, we based the information on the source, and not global knowledge. This entails that if we knew that e.g. ``Adult DVD'', wasn't from The Netherlands, because we might have been to one of their concerts, and the summary claimed that they were, we mark the claim as \texttt{EXTRINSIC} since the knowledge of where ``Adult DVD'' originates from is not present in the source material. If we were to update the source with knowledge of the ``Adult DVD's'' origin, or extend it using another database, the hallucination will be labelled as \texttt{INTRINSIC}. These ground truth labels can be found in Appendix \ref{appendix}. \question{Does this need to be in the appendix?} 
+
+\subsection{Evaluation Metrics}
+To evaluate the performance of both the baseline and experimental pipelines, we use the following metrics: 
+\begin{itemize}
+    \item \textbf{Threshold Optimization:} To assign the confidence threshold ($\mathcal{T}$) we derive it by evaluating the continuous entailment scores of the baseline model against the ground truth and locking the value that maximizes the \textbf{F1-score}.
+    
+    \item \textbf{Atomic Claim Evaluation:} At the component level, we utilize a standard confusion matrix, alongside \textbf{Precision, Recall, and F1-scores}, to measure the cross-lingual NLI model's ability to accurately categorize the ternary labels (\texttt{SUPPORTED}, \texttt{INTRINSIC}, \texttt{EXTRINSIC}). This level of measurement is critical for quantifying exactly how many claims are impacted by the external knowledge graph.
+    
+    \item \textbf{Binary Sentence Evaluation:} At the final aggregation level, where the min-aggregation assigns a definitive \texttt{CORRECT (1)} or \texttt{INCORRECT (0)} label, we evaluate the overall system using standard binary classification metrics: \textbf{Accuracy, Precision, Recall, and F1-score}. 
+    
+     To view the impact of the external knowledge graph integration, we emphasize two targeted metrics within this classification:
+    \begin{itemize}
+        \item \textbf{Error Detection Rate (Recall):} The proportion of ground-truth hallucinations successfully flagged by the pipeline.
+        \item \textbf{False Positive Rate:} How often the pipeline falsely accuses a summary of containing an error. 
+    \end{itemize}
+\end{itemize}

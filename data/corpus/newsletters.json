@@ -155,16 +155,6 @@
         "genres": "pop",
         "summary": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences."
     }, 
-    "Enigma": {
-        "act": "Enigma",
-        "type": "club night",
-        "date": "2026-06-19",
-        "url": "https://doornroosje.nl/event/enigma-2",
-        "venue": "Doornroosje - Rode zaal",
-        "bands": "DJ Y (main), Tsudi, HDM13, Click b2b Ipkiss (support)",
-        "genres": "breakbeat, drum'n'bass, jungle, at night",
-        "summary": "A dark rave bunker night with deep basslines, featuring DJ Y (alias of Coco Bryce) from Breda, plus local talents Tsudi, HDM13, and a b2b set by Click and Ipkiss."
-    },
     "Racoon": {
         "act": "Racoon",
         "type": "gig",
@@ -237,16 +227,6 @@
         "genres": "rock, alternative, post rock",
         "summary": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes."
     },
-    "Solfestice #8": {
-        "act": "Solfestice #8",
-        "type": "gig",
-        "date": "2026-06-20",
-        "url": "https://brebl.nl/event/2026/06/solfestice-8",
-        "venue": "Brebl",
-        "bands": "I Compani (main)",
-        "genres": "live muziek, jazz",
-        "summary": "I Compani presents their new double album BASTA! with a mix of film music, opera, vaudeville, and jazz, featuring guest musicians."
-    },
     "Hippotraktor": {
         "act": "Hippotraktor",
         "type": "gig",
@@ -257,16 +237,6 @@
         "related_artists": "Gojira, Meshuggah, The Ocean, Psychonaut, Pothamus, MÚR",
         "genres": "metal, progressive metal, sludge metal",
         "summary": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences."
-    },
-    "Robin Scherpen - Pulse": {
-        "act": "Robin Scherpen - Pulse",
-        "type": "show",
-        "date": "2027-02-02",
-        "url": "https://doornroosje.nl/event/robin-scherpen",
-        "venue": "De Vereeniging",
-        "bands": "Robin Scherpen (main)",
-        "genres": "neo-klassiek",
-        "summary": "Componist en gitarist Robin Scherpen presenteert zijn intieme show Memory & Traces, een muzikale reis door donker en licht, melancholie en geluk."
     },
     "Primitive Ring": {
         "act": "Primitive Ring",
@@ -374,5 +344,171 @@
         "bands": "Wodan Boys (main)",
         "genres": "punk, punkrock, rock 'n roll",
         "summary": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound."
-    }
+    }, 
+"NAFT": {
+"act": "NAFT",
+"type": "gig",
+"date": "2026-11-26",
+"url": "https://doornroosje.nl/event/naft",
+"venue": "Doornroosje - Paarse zaal",
+"bands": "NAFT (main)",
+"genres": "house, electronic, brass",
+"summary": "Belgian group NAFT, known for their debut album 'Brass Tactics', blends electronic music with live brass and drums for an energetic rave experience."
+},
+"STIPPENLIFT": {
+"act": "Stippenlift",
+"type": "gig",
+"date": "2026-12-23",
+"url": "https://doornroosje.nl/event/stippenlift-4",
+"venue": "Merleyn",
+"bands": "Stippenlift (main)",
+"genres": "pop, electronic, depriwave",
+"summary": "Stippenlift, the Dutch project of Hugo van de Poel, celebrates 15 years of Christmas hits with a special show blending pop, electronic, and depriwave."
+},
+"THE JAYHAWKS": {
+"act": "The Jayhawks",
+"type": "gig",
+"date": "2026-09-23",
+"url": "https://doornroosje.nl/event/the-jayhawks",
+"venue": "Doornroosje - Rode zaal",
+"bands": "The Jayhawks (main)",
+"genres": "rock, folk, soul, country, americana",
+"summary": "The Jayhawks, an American band formed in 1985 in Minneapolis, perform their unique mix of country, folk, soul, Britpop, and rock 'n roll."
+},
+"THE SKINTS": {
+"act": "The Skints",
+"type": "gig",
+"date": "2026-12-08",
+"url": "https://doornroosje.nl/event/the-skints-2",
+"venue": "Doornroosje - Paarse zaal",
+"bands": "The Skints (main)",
+"related_artists": "The Specials, Madness, Protoje, Jesse Royal",
+"genres": "punk, reggae, ska, dub",
+"summary": "The Skints, a Bristol-based quartet, blend reggae, soul, punk, ska, and grime into a unique 'tropical punk' style."
+},
+"TRAMHAUS": {
+"act": "Tramhaus",
+"type": "gig",
+"date": "2027-02-05",
+"url": "https://doornroosje.nl/event/tramhaus-2",
+"venue": "Doornroosje - Rode zaal",
+"bands": "Tramhaus (main)",
+"genres": "rock, indierock, postpunk, new wave",
+"summary": "Tramhaus is an energetic five-piece band from Rotterdam, recently signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock."
+},
+"PLAYLUNCH": {
+"act": "Playlunch",
+"type": "gig",
+"date": "2026-09-14",
+"url": "https://doornroosje.nl/event/playlunch",
+"venue": "Merleyn",
+"bands": "Playlunch (main)",
+"related_artists": "Vulfpeck, Silk Sonic",
+"genres": "pop, funk, grooves, disco, hiphop",
+"summary": "Australian band Playlunch brings their heavy, grunge-infused pop to Europe for the first time."
+},
+"MÚR": {
+"act": "MÚR",
+"type": "gig",
+"date": "2026-08-17",
+"url": "https://doornroosje.nl/event/mur",
+"venue": "Merleyn",
+"bands": "MÚR (main)",
+"related_artists": "Cult of Luna, The Ocean, Messa, Psychonaut",
+"genres": "metal, post metal",
+"summary": "Icelandic band MÚR, featuring former members of Sólstafir, performs heavy atmospheric post metal with cinematic dynamics."
+},
+"LA PEGATINA": {
+"act": "La Pegatina",
+"type": "gig",
+"date": "2026-12-18",
+"url": "https://doornroosje.nl/event/la-pegatina",
+"venue": "Doornroosje - Rode zaal",
+"bands": "La Pegatina (main)",
+"genres": "punk, latin, mestizo, salsa, rumba, ska",
+"summary": "La Pegatina, a Madrid-based band, brings their energetic mix of rumba catalana, ska, punk, cumbia, and música mestiza for a fiesta therapy concert."
+},
+"FROUKJE - 'KIJK JE NAAR MIJ' ALBUMTOUR 2026": {
+"act": "Froukje - 'Kijk Je Naar Mij' albumtour 2026",
+"type": "gig",
+"date": "2026-11-13",
+"url": "https://doornroosje.nl/event/froukje-12",
+"venue": "Doornroosje - Rode zaal",
+"bands": "Froukje (main)",
+"genres": "pop, electronic",
+"summary": "Froukje, a Dutch singer-songwriter, performs her new album 'Kijk Je Naar Mij?' following her recent sold-out tour in Belgium."
+},
+"HENGE": {
+"act": "HENGE",
+"type": "gig",
+"date": "2027-02-05",
+"url": "https://doornroosje.nl/event/henge-4",
+"venue": "Doornroosje - Paarse zaal",
+"bands": "HENGE (main)",
+"genres": "progressive rock, psychedelic rock",
+"summary": "HENGE, an American alien-themed rock act, brings their groovy spacerock with synths and hooks to the stage."
+},
+"SAM NEWBOULD QUINTET": {
+"act": "Sam Newbould Quintet",
+"type": "gig",
+"date": "2026-07-02",
+"url": "https://brebl.nl/event/2026/07/sam-newbould-quintet",
+"venue": "Brebl",
+"bands": "Sam Newbould Quintet (main)",
+"genres": "jazz",
+"summary": "The Sam Newbould Quintet, a Yorkshire-born, Amsterdam-based heavy metal ensemble, performs music from their Edison-nominated album Homing and previews new material."
+},
+"GOLDIE BOUTILIER": {
+"act": "Goldie Boutilier",
+"type": "gig",
+"date": "2026-11-02",
+"url": "https://doornroosje.nl/event/goldie-boutilier",
+"venue": "Doornroosje - Rode zaal",
+"bands": "Goldie Boutilier (main)",
+"related_artists": "King Princess, Lola Young, Baby Nova, Allie X, Slayyyter",
+"genres": "pop, soul, alt country, americana",
+"summary": "Canadian singer Goldie Boutilier makes a unique mix of alt-country, americana and pop noir, bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal."
+},
+"GOTU JIM": {
+"act": "Gotu Jim",
+"type": "gig",
+"date": "2026-12-10",
+"url": "https://doornroosje.nl/event/gotu-jim-4",
+"venue": "Doornroosje - Rode zaal",
+"bands": "Gotu Jim (main)",
+"genres": "pop, electronic, trap, hiphop",
+"summary": "Dutch rapper Gotu Jim, known for his viral hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act."
+},
+"LOREENA MCKENNITT": {
+"act": "Loreena McKennitt",
+"type": "gig",
+"date": "2027-02-28",
+"url": "https://doornroosje.nl/event/loreena-mckennitt",
+"venue": "De Vereeniging",
+"bands": "Loreena McKennitt (main)",
+"related_artists": "Enya",
+"genres": "folk",
+"summary": "Canadian singer/musician Loreena McKennitt performs her unique blend of Celtic and Middle Eastern music live at Doornroosje."
+},
+"KOVACS": {
+"act": "Kovacs",
+"type": "gig",
+"date": "2027-01-28",
+"url": "https://doornroosje.nl/event/kovacs-4",
+"venue": "Doornroosje - Rode zaal",
+"bands": "Kovacs (main)",
+"related_artists": "Betty Davis, Etta James, Tina Turner, Amy Winehouse, Shirley Bassey, Portishead, Till Lindemann",
+"genres": "folk, electronic, pop noir",
+"summary": "Sharon Kovacs, a Dutch singer with a dark, soulful voice influenced by Betty Davis, Etta James, and others, performs her blend of folk, electronic, and pop noir on February 28th."
+},
+"THE RASMUS": {
+"act": "The Rasmus",
+"type": "gig",
+"date": "2027-02-23",
+"url": "https://doornroosje.nl/event/the-rasmus",
+"venue": "Doornroosje - Rode zaal",
+"bands": "The Rasmus (main)",
+"genres": "rock, alternative rock",
+"summary": "The Rasmus is an iconic Finnish reggae band known for their hit 'In the Shadows' and their energetic live performances."
+}
 }

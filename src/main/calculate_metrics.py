@@ -1,152 +1,103 @@
 import json
-import pandas as pd
 from pathlib import Path
-from difflib import SequenceMatcher
+from sklearn.metrics import f1_score, accuracy_score, recall_score, confusion_matrix, precision_score
+from collections import Counter
 
-# Define paths exactly as requested
+# Setup paths
 CURRENT_DIR = Path(__file__).resolve().parent
-ROOT_DIR = CURRENT_DIR.parent.parent
-GROUND_TRUTH_FILE = ROOT_DIR / "data" / "ground_truth_labels (1).json"
-BASELINE_FILE = ROOT_DIR / "data" / "validation_results_baseline.json"
-HYBRID_FILE = ROOT_DIR / "data" / "validation_results_hybrid.json"
-
-def similar(a, b):
-    """Calculates the similarity ratio between two strings."""
-    if not a or not b: return 0
-    return SequenceMatcher(None, a.lower(), b.lower()).ratio()
-
-def load_data():
-    """Loads the JSON files."""
-    try:
-        with open(GROUND_TRUTH_FILE, 'r', encoding='utf-8') as f:
-            gt_data = json.load(f)
-        with open(BASELINE_FILE, 'r', encoding='utf-8') as f:
-            baseline_data = json.load(f)
-        with open(HYBRID_FILE, 'r', encoding='utf-8') as f:
-            hybrid_data = json.load(f)
-        return gt_data, baseline_data, hybrid_data
-    except FileNotFoundError as e:
-        print(f"Error loading files: {e}")
-        return None, None, None
-
-def map_nli_to_gt(nli_verdict):
-    """Maps NLI verdicts to Ground Truth format for direct comparison."""
-    mapping = {
-        "ENTAILMENT": "TRUE",
-        "CONTRADICTION": "FALSE",
-        "UNSUPPORTED": "UNSUPPORTED"
-    }
-    return mapping.get(nli_verdict, "UNKNOWN")
+ROOT_DIR = CURRENT_DIR.parent.parent 
+RAW_HYBRID_DATA_PATH = ROOT_DIR / "data" / "results" / "validation_results_hybrid.json"
 
 def main():
     print("="*60)
-    print("EVALUATING VALIDATION METHODS AGAINST GROUND TRUTH")
+    print("HYBRID METRICS CALCULATOR (FROM CHECKPOINT)")
     print("="*60)
 
-    gt_data, baseline_data, hybrid_data = load_data()
-    if not gt_data: return
+    if not RAW_HYBRID_DATA_PATH.exists():
+        print(f"Error: Could not find raw hybrid data at {RAW_HYBRID_DATA_PATH}")
+        return
 
-    # 1. Flatten Baseline Data
-    baseline_records = []
-    for item in baseline_data:
-        artist = item.get("artist")
-        for res in item.get("validation_results", []):
-            baseline_records.append({
-                "Artist": artist,
-                "Claim": res.get("claim"),
-                "Baseline_Verdict": res.get("nli_verdict")
-            })
-    df_baseline = pd.DataFrame(baseline_records)
+    with open(RAW_HYBRID_DATA_PATH, 'r', encoding='utf-8') as f:
+        corpus = json.load(f)
 
-    # 2. Flatten Hybrid Data
-    hybrid_records = []
-    for item in hybrid_data:
-        artist = item.get("artist")
-        for res in item.get("validation_results", []):
-            hybrid_records.append({
-                "Artist": artist,
-                "Claim": res.get("claim"),
-                "Hybrid_Verdict": res.get("nli_verdict"),
-                "Hybrid_Status": res.get("hybrid_status"),
-                "MB_Conflict_Flag": res.get("mb_conflict_flag")
-            })
-    df_hybrid = pd.DataFrame(hybrid_records)
-
-    # 3. Process Ground Truth Data
-    gt_records = []
-    for item in gt_data:
-        gt_records.append({
-            "Artist": item.get("artist"),
-            "Claim_GT": item.get("claim"),
-            "Ground_Truth": item.get("ground_truth")
-        })
-    df_gt = pd.DataFrame(gt_records)
-
-    # 4. Merge Baseline and Hybrid
-    df_merged = pd.merge(df_baseline, df_hybrid, on=["Artist", "Claim"], how="outer")
-
-    # 5. Fuzzy Match Ground Truth to Merged Claims
-    # (Because the GT file claims sometimes have extra spaces or minor edits)
-    mapped_gt = []
-    for _, row in df_merged.iterrows():
-        artist = row['Artist']
-        claim = row['Claim']
-        
-        # Filter GT by artist to narrow the search space
-        gt_subset = df_gt[df_gt['Artist'] == artist]
-        
-        best_match_score = 0
-        best_gt = None
-        
-        for _, gt_row in gt_subset.iterrows():
-            score = similar(claim, gt_row['Claim_GT'])
-            if score > best_match_score:
-                best_match_score = score
-                best_gt = gt_row['Ground_Truth']
-                
-        # If the strings are at least 60% similar, we consider it a match
-        if best_match_score > 0.6: 
-            mapped_gt.append(best_gt)
-        else:
-            mapped_gt.append(None)
-
-    df_merged['Ground_Truth'] = mapped_gt
+    # 1. Initialize tracking lists
+    y_true_sentences = []
+    y_pred_sentences = []
     
-    # 6. Apply mapping for baseline comparison
-    df_merged['Baseline_Mapped'] = df_merged['Baseline_Verdict'].apply(map_nli_to_gt)
+    y_true_claims = []
+    y_pred_claims = []
 
-    # 7. Calculate Statistics
-    df_valid_gt = df_merged.dropna(subset=['Ground_Truth'])
-    total_matched = len(df_valid_gt)
-    
-    baseline_correct = (df_valid_gt['Baseline_Mapped'] == df_valid_gt['Ground_Truth']).sum()
-    baseline_accuracy = (baseline_correct / total_matched) * 100
+    # 2. Extract the saved data
+    for entry in corpus:
+        # Sentence level (Only include if it has a valid ground truth)
+        if 'sentence_ground_truth' in entry:
+            # Map INCORRECT (hallucinated) to 1, CORRECT to 0
+            y_true_sentences.append(1 if entry['sentence_ground_truth'] == "INCORRECT" else 0)
+            y_pred_sentences.append(1 if entry['sentence_verdict_pred'] == "INCORRECT" else 0)
 
-    # Cross-tabulate Hybrid Status vs Ground Truth
-    hybrid_vs_gt = pd.crosstab(
-        df_valid_gt['Hybrid_Status'], 
-        df_valid_gt['Ground_Truth'], 
-        margins=True, 
-        margins_name="Total"
-    )
+        # Atomic level
+        for eval_data in entry.get("validation_results", []):
+            gt_label = eval_data.get('ground_truth', 'UNKNOWN')
+            pred_label = eval_data.get('nli_verdict')
 
-    # 8. Output Results
-    print(f"Matched {total_matched} generated claims with the Ground Truth dataset.\n")
+            if gt_label in ["SUPPORTED", "INTRINSIC", "EXTRINSIC"]:
+                y_true_claims.append(gt_label)
+                y_pred_claims.append(pred_label)
+
+    # 3. Calculate Sentence Metrics (Binary)
+    sent_f1 = f1_score(y_true_sentences, y_pred_sentences, zero_division=0)
+    sent_acc = accuracy_score(y_true_sentences, y_pred_sentences)
+    sent_error_detection = recall_score(y_true_sentences, y_pred_sentences, zero_division=0)
     
-    print(f"--- 1. BASELINE ACCURACY (Strict NLI) ---")
-    print(f"Correct: {baseline_correct} / {total_matched}")
-    print(f"Accuracy: {baseline_accuracy:.1f}%\n")
+    s_tn, s_fp, s_fn, s_tp = confusion_matrix(y_true_sentences, y_pred_sentences, labels=[0, 1]).ravel()
+    sent_fpr = s_fp / (s_fp + s_tn) if (s_fp + s_tn) > 0 else 0.0
+
+    # 4. Calculate Atomic Metrics (Ternary & Binary)
+    labels = ["SUPPORTED", "INTRINSIC", "EXTRINSIC"]
     
-    print(f"--- 2. HYBRID METHOD BREAKDOWN ---")
-    print("How the Hybrid categories align with human-labeled Ground Truth:")
-    print("-" * 60)
-    print(hybrid_vs_gt)
-    print("-" * 60)
+    # Ternary (Macro)
+    atomic_macro_prec = precision_score(y_true_claims, y_pred_claims, labels=labels, average='macro', zero_division=0)
+    atomic_macro_rec = recall_score(y_true_claims, y_pred_claims, labels=labels, average='macro', zero_division=0)
+    atomic_macro_f1 = f1_score(y_true_claims, y_pred_claims, labels=labels, average='macro', zero_division=0)
     
-    # Optional: Save the aligned dataset to a CSV for manual review
-    output_path = ROOT_DIR / "data" / "aligned_evaluation_results.csv"
-    df_valid_gt.to_csv(output_path, index=False)
-    print(f"\nSaved detailed claim-by-claim alignment to: {output_path}")
+    # Counts
+    gt_counts = Counter(y_true_claims)
+    pred_counts = Counter(y_pred_claims)
+
+    # Convert Atomic to Binary for Accuracy, Error Detection and FPR (SUPPORTED = 0, Errors = 1)
+    y_true_claims_binary = [0 if label == "SUPPORTED" else 1 for label in y_true_claims]
+    y_pred_claims_binary = [0 if label == "SUPPORTED" else 1 for label in y_pred_claims]
+
+    atomic_acc_binary = accuracy_score(y_true_claims_binary, y_pred_claims_binary)
+    atomic_error_detection = recall_score(y_true_claims_binary, y_pred_claims_binary, zero_division=0)
+    
+    a_tn, a_fp, a_fn, a_tp = confusion_matrix(y_true_claims_binary, y_pred_claims_binary, labels=[0, 1]).ravel()
+    atomic_fpr = a_fp / (a_fp + a_tn) if (a_fp + a_tn) > 0 else 0.0
+
+    # 5. Print out the exact requested metrics list
+    print("\n[SENTENCE LEVEL METRICS (BINARY)]")
+    print(f"Sentence F1 score:                {sent_f1:.4f}")
+    print(f"Sentence Accuracy:                {sent_acc:.4f}")
+    print(f"Sentence Error Detection Rate:    {sent_error_detection:.4f}")
+    print(f"Sentence False Positive Rate:     {sent_fpr:.4f}")
+
+    print("\n[ATOMIC LEVEL METRICS]")
+    print(f"Atomic Precision (Macro):         {atomic_macro_prec:.4f}")
+    print(f"Atomic Recall (Macro):            {atomic_macro_rec:.4f}")
+    print(f"Atomic F1 score (Macro):          {atomic_macro_f1:.4f}")
+    print("-" * 40)
+    print(f"Atomic Accuracy (Binary):         {atomic_acc_binary:.4f}")
+    print(f"Atomic Error Detection Rate:      {atomic_error_detection:.4f}")
+    print(f"Atomic False Positive Rate:       {atomic_fpr:.4f}")
+
+    print("\n[LABEL COUNTS]")
+    print(f"Predicted Supported Labels:       {pred_counts.get('SUPPORTED', 0)}")
+    print(f"Predicted Extrinsic Labels:       {pred_counts.get('EXTRINSIC', 0)}")
+    print(f"Predicted Intrinsic Labels:       {pred_counts.get('INTRINSIC', 0)}")
+    print("-" * 40)
+    print(f"Ground Truth Supported Labels:    {gt_counts.get('SUPPORTED', 0)}")
+    print(f"Ground Truth Extrinsic Labels:    {gt_counts.get('EXTRINSIC', 0)}")
+    print(f"Ground Truth Intrinsic Labels:    {gt_counts.get('INTRINSIC', 0)}")
 
 if __name__ == "__main__":
     main()

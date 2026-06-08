@@ -1,0 +1,35 @@
+{
+    "atomic_metrics": {
+        "labels": [
+            "SUPPORTED",
+            "INTRINSIC",
+            "EXTRINSIC"
+        ],
+        "confusion_matrix": [
+            [
+                37,
+                12,
+                6
+            ],
+            [
+                1,
+                16,
+                3
+            ],
+            [
+                4,
+                8,
+                11
+            ]
+        ],
+        "precision_macro": 0.6251322751322751,
+        "recall_macro": 0.6503293807641635,
+        "f1_macro": 0.6153143587811533
+    },
+    "binary_metrics": {
+        "accuracy": 0.8085106382978723,
+        "error_detection_rate": 1.0,
+        "false_positive_rate": 0.47368421052631576,
+        "f1_binary": 0.8615384615384616
+    }
+}

@@ -85,5 +85,42 @@ A Knowledge Graph is an organized data structure that represents real-world enti
 
 In order to replicate the pipeline structure with an integrated non-parametric for our niche local music knowledge, open-source databases such as MusicBrainz exist. The MusicBrainz database can be implemented as a knowledge graph, allowing us to cross-reference the generated claims against verified information. This option gives us the possibility to move on from ``Neutral" to a possible ``Contradiction'' when the source text does not provide enough context. 
 
+\section{Binary Classification Metrics}
+\label{sec:binary_metrics}
+In data mining and machine learning, evaluating the performance of a classification model requires mapping its predicted class labels against the actual ground-truth labels. For a binary classification problem, instances are categorized into a positive class or a negative class. The results are summarized in a confusion matrix \cite{tan2019introduction}, which tabulates the outcomes into four fundamental categories:
 
-\feedback{Might be nice to implement a piece on measuring succes. }
+\begin{itemize}
+    \item \textbf{True Positive (TP):} The model correctly predicts the positive class.
+    \item \textbf{True Negative (TN):} The model correctly predicts the negative class.
+    \item \textbf{False Positive (FP):} The model incorrectly predicts the positive class (Type I error).
+    \item \textbf{False Negative (FN):} The model incorrectly predicts the negative class (Type II error).
+\end{itemize}
+
+From these foundational counts, several theoretical metrics are derived to quantify different dimensions of the classifier's predictive performance.
+
+\subsection{Accuracy, Precision, and Recall}
+\textbf{Accuracy} is the most widely used metric and measures the overall proportion of correct predictions made by the model. However, accuracy can be a misleading indicator when the class distribution is highly imbalanced, as a classifier can achieve a high accuracy simply by predicting the majority class \cite{tan2019introduction}.
+\begin{equation}
+    \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+
+\noindent \textbf{Precision} evaluates the exactness of the classifier. It represents the fraction of records that actually belong to the positive class out of all the records the model classified as positive.
+\begin{equation}
+    \text{Precision} = \frac{TP}{TP + FP}
+\end{equation}
+
+\noindent \textbf{Recall} (also referred to as Sensitivity or the True Positive Rate) evaluates the completeness of the classifier. It measures the fraction of actual positive records that the model successfully detected.
+\begin{equation}
+    \text{Recall} = \frac{TP}{TP + FN}
+\end{equation}
+
+\subsection{F1-score and False Positive Rate}
+Because classification models often face a trade-off between maximizing precision and maximizing recall, the \textbf{F1-score} (or F-measure) is used to combine both into a single metric. It is calculated as the harmonic mean of precision and recall. Using the harmonic mean instead of an arithmetic mean ensures that the metric heavily penalizes a model if either precision or recall is exceptionally low \cite{tan2019introduction}.
+\begin{equation}
+    \text{F1} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{equation}
+
+\noindent Finally, the \textbf{False Positive Rate (FPR)} measures the proportion of actual negative instances that were falsely classified as positive. Tracking this metric is critical in cost-sensitive learning environments where committing a Type I error carries a significant penalty \cite{tan2019introduction}.
+\begin{equation}
+    \text{FPR} = \frac{FP}{FP + TN}
+\end{equation}

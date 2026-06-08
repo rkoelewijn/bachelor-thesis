@@ -1,0 +1,46 @@
+artist,claim,nli_verdict,ground_truth
+VroegZat,VroegZat bringing nightlife to the early evening,INTRINSIC,EXTRINSIC
+And Also the Trees,"And Also the Trees, The English post-punk band And performs songs from their new album 'The Devil's Door",SUPPORTED,EXTRINSIC
+Wyatt E.,"Wyatt E. built on heavy, repetitive riffs and deep drones",INTRINSIC,SUPPORTED
+Wyatt E.,Wyatt E. based on ancient mythology,INTRINSIC,SUPPORTED
+Daryll-Ann,Daryll-Ann is The Dutch guitar pop band,INTRINSIC,SUPPORTED
+Daryll-Ann,The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' in its entirety,INTRINSIC,SUPPORTED
+Daryll-Ann,The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' for the first time,INTRINSIC,SUPPORTED
+daoud,daoud is The French-Moroccan trumpeter,INTRINSIC,SUPPORTED
+daoud,"The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves,",INTRINSIC,EXTRINSIC
+Klezmagic,"Klezmagic, The Amsterdam-based Balkan band presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska",INTRINSIC,SUPPORTED
+Klezmagic,"Klezmagic blending Balkan, Klezmer, and Ska",INTRINSIC,SUPPORTED
+Adult DVD,Adult DVD is A six-piece synthpunk band,INTRINSIC,SUPPORTED
+Adult DVD,"Adult DVD, A six-piece synthpunk band from the Netherlands returns with danceable, retro computer game-like music that grooves, rocks, and swings",INTRINSIC,EXTRINSIC
+Hällas,"Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",INTRINSIC,SUPPORTED
+Hällas,Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror,INTRINSIC,SUPPORTED
+IDA,"IDA, Dutch hyperpop sensation performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions",INTRINSIC,EXTRINSIC
+Ruben Hillen,"Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences",INTRINSIC,SUPPORTED
+Racoon,"Racoon, a Dutch band from Zeeland, returns to Doornroosje",INTRINSIC,SUPPORTED
+Racoon,"Racoon, a Dutch band from Zeeland, returns for a concert",INTRINSIC,SUPPORTED
+Los Pirañas,"Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",INTRINSIC,SUPPORTED
+DYLAN LEBLANC - solo,"DYLAN LEBLANC - solo, American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop",INTRINSIC,SUPPORTED
+Philip Lassiter,"Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band",INTRINSIC,SUPPORTED
+Alex Henry Foster,"Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes",INTRINSIC,SUPPORTED
+Alex Henry Foster,"Alex Henry Foster known for intense, cinematic alternative rock and post-rock,",INTRINSIC,SUPPORTED
+Hippotraktor,"Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences",SUPPORTED,EXTRINSIC
+Primitive Ring,"Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour",INTRINSIC,EXTRINSIC
+Bokkeryers,"Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",INTRINSIC,EXTRINSIC
+Bokkeryers,Bokkeryers thrash metal with punk attitude and humor,INTRINSIC,SUPPORTED
+corto.alto,"corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub",INTRINSIC,SUPPORTED
+corto.alto,"corto.alto blending jazz with hiphop, broken beats",INTRINSIC,SUPPORTED
+Tusky,"Tusky delivers fierce punkrock with emo-hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",INTRINSIC,SUPPORTED
+Wodan Boys,Wodan Boys known for their energetic punk rock sound,SUPPORTED,EXTRINSIC
+NAFT,"NAFT known for their debut album 'Brass Tactics', blends electronic music with live brass and drums",INTRINSIC,EXTRINSIC
+NAFT,NAFT known for an energetic rave experience,INTRINSIC,SUPPORTED
+Stippenlift,"Stippenlift hits with a special show blending pop, electronic, and depriwave",INTRINSIC,SUPPORTED
+The Jayhawks,The Jayhawks formed in 1985,INTRINSIC,EXTRINSIC
+The Jayhawks,The Jayhawks formed in Minneapolis,INTRINSIC,SUPPORTED
+The Jayhawks,"The Jayhawks, an American band formed in 1985 in Minneapolis, perform their unique mix of country, folk, soul, Britpop, and rock 'n roll",INTRINSIC,EXTRINSIC
+Tramhaus,"Tramhaus is an energetic five-piece band from Rotterdam recently signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",INTRINSIC,EXTRINSIC
+Tramhaus,"Tramhaus signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",SUPPORTED,EXTRINSIC
+Tramhaus,Tramhaus ranging to shoegaze and punkrock,INTRINSIC,SUPPORTED
+MÚR,"Icelandic band MÚR, featuring former members of Sólstafir, performs heavy atmospheric post metal with cinematic dynamics",INTRINSIC,EXTRINSIC
+Froukje - 'Kijk Je Naar Mij' albumtour 2026,"Froukje - 'Kijk Je Naar Mij' albumtour 2026, Froukje, a Dutch singer-songwriter, performs her new album 'Kijk Je Naar Mij following her recent sold-out tour in Belgium",SUPPORTED,EXTRINSIC
+Froukje - 'Kijk Je Naar Mij' albumtour 2026,Froukje - 'Kijk Je Naar Mij' albumtour 2026 sold out,SUPPORTED,EXTRINSIC
+Gotu Jim,Gotu Jim emo in bittersweet songs,INTRINSIC,SUPPORTED

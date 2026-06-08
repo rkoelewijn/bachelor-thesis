@@ -4,7 +4,7 @@ import os
 
 CURRENT_DIR = Path(__file__).resolve().parent
 ROOT_DIR = CURRENT_DIR.parent.parent 
-CORPUS_PATH = ROOT_DIR / "data" / "full_evaluation_corpus.json"
+CORPUS_PATH = ROOT_DIR / "data" / "corpus" /"full_evaluation_corpus.json"
 
 def get_evaluation_corpus():
     """

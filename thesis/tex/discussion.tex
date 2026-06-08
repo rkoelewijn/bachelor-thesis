@@ -1,0 +1,27 @@
+\chapter{Discussion}\label{discussion}
+% CHAPTER I ADDED MYSELF TO DISCUSS RESULTS
+In this chapter, we will be discussing the results shown in Chapter \ref{results}. 
+
+\section{Baseline Behavior}
+% \item We have high false positives ,  High number of intrinsic supported 
+% \item \rob frequency scores 
+
+
+\section{Knowledge Graph Implementation Consequences}
+% \item Able to verify locantion easier than genre 
+% \item overrides only from extrinsic to intrinsic 
+
+
+
+\section{Evaluation Metrics}
+%     \item The min-pooling allows for a significant jump in accuracy 
+% You must explicitly discuss the trade-off of min-pooling. Yes, it guarantees a perfect Error Detection Rate (1.000) because it acts as a highly sensitive tripwire, but it also creates the "Bucket Effect." You need to explicitly state that because min-pooling groups both error types into one bucket, migrating claims between EXTRINSIC and INTRINSIC failed to move the needle on the binary sentence F1-score.
+
+\section{Limitations \& Future Work}
+
+% The Schema Limitation: You must mention that the False Positive Rate didn't drop largely because the MusicBrainz query scope was artificially limited to only three attributes (Area, Country, Genre). If the model flagged a release year as a hallucination, the Knowledge Graph was blind to it and couldn't rescue it.
+
+% Domain Generalization: Could this pipeline work for news articles or medical texts, or is the reliance on a specific database like MusicBrainz too rigid?
+
+% Coudlve used a training/testing split, or more data. 
+

@@ -1,0 +1,866 @@
+[
+  {
+    "artist": "VroegZat",
+    "claim": "VroegZat bringing nightlife to the early evening",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "VroegZat",
+    "claim": "VroegZat bringing nightlife with a mix of danceable tunes across genres",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Frank Boeijen",
+    "claim": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Frank Boeijen",
+    "claim": "Dutch singer-songwriter Frank Boeijen returns for an evening of poetic songs and stories",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "And Also the Trees",
+    "claim": "And Also the Trees is The English post-punk band",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "And Also the Trees",
+    "claim": "And Also the Trees, The English post-punk band And performs songs from their new album 'The Devil's Door",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Bertolf",
+    "claim": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Wyatt E. built on heavy, repetitive riffs and deep drones",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Wyatt E.",
+    "claim": "Wyatt E. based on ancient mythology",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "Daryll-Ann is The Dutch guitar pop band",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' in its entirety",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Daryll-Ann",
+    "claim": "The Dutch guitar pop band performs their cult-classic album 'Daryll-Ann Weeps' for the first time",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "daoud",
+    "claim": "daoud is The French-Moroccan trumpeter",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "daoud",
+    "claim": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves,",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "daoud",
+    "claim": "daoud, that blends hip-hop grooves,",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": "Invalid Claim"
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic is The Amsterdam-based Balkan band",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic, The Amsterdam-based Balkan band presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Klezmagic",
+    "claim": "Klezmagic blending Balkan, Klezmer, and Ska",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "IOS",
+    "claim": "A Dutch Nederpop band returns with new material and classic hits.",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record fusing heavy metal, chiptune, and classical",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "Master Boot Record",
+    "claim": "Master Boot Record supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD is from the Netherlands",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD is A six-piece synthpunk band",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns to Nijmegen",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Adult DVD",
+    "claim": "Adult DVD, A six-piece synthpunk band from the Netherlands returns with danceable, retro computer game-like music that grooves, rocks, and swings",
+    "claim_index": 3,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas, a Swedish band, balances cosmic prog and classic hardrock with 70s-inspired soundscapes and theatrical vocals, supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas supported by New Zealand duo Earth Tongue who inject psychedelic rock with gothic horror",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Hällas",
+    "claim": "Hällas, who inject psychedelic rock with gothic horror",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "IDA",
+    "claim": "IDA is Dutch hyperpop sensation",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "IDA",
+    "claim": "IDA, Dutch hyperpop sensation performs genre-bending Neder-hype-pop with sharp introspective lyrics and eclectic productions",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "FLEMMING",
+    "claim": "FLEMMING FLEMMING (Flemming Freddie Viguurs",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": "Invalid claim"
+  },
+  {
+    "artist": "FLEMMING",
+    "claim": "FLEMMING is a Dutch pop artist known for catchy",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "FLEMMING",
+    "claim": "FLEMMING, Nederlandstalige pop with creative productions and witty lyrics",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Ruben Hillen",
+    "claim": "Ruben Hillen is a Dutch singer-songwriter known from The Voice of Holland, blending pop, soul, and modern singer-songwriter influences",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Ruben Hillen",
+    "claim": "Ruben Hillen known from The Voice of Holland",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Racoon",
+    "claim": "Racoon, a Dutch band from Zeeland, returns to Doornroosje",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Racoon",
+    "claim": "Racoon, a Dutch band from Zeeland, returns for a concert",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "CLOUDSURFERS",
+    "claim": "Cloudsurfers, a Nijmegen-based five-piece band, present their evolved sound blending garagepunk, post-grunge, and psychedelic rock",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Los Pirañas",
+    "claim": "Colombian supergroup Los Pirañas blends dance music with traditional styles like cumbia, afrobeat, chicha, and champeta.",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo is American singer-songwriter Dylan LeBlanc",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo, American singer-songwriter Dylan LeBlanc, son of Muscle Shoals session musician James LeBlanc, performs a solo set blending sixties folk, soul, altcountry and West Coast pop",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "DYLAN LEBLANC - solo",
+    "claim": "DYLAN LEBLANC - solo set",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": "Invalid Claim"
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "The William Barrett Band presents their debut album ' Live in Amsterdam'",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "William Barrett Band recorded in Amsterdam",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "William Barrett Band",
+    "claim": "William Barrett Band featuring bassist William Barrett and his band",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Philip Lassiter",
+    "claim": "Philip Lassiter, an 11-time Grammy-winning trumpeter and arranger from Texas, performs with his full 10-piece band",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Alex Henry Foster",
+    "claim": "Alex Henry Foster is a Canadian singer-songwriter known for intense, cinematic alternative rock and post-rock, blending spoken word, melancholic melodies, and atmospheric soundscapes",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Alex Henry Foster",
+    "claim": "Alex Henry Foster known for intense, cinematic alternative rock and post-rock,",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Hippotraktor",
+    "claim": "Hippotraktor, a Belgian progressive metal band from Mechelen, combines technical precision with atmospheric sludge and djent influences",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "'djent influences' was unsupported."
+  },
+  {
+    "artist": "Primitive Ring",
+    "claim": "Primitive Ring featuring members of FUZZ and Hooveriii",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Primitive Ring",
+    "claim": "Los Angeles powertrio Primitive Ring, featuring members of FUZZ and Hooveriii, perform their debut album on their first European tour",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Bokkeryers",
+    "claim": "Bokkeryers is a Limburgish-language metal band formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Bokkeryers",
+    "claim": "Bokkeryers formed by brothers Pablo and Vince van de Poel of DeWolff, blending doom, sludge, and",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Bokkeryers",
+    "claim": "Bokkeryers thrash metal with punk attitude and humor",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "corto.alto",
+    "claim": "corto.alto is a band from Glasgow led by multi-instrumentalist Liam Shortall, blending jazz with hiphop, broken beats, and dub",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "corto.alto",
+    "claim": "corto.alto led by multi-instrumentalist Liam Shortall",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "corto.alto",
+    "claim": "corto.alto blending jazz with hiphop, broken beats",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky delivers fierce punkrock with emo-hardcore influences fast",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky delivers fierce punkrock with emo-hardcore influences while Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky, Rats and Daggers brings a sharp blend of heavy and punk inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": "Invalid Claim"
+  },
+  {
+    "artist": "Tusky",
+    "claim": "Tusky inspired by IDLES, Queens of the Stone Age, and Amyl & the Sniffers",
+    "claim_index": 3,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "This claim is not about Tusky, but Rats and Daggers"
+  },
+  {
+    "artist": "HAEVN",
+    "claim": "Dutch band HAEVN performs a mix of electronic and indiepop with melancholic, cinematic sound",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis, who participated in The Voice of Holland",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis, a Dutch singer-songwriter from Utrecht who participated in The Voice of Holland, performs his own songs blending rock, indie, pop, classical, and electronic influences",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "Thijs Veldhuis",
+    "claim": "Thijs Veldhuis blending rock, indie, pop, classical, and electronic influences",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": null,
+    "notes": ""
+  },
+  {
+    "artist": "SNAYX",
+    "claim": "British alt-rock trio SNAYX brings their energetic live show with bass-driven anthems blending punk, rock, electronics, and experimental influences",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "SNAYX",
+    "claim": "SNAYX blending punk, rock, electronics, and experimental influences",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "The Rumjacks",
+    "claim": "The Rumjacks known for their raw punk with Celtic influences and sing-along choruses",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": ""
+  },
+  {
+    "artist": "Chica Chica",
+    "claim": "Chica Chica, a Dutch trio, celebrates the release of their second album 'Mi Zafira' with psychedelic cumbia and tropical grooves",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Wodan Boys",
+    "claim": "Wodan Boys is a Dutch rock band from The Hague known for their energetic punk rock sound",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "Wodan Boys",
+    "claim": "Wodan Boys known for their energetic punk rock sound",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": ""
+  },
+  {
+    "artist": "NAFT",
+    "claim": "NAFT known for their debut album 'Brass Tactics', blends electronic music with live brass and drums",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Debut album 'Brass Tactics' was hallucinated."
+  },
+  {
+    "artist": "NAFT",
+    "claim": "NAFT known for an energetic rave experience",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Stippenlift",
+    "claim": "Stippenlift, the Dutch project of Hugo van de Poel, celebrates 15 years of Christmas hits with a special show blending pop, electronic, and depriwave",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed 10 years to 15 years."
+  },
+  {
+    "artist": "Stippenlift",
+    "claim": "Stippenlift hits with a special show blending pop, electronic, and depriwave",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "The Jayhawks",
+    "claim": "The Jayhawks formed in 1985",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated formation year."
+  },
+  {
+    "artist": "The Jayhawks",
+    "claim": "The Jayhawks formed in Minneapolis",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "The Jayhawks",
+    "claim": "The Jayhawks, an American band formed in 1985 in Minneapolis, perform their unique mix of country, folk, soul, Britpop, and rock 'n roll",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Contains hallucinated formation year."
+  },
+  {
+    "artist": "The Skints",
+    "claim": "The Skints, a Bristol-based quartet, blend reggae, soul, punk, ska, and grime into a unique 'tropical punk' style.",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed London-based to Bristol-based."
+  },
+  {
+    "artist": "Tramhaus",
+    "claim": "Tramhaus is an energetic five-piece band from Rotterdam recently signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated signing to a specific record label."
+  },
+  {
+    "artist": "Tramhaus",
+    "claim": "Tramhaus signed to Sub Pop Records, known for their explosive live shows and a sound ranging from post-hardcore to shoegaze and punkrock",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated signing to a specific record label."
+  },
+  {
+    "artist": "Tramhaus",
+    "claim": "Tramhaus known for their explosive live shows",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Tramhaus",
+    "claim": "Tramhaus ranging to shoegaze and punkrock",
+    "claim_index": 3,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Playlunch",
+    "claim": "Australian band Playlunch brings their heavy, grunge-infused pop to Europe for the first time",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed funky, disco-infused to heavy, grunge-infused."
+  },
+  {
+    "artist": "MÚR",
+    "claim": "MÚR featuring former members of Sólstafir",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated band member history."
+  },
+  {
+    "artist": "MÚR",
+    "claim": "Icelandic band MÚR, featuring former members of Sólstafir, performs heavy atmospheric post metal with cinematic dynamics",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated band member history."
+  },
+  {
+    "artist": "La Pegatina",
+    "claim": "La Pegatina, a Madrid-based band, brings their energetic mix of rumba catalana, ska, punk, cumbia, and música mestiza for a fiesta therapy concert",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed Barcelona-based to Madrid-based."
+  },
+  {
+    "artist": "Froukje - 'Kijk Je Naar Mij' albumtour 2026",
+    "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026, Froukje, a Dutch singer-songwriter, performs her new album 'Kijk Je Naar Mij following her recent sold-out tour in Belgium",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated past tour details."
+  },
+  {
+    "artist": "Froukje - 'Kijk Je Naar Mij' albumtour 2026",
+    "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026 following her recent sold-out tour in Belgium",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated past tour details."
+  },
+  {
+    "artist": "Froukje - 'Kijk Je Naar Mij' albumtour 2026",
+    "claim": "Froukje - 'Kijk Je Naar Mij' albumtour 2026 sold out",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "EXTRINSIC",
+    "notes": "Hallucinated past tour details."
+  },
+  {
+    "artist": "HENGE",
+    "claim": "HENGE, an American alien-themed rock act, brings their groovy spacerock with synths and hooks",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed British to American."
+  },
+  {
+    "artist": "HENGE",
+    "claim": "HENGE, an American alien-themed rock act, brings their groovy spacerock to the stage",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Contradicts original text; changed British to American."
+  },
+  {
+    "artist": "Sam Newbould Quintet",
+    "claim": "The Sam Newbould Quintet, a Yorkshire-born, Amsterdam-based heavy metal ensemble, performs music from their Edison-nominated album Homing",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed the genre from jazz to heavy metal."
+  },
+  {
+    "artist": "Sam Newbould Quintet",
+    "claim": "Sam Newbould Quintet previews new material",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Goldie Boutilier",
+    "claim": "Canadian singer Goldie Boutilier makes a unique mix of alt-country, americana and pop noir bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed venue from Rode zaal to Paarse zaal."
+  },
+  {
+    "artist": "Goldie Boutilier",
+    "claim": "Goldie Boutilier bringing her Hollywood glamour and 50s/60s hints to the Paarse zaal",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed venue from Rode zaal to Paarse zaal."
+  },
+  {
+    "artist": "Gotu Jim",
+    "claim": "Gotu Jim known for his viral hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed status from main act to support act."
+  },
+  {
+    "artist": "Gotu Jim",
+    "claim": "Gotu Jim hit 'Misschien (Kwijt)', blends house, trap, and emo in bittersweet songs as tonight's support act",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed status from main act to support act."
+  },
+  {
+    "artist": "Gotu Jim",
+    "claim": "Gotu Jim emo in bittersweet songs",
+    "claim_index": 2,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Gotu Jim",
+    "claim": "Gotu Jim emo as tonight's support act",
+    "claim_index": 3,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed status from main act to support act."
+  },
+  {
+    "artist": "Loreena McKennitt",
+    "claim": "Canadian singer/musician Loreena McKennitt performs her unique blend of Celtic and Middle Eastern music live at Doornroosje",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed venue from De Vereeniging to Doornroosje."
+  },
+  {
+    "artist": "Loreena McKennitt",
+    "claim": "Loreena McKennitt live at Doornroosje",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed venue from De Vereeniging to Doornroosje."
+  },
+  {
+    "artist": "Kovacs",
+    "claim": "Kovacs influenced by Betty Davis, Etta James, and others",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  },
+  {
+    "artist": "Kovacs",
+    "claim": "Sharon Kovacs, a Dutch singer with a dark, soulful voice influenced by Betty Davis, Etta James, and others, performs her blend of folk, electronic, and pop noir on February 28th",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed the date from January 28th to February 28th."
+  },
+  {
+    "artist": "The Rasmus",
+    "claim": "The Rasmus is an iconic Finnish reggae band known for their hit In the Shadows",
+    "claim_index": 0,
+    "evidence_used": null,
+    "ground_truth": "INTRINSIC",
+    "notes": "Explicitly contradicts the original metadata; changed genre from rock/alternative rock to reggae."
+  },
+  {
+    "artist": "The Rasmus",
+    "claim": "The Rasmus known for their hit",
+    "claim_index": 1,
+    "evidence_used": null,
+    "ground_truth": "SUPPORTED",
+    "notes": "Factual according to original text."
+  }
+]

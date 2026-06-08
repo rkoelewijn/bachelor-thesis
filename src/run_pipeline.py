@@ -8,8 +8,8 @@ CURRENT_DIR = Path(__file__).resolve().parent
 MAIN_DIR = CURRENT_DIR / "main"
 
 # --- GLOBAL STATE ---
-TEST_MODE = True
-TEST_LIMIT = 1
+TEST_MODE = False
+TEST_LIMIT = 3
 
 SCRIPTS = {
     "1": {
@@ -31,7 +31,11 @@ SCRIPTS = {
         "name": "Run Hybrid Pipeline (NLI + MusicBrainz)",
         "file": MAIN_DIR / "hybrid_evaluator.py",
         "description": "Evaluates both intrinsic and extrinsic hallucinations"
-    }
+    },
+    "5": {
+        "name": "Show Results",
+        "file": MAIN_DIR / "evaluation_metrics.py",
+        "description": "Shows performance scores."}
 }
 
 def print_menu():
@@ -44,7 +48,7 @@ def print_menu():
         print(f"      ↳ {info['description']}")
     
     print("-" * 60)
-    print("  [5] Run Full Pipeline Sequentially (1 ➔ 3 ➔ 4)")
+    print("  [6] Run Full Pipeline Sequentially (1 ➔ 3 ➔ 4 ➔ 5)")
     
     # Dynamic Test Mode Status UI
     mode_status = f"🟢 ON (Limit: {TEST_LIMIT} items)" if TEST_MODE else "🔴 OFF (Full Corpus)"
@@ -93,7 +97,7 @@ def main():
             TEST_MODE = not TEST_MODE
             print(f"\n⚙️ Test Mode is now {'ON' if TEST_MODE else 'OFF'}.")
             
-        elif choice == '5':
+        elif choice == '6':
             print("\n" + "🔥 "*15)
             print(" INITIATING FULL END-TO-END PIPELINE")
             print("🔥 "*15)
