@@ -1,0 +1,117 @@
+{
+  "TEMPLATE": {
+    "act": "JSON TEMPLATE",
+    "type": "type",
+    "date": "2026-09-13",
+    "url": "https://doornroosje.nl/event/template",
+    "venue": "Doornroosje - Rode zaal",
+    "bands": "bands",
+    "genres": "genres",
+    "summary": "one sentence summary"
+  },
+  "VROEGZAT": {
+    "act": "VroegZat",
+    "date": "2026-06-26",
+    "url": "https://www.doornroosje.nl/event/vroegzat-10/",
+    "venue": "Doornroosje",
+    "bands": "DJ Rob de Nice, MC Rick Rossig (main)",
+    "genres": "pop, disco",
+    "summary": "A Dutch event bringing nightlife to the early evening with a mix of danceable tunes across genres."
+  },
+  "FRANK_BOEIJEN": {
+    "act": "Frank Boeijen",
+    "date": "2026-08-23",
+    "url": "https://doornroosje.nl/event/frank-boeijen-19/",
+    "venue": "Openluchtteater De Goffert",
+    "bands": "Frank Boeijen (main)",
+    "genres": "pop",
+    "summary": "Dutch singer-songwriter Frank Boeijen returns to his beloved hometown of Nijmegen for an evening of poetic songs and stories."
+  },
+  "AND_ALSO_THE_TREES": {
+    "act": "And Also the Trees",
+    "date": "2026-09-24",
+    "url": "https://doornroosje.nl/event/and-also-the-trees/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "And Also the Trees (main)",
+    "related_artists": "The Cure, Killing Joke, Cocteau Twins, Tindersticks, Nick Cave",
+    "genres": "indierock, pop noir, post-punk",
+    "summary": "The English post-punk band And Also the Trees from Worcestershire performs songs from their new album 'The Devil's Door'."
+  },
+  "BERTOLF": {
+    "act": "Bertolf",
+    "date": "2026-12-19",
+    "url": "https://www.doornroosje.nl/event/bertolf-4/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Bertolf (main)",
+    "related_artists": "Buck Meek, Ben Caplan, CCC Inc., Millichamp",
+    "genres": "roots, bluegrass",
+    "summary": "Dutch musician Bertolf presents his bluegrass album 'Bluefinger vol. 2' with his excellent Dutch band."
+  },
+  "WYATT_E": {
+    "act": "Wyatt E.",
+    "date": "2026-09-01",
+    "url": "https://www.doornroosje.nl/event/wyatt-e/",
+    "venue": "Merleyn",
+    "bands": "Wyatt E. (main)",
+    "genres": "metal, doom metal",
+    "summary": "Belgian band Wyatt E. performs long, hypnotic, and atmospheric compositions built on heavy, repetitive riffs and deep drones, often based on ancient mythology."
+  },
+  "DARYLL_ANN": {
+    "act": "Daryll-Ann",
+    "date": "2026-09-26",
+    "url": "https://www.doornroosje.nl/event/daryll-ann-5/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Daryll-Ann (main)",
+    "genres": "pop, rock",
+    "summary": "The Dutch guitar pop band Daryll-Ann performs their cult-classic album 'Daryll-Ann Weeps' in its entirety for the first time."
+  },
+  "DAOUD": {
+    "act": "daoud",
+    "date": "2026-11-16",
+    "url": "https://www.doornroosje.nl/event/daoud/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "daoud (main)",
+    "related_artists": "Erik Truffaz",
+    "genres": "hip hop, jazz, electronic, neo-soul",
+    "summary": "The French-Moroccan trumpeter and composer daoud plays unconventional, danceable, and cheerful jazz that blends hip-hop grooves, neo-soul, and rock."
+  },
+  "KLEZMAGIC": {
+    "act": "Klezmagic",
+    "date": "2026-12-18",
+    "url": "https://www.doornroosje.nl/event/klezmagic/",
+    "venue": "Merleyn",
+    "bands": "Klezmagic (main)",
+    "genres": "balkan, klezmer, Ska",
+    "summary": "The Amsterdam-based Balkan band Klezmagic presents their new album 'Op Vrije Voeten' in an energetic show blending Balkan, Klezmer, and Ska."
+  },
+  "IOS": {
+    "act": "IOS",
+    "date": "2026-10-30",
+    "url": "https://www.doornroosje.nl/event/ios/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "IOS (main)",
+    "genres": "pop",
+    "summary": "A Dutch Nederpop band returns with new material and classic hits."
+  },
+  "MASTER_BOOT_RECORD": {
+    "act": "Master Boot Record+ Fulci + Arottenbrit",
+    "date": "2026-11-19",
+    "url": "https://www.doornroosje.nl/event/master-boot-record-3/",
+    "venue": "Doornroosje - Paarse zaal",
+    "bands": "Master Boot Record (main), Fulci, Arottenbrit (support)",
+    "related_artists": "Carpenter Brut, Perturbator, Gost, 220 Stab Wounds, Sanguisugabogg",
+    "genres": "metal, death metal, punk, chiptune",
+    "summary": "Master Boot Record creates an instrumental retro-futurist soundscape fusing heavy metal, chiptune, and classical, supported by Italian death metal band Fulci and solo Gameboy project Arottenbrit."
+  },
+  "ADULT_DVD": {
+    "act": "Adult DVD",
+  "type": "gig",
+  "date": "2026-11-19",
+  "url": "https://doornroosje.nl/event/adult-dvd",
+  "venue": "Merleyn",
+  "bands": "Adult DVD (main)",
+  "related_artists": "DEVO, Soulwax",
+  "genres": "electronic, dance, noise rock, postpunk",
+  "summary": "A six-piece synthpunk band from the Netherlands returns to Nijmegen with danceable, retro computer game-like music that grooves, rocks, and swings."
+  }
+}
