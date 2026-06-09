@@ -19,7 +19,7 @@ logic is written in Python and SQL. No manual data entry is required.
 \end{enumerate}
 Feedback is collected from users via a web form and stored in PostgreSQL. \\\\ 
 
-\noindent Step 3, LLM extraction and summarisation by the DeepSeek model, is what interest us the most. Even though we know the model and set up of the extraction, throughout this thesis the LLM and creation of the summary will be treated as a ``black box''. 
+\noindent Step 3, LLM extraction and summarisation by the DeepSeek model, is what interests us the most. Even though we know the model and set up of the extraction, throughout this thesis the LLM and creation of the summary will be treated as a ``black box'', meaning we won't be tweaking any of it's parameters or trying to base our strategy around the models known weak spots. 
 The fields extracted by the LLM can be found in table \ref{tab:metadata_fields}.  
 
 \newpage
@@ -47,7 +47,7 @@ The fields extracted by the LLM can be found in table \ref{tab:metadata_fields}.
     \end{tabular}
 \end{table}
 
-\noindent Table \ref{tab:metadata_fields} shows that DeepSeek is instructed to generate a one-sentence English summary including the origin of the artist, which will be used to as the to be validated summary for this thesis. Other relevant field include the \texttt{main\_act} which is used to in generating atomic claims in Section \ref{rsh:decomposer} and \texttt{url\_sale} which is used find the source text of the summary in Section \ref{rsh:datacorpus}. We limit our scope to verifying the \texttt{summary}, but investigative work shows that there exist occurences of the LLM hallucinating on the \texttt{related\_bands}, where all bands mentioned on the page get marked as related, even though this might not be the case. Other fields, will be discarded in our own validation steps. 
+\noindent Table \ref{tab:metadata_fields} shows that DeepSeek is instructed to generate a one-sentence English summary including the origin of the artist, which will be used to as the to be validated summary for this thesis. Other relevant fields include the \texttt{main\_act} which is used to in generating atomic claims in Section \ref{rsh:decomposer} and \texttt{url\_sale} which is used find the source text of the summary in Section \ref{rsh:datacorpus}. We limit our scope to verifying the \texttt{summary}, but investigative work shows that there exist occurences of the LLM hallucinating on the \texttt{related\_bands}, where all bands mentioned on the page get marked as related, even though this might not be the case. The remaining fields, will be discarded in our own validation steps. 
 
 \section{Extracted Newsletters}  
 For our tests, we will be using 47 different output examples,of events taking place on June 10 2026 untill April 15 2027. Listing \ref{lst:newsletter_example} shows one example. 
@@ -94,7 +94,7 @@ All used newsletters can be found in Appendix \ref{tab:newsletters}.
 \section{Discussing Historical Feedback}
 At the bottom of each email sent by the pipeline, a link is put with a request for feedback to the reader. To see whether hallucinations already occurred during this pipeline, we requested the full feedback list from Bol. 
 
-The feedback list, contains 11 different feedback entries, of which three are suggestions of new features, two entires are about the \texttt{genre} being labelled incorrectly, two entries where the act (main vs supporting) is labelled wrong and lastly, two actual hallucinations. 
+The feedback list, contains 11 different feedback entries, of which three are suggestions for new features, two entires are about the \texttt{genre} being labelled incorrectly, two entries where the act (main vs supporting) is labelled wrong and lastly, two actual hallucinations. 
 
 The hallucination feedback reads: ``I wonder whether \textit{Luna Maki} really is from Utrecht.'' A short online search shows that Luna Maki is actually from Amersfoort\footnote{https://www.nieuwsplein33.nl/nieuws/3867624/luna-maki-op-het-punt-van-doorbreken-met-afrobeat-uit-amersfoort}.  
 

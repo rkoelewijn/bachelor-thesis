@@ -22,13 +22,12 @@ and following the taxonomy proposed by Huang \etal
     \item \textbf{Faithfulness Hallucinations} 
     \\ Divergence from the provided user input or context. This includes \textit{Instruction} (following the wrong instructions from the prompt), 
     \textit{Context} (Not understanding the context) and \textit{Logical} (Incorrect logic, e.g. math errors).  
-    In information extraction (IE) tasks, these often manifest as ``Missing Spans" or ``Incorrect Types" \cite{gao2024empirical}.
 \end{itemize}
 
 \noindent Classifying the hallucinations allows us to have insight on what went wrong and where to improve, giving us the ability to do a system-level
 diagnosis of the pipeline \cite{vinay2025failuremodesllmsystems}. For instance, a \textit{faithfulness} error indicates a failure to maintain ``context-boundary" stability \cite{vinay2025failuremodesllmsystems}, 
 where a \textit{factuality} error might need validation by means of an external source. Because LLMs are often unable to faithfully detect their own factual errors 
-  \cite{chen2023felm}, deterministic verification is required to ensure airtight verification. 
+  \cite{chen2023felm}, deterministic verification is required to ensure airtight verification. In our pipeline, we will be using the labels \texttt{INTRINSIC} for when a direct contradiction against the source was found, \texttt{EXTRINSIC} when were made up, but aren't a clear contradiction \cite{huang2025survey}. 
 
 To understand why these factual hallucinations occur so frequently in localized domains like local music venues, we must look at how LLMs store information. LLMs encode knowledge within their network weights during pre-training, forming what is known as \textit{parametric memory} \cite{mallen2023when}. While parametric memory may be reliable for globally prominent entities (e.g., world-famous pop stars) due to their massive presence in the training data, it is inherently weak for niche, local entities. This limitation is known as \textit{popularity bias}. Kandpal \etal \cite{kandpal2023longtail} mathematically demonstrate that an LLM's ability to accurately recall a fact drops immensely for ``long-tail'' entities that appear infrequently in its training corpus. Consequently, when an LLM is tasked with summarizing text about a local grassroots band, it encounters a void in its parametric memory and is prone to hallucinating plausible, fabrications in-line with what it knows about other grassroots bands. 
 
@@ -87,7 +86,7 @@ In order to replicate the pipeline structure with an integrated non-parametric f
 
 \section{Binary Classification Metrics}
 \label{sec:binary_metrics}
-In data mining and machine learning, evaluating the performance of a classification model requires mapping its predicted class labels against the actual ground-truth labels. For a binary classification problem, instances are categorized into a positive class or a negative class. The results are summarized in a confusion matrix \cite{tan2019introduction}, which tabulates the outcomes into four fundamental categories:
+In Data Mining and Machine Learning, evaluating the performance of a classification model requires mapping its predicted class labels against the actual ground-truth labels. For a binary classification problem, instances are categorized into a positive class or a negative class. The results are summarized in a confusion matrix \cite{tan2019introduction}, which tabulates the outcomes into four fundamental categories:
 
 \begin{itemize}
     \item \textbf{True Positive (TP):} The model correctly predicts the positive class.
@@ -99,7 +98,7 @@ In data mining and machine learning, evaluating the performance of a classificat
 From these foundational counts, several theoretical metrics are derived to quantify different dimensions of the classifier's predictive performance.
 
 \subsection{Accuracy, Precision, and Recall}
-\textbf{Accuracy} is the most widely used metric and measures the overall proportion of correct predictions made by the model. However, accuracy can be a misleading indicator when the class distribution is highly imbalanced, as a classifier can achieve a high accuracy simply by predicting the majority class \cite{tan2019introduction}.
+\textbf{Accuracy} is the most widely used metric and measures the overall proportion of correct predictions made by the model. However, accuracy can be a misleading indicator when the class distribution is highly unbalanced, as a classifier can achieve a high accuracy simply by predicting the majority class \cite{tan2019introduction}.
 \begin{equation}
     \text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation}
