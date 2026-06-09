@@ -26,7 +26,67 @@ def clean_cookie_text(text):
     
     return re.sub(r'\n\s*\n', '\n', cleaned_text).strip()
 
-def prepare_dutch_sentences(raw_text, artist_name):
+def synthesize_musicbrainz_sentences(artist_name, mb_facts):
+    """
+    Convert MusicBrainz structured data into natural language sentences.
+    These get added to the NLI premise to help verify facts not in Dutch text.
+    """
+    if mb_facts.get("status") != "Found":
+        return []
+    
+    sentences = []
+    
+    # Country/origin mapping
+    country_adjectives = {
+        'NL': 'Dutch',
+        'GB': 'English', 
+        'US': 'American',
+        'BE': 'Belgian',
+        'DE': 'German',
+        'SE': 'Swedish',
+        'AU': 'Australian',
+        'IT': 'Italian',
+        'CA': 'Canadian',
+        'CO': 'Colombian',
+        'FR': 'French',
+        'ES': 'Spanish'
+    }
+    
+    artist_type = mb_facts.get('type', 'Unknown')
+    country = mb_facts.get('country', 'Unknown')
+    area = mb_facts.get('area', 'Unknown')
+    country_adj = country_adjectives.get(country, area)
+    
+    # Generate type + country sentences
+    if artist_type == 'Group' and country != 'Unknown':
+        sentences.append(f"{artist_name} is a {country_adj} band.")
+        sentences.append(f"The band {artist_name} is from {area}.")
+        sentences.append(f"{artist_name} is a musical group.")
+    
+    elif artist_type == 'Person' and country != 'Unknown':
+        sentences.append(f"{artist_name} is a {country_adj} artist.")
+        sentences.append(f"{artist_name} is from {area}.")
+        sentences.append(f"{artist_name} is a solo artist.")
+    
+    # Fallback: at least assert existence
+    if not sentences:
+        sentences.append(f"{artist_name} is a known musical artist.")
+    
+    return sentences
+
+def prepare_dutch_sentences(raw_text, artist_name, mb_facts=None):
+    """
+    Parse Dutch source text into sentences and optionally augment with 
+    MusicBrainz-synthesized facts.
+    
+    Args:
+        raw_text: Raw Dutch text from scraping
+        artist_name: Name of the artist
+        mb_facts: MusicBrainz facts dict (optional, from data_loader)
+    
+    Returns:
+        List of contextualized sentences for NLI verification
+    """
     doc = nlp_nl(raw_text)
     noise_words = ["ticket", "vvk", "euro", "uitverkocht", "bestel", "koop", "kassa", "mailbox", 
         "is gevestigd op",                      # Locatie Doornroosje/Merleyn
@@ -39,6 +99,7 @@ def prepare_dutch_sentences(raw_text, artist_name):
         ]
     prepared_sentences = []
     
+    # 1. Parse Dutch text
     for sent in doc.sents:
         text = sent.text.strip()
         
